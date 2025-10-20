@@ -1,26 +1,20 @@
-The html file contains a transcript of a dungeons and dragons stream for Critical Role.
-Analyze the transcript, look for characters, locations, objects, weapons with descriptions and put them in json with descriptions and tags.
-Follow the format of the example file episode_1_example.json. Start each description with the name of the person quoted, keep the whole row of each row containing information.
-Do not generate, infer, speculate, or summarize content, only quote with minor grammatical fixes such as removing stuttering.
+Analyze the transcript, look for named entities. **Entities must explicitly include:**
 
-alt:
-### **Prompt Goal**
-You are an entity extraction engine specializing in Dungeons & Dragons transcripts. Analyze the provided Critical Role transcript content and extract specific entities into a **strict JSON format**.
+1.  **Characters:** Primary, secondary, and supporting characters (e.g., Aranessa, Olgud, Hero, Elodie).
+2.  **Companions/Creatures:** Named animal or magical companions (e.g., Wulfric, Pin, Hala).
+3.  **Factions & Organizations:** Named groups, guilds, religious orders, or noble houses (e.g., House Halovar, House Royce, Candescent Creed).
+4.  **Locations:** Cities, neighborhoods, or specific described places (e.g., Dol-Makjar, The Rookery, The Tanners).
+5.  **Objects:** Named items or artifacts (e.g., Stone of Nightsong, Thjazi's Scimitar).
+6.  **Events:** Named historical or recent conflicts (e.g., Shapers' War, Falconer's Rebellion).
+When determining the key field for an entity, follow these specific formatting rules:
 
-### **Entity Extraction Task**
-Identify the following entities along with their descriptive quotes and tags:
-1.  **Characters** (Player Characters, NPCs)
-2.  **Locations** (Cities, specific buildings, geographical features)
-3.  **Objects & Items** (Weapons, artifacts, non-magical and magical items)
-4.  **Concepts/Factions** (Organizations, deities, major plot concepts)
+*   Titles and Suffixes: Do not include formal ranks, honorifics, or professional titles (e.g., Sir, General, Lady, Lord, Dean, Photarch, Aspirant) in the key. Use the person's full name where available (e.g., use "Julien Davinos" for "Sir Julien Davinos," and "Aranessa" for "Lady Aranessa").
+*   The Definite Article: Include "The" in the key only if it is consistently capitalized as part of the entity's proper name in the source text. If included, place it at the beginning of the name without a comma (e.g., use "The Archanade" for "Archanade, The").
 
-### **Output Constraints (MUST be Followed)**
+Follow the format of the example file `_example.json`. When extracting descriptions:
 
-*   **Format:** The final output **MUST** be a valid JSON object that **STRICTLY adheres** to the structure defined in the `episode_1_example.json` file.
-*   **Content Fidelity (No Inference):**
-    *   Do **NOT** generate, infer, speculate, or summarize content.
-    *   The `description` field **MUST** contain **ONLY** direct, complete quotes from the transcript.
-    *   Minor grammatical cleanup is permitted (e.g., removing stuttering like "uh," "um," "like," or fixing run-on sentences for clarity).
-*   **Description Formatting:**
-    *   The quote for each entity's `description` **MUST begin** with the name of the person speaking (e.g., "Liam\nThe sword felt cold in my hand.").
-    *   Keep the **entire row/sentence** from the transcript that contains the relevant information.
+*   Look for lines literally describing the entity, or providing context to the entity and it's nature, including scenes where characters are actively interacting with, seeking, or revealing information about the entity, such as its appearance, function, or immediate history (e.g., drawing its likeness, examining its physical form, or recalling its features).
+*   Combine lines spoken by the same speaker without interruption in-between, separated by `\n`.
+*   Start each description with the name of the person quoted. The speaker's name must be followed immediately by a literal newline character (\n) and then the quote's text. Do not add any colon, space, or other punctuation between the speaker's name and the newline.
+*   Keep the **full row** of each line containing information.
+*   **Do not generate, infer, speculate, or summarize content.** All information must be a direct quote from the text, with only minor grammatical fixes (e.g., removing stuttering).

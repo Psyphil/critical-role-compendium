@@ -1,0 +1,763 @@
+[
+	{
+		"key": "Teor Pridesire",
+		"descriptions": [
+			"BRENNAN\nTeor, you are seated on a exquisite,\nvelvet-lined and cushioned seat\nas a small, white velvet\nsack of coins\nlands with a thunk in front of you.",
+			"TRAVIS\nThat would be me, Teor.",
+			"BRENNAN\n\"Very well. Well, Teor, it's a pleasure to meet you.\"",
+			"TRAVIS\nI am Teor Pridesire. Your name?",
+			"BRENNAN\nTeor, you look down and see the symbol,\nsubtle, but on the belt of House Davinos,\nyou briefly saw this guy at the funeral last night.",
+			"BRENNAN\nYou look and see Teor traveling\nwith a small satchel of coin\nwith the Candescent Creed's symbol on it,\nand you know that you're nearby this place,\nthe Mercanaud Couturier.",
+			"SAM\nEarlier you said to get rid of Teor,\nTeor the lion fellow.",
+			"BRENNAN\nYou know exactly where he would get sent.\nIf the grandma already took care of him,\nthere's a tailor shop in the market\nthey would've sent him to\nand they'd be dealing with him.",
+			"BRENNAN\nTeor stumbles,\nobviously altered by whatever this incense was.",
+			"TRAVIS\nHe's wobbling side-to-side.\nThe poison's been removed\nbut getting your shadow cut will fuck you up.",
+			"TRAVIS\nI was drugged and almost tortured\nwithin an inch of my life\nand these two,\nthese two came and saved me.",
+			"TRAVIS\nThey were cutting my shadow into pieces."
+		],
+		"tags": [
+			"player character",
+			"human",
+			"male",
+			"Bannersman",
+			"Candescent Creed"
+		]
+	},
+	{
+		"key": "Wicander Halovar",
+		"descriptions": [
+			"BRENNAN\n\"Wicky, my little ducky,\nI love you\nand I understand that this is unusual.\"",
+			"SAM\nI take a step back, gripping my cane,\nand I think just looking around\nat the craziness of this image,\nof this gigantic monster thrashing about,\nand then also juxtaposed\nwith everybody feeling like it's commonplace\nor looking like they've seen this a hundred times before,\nand I guess I'm staring at different faces\nto try to register who is surprised by this, if anyone.",
+			"SAM\nIt's not the distilled liquid of the universe?",
+			"SAM\nI shrink back at the sight of the thrashing monster.",
+			"SAM\nAm I still the Scion of the family? Am I still--",
+			"BRENNAN\n\"You are the grandson of a celestial.\nYou do not get your powers\nfrom your devotion to poetry.\nYou get them because of the blood\nthat runs in your veins.\nIt's our family first always, Wicander.\"",
+			"BRENNAN\n\"Hot bath!\"\nYou-- (laughter)",
+			"BRENNAN\nyou look and see on your desk\na small, silver, filigreed frame\nturned the other direction amongst your belongings.",
+			"SAM\nI will take it out of the frame.\nI'll put it in a small satchel,\ngather a few items,\nunclear of when I'll come back,\ngrab my cane,\ngrab a flask of water,\nand I guess head out.",
+			"SAM\nI told you, we could just go in there and talk to them\nlike nice people--",
+			"SAM\nI'm having a very bad day.",
+			"SAM\nI'm starting to think that\nwe might not be able to sleep in the villa tonight.",
+			"SAM\nI humbly ask for\nprotection, shelter, friendship,\nloyalty, love, and\nI don't know where to go or what to do.\nI don't have anyone and I'm very scared\nand could someone take care of me for a while?",
+			"SAM\nI apologize to you for your brother\nand all of you for the danger you've been placed in\nand you for, well, I don't know what,\nbut you hate me and that's not good."
+		],
+		"tags": [
+			"player character",
+			"male",
+			"noble",
+			"House Halovar"
+		]
+	},
+	{
+		"key": "Tyranny",
+		"descriptions": [
+			"BRENNAN\n\"You understand why that would be frightening, right, Tyranny?\"\nWHITNEY\nOf course, Photarch.",
+			"WHITNEY\n\"What a thoughtful demon you are.",
+			"WHITNEY\nI was given a body six months ago\nwith the explicit purpose to make you look good, okay!",
+			"WHITNEY\nI am hired by your family.\nI am not going to be saved.\nI'm a demon, man.\nYou can't save a demon. I was hired--",
+			"WHITNEY\nMy maker, Ksha'aravi, the High Prince of Demonkind\nand the Shadow of Suffering--\nbrought me to you\nto spread the word of the Candescent Creed.\nIn exchange, he is getting Filament.\nHe is getting souls.",
+			"WHITNEY\nI am looking.",
+			"BRENNAN\n\"Aspirant Tyranny.\"\nWHITNEY\nRulius.\nBRENNAN\n\"A pleasure to see you.\nYou look, well, radiant.\"\nWHITNEY\nEver bright. ever right.",
+			"WHITNEY\nNo, no. No need. He's here imminently.\nIn fact, I'm here to announce him.\nHe requires counsel with Teor\nbefore he gets outfitted.",
+			"WHITNEY\nWe just brought your friend\nback from imminent doom.",
+			"WHITNEY\nI thought he'd lap it up.\nI kind of wanted him to lap it up.",
+			"WHITNEY\nHe's a full idiot, okay?\nBut he is the only one\nin his family who has actual ethics.",
+			"WHITNEY\nEverybody has really big\nand rough hands except for you.\nTouch this, they're soft as--\nand I would know",
+			"WHITNEY\nI hate my family, too, all right?\nWe'll get into it on the road."
+		],
+		"tags": [
+			"player character",
+			"demon",
+			"female",
+			"Candescent Creed"
+		]
+	},
+	{
+		"key": "Yanessa",
+		"descriptions": [
+			"BRENNAN\nYour grandmother, Yanessa, turns and says,\n\"It's something that's almost too hard to be believed.",
+			"BRENNAN\n\"Wick,\n70 years ago,\na bunch of lunatics and idiots\nstood up to kill the gods.\nNow, the gods died, so maybe they weren't gods.\nIf you can kill them, are they gods?\nSeems unreasonable,\nbut that doesn't mean that the world was ready\nto stop believing in something.",
+			"BRENNAN\n\"We just have a place that we get it from.\nWhen I was a young girl,\nthey came for us.\nThey wanted to destroy our family, the Halovars.\nWe were the family of flames.\nWe were the right hand of the Obridimian royal house.\nWe served what we believed to be a god true,\nand they cast us down, slaughtered us.",
+			"BRENNAN\n\"Your grandfather, Aetheon.\"\nSAM\nAetheon?\nBRENNAN\n\"Aetheon.\"\nSAM\nThe way that you cocked your head\nmade me think that maybe that's not his name, or--?\nBRENNAN\n\"No, it is.\"\nSAM\nOkay, okay.\nBRENNAN\n\"Well, it was. It still is,\nbut he was the servant of the sun.\"\nSAM\nAnd you married him?\nBRENNAN\n\"No, no, no, no. That'd be disgusting.\"\nSAM\nOh\nBRENNAN\n\"I didn't.\nHe's your grandfather because I took some of his blood\nand I used it for a spell, and I made a wish,\nand my wish was to have a child.\"",
+			"BRENNAN\n\"I hate your mother.\nShe--\"\nSAM\nOh.\nBRENNAN\n\"I am so sorry.\nI should never have let this happen and it's gone too long,\nbut we're fixing it now.\"",
+			"BRENNAN\nYou see she looks at you and says,\n\"I know you had this\nromance thing with the one who got away,\nbut this marriage to the D'Antonio needs to happen.\"",
+			"BRENNAN\n\"So her father is very old in age,\nand I believe their son is younger\nand is more or less abdicated from his position there.\nThey sit on a plot of land with a series of vineyards\nthat produce a magical,\nan alchemical element\nwithin the fruit of that vineyard\nthat will allow the Filament\nthat we can dilute it pretty considerably.\"",
+			"BRENNAN\n\"What a thoughtful demon you are."
+		],
+		"tags": [
+			"non-player character",
+			"female",
+			"Halovar family"
+		]
+	},
+	{
+		"key": "Filoneus Halovar",
+		"descriptions": [
+			"BRENNAN\nClose behind you, you hear\n(dog growling, barking)\nas the door flies open\nand on these sets of silvery white chains,\nthis massive knight walks in,\nheavily-armored, gray-bearded, human knight.\nHe's got gleaming luminous tattoos\nall around his neck that curl up around over his eyes.",
+			"BRENNAN\n\"I am Sir Filoneus Halovar.\nThese are my dogs, Wrath and Judgment.",
+			"BRENNAN\nClaps you on the shoulder and says,\n\"Well, you're best on your way to the couturier."
+		],
+		"tags": [
+			"non-player character",
+			"human",
+			"male",
+			"knight",
+			"House Halovar"
+		]
+	},
+	{
+		"key": "Godard",
+		"descriptions": [
+			"BRENNAN\n\"And that was your father, Godard,\nand Godard has always had a gift.\"\nYou see your father has this blindfold on again\nand you look at that enormous, top-heavy\nprotrusion in his back,\nand he turns and goes,\n\"Mother,\nmight I?\" She says, \"Yes, darling.\"\nHe removes his coat, undoes his shirt,\nand you see tight wrapped bandages.\nThere's no red,\nbut you realize that some kind of bright light fluid\nis coming through on his back,\nand as he releases it,\nyou see these two stunted naked wings\nextend from his back \"(grunts)\"\nand immediately grow luminous, beautiful feathers.\nWhite eagle's wings.\n\"(inhales, exhales)\nThank you, Mother.\""
+		],
+		"tags": [
+			"non-player character",
+			"male",
+			"House Halovar"
+		]
+	},
+	{
+		"key": "Zebani Halovar",
+		"descriptions": [
+			"BRENNAN\nNearby, you see your elder sister emerges.\nThis is the Lady Zebani Halovar,\nand trailing behind her is your sister, Tyranny; Cruelty.",
+			"BRENNAN\nZebani steps forward, your older sister.\n\"Glad you're finally in the fold, Wick.\"",
+			"BRENNAN\nYou see Zebani is just staring straight ahead.\n\"We needed someone that could run the basement,\nand your mother had a very convincing argument\nthat we needed you to marry Ebecca, young Ebecca."
+		],
+		"tags": [
+			"non-player character",
+			"female",
+			"House Halovar"
+		]
+	},
+	{
+		"key": "Murray",
+		"descriptions": [
+			"MARISHA\nOh, sorry, no, I just, (coughs)\n(sniffs) I think it's allergies.\nBRENNAN\n\"I wouldn't be surprised.\nThere's something wrong with your teeth, certainly.\"\nMARISHA\nOh yeah, you like 'em?\nBRENNAN\n\"No.\"\nMARISHA\nOh, well, fuck you. (laughs)",
+			"MARISHA\nThe back of Murray's head is just on fire\nand she's chewing on the inside of her mouth,\nalmost to the point of where it's starting to bleed\na little bit as a way to quite literally bite her tongue\nso that she does not make a massive mistake.",
+			"BRENNAN\n\"You would like to call me Primus, my first name,\neven though you are a ragamuffin and a commoner?\"\nMARISHA\nOh my god, thank you so much.\nI haven't been called a ragamuffin since my early 20s.",
+			"MARISHA\nI just\nrun my tongue across the top of my teeth,\ngive a few glances around.",
+			"MARISHA\nMurray loosens her corset a little bit.\nI need more oxygen in my bloodstream, let's go.",
+			"MARISHA\nI'm adjusting my corset.\nI dab a little bit of sweat off my bosom.\nIt's just there always, though.\nIt's summer."
+		],
+		"tags": [
+			"player character",
+			"dwarf",
+			"female",
+			"wizard"
+		]
+	},
+	{
+		"key": "Ellipides",
+		"descriptions": [
+			"BRENNAN\nStanding across from you in the doorway\nis the tall figure of the Lord Primus Tachonis.\nGazing at you and Dean Tallbarrel.\nHis eyes pass over you\nand alight on Dean Tallbarrel.\n\"Ellipides, I am given to understand\n\"that until the stroke of six this evening,\n\"you are Dean of this institution, are you not?\"\nDean Tallbarrel goes,\n\"Yes, I am, it's true, it's true.\"",
+			"BRENNAN\nA minor Message cantrip comes from\nEllipides to you and says, \"You hate Occtis.\"",
+			"BRENNAN\nPrimus looks and says,\n\"Coarse language like that will not be tolerated.\nI'll speak to Dean Kora about disciplinary measures.\nI'm looking for my child.\nI understand that he boards here in your dormitories.\"",
+			"BRENNAN\nDean Tallbarrel says,\n\"Aha, I think there's no problem at all.\nWe can be finished here.\"\nMARISHA\nClumsier than a blind badger, that one.",
+			"BRENNAN\nDean Tallbarrel\nhas fundamentally betrayed you."
+		],
+		"tags": [
+			"non-player character",
+			"male",
+			"Dean",
+			"Penteveral"
+		]
+	},
+	{
+		"key": "Occtis Tachonis",
+		"descriptions": [
+			"MATT\nI'm looking for this Occtis figure.\nI recall we had an encounter\nwhen he was very young many years ago\nand I thought I caught a keen--\nThere's a look about the family that's very specific,\nbut was in the company of Thaisha,\nlast I saw",
+			"BRENNAN\nI'm searching for my\nson, Occtis.\nHe was sent here some years ago\nto your boarding school.\nHe arrived at the age of maturity\nand manifested no sorcerous powers whatsoever.",
+			"MARISHA\nOcctis, right?\nA little weaselLy fucker, right?\nA little gangly man, built like a string bean? (laughs)\nBRENNAN\n\"Yes.\"\nMARISHA\nHonestly, good kid.",
+			"BRENNAN\n\"My house has arrived here in Dol-Makjar\nfor the events of the execution of the criminal\nwho attacked our guards in the marketplace.\nI had hoped to entreat with my son,\nwho I'm given to understand has\nsomehow worked out a way\nto acquire the gifts of shadow in the Realms Beyond\nthat his own constitution was either\ntoo weak or sclerotic to arrive at under normal means?\"",
+			"ALEXANDER\nSo Occtis sees you fly into his pants\nand sees your intimidation check completely not go off.",
+			"ALEXANDER\nHe goes: (grumbles) Okay.\nAnd looks at Solomon and says:\nI think maybe\nyou should be a little more scared than you are.\nAnd casts Cause Fear on Solomon.",
+			"ALEXANDER\nI have no bonus actions to use, but I will\nuse my movement to jump up on the bar behind Vaelus\nand as I do, just go: Oh my god, thank you for being here.",
+			"ALEXANDER\nYes, I made him\nand he has a hard time staying\nin the dimensional pocket that I put him in.\nIt's something to do with the fact that he's made out of different pieces.",
+			"ALEXANDER\nYeah, there was the part\nwith the magic that brought him back to life.\nYes, I did do that,\nand then it was a thing where I was supposed to be\nmaking a fearsome thing that would fight and then he didn't.",
+			"ALEXANDER\nI can honestly tell you that is not\nthe response I thought you were going to give.\nA lot of people don't like him\nand they get weird about it and I just thought--",
+			"ALEXANDER\nI honestly couldn't tell you.\nI don't know why they would want to see me.\nThey sent me away, they didn't have any use for me.",
+			"ALEXANDER\nI believe, to the extent of my knowledge,\nThaisha still has the box.",
+			"ALEXANDER\nI kind of had to force it. (laughs)"
+		],
+		"tags": [
+			"player character",
+			"male",
+			"human",
+			"Penteveral",
+			"House Tachonis"
+		]
+	},
+	{
+		"key": "Thimble",
+		"descriptions": [
+			"LAURA\nI hear the whistle of the bag\nand I am going to fly backwards.\nBRENNAN\nCool.\nLAURA\nStraight into the guy that is trying to come down.",
+			"LAURA\nNeedles out and I'm going to get right up to his junk.\nI'm going to fly backwards and fly down to his legs\nand stick my needle into the pants\nand say, \"Call your henchmen off or I chop off his balls!\"",
+			"LAURA\nI'm going to go into his pants",
+			"BRENNAN\nThe guy right behind you, he gasps, he's not into this.\nYou see Solomon says,\n\"You're going to slice balls with a sewing needle?\nThat'll take all day.\nGo for it.\"",
+			"BRENNAN\nSo the first rogue\nreaches into his pants--\nLAURA\nHelp.\nBRENNAN\n-- his ruined pants, grabs Thimble,\nand shoves you in a bag and pulls the drawstring closed.",
+			"LAURA\nI'm going to fly up in the air\nand I'm going to spread my wings out of my arms\nand fairy dust is going to fly out in all directions\nfrom me and I'm going to Faerie Fire the room.",
+			"LAURA\nThat is glowing dust which always\ncomes out of me, scatters around\nits bright spring green-gold sparkles everywhere.",
+			"LAURA\nYeah, I was just going to chop somebody's balls off.",
+			"LAURA\nI'm going to fly down, is Teor walking?\nIs he stumbling, what's happening?\nTRAVIS\nHe's wobbling side-to-side.\nThe poison's been removed\nbut getting your shadow cut will fuck you up."
+		],
+		"tags": [
+			"player character",
+			"fairy",
+			"female",
+			"rogue"
+		]
+	},
+	{
+		"key": "Kattigan",
+		"descriptions": [
+			"ROBBIE\nI'm going to just jump over the bar, and\nno weapon,\nfisticuff the first guy in the room",
+			"ROBBIE\nMy intention is to jump over\nand grab this man by the back of his lapels.",
+			"ROBBIE\nThen from behind his back, he pulls out this thing\nand at first glance, it looks like a club,\nbut it's not quite a club.\nIt's got a stone knot on the side, but on the back\nis this horrific Damascus steel-looking blade,\nand there's a notch that you can't quite figure out.\nIt doesn't look right\nand it's definitely something cobbled together,\ncrafted together and well-loved,\nand he's going to flip it over\nto the bludgeoning side and grab it with both hands",
+			"ROBBIE\nKattigan has pilfered a bone-in ribeye\nfrom their cellar and he's got it over his shiner\nthat he's nursing from the bar fight\nbut he's also eating it at the same time.",
+			"ROBBIE\nI'm all right, I'm feeling good.\nFresh and young, yeah."
+		],
+		"tags": [
+			"player character",
+			"male",
+			"brawler"
+		]
+	},
+	{
+		"key": "Vaelus",
+		"descriptions": [
+			"BRENNAN\n...an elven warrior leaps into the tavern.\nAshley Johnson, would you come out to the table and join us?",
+			"BRENNAN\nVaelus,\nyou guys are some rough-and-tumble rowdies,\nto the Crow Keepers, a creature of myth and legend,\nan elf from the far north, fully armored,\nveil of mourning religious garb.",
+			"ASHLEY\nshe moves so lightly and quietly\nand undoes her censer whip.\nBRENNAN\nOkay\nASHLEY\nAnd\nI'm going to take the whip\nand take it around the back of my neck\nand roll it all the way around for propulsion and\nat the end of the censer,\nthere's little blades in the censer.",
+			"ASHLEY\nYou just see\nVaelus' eyes go\ncompletely black just for a split second\nand he just feels,\nit feels like heartburn, but he doesn't know what it is.",
+			"BRENNAN\nVaelus whispers, \"Run,\"\nand these petty criminals make for every door and window\nin the place and begin to bolt as fast as they can.",
+			"ASHLEY\nI will come along as well.",
+			"ASHLEY\nI will protect him.",
+			"ASHLEY\nI just think it's beautiful\nand fascinating that you were able to build such a thing.",
+			"ASHLEY\nI unclick my censer",
+			"ASHLEY\nI think hearing that,\nVaelus hasn't had this feeling in a long time,\nalmost as if her heart\nhas--\nit's beating again for the first time,\nand hearing that mourning howl,\nsomething gets caught in her throat.\nAn emotion, something.",
+			"ASHLEY\nI will cast Command.",
+			"ASHLEY\nI stand in the open doorway\nand I put a hand out to sniff.",
+			"ASHLEY\nThis garden beyond Julien\nis filled with hundreds and hundreds\nof specters of the restless dead\njust on the other side of the veil\nfrom the living world."
+		],
+		"tags": [
+			"player character",
+			"elf",
+			"female",
+			"paladin",
+			"myth and legend"
+		]
+	},
+	{
+		"key": "Thaisha",
+		"descriptions": [
+			"MATT\n...was in the company of Thaisha,\nlast I saw",
+			"AABRIA\nAnd Thaisha is wrestling--\nWe've talked about it and went back and forth\nin letters and correspondence.\nIt's such a fraught place that your desire to reclaim it,\nwell-intended though it is,\nI think there's just that little bit of her\nthat can't quite get comfortable standing here.",
+			"AABRIA\nI want to slide over to him.\n(whispers) So what do you think about all of this?\nSorry. (loudly) What do you--! How do I whisper to you?\nMessage",
+			"AABRIA\nShe leans her head against your shoulder and goes,\n\"You make joy.\nYou're my mom.\"\nI love you so much.",
+			"AABRIA\nI approach at the same speed."
+		],
+		"tags": [
+			"non-player character",
+			"female",
+			"druid"
+		]
+	},
+	{
+		"key": "Shadia",
+		"descriptions": [
+			"BRENNAN\nShadia starts to explain,\n\"Because it's outdoors, but it's raining a lot in Dol-Makjar\nand you know, people used to just get wet,\nbut you get sick,\nso you can pull the covers up.\"\nShe does this big fabric\nand you see there's a waxed beautiful,\nand they're all multicolored\nand you see that some of them are harlequin pattern.\nSome of them are tasseled that come up\nand make this little rain roof.\nShe says, \"And--\"\nYou see that she takes out, she throws a crate\nand you see 30 little silvery filigreed,\nthey're made of tin or something kind of cheap,\nbut they look beautiful.",
+			"BRENNAN\nShe takes your hand and says, \"I'm going to show you\nI think a part you'll like the most.\"",
+			"BRENNAN\nShe struggles in this moment to say what's on her heart.",
+			"BRENNAN\nShe leans her head against your shoulder and goes,\n\"You make joy.\nYou're my mom.\"\nAABRIA\nI love you so much.\nBRENNAN\n\"I love you too.\nI'll keep dancing and keep juggling.\""
+		],
+		"tags": [
+			"non-player character",
+			"female"
+		]
+	},
+	{
+		"key": "Bolaire",
+		"descriptions": [
+			"TALIESIN\nI hop out of the carriage,\nclear-eyed and bushy-tailed if I had eyes or a tail.\nMy word, it is looking lovely and everybody is working\nand it is just delightful.",
+			"TALIESIN\nI would've tested a sample of this stuff\nto make sure that it is not harmless in any way.",
+			"BRENNAN\nAll of this is, you would swear\nit all looks like Penteveral work.\nThe actual substance of the materials inside.\nIt is--\nIt has faint residue of--\nIt's thick with illusion,\nwhich makes sense if it's paint.\nBut there's a little bit\nof a hint of conjuration under it.",
+			"TALIESIN\nHe wouldn't have given it to me to give to him\nif it were dangerous, I assume.",
+			"TALIESIN\nI will not put anything that has the word leather\nin my mouth and swallow it. That's disgusting.",
+			"AABRIA\nDo you want any help with Bolaire's paint?\nWith just enough emphasis\nthat you mentioned that very quickly\nwhen talking about all the things that Thjazi said to you\nin those last moments.",
+			"TALIESIN\nIt, (sighs) it was waiting for me\nwhen I got to the museum.\nLIAM\nWaiting for you?\nTALIESIN\nI am as shocked as anyone.\nI am usually aware of everything\nthat comes in or out of your wing.",
+			"TALIESIN\nJust a bit unsettled.",
+			"TALIESIN\nI think you\nvery well know the answer to that."
+		],
+		"tags": [
+			"player character",
+			"non-human",
+			"male",
+			"archivist"
+		]
+	},
+	{
+		"key": "Julien Davinos",
+		"descriptions": [
+			"BRENNAN\nYou look and see the symbol of House Davinos\nthere in that moment, and I think, Julien,\nyou recognize him as a former companion of Thjazi's.",
+			"MATT\nSir Julien Davinos, Knight of the Vassal House Davinos.",
+			"BRENNAN\nYou look over Teor's shoulder\nand see the direction he was headed in\nis towards the Mercanaud Couturier.",
+			"MATT\nThis pretty boy. What are you doing here?",
+			"MATT\nYou go to fly away and the gauntleted hand moves rapidly\nfrom underneath his cloak\nand goes to grab the back of your wings\nto hold you in place.",
+			"MATT\nAt least I'm in good company.\nAnd he flicks you off.",
+			"MATT\n(chuckles)\nStrangely, I know what that's like.\nPerhaps we should speak somewhere more private.",
+			"MATT\nHis bravado crumbles a bit\nas he gets lost in thought\nand approaches and steps up beside you,\nshoulder to shoulder.\nI don't like the feeling of being overwhelmed,\nbut I feel like the tide is rising\nand I don't know why or how.",
+			"MATT\nthis is,\nsomething's happening and\nI haven't grown up under the,\nthe golden flicker of\nthe house of fae magic to not recognize shifts,\nthese ethereal winds, as omen.",
+			"MATT\nI have--\nI have a bad feeling about tonight.",
+			"ASHLEY\nWithout, unless you use your Divine Sense\nfrom that perception, all you get is\nthere's something deep about Julien's shadow.\nSomething a little bit\nthicker and more obscure about it.",
+			"BRENNAN\nJulien-- You reach out.\nJulien's cursed."
+		],
+		"tags": [
+			"player character",
+			"male",
+			"knight",
+			"House Davinos"
+		]
+	},
+	{
+		"key": "Aranessa",
+		"descriptions": [
+			"MATT\n...House Royce above it from Aranessa, Lady Aranessa herself\nthat a plot had been hatched to rescue Thjazi.",
+			"BRENNAN\nShe looks and says, \"Julien, thank you.\nOcctis.\"\nALEXANDER\nGood evening.\nBRENNAN\n\"Good evening.\nMaybe there's a good, quiet place for us\nto discuss.\nThere's a room higher in the keep,\nor if you prefer an additional layer of privacy,\nwe have a bedroom that you're welcome to stay in\nwhile we're figuring out.\"",
+			"BRENNAN\nShe looks and says,\n\"How have you found your studies at the Penteveral?\"\nALEXANDER\nOh, fine?\nBRENNAN\n\"You're studying--\nI know that your family is gifted\nwith sorcerous ability as mine is, but--\"\nALEXANDER\nYeah.\n(snorts) You know,\nbeing the eighth kid and all,\nit didn't quite get to me, you know?\nBRENNAN\nShe looks at Pin in Vaelus' arms and says,\n\"Or it did in its own way.\"",
+			"BRENNAN\n\"Occtis,\nthe doors to Faerie closed\nbecause the realm of death\nis so choked with souls that cannot move\nto an afterlife because we killed the gods,\nthat that energy burst into our world\nand almost struck the heart of Faerie, killing it forever.\nYour family and my family\neach have a castle not in this world,\nand I don't think many common folk know that.\"",
+			"BRENNAN\n\"Your family's looking for you.\"\nALEXANDER\nYeah.\nBRENNAN\n\"Thjazi was collecting things\ntowards the end.\nI believe he was collecting--\nHe asked Thaisha,\nand by extension you, to collect something.\""
+		],
+		"tags": [
+			"non-player character",
+			"female",
+			"House Royce"
+		]
+	},
+	{
+		"key": "Raimond",
+		"descriptions": [
+			"BRENNAN\nYour father, General Raimond.\n\"Julien,\nwell done, my son.\nI am General Raimond Davinos.\nYou are Occtis Tachonis.\"",
+			"BRENNAN\n\"No word from the carriages\nat the eastern edge of the pass.\nThe Tachonis are moving.\nTheir forces in the city are\nmaybe triple what we imagined they would be.\"\nMATT\nOh, so this is fairly grave, then.\nWhat is going on, Father?\nBRENNAN\n\"I don't know.\nI don't know why the Lady Aranessa was not met.\nI don't know.\nDo you know anything about a,\na stone,\na missing stone?\"",
+			"BRENNAN\n\"I suppose I owe you some thanks\nfor retrieving Occtis.\nAt least you can follow that direction.",
+			"BRENNAN\nA hand from an invisible figure reaches forward\nas the invisibility is dropped\nand a black-clad member of House Tachonis\nreaches their hand up immaterially through the skin,\nunder his jaw, reaches inside his head,\nand pulls his skull out of his head, immaterially.\nLetting go, it becomes corporeal again,\nand suddenly the upper half of his spinal cord and skull\nis out in front of the flesh of his head\nand he dies instantly, collapsing to the ground."
+		],
+		"tags": [
+			"non-player character",
+			"male",
+			"General",
+			"House Davinos"
+		]
+	},
+	{
+		"key": "Ethrand",
+		"descriptions": [
+			"BRENNAN\nIn the midst you see here,\nyour brother Ethrand\ncasting a Silence spell,\nholding in his hand\na perfectly spherical black stone,\nwings surrounding it.",
+			"BRENNAN\nHe looks, speaking in silence.\nNo sound travels,\nbut his lips mouth the words, which is enough\nfor the undead that he commands.\n\"Put him on the table, open him up\nand we'll put the stone where it belongs.\""
+		],
+		"tags": [
+			"non-player character",
+			"male",
+			"undead",
+			"House Tachonis"
+		]
+	},
+	{
+		"key": "Primus Tachonis",
+		"descriptions": [
+			"BRENNAN\nStanding across from you in the doorway\nis the tall figure of the Lord Primus Tachonis.",
+			"BRENNAN\n\"I'm searching for my\nson, Occtis.\nHe was sent here some years ago\nto your boarding school.",
+			"BRENNAN\n\"My house has arrived here in Dol-Makjar\nfor the events of the execution of the criminal\nwho attacked our guards in the marketplace.",
+			"BRENNAN\n\"If you continue to speak to me,\nI'm going to kill you where you stand.\"",
+			"BRENNAN\nThe Lord Primus doesn't do anything\nbut you feel a cold settle upon you\nas his gaze descends\nand feel yourself\nrepel a powerful curse\nthat alights on you.",
+			"BRENNAN\nI want you to fire her.\"\nYou see that Dean Tallbarrel says,\n\"Oh, I'll make sure to explain it to Kora.\nI don't have enough time with,\nbut we'll make sure that actions are taken, Lord Tachonis,\nand I'll say as well, in terms of cursing her,\nwhat worse curse could there be\nthan allowing a commoner\nto struggle with magic? (chuckle)\"",
+			"MARISHA\nYeah, guess who just walked into my office.\nActually, technically, it wasn't my office.\nIt was Dean Tallbarrel's, but he walked in.\nIt was Primus, Lord Primus Tachonis."
+		],
+		"tags": [
+			"non-player character",
+			"male",
+			"House Tachonis"
+		]
+	},
+	{
+		"key": "Casimir",
+		"descriptions": [
+			"LAURA\n\"Casimir's gone.\nCasimir's gone.\"\nLAURA\nWhen did he leave?\nBRENNAN\nHe says,\n\"Cas has been on the gibbet for a moment.\nThat's our list\nof people who have owed money for long enough\nthat they're not going to survive the next new moon.",
+			"BRENNAN\n\"He worked at a place called Underwallen & Sisters.\nThey were a wainwright that worked in the Embers,\nthey made wagons.\nHe worked putting\ncompartments in the wagons,\nplaces that shouldn't be there,\nran a racket off the smugglers there.\"",
+			"LAURA\nDid any of the masked figures look as big as Casimir?\nMotherfucker.\nBRENNAN\n\"Cas came in here yesterday\nand settled his debts in full.\nWe told him if he could pay off even half of it,\nthat we would extend, we'd take him off the gibbet\nuntil he could make it right.",
+			"BRENNAN\n\"Him and his crew had new gear.\nHe dropped a sack of money on the bar,\npaid off his whole debt, and he had a deed of title to\n\"a stronghouse in Gormalay.",
+			"LAURA\nCasimir betrayed everybody.\nHe's the one that broke into the hideout.",
+			"LAURA\nYeah.\nHe's going to some new stronghold in Gormalay."
+		],
+		"tags": [
+			"non-player character",
+			"male",
+			"thief",
+			"Crow Keepers"
+		]
+	},
+	{
+		"key": "Cyd",
+		"descriptions": [
+			"BRENNAN\n\"You know that,\nit wasn't a Crow Keeper, but he knew someone,\nit was a Nama.\"\nLAURA\nCyd.\nBRENNAN\n\"Cyd barged in, started shouting at him.\nCyd had worked up a lather, his fur was matted.\nHe'd been sweating, looked like he'd run here\nfrom Marud or wherever.\nI know he drives wagons\nfor the Revolutionary Council up there.\nHe came in screaming about, 'Where's the wagon?\nWe're already too late.'\nHe saw the money on the table\nand Cyd grabbed that deed of title and ran out the door\nand Cas and his boys took after him.\"",
+			"LAURA\nCyd chased him down.\nCyd wanted to know why he didn't show up\nand he stole a deed."
+		],
+		"tags": [
+			"non-player character",
+			"male",
+			"Nama",
+			"Revolutionary Council"
+		]
+	},
+	{
+		"key": "Uli",
+		"descriptions": [
+			"BRENNAN\nYou see nearby there is an ancient orcish man.\nHe's got one of the ugliest crocheted hats you've ever seen.\nHe's got patch--\nHe looks like an old quilt monster\nthat rolled out of the bed.",
+			"BRENNAN\nSo Uli is 85 years old,\nwhich means that Uli remembers before the war,\nhe's one of the few orcs who's here\nwho remembers before the war.\nYou see he (rhythmic thumping) hits the drum.",
+			"BRENNAN\n\"When I was a young boy,\nmy older brother went off to join\na revolution.\"\nLIAM\nI whisper to Thaisha: Settle in.\n(laughter)\nBRENNAN\n\"He went off to join Odrun.\nYou know, he was always a whippersnapper\nand he had a fire in him."
+		],
+		"tags": [
+			"non-player character",
+			"orc",
+			"male"
+		]
+	},
+	{
+		"key": "Olgud",
+		"descriptions": [
+			"BRENNAN\nOlgud, who you've worked a lot with\nwhen you were running at the Lyceum, says,\n\"What do you have against fruit leather?\nWe got to keep the, we have to run this place.",
+			"BRENNAN\n\"Thjazi got this?\"",
+			"BRENNAN\n\"Gift shop, museum-ass.\""
+		],
+		"tags": [
+			"non-player character",
+			"male"
+		]
+	},
+	{
+		"key": "Wrath and Judgment",
+		"descriptions": [
+			"BRENNAN\n\"I am Sir Filoneus Halovar.\nThese are my dogs, Wrath and Judgment.\nI can't tell which one is which,\nbut then again, when it comes to wrath and judgment,\n(thump), who can?!\"\nTRAVIS\nIndeed.\nBoth beautiful companions.",
+			"BRENNAN\nOne of them snarls\nand it has a dull glow from the back of the dog's throat.\nYou hear a faint humming from its vocal cords,\nalmost like it can't stop whining.\nThis whining is\nbeautiful, ethereal, almost angelic.\nTRAVIS\nSuch a beautiful noise they make.\nI've never heard the like.\nBRENNAN\n\"Oh yes, they can't stop singing, these dogs.\"\nTRAVIS\nSinging?\nBRENNAN\n\"The song confuses spellcasters."
+		],
+		"tags": [
+			"companion",
+			"dog",
+			"celestial"
+		]
+	},
+	{
+		"key": "Pin",
+		"descriptions": [
+			"BRENNAN\nYou watch Occtis walking away\nand you see that little dead fox\n(skitters)\nwith its button eyes walking behind him.",
+			"BRENNAN\nThat little thing with button eyes is unnatural.\nIt's a spirit of undeath.\nYou are one who but for injury\nor catastrophe will never die.",
+			"ALEXANDER\nYes, I made him\nand he has a hard time staying\nin the dimensional pocket that I put him in.\nIt's something to do with the fact that he's made out of different pieces.",
+			"ALEXANDER\nI had to work with what I had.\nIt's easier when you have a whole thing, apparently.",
+			"ALEXANDER\n(poofs) He's on the shoulder.\nYeah, he was supposed to be scary and then I made him\nand he absolutely was terrible at it\nand so I just bent some things and\nwe have familiars and spellcasters and whatnot\nand I was like: I think I can do that\nand so I did that and made him that.",
+			"ALEXANDER\nThis whole time, Pin has been gnawing\nat the bindings on Wulfric to try and untie the wolf."
+		],
+		"tags": [
+			"companion",
+			"fox",
+			"undead",
+			"familiar"
+		]
+	},
+	{
+		"key": "Wulfric",
+		"descriptions": [
+			"BRENNAN\nTwo of these Crow Keepers leap on the wolf,\nthrow him to the side and get rope around his legs,\njust hogtying this wolf.",
+			"ROBBIE\nAs a bonus action,\ncan I have Wulfric try to break the pin?",
+			"BRENNAN\nYou see (snarls) struggling against\nthe bonds there on that bonus action.",
+			"BRENNAN\nWith that, where do you all head at this moment?"
+		],
+		"tags": [
+			"companion",
+			"wolf"
+		]
+	},
+	{
+		"key": "House Halovar",
+		"descriptions": [
+			"BRENNAN\n\"They wanted to destroy our family, the Halovars.\nWe were the family of flames.\nWe were the right hand of the Obridimian royal house.\nWe served what we believed to be a god true,\nand they cast us down, slaughtered us.",
+			"BRENNAN\n\"It's our family first always, Wicander.\"",
+			"WHITNEY\nYour family has been in bed with my family\nfor a very long time, okay?",
+			"SAM\nThe Light is all. Hello.\nBRENNAN\nDeep bow. \"My lord Halovar.\"\nSAM\nOh please. Your Radiance is fine.",
+			"SAM\nMy family\ncast as much shadow as it has light and\nI must burn it away and rectify it\nand I will not stop until I do so."
+		],
+		"tags": [
+			"noble house",
+			"faction"
+		]
+	},
+	{
+		"key": "Candescent Creed",
+		"descriptions": [
+			"BRENNAN\n\"The Mercanaud Couturier will be happy to fit you\nand your gear to our station.\nWe attempt to make clear\nthat violence is always a regrettable, tragic,\nand final resort; that the weaponry, armor,\nand tabardry of our various vassals and men-at-arms\nbear the symbol of the Candescent Creed,",
+			"BRENNAN\n\"It is such an exciting proposition to imagine,\nthat by wearing the symbol of the Candescent Creed,\nyou may attempt to be covert\nin proudly wearing the symbol of the order.\"",
+			"TRAVIS\nIf you find yourself in need of business\nwith the Candescent Creed,\nI have recently allied myself with them.",
+			"SAM\nShe did read it to me as a bedtime every night\nfor my whole life",
+			"SAM\nI'm sorry, the Filament is--\nis that creature's blood?\nBRENNAN\n\"No, no, no, Wicky.\"\nSAM\nOh.\nBRENNAN\n\"It ain't got blood.\nIt is Light, you know,\nbut it's in his body, yeah,\nbut it's also his spit. You know, it's hard to say.\nIt is Light. It's just,\nit's just what he's made of, innit?\"\nSAM\nIt's not the distilled liquid of the universe?\nBRENNAN\n\"(sighs)\"\nSAM\nWe've been drinking this from the Radiant Chalice.\nWe've been tattooing it on my body.",
+			"TRAVIS\nThis may be very well-known\nbut the Candescent Creed is not what it appears.\nThe people in that house, the people that work for them\nare some of the darkest people I've ever met."
+		],
+		"tags": [
+			"religious order",
+			"faction"
+		]
+	},
+	{
+		"key": "Crow Keepers",
+		"descriptions": [
+			"BRENNAN\nThimble,\nthis is The Guard Tower.\nIt is the home base of the Crow Keepers.",
+			"LAURA\nI don't want to get in a fight with the entire Crow Keepers.",
+			"BRENNAN\nTwo of these Crow Keepers leap on the wolf,\nthrow him to the side and get rope around his legs,\njust hogtying this wolf.",
+			"BRENNAN\n\"The last thing we would've done is, frankly,\nfuck with someone as connected as Thjazi.\"",
+			"BRENNAN\n\"You'll have no trouble from the Crow Keepers.\"",
+			"MARISHA\nI've got some contacts still in the thieves' guild.\nLAURA:(ironic chuckle)\nMARISHA\nI know, well you killed some good ones.\nI'm not going to lie"
+		],
+		"tags": [
+			"factions",
+			"thieves' guild"
+		]
+	},
+	{
+		"key": "House Davinos",
+		"descriptions": [
+			"BRENNAN\nTeor, you look down and see the symbol,\nsubtle, but on the belt of House Davinos,",
+			"MATT\nSir Julien Davinos, Knight of the Vassal House Davinos.",
+			"MATT\nIt has come to the attention\nof House Davinos\nand House Royce above it from Aranessa, Lady Aranessa herself",
+			"BRENNAN\n\"Julien,\nwell done, my son.\nI am General Raimond Davinos.\nIs this the house of my vassal, Lord Raimond."
+		],
+		"tags": [
+			"noble house",
+			"faction"
+		]
+	},
+	{
+		"key": "House Tachonis",
+		"descriptions": [
+			"BRENNAN\n\"Your family has a castle in Death.\"\nALEXANDER\nIt's doing both, honestly.\nIt's getting more powerful and with every death.\nI know.",
+			"BRENNAN\nYour family's looking for you.",
+			"BRENNAN\n\"The Tachonis are moving.\nTheir forces in the city are\nmaybe triple what we imagined they would be.\"",
+			"BRENNAN\nand a black-clad member of House Tachonis\nreaches their hand up immaterially through the skin,\nunder his jaw, reaches inside his head,\nand pulls his skull out of his head, immaterially.",
+			"BRENNAN\nYou see six black-clad figures\nwearing Tachonis symbols.",
+			"BRENNAN\nThe Tachonis the Priestly Family of Shadow,\nof the journey through night to the next day.\nThey were\ngifted with the rites of funeral cremation,\nof moving from one realm to the other"
+		],
+		"tags": [
+			"noble house",
+			"faction"
+		]
+	},
+	{
+		"key": "House Royce",
+		"descriptions": [
+			"BRENNAN\n\"The Royce had their Golden Orchard\nhalfway between here and the fairies,",
+			"MATT\nIt has come to the attention\nof House Davinos\nand House Royce above it from Aranessa, Lady Aranessa herself",
+			"BRENNAN\nThis is the house of my vassal, Lord Raimond."
+		],
+		"tags": [
+			"noble house",
+			"faction"
+		]
+	},
+	{
+		"key": "The Guard Tower",
+		"descriptions": [
+			"BRENNAN\nThimble,\nthis is The Guard Tower.\nIt is the home base of the Crow Keepers."
+		],
+		"tags": [
+			"location",
+			"tavern"
+		]
+	},
+	{
+		"key": "The Rookery",
+		"descriptions": [
+			"BRENNAN\n...you move to go\nto the couturier and you move to the bridge\nacross the River Vrosh to The Rookery.",
+			"BRENNAN\n\"The Round?\nWell, we outgrew The Rookery for a while.\nThat stage is best used for students, anyhow."
+		],
+		"tags": [
+			"location",
+			"neighborhood"
+		]
+	},
+	{
+		"key": "Ogrimock Marketplace",
+		"descriptions": [
+			"BRENNAN\n-- the Ogrimock Marketplace,\ntowering shelves of ripe fruit,\nspices, produce.\nYou see there's a hanging fish market\nwith fish, blocks of ice that they've been delivered on,\nraw foodstuffs, and you see fine tapestry, silk,\nand armories like you wouldn't believe.\nThe Ogrimok Marketplace has some of the finest weapons dealers\nand armorers in all the world.",
+			"BRENNAN\nBy order of the Chamber of the Lords-Advisory,\nall arcane magic is forbidden by law\nwithin the confines of the marketplace."
+		],
+		"tags": [
+			"location",
+			"marketplace"
+		]
+	},
+	{
+		"key": "The Hallowed Round",
+		"descriptions": [
+			"LIAM\n...the sign reads, \"The Hallowed Round.\"\nA pun.",
+			"BRENNAN\nBefore you, you see an ancient dithyramb,\nan amphitheater.\nThis place can fit thousands, it is truly enormous,\nand at its center there is a stage,\nand that stage, ancient stone,\nyou see there's some ruins and collapsing around,",
+			"LIAM\nIt is a massive place\nand in Thaisha and my youth,\nit was much wilder here.\nThe place has been in disuse for decades.\nFor centuries before the fall of the Shapers,\nthis was a place where our god, our Shaper,\nwould sometimes appear in the heavens above the city\nto witness his people\nexalting in ecstatic fervent ritual\nunto our keeper.",
+			"LIAM\n...at the center of the amphitheater is a massive,\ngnarled, twisted cedar tree that is extreme-looking,\nbut beautiful in this rugged landscape,",
+			"LIAM\nWell, once we came here\nto celebrate a god,\nnow we come to celebrate each other.",
+			"LIAM\nI'm making sure that we've moved this cart,\nand I gather Bolaire's assistants are along for the ride.\nBut we are moving away from the company,\noff beyond the concession stand\nand several barrels of fruit leather\nso we can talk in private."
+		],
+		"tags": [
+			"location",
+			"amphitheater"
+		]
+	},
+	{
+		"key": "The Tanners",
+		"descriptions": [
+			"BRENNAN\nAs you walk, you hear a voice saying,\n\"Occtis must be retrieved at once.\nI would like the resources of your institution\nto bring my son to me.\nWe are at Obrimus Manor in The Tanners.\""
+		],
+		"tags": [
+			"location",
+			"neighborhood"
+		]
+	},
+	{
+		"key": "Villa Aurora",
+		"descriptions": [
+			"BRENNAN\nAt a broad table,\nhere in the banquet hall of the Villa Aurora,\nthe Halovar estate."
+		],
+		"tags": [
+			"location",
+			"estate",
+			"House Halovar"
+		]
+	},
+	{
+		"key": "Mercanaud Couturier",
+		"descriptions": [
+			"BRENNAN\n...you see the direction he was headed in\nis towards the Mercanaud Couturier.",
+			"BRENNAN\nIn the Sundered Houses, you've heard some rumors,\nhere in Dol-Makjar, or other people that you've consorted with\nthat the Mercanaud are a family\nthat have worked for the Halovars for a long time,\nbut their main purpose for the Halovars\nis making problems go away.",
+			"BRENNAN\nYou walk up, the market is closed down.\nIt was late at night that you got down there.\nThe market is closed by now,\nbut you see that there's a small candle\nlit within the shop of the Mercanaud Couturier.",
+			"BRENNAN\nIt's all beaded curtains\nhere at the Mercanaud Couturier.",
+			"BRENNAN\nThis place is very visually confusing.\nThere are many different clothing racks,\nthere's lots of bolts of fabric,\nthe rugs are very thick.\nThere's incense hanging in the air.",
+			"BRENNAN\nYou are suspended with arms over your head in manacles\nin the center of a massive nine-pointed pentagram\nin the basement of the tailor's shop."
+		],
+		"tags": [
+			"location",
+			"shop",
+			"tailor"
+		]
+	},
+	{
+		"key": "Palazzo Davinos",
+		"descriptions": [
+			"BRENNAN\n...not far away from the Villa Aurora\nat the Palazzo Davinos, we see walking out,\nunder the early afternoon sun,\nJulien Davinos.",
+			"BRENNAN\nGorgeous,\nlit with fairy light,\ndancing wisps of magic\nas Julien, Vaelus, Occtis arrive.",
+			"BRENNAN\nGardens here are beautiful.\nSome of these trees aren't from this world.\nSeeds\nfrom far Faerie, Tír Cruthú.\nLands beyond grow in this place.",
+			"ASHLEY\nThis garden beyond Julien\nis filled with hundreds and hundreds\nof specters of the restless dead\njust on the other side of the veil\nfrom the living world."
+		],
+		"tags": [
+			"location",
+			"palazzo",
+			"House Davinos"
+		]
+	},
+	{
+		"key": "The Archanade",
+		"descriptions": [
+			"BRENNAN\n\"...let us play at the Lyceum, at The Archanade\nfor quite some time, but I don't know, folks from Caravan Hill\nand The Fray deserve a show too, I'd say."
+		],
+		"tags": [
+			"location",
+			"museum"
+		]
+	},
+	{
+		"key": "Filament",
+		"descriptions": [
+			"SAM\nI'm sorry, the Filament is--\nis that creature's blood?\nBRENNAN\n\"No, no, no, Wicky.\"\nSAM\nOh.\nBRENNAN\n\"It ain't got blood.\nIt is Light, you know,\nbut it's in his body, yeah,\nbut it's also his spit. You know, it's hard to say.\nIt is Light. It's just,\nit's just what he's made of, innit?\"\nSAM\nIt's not the distilled liquid of the universe?\nBRENNAN\n\"(sighs)\"\nSAM\nWe've been drinking this from the Radiant Chalice.\nWe've been tattooing it on my body.",
+			"BRENNAN\n\"The Filament,\nwe don't know that it's not condensed Light from the cosmos.\nWe just have a place that we get it from.",
+			"WHITNEY\nIn exchange, he is getting Filament.\nHe is getting souls.",
+			"BRENNAN\n\"They sit on a plot of land with a series of vineyards\nthat produce a magical,\nan alchemical element\nwithin the fruit of that vineyard\nthat will allow the Filament\nthat we can dilute it pretty considerably.\"",
+			"SAM\nThere is a treasured\nliquid that we ship around."
+		],
+		"tags": [
+			"object",
+			"material"
+		]
+	},
+	{
+		"key": "Prismatic Retort",
+		"descriptions": [
+			"BRENNAN\nWe return,\ndeep underground\nin front of the opening of the Prismatic Retort,\nwhereupon a towering celestial\nwith gnashing teeth\nstrains and fights against massive chains,"
+		],
+		"tags": [
+			"object",
+			"structure"
+		]
+	},
+	{
+		"key": "Radiant Chalice",
+		"descriptions": [
+			"SAM\nWe've been drinking this from the Radiant Chalice.\nWe've been tattooing it on my body."
+		],
+		"tags": [
+			"object"
+		]
+	},
+	{
+		"key": "Stone of Nightsong",
+		"descriptions": [
+			"ASHLEY\n...the Stone of Nightsong has passed\nbeyond the reach of the thief who took it from you.",
+			"ALEXANDER\nWhat did he steal?\nA stone.",
+			"BRENNAN\nEthrand\n...holding in his hand\na perfectly spherical black stone,\nwings surrounding it.",
+			"BRENNAN\n\"Do you know anything about a,\na stone,\na missing stone?\""
+		],
+		"tags": [
+			"object",
+			"artifact"
+		]
+	},
+	{
+		"key": "Thjazi's Scimitar",
+		"descriptions": [
+			"LIAM\nI'm going to go to my study\nand stare at my brother's sword on the desk",
+			"LIAM\nI pick up the weapon and it is heavier than a stage prop.",
+			"BRENNAN\nThere's a small symbol where the fuller of the blade ends\nright before the tang enters into the hilt of the sword\nwhere it goes from having the indentation\nand there's a maker's mark there, but you see\nit looks like\na half of a mask\nbut that half, the middle line\nwhere the other half is not there is broken\nby a smirking tongue that comes out of it.",
+			"BRENNAN\nThis is the Liar's Blade.\nYour brother wielded it well.\nIf you're lucky, maybe you can, too.",
+			"LIAM\nHe wears Thjazi's sword on his back."
+		],
+		"tags": [
+			"object",
+			"weapon"
+		]
+	},
+	{
+		"key": "Shapers' War",
+		"descriptions": [
+			"BRENNAN\n\"We helped after the Shapers' War, didn't we?\"\nSAM\nOf course\nBRENNAN\n\"We accepted what had been,\nbut we didn't forget, did we?\"",
+			"BRENNAN\n\"I know that the ancients, they had to rebuild the city\nafter the Shapers' War, but\nthis forest survived everything.\""
+		],
+		"tags": [
+			"event",
+			"historical"
+		]
+	},
+	{
+		"key": "Falconer's Rebellion",
+		"descriptions": [
+			"BRENNAN\n\"I've only had stories about the-- to me,\nI was a kid when the Falconer's Rebellion ended,",
+			"BRENNAN\nThis monument to those fallen\nof Dol-Makjar in the Falconers' Rebellion\naround the pillars by the balustrade.\nNo names written on where the hands rest."
+		],
+		"tags": [
+			"event",
+			"historical"
+		]
+	},
+	{
+		"key": "Execution",
+		"descriptions": [
+			"BRENNAN\n\"My house has arrived here in Dol-Makjar\nfor the events of the execution of the criminal\nwho attacked our guards in the marketplace.",
+			"ALEXANDER\nI only came back because we heard\nhe was being executed."
+		],
+		"tags": [
+			"event",
+			"recent"
+		]
+	}
+]
