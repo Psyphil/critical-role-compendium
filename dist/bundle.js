@@ -13885,7 +13885,6 @@ var init_dataProvider = __esm({
                   (entry.tags || []).forEach((tag) => this.data.tags.add(tag));
                 });
               } catch (err) {
-                console.error(`Failed to load ${episodeEntry}:`, err);
               }
             }
           }
@@ -13944,12 +13943,11 @@ var init_selectpicker = __esm({
       }
       deselectEntry(value) {
         const newSelected = this.selected.filter((s) => s.value !== value).map((s) => s.value);
-        if (newSelected.length === 0) {
-          this.selectElement.selectpicker("deselectAll");
-        } else {
+        this.selectElement.selectpicker("deselectAll");
+        if (newSelected.length > 0) {
           this.selectElement.selectpicker("val", newSelected);
         }
-        this.refresh();
+        this.render();
         return this;
       }
       setOptions(options, selectedValues) {
@@ -14049,7 +14047,7 @@ var init_app = __esm({
         this.controls.seriesSelect = new SelectPicker("#series-select", "series");
         this.controls.episodeSelect = new SelectPicker("#episode-select", "episode");
         this.controls.tagSelect = new SelectPicker("#tag-select", "tag");
-        this.controls.filterBadges = document.getElementById("filter-badges");
+        this.controls.filterBadges = document.getElementById("filter-wrapper");
         this.controls.results = document.getElementById("key-results");
         this.controls.search = document.getElementById("search-input");
       }

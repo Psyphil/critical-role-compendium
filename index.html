@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Critical Role Compendium</title>
+    <title>CR: Compendium</title>
 
     <link rel="stylesheet" href="dist/vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="dist/vendor/bootstrap-select.min.css" />
@@ -16,10 +16,7 @@
         <p class="subtitle">Search characters, locations, objects, and lore</p>
       </header>
 
-      <div
-        class="search-row justify-content-center mb-3 m-auto"
-        style="max-width: 900px"
-      >
+      <div class="search-row m-auto" style="max-width: 900px">
         <div class="search-wrapper w-100">
           <input
             id="search-input"
@@ -29,37 +26,37 @@
             autofocus
           />
         </div>
-        <div
-          id="filter-badges"
-          class="justify-content-center mb-3 flex-wrap gap-3"
-        >
-          <div class="picker-group">
+        <div id="filter-wrapper" class="mb-3">
+          <div class="filter-group">
             <select
               id="series-select"
               class="selectpicker"
               multiple
+              data-style="btn-cr"
               data-live-search="true"
               data-actions-box="true"
               title="All Series"
             ></select>
           </div>
 
-          <div class="picker-group">
+          <div class="filter-group">
             <select
               id="episode-select"
               class="selectpicker"
               multiple
+              data-style="btn-cr"
               data-live-search="true"
               data-actions-box="true"
               title="All Episodes"
             ></select>
           </div>
 
-          <div class="picker-group">
+          <div class="filter-group">
             <select
               id="tag-select"
               class="selectpicker"
               multiple
+              data-style="btn-cr"
               data-live-search="true"
               title="All Tags"
             ></select>

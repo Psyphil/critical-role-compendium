@@ -18,8 +18,6 @@ body {
 }
 
 header {
-  text-align: center;
-  margin-bottom: 40px;
   padding: 20px;
 }
 
@@ -35,20 +33,35 @@ h1 {
   font-size: 1.1em;
 }
 
-.controls {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 25px;
-  border-radius: 12px;
-  margin-bottom: 30px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 .search-bar {
   display: flex;
   gap: 15px;
   margin-bottom: 20px;
   flex-wrap: wrap;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 6px;
+}
+
+.search-input {
+  border-radius: 999px;
+  padding: 25px 22px;
+  font-size: 1.25rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  background: rgba(255, 255, 255, 0.03);
+  color: #eaeaea;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.12);
+  border-color: #d4af37;
+  background: rgba(255, 255, 255, 0.04);
 }
 
 input[type="text"],
@@ -75,42 +88,143 @@ input::placeholder {
   color: #888;
 }
 
-.episode-selector {
-  display: flex;
-  gap: 10px;
-  align-items: center;
+#filter-wrapper {
+  padding: 6px 12px;
+  pointer-events: auto;
 }
 
-.episode-selector label {
-  color: #d4af37;
-  font-weight: 600;
+#filter-wrapper .filter-group {
+  display: inline-block;
 }
 
-.tags-filter {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 15px;
-}
-
-.tag-chip {
-  padding: 6px 14px;
-  background: rgba(212, 175, 55, 0.2);
-  border: 1px solid rgba(212, 175, 55, 0.4);
-  border-radius: 20px;
+.filter-badge {
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 0.9em;
+  user-select: none;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  border-radius: 999px;
 }
 
-.tag-chip:hover {
-  background: rgba(212, 175, 55, 0.3);
+.filter-badge:hover {
+  transform: translateY(-3px);
+  opacity: 0.95;
 }
 
-.tag-chip.active {
-  background: #d4af37;
-  color: #1a1a2e;
-  border-color: #d4af37;
+/* different colors for badge types */
+.filter-badge.series {
+  background: rgba(212, 175, 55, 0.12);
+  color: #e6c96a;
+  border: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+.filter-badge.episode {
+  background: rgba(135, 206, 235, 0.08);
+  color: #87ceeb;
+  border: 1px solid rgba(135, 206, 235, 0.12);
+}
+
+.filter-badge.tag {
+  background: rgba(158, 103, 255, 0.09);
+  color: #caa2ff;
+  border: 1px solid rgba(158, 103, 255, 0.12);
+}
+
+.bootstrap-select.dropdown {
+  width: auto !important;
+}
+
+.bootstrap-select .selectpicker {
+  pointer-events: none;
+}
+
+.bootstrap-select .dropdown-toggle {
+  min-height: 42px;
+  padding: 6px 10px;
+  border-radius: 12px;
+  background: none;
+  border: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bootstrap-select .btn.btn-cr:focus {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder {
+  color: inherit;
+}
+
+.bootstrap-select .filter-option-inner-inner.filter-pill-holder,
+.bootstrap-select .filter-option-inner-inner {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.filter-pill {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  user-select: none;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.filter-pill.series {
+  background: rgba(212, 175, 55, 0.12);
+  color: #e6c96a;
+  border: 1px solid rgba(212, 175, 55, 0.18);
+}
+
+.filter-pill.episode {
+  background: rgba(135, 206, 235, 0.08);
+  color: #87ceeb;
+  border: 1px solid rgba(135, 206, 235, 0.12);
+}
+
+.filter-pill.tag {
+  background: rgba(158, 103, 255, 0.09);
+  color: #caa2ff;
+  border: 1px solid rgba(158, 103, 255, 0.12);
+}
+
+.filter-pill:hover {
+  background: rgba(255, 103, 103, 0.09);
+  color: #ff8686ff;
+  border: 1px solid rgba(255, 103, 103, 0.12);
+}
+
+.stats {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #a8a8a8;
+  font-size: 0.95em;
+}
+
+.error {
+  background: rgba(220, 53, 69, 0.2);
+  border: 1px solid rgba(220, 53, 69, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #ff6b6b;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: #d4af37;
+  font-size: 1.2em;
 }
 
 .results {
@@ -165,7 +279,7 @@ input::placeholder {
   margin-top: 15px;
 }
 
-.tag {
+.entry-tags .tag {
   padding: 4px 12px;
   background: rgba(135, 206, 235, 0.2);
   border: 1px solid rgba(135, 206, 235, 0.4);
@@ -181,273 +295,18 @@ input::placeholder {
   font-size: 1.2em;
 }
 
-.loading {
-  text-align: center;
-  padding: 60px 20px;
-  color: #d4af37;
-  font-size: 1.2em;
-}
-
-.error {
-  background: rgba(220, 53, 69, 0.2);
-  border: 1px solid rgba(220, 53, 69, 0.5);
-  padding: 20px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  color: #ff6b6b;
-}
-
-.stats {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #a8a8a8;
-  font-size: 0.95em;
-}
-
-/* Keep existing content above — below are additions/overrides for the new layout */
-
-.search-row {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-.search-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 6px;
-}
-
-.search-input {
-  border-radius: 999px;
-  padding: 25px 22px;
-  font-size: 1.25rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(212, 175, 55, 0.15);
-  background: rgba(255, 255, 255, 0.03);
-  color: #eaeaea;
-}
-
-.search-input:focus {
-  outline: none;
-  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.12);
-  border-color: #d4af37;
-  background: rgba(255, 255, 255, 0.04);
-}
-
-/* badges under the search bar */
-#filter-badges {
-  gap: 8px;
-  padding: 6px 12px;
-  pointer-events: auto;
-}
-
-.filter-badge {
-  cursor: pointer;
-  user-select: none;
-  transition: transform 0.12s ease, opacity 0.12s ease;
-  font-size: 0.85rem;
-  padding: 6px 10px;
-  border-radius: 999px;
-}
-
-.filter-badge:hover {
-  transform: translateY(-3px);
-  opacity: 0.95;
-}
-
-/* different colors for badge types */
-.filter-badge.series {
-  background: rgba(212, 175, 55, 0.12);
-  color: #e6c96a;
-  border: 1px solid rgba(212, 175, 55, 0.18);
-}
-
-.filter-badge.episode {
-  background: rgba(135, 206, 235, 0.08);
-  color: #87ceeb;
-  border: 1px solid rgba(135, 206, 235, 0.12);
-}
-
-.filter-badge.tag {
-  background: rgba(158, 103, 255, 0.09);
-  color: #caa2ff;
-  border: 1px solid rgba(158, 103, 255, 0.12);
-}
-
-.bootstrap-select.dropdown {
-  width: auto !important;
-}
-
-/* make the selectpickers visually lighter and smaller so they don't dominate the layout */
-.selectpicker.btn,
-.bootstrap-select .dropdown-toggle {
-  border-radius: 8px;
+.mark,
+mark {
+  border-bottom: 1px solid #fcf8e3;
   background: none;
-  color: #eaeaea;
-  border: none;
-  padding: 6px 12px;
-  min-height: 42px;
-}
-
-/* Make bootstrap-select buttons render like filter badges */
-.bootstrap-select .dropdown-toggle {
-  min-height: 42px;
-  padding: 6px 10px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.04);
-  color: inherit;
-}
-
-/* ensure the bootstrap-select inner text container can hold pills */
-.bootstrap-select .filter-option-inner-inner.filter-pill-holder,
-.bootstrap-select .filter-option-inner-inner {
-  display: inline-flex;
-  gap: 6px;
-  align-items: center;
-  flex-wrap: wrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  vertical-align: middle;
-}
-
-/* pills inside the button */
-.filter-pill {
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  cursor: pointer;
-  user-select: none;
-  line-height: 1;
-  white-space: nowrap;
-}
-
-/* preserve per-picker color styles */
-.filter-pill.series {
-  background: rgba(212, 175, 55, 0.12);
-  color: #e6c96a;
-  border: 1px solid rgba(212, 175, 55, 0.18);
-}
-
-.filter-pill.episode {
-  background: rgba(135, 206, 235, 0.08);
-  color: #87ceeb;
-  border: 1px solid rgba(135, 206, 235, 0.12);
-}
-
-.filter-pill.tag {
-  background: rgba(158, 103, 255, 0.09);
-  color: #caa2ff;
-  border: 1px solid rgba(158, 103, 255, 0.12);
-}
-
-/* small spacing tweak so caret stays visible */
-.bootstrap-select .dropdown-toggle .caret,
-.bootstrap-select .dropdown-toggle .bs-caret {
-  margin-left: 6px;
-}
-
-/* container inside the button where we inject small badge-like pills */
-.bootstrap-select .filter-pill-container {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-/* responsive: keep pills from overflowing the button */
-.bootstrap-select .filter-pill-container {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* layout for pickers inside #filter-badges */
-#filter-badges .picker-group {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin: 4px 6px;
-}
-
-/* ensure the bootstrap-select button keeps badge space */
-#filter-badges .bootstrap-select .dropdown-toggle {
-  min-height: 42px;
-  padding: 6px 10px;
-  border-radius: 12px;
-  background: none;
-  border: none;
-  color: inherit;
-}
-
-.selectpicker {
-  pointer-events: none;
-}
-
-/* external badges to the right of each picker */
-.picker-badges {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  flex-wrap: nowrap;
-  max-width: 320px;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-/* pill base style (matches .filter-badge) */
-.picker-badges .filter-pill {
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-size: 0.85rem;
-  cursor: pointer;
-  user-select: none;
-  line-height: 1;
-  white-space: nowrap;
-}
-
-/* colors for each picker type (use container data-type attribute) */
-.picker-group[data-type="series"] .filter-pill,
-.picker-badges[data-type="series"] .filter-pill {
-  background: rgba(212, 175, 55, 0.12);
-  color: #e6c96a;
-  border: 1px solid rgba(212, 175, 55, 0.18);
-}
-
-.picker-group[data-type="episode"] .filter-pill,
-.picker-badges[data-type="episode"] .filter-pill {
-  background: rgba(135, 206, 235, 0.08);
-  color: #87ceeb;
-  border: 1px solid rgba(135, 206, 235, 0.12);
-}
-
-.picker-group[data-type="tag"] .filter-pill,
-.picker-badges[data-type="tag"] .filter-pill {
-  background: rgba(158, 103, 255, 0.09);
-  color: #caa2ff;
-  border: 1px solid rgba(158, 103, 255, 0.12);
-}
-
-/* hover affordance */
-.picker-badges .filter-pill:hover {
-  transform: translateY(-2px);
+  color: #fcf8e3;
 }
 
 /* small responsive tweak */
 @media (max-width: 680px) {
-  #filter-badges .picker-group {
+  #filter-wrapper .filter-group {
     flex-direction: column;
     align-items: stretch;
     gap: 6px;
-  }
-  .picker-badges {
-    max-width: 100%;
-    overflow: auto;
   }
 }
