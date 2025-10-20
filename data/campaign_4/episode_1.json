@@ -1,0 +1,509 @@
+[
+	{
+		"key": "Azune Nayar",
+		"descriptions": [
+			"LUIS\nAzune Nayar stands tall, proud. →\nHuman in appearance, he is just over 5'10\", but gives the presence of someone that's taller than that. →\nHis pride carries him above his height. →\nHe is strong, lean, muscular. →\nHe has medium brown skin and coppery auburn brown hair that's tied back in a braid, a birthmark that goes up the right side of his neck, up his face, and up to his forehead around his eye. →\nHis eyes look like a sunset on an ocean. →\nThe bottom half of his irises are a deep blue. →\nHis pupils are yellow like the sun that bursts out into an orange and then into a teal and then into a light gray. →\nHe's wearing full armor, as is given to him by his station in Dol-Makjar. →\nHe is a member of the Revolutionary Guard, an Arcane Marshal, specifically. →\nHis arms are exposed. →\nAlong his right bicep are tattooed the words: Have mercy on those I send you.",
+			"BRENNAN\nThat was not here last time. You had heard that Azune had joined the Revolutionary Guard, but the show of force was--",
+			"BRENNAN\nYou have an Arcane Marshal here, and I think, you know, Teor, the last time you saw Azune he was one of the younger people in you and Thjazi's battalion."
+		],
+		"tags": [
+			"player character",
+			"human",
+			"male",
+			"Revolutionary Guard",
+			"Arcane Marshal"
+		]
+	},
+	{
+		"key": "Dol-Makjar",
+		"descriptions": [
+			"BRENNAN\nThis moment, you stand shoulder to shoulder with the people you stand shoulder to shoulder with the people of the city of Dol-Makjar, its gray stone standing proud here at the eastern edge of the land known as Kahad. →\nUnder their arms stands the base of this massive wall at the eastern edge of the city, Dol-Makjar, towering spires that follow the River Vrosh step-by-step down from the mountains. →\nThe Guardian Wall, like much of Dol-Makjar, is a place dedicated to heroism, camaraderie, the struggle of the mortal world to make a brighter day.",
+			"BRENNAN\nDol-Makjar is Chicago.",
+			"BRENNAN\nAnd the city, this is the exact kind of survey. →\nYou know, we obviously, we've had a basis for our-- There are many plans of ours that are unfolding here in Dol-Makjar, but we haven't cracked the nut of the Creed really spreading. →\nThis is the seat of the revolution after all, but.",
+			"BRENNAN\nIt's a bohemian lifestyle here in Dol-Makjar. →\nNot a lot of people tying the knot."
+		],
+		"tags": [
+			"city",
+			"location"
+		]
+	},
+	{
+		"key": "Halandil Fang",
+		"descriptions": [
+			"LIAM\nMy name is Halandil Fang, Hal. →\nI am a older, dark-haired with streaks of white orc gentleman dressed in fairly fine, but not ostentatious clothing and has smile lines at the eyes from a life well lived. →\nTrying in this moment to hold on to the spirit that has buoyed him through his life, maybe not doing as well as he'd like to in this moment.",
+			"LIAM\nHal is not a man of deep pockets or wealth, but he lives happily and comfortably in this home with its view of the river and my theater down below at the foot of the hill.",
+			"SAM\nYes it is. Hal. →\nHe's opening a theater. →\nHe is beloved by all."
+		],
+		"tags": [
+			"player character",
+			"orc",
+			"male",
+			"bard"
+		]
+	},
+	{
+		"key": "Stone of Nightsong",
+		"descriptions": [
+			"BRENNAN\nThe Stone of Nightsong was an artifact created by a celestial, which was basically a celestial servant of Sylandri, the shaper of the elves, the goddess of life in the woodland. →\nTo her children, the elves, did she alone grant immortality that they would not die of age or infirm, that they would live lest accident or injury befell them. →\nBut for those elves that it did befall, she crafted a stone that their spirits would be brought to peace beyond in the Garden of the Spirit kept for her. →\nBut in traveling, there was a realm that they must pass.",
+			"BRENNAN\nThe Stone of Nightsong existed that elves and their immortal spirits need not even touch those ghastly realms, but would be ferried by a spirit of song and night swiftly through the darkness to bright dawn. →\nThe goddess of life so loved her elven children that even in catastrophe, the destruction of their bodies with their immortal souls never have to know hardship or pain.",
+			"BRENNAN\nThe Stone of Nightsong you believe was created after the original guardian spirit, that immortal nightingale, a celestial that took the wings of a nightingale, sort of like a night angel.",
+			"BRENNAN\nThe stone was created after that celestial's destruction in the Shapers' War.",
+			"BRENNAN\n21, Stone of Nightsong. →\nYeah, there is a reference to that in the Penteveral. →\nBack at the school, there is-- The Stone of Nightsong is referenced as some relic. →\nIt came up in something about the Shapers' War. →\nIt was used by, if you're not mistaken, it was an elven artifact.",
+			"LAURA\nThe song, the Nightsong, right?",
+			"LAURA\nIt's a fucking black stone with crow-- Crows.",
+			"BRENNAN\nAs you draw it, it's a spherical stone that is a sort of perpendicular embrace of wings of some kind-- You know, it could have been a crow, but also I think you'd heard Thjazi refer to it as a nightingale--",
+			"LAURA\nA nightingale, it's a bird."
+		],
+		"tags": [
+			"object",
+			"celestial artifact",
+			"elven artifact"
+		]
+	},
+	{
+		"key": "Thjazi Fang",
+		"descriptions": [
+			"BRENNAN\nIt is here, under the Guardian Wall, that they have strung up the hangman's noose to kill your brother, Thjazi Fang.",
+			"BRENNAN\nSoldiers of House Tachonis retrieve a figure from inside the shadows and a handsome orc, smile across his fanged face, nice shiner indicating some degree of glibness or flippancy in the face of these guards, wearing his soiled coat and his old boots, his effects having been taken from him, is marched out in manacles.",
+			"BRENNAN\nThe man you followed into battle all those years ago, dragged forward here.",
+			"LUIS\nI looked up at his face and how young and strong he was. →\nThe fighter that led us with such a cause that I knew was worth dying for.",
+			"LUIS\nI try to superimpose that right onto the face that I see that's lifeless. →\nHis eyes are a little open and they're glassy. →\nThe lines on his face, they stand out to me. →\nAlmost a bit of the last expression that he had frozen on his face still."
+		],
+		"tags": [
+			"character",
+			"orc",
+			"male",
+			"executed",
+			"arcanist",
+			"rogue"
+		]
+	},
+	{
+		"key": "Guardian Wall",
+		"descriptions": [
+			"BRENNAN\nYou stand under the Guardian Wall, heroes of the Shapers' War carved in statue heroes of the Shapers' War carved in statue some 80 feet tall, their torsos emerging from masonry, from the rock and stone of the mountainside, lean and hold the mountains of Kavros at bay.",
+			"BRENNAN\nUnder their arms stands the base of this massive wall at the eastern edge of the city, Dol-Makjar, towering spires that follow the River Vrosh step-by-step down from the mountains.",
+			"BRENNAN\nThe Guardian Wall, like much of Dol-Makjar, is a place dedicated to heroism, camaraderie, the struggle of the mortal world to make a brighter day."
+		],
+		"tags": [
+			"location",
+			"structure",
+			"wall"
+		]
+	},
+	{
+		"key": "River Vrosh",
+		"descriptions": [
+			"BRENNAN\nUnder their arms stands the base of this massive wall at the eastern edge of the city, Dol-Makjar, towering spires that follow the River Vrosh step-by-step down from the mountains.",
+			"BRENNAN\nYou see a flight of magpies, black wings, white breasts, take to the sky, flying over the stream as the mist rises on this gray day.",
+			"BRENNAN\n...down towards the River Vrosh, where we see a stage gathered down in this neighborhood academy."
+		],
+		"tags": [
+			"location",
+			"river"
+		]
+	},
+	{
+		"key": "Kahad",
+		"descriptions": [
+			"BRENNAN\nThis moment, you stand shoulder to shoulder with the people you stand shoulder to shoulder with the people of the city of Dol-Makjar, its gray stone standing proud here at the eastern edge of the land known as Kahad.",
+			"BRENNAN\nIt is, in orcish custom in Kahad, basically the day of a death or as soon as possible, you begin the grieving process and part of that is putting the body in a state of viewing where loved ones can come and pay their respects.",
+			"BRENNAN\nMy family lives further into Kahad near Dol-Rungja."
+		],
+		"tags": [
+			"location",
+			"land"
+		]
+	},
+	{
+		"key": "Kavros",
+		"descriptions": [
+			"BRENNAN\nYou stand under the Guardian Wall, heroes of the Shapers' War carved in statue heroes of the Shapers' War carved in statue some 80 feet tall, their torsos emerging from masonry, from the rock and stone of the mountainside, lean and hold the mountains of Kavros at bay."
+		],
+		"tags": [
+			"location",
+			"mountains"
+		]
+	},
+	{
+		"key": "House Tachonis",
+		"descriptions": [
+			"BRENNAN\nSoldiers, their heraldry and tabards alive with the crests of the Sundered Houses, Tachonis, Halovar, Royce, Einfasen, Cormoray march.",
+			"BRENNAN\nSoldiers of House Tachonis retrieve a figure from inside the shadows and a handsome orc... is marched out in manacles.",
+			"BRENNAN\nA herald of House Tachonis steps forward.",
+			"BRENNAN\nHouse Tachonis. →\nHouse Halovar was there. →\nHouse Halovar that's now going by the Candescent Creed, this new faith that's-- There's a lot of things going on in the city that you're like, \"That was not here last time.\"",
+			"BRENNAN\nMy grandfather sided with the Halovars and the Tachonises.",
+			"ALEXANDER\nYou do you immediately recognize me as one of the House Tachonis."
+		],
+		"tags": [
+			"group",
+			"noble house"
+		]
+	},
+	{
+		"key": "House Halovar",
+		"descriptions": [
+			"BRENNAN\nSoldiers, their heraldry and tabards alive with the crests of the Sundered Houses, Tachonis, Halovar, Royce, Einfasen, Cormoray march.",
+			"BRENNAN\nAnother voice stands, this one from an elderly woman dressed in white, the matriarch of House Halovar, Scion of the Candescent Creed.",
+			"BRENNAN\nThis white funereal sheet provided by the Candescent Creed and the House of Halovar is left on the cobblestones by the carriage.",
+			"BRENNAN\nHouse Halovar was there. →\nHouse Halovar that's now going by the Candescent Creed, this new faith that's-- There's a lot of things going on in the city that you're like, \"That was not here last time.\"",
+			"BRENNAN\nMy grandfather sided with the Halovars and the Tachonises.",
+			"SAM\nOn behalf of the Halovar family, please accept this, your brother's blade."
+		],
+		"tags": [
+			"group",
+			"noble house"
+		]
+	},
+	{
+		"key": "House Royce",
+		"descriptions": [
+			"BRENNAN\nSoldiers, their heraldry and tabards alive with the crests of the Sundered Houses, Tachonis, Halovar, Royce, Einfasen, Cormoray march.",
+			"LIAM\nTwo weeks I have talked my way through the Royce home and Aranessa--"
+		],
+		"tags": [
+			"group",
+			"noble house"
+		]
+	},
+	{
+		"key": "House Einfasen",
+		"descriptions": [
+			"BRENNAN\nSoldiers, their heraldry and tabards alive with the crests of the Sundered Houses, Tachonis, Halovar, Royce, Einfasen, Cormoray march."
+		],
+		"tags": [
+			"group",
+			"noble house"
+		]
+	},
+	{
+		"key": "House Cormoray",
+		"descriptions": [
+			"BRENNAN\nSoldiers, their heraldry and tabards alive with the crests of the Sundered Houses, Tachonis, Halovar, Royce, Einfasen, Cormoray march."
+		],
+		"tags": [
+			"group",
+			"noble house"
+		]
+	},
+	{
+		"key": "Candescent Creed",
+		"descriptions": [
+			"BRENNAN\nAnother voice stands, this one from an elderly woman dressed in white, the matriarch of House Halovar, Scion of the Candescent Creed.",
+			"BRENNAN\nHouse Halovar is now going by the Candescent Creed, this new faith that's-- There's a lot of things going on in the city that you're like, \"That was not here last time.\"",
+			"BRENNAN\nArriving here to the funeral, all of you see a carriage moving along the street and turn to see the symbol of the Candescent Creed.",
+			"BRENNAN\nA beautiful point of light hovering above a pillar stylized to look almost like the pillar of the sun or perhaps simply a humble candle depending on the size of the emblem, for the light surrounds us all.",
+			"SAM\nHe is clutching very, very hard and fingering nervously a cane that he carries with the symbol of the Candescent Creed on the top of it.",
+			"BRENNAN\nThere is a deep speckled red, red and black. →\nYou see there's almost lava congealing into stone, but wearing a white candescent almost a priestly garb.",
+			"SAM\nIf he were to perform a play at his theater that talked about the Candescent Creed in a good light, it could tell our message to a new audience."
+		],
+		"tags": [
+			"group",
+			"religion"
+		]
+	},
+	{
+		"key": "Olgud Akarat",
+		"descriptions": [
+			"BRENNAN\nAn older orcish gentleman, Olgud, shows up.",
+			"BRENNAN\nYou look and see that this is Olgud Akarat, your business partner who enters the home and goes, \"(knocking) Ah.\"",
+			"BRENNAN\nYou see Shadia says, \"Hi, Uncle Olgud.\" Not her uncle uncle, but effectively as good as an uncle to her.",
+			"BRENNAN\nHe looks over and goes, \"I brought a ton of cranberry rolls.\"",
+			"BRENNAN\nHe hands it over to you and says, \"Hello, I'm Olgud. What's--\"",
+			"BRENNAN\n\"I'm a theater producer.\"",
+			"BRENNAN\n\"You drank 3/4 of a bottle of Yahrgraz in less than 10 seconds. →\nIt's the most frightening thing I've ever seen.\"",
+			"BRENNAN\nYou see Olgud comes up and gives you a tall thing of water and puts a little melting alchemical tablet in it. →\n\"Yeah, the Yahrgraz will do that every time.\""
+		],
+		"tags": [
+			"character",
+			"orc",
+			"male",
+			"theater producer",
+			"business partner"
+		]
+	},
+	{
+		"key": "Shadia",
+		"descriptions": [
+			"BRENNAN\nYou see, with the outline of dried tears on her face, is your young daughter, Shadia.",
+			"BRENNAN\nYou see Shadia wipes her nose and goes about the task of getting your home ready for the Farramh, which is essentially a wake.",
+			"BRENNAN\nShadia has not had to say goodbye to anybody and you can see absentmindedly is setting the table like for the many dinner parties and large family dinners you have here.",
+			"BRENNAN\nYou see your daughter Shadia, this beautiful, young orcish woman who wears a harlequin pattern to her breeches and is studying to be a performer like her father, looks out and she goes, \"(sniffing) Jasmine.\"",
+			"BRENNAN\nShadia looks over at you and goes like, \"I don't know why I thought he was a member of the Old Path. →\nHe's not a member of the Old Path.\"",
+			"BRENNAN\n\"I'll go get you a cranberry cream roll,\" and she walks away.",
+			"BRENNAN\nShe looks and says, \"Dad, this--\"",
+			"BRENNAN\nYou see Shadia walks up and has a small rose velvety drink with a little, you know, one or two ice cubes in it that have been chipped off of an ice block off in the corner of the kitchen. →\nYou see that she passes it to you and says, \"Here, this is a flower brew. →\nBut there's no alcohol in it.\""
+		],
+		"tags": [
+			"character",
+			"orc",
+			"female",
+			"daughter",
+			"aspiring performer"
+		]
+	},
+	{
+		"key": "Thaisha Lloy",
+		"descriptions": [
+			"AABRIA\nThaisha is a tall-- She's tall for an orc, 6'4\", desaturated green skin, curly, long, dark hair.",
+			"AABRIA\nShe's beginning to show the signs of graying, but her druidic connection means that the age of her is being lost in her face.",
+			"AABRIA\nShe's already started slowing down so she appears in her mid-to-late 30's.",
+			"AABRIA\nHer eyes, the scleras and pupils are black, but her irises are silver with a ring of red, and on her hands, her fingers go red and black at the tip.",
+			"AABRIA\nShe is a Lloy, a family that means something in this city and she wears those colors, blood and the soot and scale of smiths, and she swishes up the street in fine clothes, but doesn't even seem to be aware of her presence, and her presence, as she speaks with her companion in hushed and panicked tones about what went wrong.",
+			"AABRIA\nI fell in love with the world, so I became a druid and I abandoned our kids."
+		],
+		"tags": [
+			"character",
+			"orc",
+			"female",
+			"druid",
+			"mother"
+		]
+	},
+	{
+		"key": "Occtis",
+		"descriptions": [
+			"ALEXANDER\nYou see a small young man about, small in presence. →\nHe's about 5'11\".",
+			"ALEXANDER\nHe is thin with dark hair and light olive skin and bright green eyes and wearing dark noble clothing that is clean but worn and with an array of implements around his belt and a book strapped to his leg and he is glassy-eyed. →\nHe is just staring and not blinking.",
+			"ALEXANDER\nI'm just a friend.",
+			"ALEXANDER\nHe helped me when I was a child.",
+			"BRENNAN\nTwo veterans of the Falconer's Rebellion watch the most anxious, finely dressed necromancer in the world step up outside in the dark to both of you."
+		],
+		"tags": [
+			"character",
+			"human",
+			"male",
+			"necromancer",
+			"noble"
+		]
+	},
+	{
+		"key": "Pin",
+		"descriptions": [
+			"ALEXANDER\nAnd with him is a small, white and other colors fox.",
+			"ALEXANDER\nThe fox (pitter pats) up onto my shoulder. →\nThe fox is mostly white with one leg that is from a different fox and eyes that are purple buttons."
+		],
+		"tags": [
+			"creature",
+			"fox",
+			"construct"
+		]
+	},
+	{
+		"key": "Loza Blade",
+		"descriptions": [
+			"BRENNAN\nOne of them, an older orcish woman who is broad-shouldered, tall, powerful, square jaw, beautiful tusks with filigreed runic rings of gold set into the middle of her tusks. →\nShe's got her hair up in a gray and white messy bun. →\nAnd an enormous battle axe across her back. →\nShe is of such an advanced age that the muscles remaining on her body are clinging to pure spite at this point.",
+			"BRENNAN\nThe musculature of this ancient warrior is evidence of a willpower greater than the biological processes of those creatures, of the world of Aramán.",
+			"BRENNAN\nLoza Blade, this ancient orcish woman, Commander of the Torn Banner that once was steps into the home.",
+			"BRENNAN\nMy companion Teor and I have traveled here for Thjazi's funeral and I'm retiring. →\nMy family lives further into Kahad near Dol-Rungja."
+		],
+		"tags": [
+			"character",
+			"orc",
+			"female",
+			"warrior",
+			"commander",
+			"Torn Banner"
+		]
+	},
+	{
+		"key": "Teor Pridesire",
+		"descriptions": [
+			"TRAVIS\nYou see a very tall, very powerfully-built lion man. →\nDark silver fur coming down from his head onto his shoulders. →\nHe has a golden breastplate and adornments that would match his station as a Vanguard Marshal. →\nPurple vestments and a shield on his back as well, with a cape flowing behind him, and his feet, of course, uncovered, as is custom for our kind. →\nPowerful arms. →\nA tattoo running up the upper left side of his arm and you see a braid's coming down from his mane, down onto his chest. →\nAnd he is moving alongside this orcish woman, but also scanning while he does so.",
+			"BRENNAN\nTeor is a soldier and a mercenary, not a politician. →\nNo great judge or magistrate or lord.",
+			"BRENNAN\nBut he is loyal and shrewd and a fine warrior."
+		],
+		"tags": [
+			"player character",
+			"lion man",
+			"nama",
+			"male",
+			"Vanguard Marshal",
+			"soldier",
+			"mercenary"
+		]
+	},
+	{
+		"key": "Talcydimir",
+		"descriptions": [
+			"TRAVIS\nI often wondered about you, about my brother Cyd, and what this city had to offer and we thought it would be a good time to return and we found it...",
+			"BRENNAN\nCyd was supposed to be part of what was supposed to happen.",
+			"BRENNAN\nIt was going to be put in place by Cyd, Teor's younger brother was going to drive it into place."
+		],
+		"tags": [
+			"character",
+			"male",
+			"nama",
+			"Teor's brother"
+		]
+	},
+	{
+		"key": "Wicander Halovar",
+		"descriptions": [
+			"SAM\nSitting in the back of the carriage is a tall man, 5'11\".",
+			"SAM\nHe's a very beautiful young man, maybe 28 or 30 years old. →\nHe has light teal and white hair with teal and white robes. →\nI think the most distinguishing characteristic about him would be the pearlescent, shimmering face markings that he has, tattoos all over about half of his face. →\nThey seem to shimmer with a light that they make on their own.",
+			"SAM\nHe is clutching very, very hard and fingering nervously a cane that he carries with the symbol of the Candescent Creed on the top of it. →\nHe's got a lot of sweat on his upper brow right now, rocking back and forth.",
+			"SAM\nLight Priest Wicander Halovar.",
+			"BRENNAN\nYou are the future of the House of Halovar."
+		],
+		"tags": [
+			"player character",
+			"human",
+			"male",
+			"Light Priest",
+			"noble"
+		]
+	},
+	{
+		"key": "Tyranny",
+		"descriptions": [
+			"WHITNEY\nShe's got bubblegum-colored skin, white hair, blunt bangs that are haphazardly tucked behind a veil, a bunch sticking out. →\nShe's got yellow goat's eyes, soft goat's ears, and she's got a silver arrow piercing through one of them, and of course, a forked tongue. →\nHooves put her at around 5'3\", not including the horns jutting out.",
+			"WHITNEY\nHer tail peeks out of just an abomination of ruffles that mark her as an Aspirant to the Candescent Creed of the House of Halovar.",
+			"WHITNEY\nI'm a demon, and my name is Tyranny."
+		],
+		"tags": [
+			"player character",
+			"demon",
+			"female",
+			"Aspirant",
+			"tiefling"
+		]
+	},
+	{
+		"key": "Enmity",
+		"descriptions": [
+			"BRENNAN\nYou see, next to him, Tyranny, you see one of your siblings, the Aspirant Enmity, who turns over. →\nThis is a deep speckled red, red and black. →\nThis is a deep speckled red, red and black. →\nYou see there's almost lava congealing into stone, but wearing a white candescent almost a priestly garb. →\nUnlike your horns that go straight up, these curl ram-like around."
+		],
+		"tags": [
+			"character",
+			"demon",
+			"male",
+			"Aspirant",
+			"tiefling"
+		]
+	},
+	{
+		"key": "Kattigan Vale",
+		"descriptions": [
+			"ROBBIE\nYou see a human man. →\nHe actually is an imposing figure. →\nHe's older. →\nI say in his mid-40s or so. →\nBut it's tough to tell because he's lived a hard life, a weathered life from the very beginning. →\nYou see a man at the waning peak of his physical ability, but he was definitely there and very, very capable. →\nHe's 6'4\", 220 pounds. →\nHe's carved out of the oak that he lives among.",
+			"ROBBIE\nKattigan Vale has a cowl and hood over his head, monochrome. →\nEverything on him feels scavenged, but purposeful, high-quality and cared for, but wild and raw. →\nThe things that he wears represents who he is on the inside as well. →\nHe's a wild man in a place that he shouldn't be.",
+			"ROBBIE\nI'm a very highly sought-after bounty hunter and a warrior of the people, if you will."
+		],
+		"tags": [
+			"player character",
+			"human",
+			"male",
+			"bounty hunter",
+			"ranger"
+		]
+	},
+	{
+		"key": "Wulfric",
+		"descriptions": [
+			"ROBBIE\nA massive juvenile canine floats through the air and lands right in the middle of the room immediately off to his quarter.",
+			"ROBBIE\nWulfric, the wolf, not a dog.",
+			"ROBBIE\nIs armored himself. →\nIt mirrors Kattigan's armor. →\nOn his side is an empty quiver. →\nHe even wears a tattered cowl."
+		],
+		"tags": [
+			"creature",
+			"wolf",
+			"companion"
+		]
+	},
+	{
+		"key": "Aranessa",
+		"descriptions": [
+			"BRENNAN\nSeated in the back, a grieving widow in years only of some 40 odd and her gorgeous, gleaming green gown bedecked with jewels. →\nTears streaming down her face as she stares ahead, shattered. →\nShe holds in her hand a wedding ring, one she has not worn on her hand in many years, but has never let stray beyond her person.",
+			"BRENNAN\nAranessa is falling apart beside you.",
+			"BRENNAN\nI married a dashing hero from the very end of the War of Axe and Vine, the adventurer rogue, a pixie by his side and magic in his eyes. →\nAnd two years later, he took up the banner of rebellion →\nMy grandfather sided with the Halovars and the Tachonises. →\nWhat I can tell you is this: When you knocked my husband off his horse and brought him to justice and he was given clemency, Julien, he told me to run away with him. →\nAnd I said, 'No.' I've loved that man every year since of the long years we have been apart. →\nAnd when he died, I hid. →\nLove doesn't go away so easily; it stays. →\nEven if people turn their back and walk away. →\nThey leave some part of themself. →\nIt's what loving someone is.",
+			"BRENNAN\nI was kept waiting in the antechamber of the Villa Aurora for the better part of a day. →\nHal, the doors to Faerie shut. →\nI don't know how much longer my name will mean anything. →\nEvery passing day, the Tachonis, the Halovar seem stronger. →\nIt seems like fewer messages arrive at the Golden Orchard. →\nI don't know what the future means. →\nMaybe I should have run away with Thjazi all those years ago."
+		],
+		"tags": [
+			"character",
+			"human",
+			"female",
+			"noble",
+			"Thjazi's wife"
+		]
+	},
+	{
+		"key": "Julien Davinos",
+		"descriptions": [
+			"BRENNAN\nTo her left, one of her oldest childhood friends.",
+			"MATT\nYou see a human man just about to crest into his thirties. →\nLanky, compact build, sealed within a reinforced leather military uniform of House Davinos, the Vassal House to the Sundered House of Royce in dark purples and gray with red trim. →\nYou see across the right shoulder an intricate silver metal pauldron and the other shoulder itself hidden within a dark green short cape with intricate designs of vine and flower sewn through it. →\nHimself, a very stern, stoic look as he just stares into the opposite side of the carriage. →\nHis long, heavily curly black hair tumbling past his shoulders, his other hand resting on his knee while the sheathed rapier sits on his left hip as he rides in the carriage.",
+			"MATT\nHis left hand itself is fully wrapped in an intricate metal gauntlet of dark silver itself, deeply filigreed and multiple plates of it. →\nIt almost looks unbalanced compared to the rest of his thin frame.",
+			"BRENNAN\nFor the hero of the battle of Maharlian Falls the man who brought Thjazi Fang to heel."
+		],
+		"tags": [
+			"character",
+			"human",
+			"male",
+			"knight",
+			"soldier",
+			"noble"
+		]
+	},
+	{
+		"key": "Murray Mag'Nesson",
+		"descriptions": [
+			"MARISHA\nYou see walking in, she's a little disheveled from the rain, which is not normally her position. →\nIn fact, she does a little bit of wizard magic to get herself all back into her full shining glory.",
+			"MARISHA\nYou see a dwarf woman with long auburn hair spilling out from under a flat brim cap, big, long, big hat.",
+			"MARISHA\nIt's a long duster jacket that doesn't have sleeves, because sleeves are bullshit.",
+			"MARISHA\nIt looks like she walked into a rich person's house and saw someone's rug and went, \"That looks nice,\" and then made a jacket out of it.",
+			"MARISHA\nShe's very-- She's not afraid of color.",
+			"MARISHA\nI'm missing the front three right side of her teeth, and if you look closer, they've been replaced with gemstones. →\nSo she's got one that's a little ruby, one that's kind of a clear white quartz, and then another that's a purple quartz.",
+			"MARISHA\nThen you see on the tip of her index finger, she's got what looks like a press-on, but when you look a little bit closer, it's like the tip of an ink pen. →\nIt's like a quill.",
+			"MARISHA\nShe's got a little bit of a chin strap. →\nIt is perfectly braided. →\nHer nails are did, they are shining."
+		],
+		"tags": [
+			"player character",
+			"dwarf",
+			"female",
+			"arcanist"
+		]
+	},
+	{
+		"key": "Bolaire",
+		"descriptions": [
+			"TALIESIN\nHe wears a very fine set of clothing. →\nIt's not very rich, but it certainly has money and a bit of somewhere between ostentatious taste and trying to blend in, but really not wanting to. →\nHe wears black leather and suede tied over an underlayer of deep red crimson. →\nHe is covered head to toe from gloves all the way up to a high neck. →\nHe has very long, curly, dark red hair.",
+			"TALIESIN\nThe most notable thing about Bolaire is that he wears a mask. →\nThis mask is a gray clay with dark gray, almost black lips and very, very large, empty pools of blackness where each eye should be with a cut to indicate possibly tears that run down the face. →\nDeep within these black pools, you can see tiny blue reflected lights, almost like a cat hiding in a shadow at night. →\nThat's what blinks instead of the mask, deep, deep within. →\nThis would be even more disturbing as he approaches the door, the mask itself, sighs and moves just like a real face."
+		],
+		"tags": [
+			"player character",
+			"male",
+			"patron",
+			"masked"
+		]
+	},
+	{
+		"key": "Thimble",
+		"descriptions": [
+			"LAURA\nYou see a very small four-inch tall pixie with short, brown hair. →\nShe's older than the last time you saw her. →\nShe looks almost 18 at this point. →\nHer clothes are a bit tattered now, they're dark green. →\nHer wings, which are normally a bright spring green, are almost muted at this point. →\nThe wing is a little bent and she's unconscious and askew on the ground. →\nHer two swords, the needles, have scattered away from her grasp.",
+			"BRENNAN\nThimble, your old friend, Thjazi's partner in all things.",
+			"BRENNAN\nYou are a pixie from Tír Cruthú, the land of fairy beyond this realm.",
+			"BRENNAN\nTeor and Azune, you would both recognize this. →\nWhoever they were fighting in here is not someone that they would've been capable of throwing around. →\nI need all three of you to make an investigation check for me if you'd be so kind."
+		],
+		"tags": [
+			"player character",
+			"pixie",
+			"female",
+			"Thjazi's partner"
+		]
+	},
+	{
+		"key": "Vaelus",
+		"descriptions": [
+			"ASHLEY\nI am Vaelus, of the Sisters of Sylandri, the Fallen Goddess of Life. →\nThe Green Mother, the Shaper of the Elves.",
+			"ASHLEY\nShe's just wearing pure black minus her white lacing and there's not really any religious symbols on her whatsoever.",
+			"ASHLEY\nShe pulls down a black hood and she wears a veil of mourning that looks to be chainmail that's draped over her elven ears.",
+			"ASHLEY\nThe part of her face that we can see, you can see that there's gashes and scarring and burns. →\nIt almost looks like a scar of arcane magic.",
+			"ASHLEY\nWrapped around her waist a few times is a very, very long chain, and she holds the end of it laced between her fingers and dangling on the bottom of it is a censer with some smoke coming out of it."
+		],
+		"tags": [
+			"player character",
+			"elf",
+			"female",
+			"religious figure"
+		]
+	}
+]

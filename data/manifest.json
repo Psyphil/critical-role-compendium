@@ -1,0 +1,26 @@
+{
+	"series": [
+		{
+			"key": "campaign_4",
+			"title": "Campaign 4",
+			"shortTitle": "Campaign 4",
+			"episodes": [
+				{
+					"key": "episode_1",
+					"title": "Episode 1: The Fall of Thjazi Fang",
+					"shortTitle": "Episode 1"
+				},
+				{
+					"key": "episode_2",
+					"title": "Episode 2: Broken Wing",
+					"shortTitle": "Episode 2"
+				},
+				{
+					"key": "episode_3",
+					"title": "Episode 3: The Snipping of Shears",
+					"shortTitle": "Episode 3"
+				}
+			]
+		}
+	]
+}

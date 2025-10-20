@@ -1,0 +1,277 @@
+[
+	{
+		"key": "Azune Nayar",
+		"descriptions": [
+			"LUIS\nAzune, where are you? And how do you look in this distant memory? ",
+			"LUIS\nI am 15 years old. I'm young. I'm shorter, I'm skinnier, and the last thing I remember before the lights went out was struggling to keep up with my group, these two guys, grown men at this point in my life that I've grown to emulate in a way. ",
+			"LUIS\nSave, 19."
+		],
+		"tags": [
+			"player character",
+			"human",
+			"male",
+			"Revolutionary Guard"
+		]
+	},
+	{
+		"key": "Dol-Makjar",
+		"descriptions": [
+			"BRENNAN\nWe return here to Dol-Makjar, the eastern edge of Kahad."
+		],
+		"tags": [
+			"city",
+			"location"
+		]
+	},
+	{
+		"key": "Halandil Fang",
+		"descriptions": [
+			"LIAM\nHal is not a man of deep pockets or wealth, but he lives happily and comfortably in this home with its view of the river and my theater down below at the foot of the hill.",
+			"SAM\nYes it is. Hal. He's opening a theater. He is beloved by all.",
+			"LIAM\nHal falls to his knees, scoops underneath.",
+			"LIAM\nHis arms are going to run down along her arms, and he will say one word, and nobody hears it, because I'm alone with my unconscious baby mama, but he just says the word \"stay,\" but it reverberates. It echoes low as I cast Healing Word.",
+			"LIAM\nHal is struck by how thick the air in this room is with history and how his brother was something different to every person in this room."
+		],
+		"tags": [
+			"player character",
+			"orc",
+			"male"
+		]
+	},
+	{
+		"key": "Stone of Nightsong",
+		"descriptions": [
+			"ASHLEY\nAnd that is the Stone of Nightsong. And it was taken.",
+			"LAURA\n(sighs) I'm sorry I took your stone. I'm sorry it's lost."
+		],
+		"tags": [
+			"object"
+		]
+	},
+	{
+		"key": "Kattigan Vale",
+		"descriptions": [
+			"ROBBIE\nFail, seven.",
+			"BRENNAN\nKattigan, on the ground, describe your character for us in this moment and describe the injury that is starting to bleed out past the point of repair.",
+			"ROBBIE\nBasically, he's always fighting low so all of his injuries are up high in his body. Shoulders, neck, he's got puncture wounds super close to lungs and heart. He's jacked from the waist up mostly, yeah.",
+			"ROBBIE\nI'm just lollygagging by the bar. I got a 12.",
+			"ROBBIE\nI look at him and quietly to myself say: Man, it's too bad. Well. Let's get after it, then."
+		],
+		"tags": [
+			"player character",
+			"male",
+			"mercenary"
+		]
+	},
+	{
+		"key": "Loza Blade",
+		"descriptions": [
+			"BRENNAN\nNearby, Loza Blade, about 12 or 13 years younger than the last time we saw her, cries out as, thump, thump, two arrows go into her shoulder.",
+			"BRENNAN\nShe says, \"Get back under the hill!\"",
+			"BRENNAN\nLoza, a woman who does not do this lightly, does not actually shed a tear but you see her eyes water as she looks at Thjazi, another name added to a long list of people that she's had to say goodbye to, and here in this place with family surrounding, the song picks up and she hums along to it.",
+			"BRENNAN\nLoza Blade was the commander of the Torn Banner.",
+			"BRENNAN\nLoza says, \"I think that's a good idea, Thimble, but if you're going to check on the thieves' guild, make sure that you are checking on them with some friends in tow. I don't know the city, I haven't been in Dol-Makjar.\"",
+			"BRENNAN\nI'm headed west to green vines, wide orchards. My family's old farm."
+		],
+		"tags": [
+			"NPC",
+			"female",
+			"mercenary",
+			"commander"
+		]
+	},
+	{
+		"key": "Thimble",
+		"descriptions": [
+			"BRENNAN\nThimble, it is your turn.",
+			"LAURA\nI'm darting ahead and I'm trying to find one of the sorcerers. And I'm trying to get through the ranks, get up right behind them to the back of their head while they're distracted with all of the other shit going on.",
+			"LAURA\nI'll fly over and land on his chest. (sighs) You stupid fuck. I'm so sorry. I'm so sorry. Thaz, I-- (sobs) I ruined it.",
+			"LAURA\nI'll fly up in the air and my light starts to glow. Was this you? Did you do this? And I'll fly over, I'll get right in your face. Did you bring those people?",
+			"LAURA\nI have free will. What do you think? I fly up. You're an elf. You know our history. Better than me, probably. Thjazi was great. He didn't keep me: he was my partner. We were equals. Can you believe that? Equals. (breathy laugh) I'm sorry I took your stone. I'm sorry it's lost."
+		],
+		"tags": [
+			"player character",
+			"fairy",
+			"female",
+			"rogue"
+		]
+	},
+	{
+		"key": "Vaelus",
+		"descriptions": [
+			"ASHLEY\nI'm going to start walking upstairs.",
+			"ASHLEY\nSo hello, I am Vaelus of the Sisters of Sylandri.",
+			"ASHLEY\nI am very sorry. I can see that you cared about this person very much. I'm not here to hurt any of you. I try as much as I can to show her that I am not the person that caused his death. I'm not the bad guy here. This was something that was taken from me. I think we're on the same side. Someone who did let me in the city, his name is Bolaire.",
+			"ASHLEY\nI've learned for all of the years that I've been alive that sugar is very bad for you."
+		],
+		"tags": [
+			"player character",
+			"elf",
+			"female",
+			"Sister of Sylandri"
+		]
+	},
+	{
+		"key": "Bolaire",
+		"descriptions": [
+			"TALIESIN\nI am going to push past--",
+			"TALIESIN\nI am both fascinated and angry at her.",
+			"TALIESIN\nI touched the wrong thing many years ago and have had this thing stuck to me ever since. Half the people at the museum have been maimed touching the wrong thing. Whatever else shows up tonight, do not touch it if you don't know where it came from!",
+			"TALIESIN\nI would procure artifacts for him, and in return, he would send me things to look at. I did some dirty work for him. He's dead now, so I hardly think it matters, at this point.",
+			"TALIESIN\nWe need someone with a familiar, something similar, we need to put something living in there that we can see through. Not a person. But someone who can see through other people's eyes."
+		],
+		"tags": [
+			"player character",
+			"male",
+			"curator",
+			"friend of Thjazi"
+		]
+	},
+	{
+		"key": "Murray Mag'Nesson",
+		"descriptions": [
+			"MARISHA\nI'm still holding my cocktail.",
+			"MARISHA\nI'm just saying, if you guys wanted to hot-box the place, it would've been nice to share and get an invite.",
+			"MARISHA\nI think we should take maybe the back streets, get this to the Penteveral, get this to my office and then we can do our investigation there.",
+			"MARISHA\nI would've done a very meticulous ritual casting of an Identify spell.",
+			"MARISHA\nI've got papers I got to grade today.",
+			"BRENNAN\nYou are the Bursar of the Penteveral. You got to go work."
+		],
+		"tags": [
+			"player character",
+			"dwarf",
+			"female",
+			"wizard",
+			"Penteveral",
+			"Bursar"
+		]
+	},
+	{
+		"key": "Sir Julien Davinos",
+		"descriptions": [
+			"MATT\nJulien's going to stay below and more or less interpose himself between Lady Aranessa and whatever this might be up the stairs. He just kind of keeps a keen eye.",
+			"MATT\nLooks like you took a nasty spill.",
+			"MATT\nHis demeanor has definitely darkened at the mention of his father and he looks out the window of the carriage with his hand on the hilt of his sword now, his jaw tensing for the rest of the ride in quiet.",
+			"MATT\nJulien, his hair, dark hair thrown asunder across the wrecked bedsheets, clambers up over the voluptuous tan-skinned woman, and the blonde-haired muscular young man. Who begin to stir as he steps and scrambles and stumbles onto the floor.",
+			"MATT\nEvery man makes their choices. I'm sorry that I was the consequence of his."
+		],
+		"tags": [
+			"player character",
+			"male",
+			"knight",
+			"Vassal of House Royce",
+			"son of General Raimond Davinos"
+		]
+	},
+	{
+		"key": "Aranessa",
+		"descriptions": [
+			"BRENNAN\n\"Ever valorous, Sir Julien.\"",
+			"BRENNAN\nAs you walk in, she looks up and says, \"The wagons have-- We've confirmed that they were stopped at the Dvalmar Pass.\"",
+			"BRENNAN\n\"Given the gravity of this and the carriages, should we postpone the gala tomorrow night?\" She turns and says, \"No, no. Appearances are everything. Absolutely. If anything, invite more people. We should have it be as much of a to-do as we possibly can. in fact--\""
+		],
+		"tags": [
+			"NPC",
+			"female",
+			"House Royce",
+			"widow of Thjazi Fang"
+		]
+	},
+	{
+		"key": "Thjazi Fang",
+		"descriptions": [
+			"BRENNAN\nThimble, you see Thjazi for the first time.",
+			"LAURA\n(sighs) You stupid fuck. I'm so sorry. I'm so sorry. Thaz, I-- (sobs) I ruined it.",
+			"BRENNAN\n(whispering) And then you see, I think as you walk back to land again on Thjazi's chest, Thimble, you look under his chest and you see there's a couple different necklaces. A lot of thieves and scoundrels, you know, collected little bits of jewelry from here and there, but you see that his silver necklace is kind of bunched up that has his old wedding ring on it, that he was wearing around his neck, and I think there's a moment where, Hal, you're standing nearby and you just remember being in a tiny little tower room of Castle Royce, two young guys, orcish commoners from Dol-Makjar in this nobles' wedding, and your brother dressed in (laughs) gifted finery looking at you and being like, \"I'm nervous. I don't know why I'm so nervous.\"",
+			"ROBBIE\nThjazi's, to me, looks mischievous still, as I remember him in my youth, and then while nobody's looking, just out of curiosity, I'm going to say: Are you sure? I'll grab a little pinch and a little flick to where no one can see it and I want to cast really quick, just to check, Spare the Dying, because I figure if there's one last gambit he might have in his pocket, it could be that he's not really dead, just to check."
+		],
+		"tags": [
+			"NPC",
+			"male",
+			"orc",
+			"deceased",
+			"political prisoner",
+			"former mercenary"
+		]
+	},
+	{
+		"key": "Occtis",
+		"descriptions": [
+			"AABRIA\nOcctis and I, when were in Venatus, this is what we were meant to find and bring back. I was supposed to hand it off to Bolaire.",
+			"ALEXANDER\nYeah, there were feathers in the house.",
+			"ALEXANDER\nI sit down in one of the chairs in whatever room we're in and from behind the chair comes Pin, walks around and I go: You keep an eye on her. My vision goes into Pin's and he's going to follow Vaelus up the stairs.",
+			"ALEXANDER\nEyes completely whited out as, just sitting in a chair, all my senses are in Pin.",
+			"ALEXANDER\nOcctis walks up next to the body. We'll figure it out. We can figure it out. Figure out what went wrong.",
+			"BRENNAN\nOcctis is a member of the House Tachonis."
+		],
+		"tags": [
+			"player character",
+			"male",
+			"wizard",
+			"House Tachonis",
+			"friend of Thaisha"
+		]
+	},
+	{
+		"key": "Wicander (Wick)",
+		"descriptions": [
+			"SAM\nHe is decompressing. Ever strong. He had a really, you know, everyone had sort of a tense day, and you know, he went to his quarters. I think that, all in all, pretty good. I think. Yeah.",
+			"SAM\nWell, forgiveness is one of our central tenets. Do you still harbor resentment or ill will towards the noble houses?",
+			"SAM\nI don't know exactly how it works, but I do know that that Filament can even be ingested by people. Why, you see the markings on my face, these beautiful glowing tattoos are actually pure Filament. That's the bottled-down essence of the universe tattooed on my face.",
+			"SAM\nI mean, I know you're being humble and demure because that's what you should be, but you could be a little happy.",
+			"BRENNAN\nYanessa turns to you. \"Wicky, I'd like you to meet your grandfather.\""
+		],
+		"tags": [
+			"player character",
+			"male",
+			"Lord",
+			"House Halovar",
+			"Candescent Creed",
+			"Scion"
+		]
+	},
+	{
+		"key": "Tyranny",
+		"descriptions": [
+			"WHITNEY\nI feel good. I mean, I think that last night, it didn't go great, but at least Wick got his scimitar, and I think everybody kind of understood that his intentions were good. I'm glad I got him out of there before he got his ass kicked by Lady Aranessa. So I feel all right.",
+			"WHITNEY\nI think it's really fun that he believes in something. I think that he, well, I know he's the only one, so. I don't want to touch it.",
+			"WHITNEY\nI just wanted to say that I know I haven't been really easy to work with these past couple months. And I'm really sorry about that.",
+			"WHITNEY\nWell, I still am a demon, technically, but I'm on my way.",
+			"BRENNAN\nAspirant Tyranny, presenting Teor Pridesire, mercenary errant, and I believe, a compatriot of Loza Blade, a warrior of some renown here in the city of Dol-Makjar. For audience with his lordship, the bright Wicander."
+		],
+		"tags": [
+			"player character",
+			"female",
+			"demon",
+			"Aspirant",
+			"bodyguard"
+		]
+	},
+	{
+		"key": "Yanessa",
+		"descriptions": [
+			"BRENNAN\nYour grandmother.",
+			"BRENNAN\n\"The Photarch has made a decision. You won't have to keep any terrible little secrets for much longer.\"",
+			"BRENNAN\n\"Wicky, I'd like you to meet your grandfather.\"",
+			"BRENNAN\nYanessa turns to you. \"Wicander, There's no two ways about it. The love I hold for you is as true as the foundations of the earth and I need you to know that because that love is true. However, some of the things I have told you in your life have not been true, and so I suspect that there may be some points where you feel rattled, unsure, your legs taken out from under you.\""
+		],
+		"tags": [
+			"NPC",
+			"female",
+			"Photarch",
+			"grandmother of Wicander"
+		]
+	},
+	{
+		"key": "Prismatic Retort",
+		"descriptions": [
+			"SAM\nThis is the machine that distills the Light into Filament.",
+			"BRENNAN\nThis is not a sarcophagus, it's an iron maiden, and within it is a 30-foot tall angel chained with taps like that that removes the sap from maple trees, gushing blood out as the angel chained with its head against the inner workings, its featherless wings spread out and splayed against the inside of the machine. Roars out like a screaming titan. \"(screaming)\" As rows and rows of unpointed teeth within its mouth gnash furiously."
+		],
+		"tags": [
+			"object",
+			"magical artifact",
+			"machine"
+		]
+	}
+]

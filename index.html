@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Critical Role Compendium</title>
+
+    <link rel="stylesheet" href="dist/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/vendor/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="dist/styles.css" />
+  </head>
+  <body>
+    <div class="container py-4">
+      <header class="mb-3 text-center">
+        <h1>Critical Role Compendium</h1>
+        <p class="subtitle">Search characters, locations, objects, and lore</p>
+      </header>
+
+      <div
+        class="search-row justify-content-center mb-3 m-auto"
+        style="max-width: 900px"
+      >
+        <div class="search-wrapper w-100">
+          <input
+            id="search-input"
+            class="form-control search-input"
+            type="search"
+            placeholder="Search characters, locations, or descriptions..."
+            autofocus
+          />
+        </div>
+        <div
+          id="filter-badges"
+          class="justify-content-center mb-3 flex-wrap gap-3"
+        >
+          <div class="picker-group">
+            <select
+              id="series-select"
+              class="selectpicker"
+              multiple
+              data-live-search="true"
+              data-actions-box="true"
+              title="All Series"
+            ></select>
+          </div>
+
+          <div class="picker-group">
+            <select
+              id="episode-select"
+              class="selectpicker"
+              multiple
+              data-live-search="true"
+              data-actions-box="true"
+              title="All Episodes"
+            ></select>
+          </div>
+
+          <div class="picker-group">
+            <select
+              id="tag-select"
+              class="selectpicker"
+              multiple
+              data-live-search="true"
+              title="All Tags"
+            ></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats" id="stats"></div>
+      <div id="error-container"></div>
+      <div class="results" id="key-results"></div>
+      <div class="stats pt-4" id="description-results-title">Related</div>
+      <div class="results" id="description-results"></div>
+    </div>
+
+    <!-- bundle includes jQuery, bootstrap, bootstrap-select -->
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>

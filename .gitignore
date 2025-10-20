@@ -1,0 +1,7 @@
+.vscode/
+node_modules/
+scripts/
+src/
+package-lock.json
+package.json
+tsconfig.json

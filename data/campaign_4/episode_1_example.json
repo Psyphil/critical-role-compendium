@@ -1,0 +1,55 @@
+[
+	{
+		"key": "Azune Nayar",
+		"descriptions": [
+			"LUIS\nAzune Nayar stands tall, proud. →\nHuman in appearance, he is just over 5'10\", but gives the presence of someone that's taller than that. →\nHis pride carries him above his height. →\nHe is strong, lean, muscular. →\nHe has medium brown skin and coppery auburn brown hair that's tied back in a braid, a birthmark that goes up the right side of his neck, up his face, and up to his forehead around his eye. →\nHis eyes look like a sunset on an ocean. →\nThe bottom half of his irises are a deep blue. →\nHis pupils are yellow like the sun that bursts out into an orange and then into a teal and then into a light gray. →\nHe's wearing full armor, as is given to him by his station in Dol-Makjar. →\nHe is a member of the Revolutionary Guard, an Arcane Marshal, specifically. →\nHis arms are exposed. →\nAlong his right bicep are tattooed the words: Have mercy on those I send you.",
+			"BRENNAN\nThat was not here last time. You had heard that Azune had joined the Revolutionary Guard, but the show of force was--",
+			"BRENNAN\nYou have an Arcane Marshal here, and I think, you know, Teor, the last time you saw Azune he was one of the younger people in you and Thjazi's battalion."
+		],
+		"tags": [
+			"player character",
+			"human",
+			"male",
+			"Revolutionary Guard"
+		]
+	},
+	{
+		"key": "Dol-Makjar",
+		"descriptions": [
+			"BRENNAN\nThis moment, you stand shoulder to shoulder with the people you stand shoulder to shoulder with the people of the city of Dol-Makjar, its gray stone standing proud here at the eastern edge of the land known as Kahad. →\nUnder their arms stands the base of this massive wall at the eastern edge of the city, Dol-Makjar, towering spires that follow the River Vrosh step-by-step down from the mountains. →\nThe Guardian Wall, like much of Dol-Makjar, is a place dedicated to heroism, camaraderie, the struggle of the mortal world to make a brighter day.",
+			"BRENNAN\nDol-Makjar is Chicago.",
+			"BRENNAN\nAnd the city, this is the exact kind of survey. →\nYou know, we obviously, we've had a basis for our-- There are many plans of ours that are unfolding here in Dol-Makjar, but we haven't cracked the nut of the Creed really spreading. →\nThis is the seat of the revolution after all, but.",
+			"BRENNAN\nIt's a bohemian lifestyle here in Dol-Makjar. →\nNot a lot of people tying the knot."
+		],
+		"tags": [
+			"city",
+			"location"
+		]
+	},
+	{
+		"key": "Halandil Fang",
+		"descriptions": [
+			"LIAM\nMy name is Halandil Fang, Hal. →\nI am a older, dark-haired with streaks of white orc gentleman dressed in fairly fine, but not ostentatious clothing and has smile lines at the eyes from a life well lived. →\nTrying in this moment to hold on to the spirit that has buoyed him through his life, maybe not doing as well as he'd like to in this moment.",
+			"LIAM\nHal is not a man of deep pockets or wealth, but he lives happily and comfortably in this home with its view of the river and my theater down below at the foot of the hill.",
+			"SAM\nYes it is. Hal. →\nHe's opening a theater. →\nHe is beloved by all."
+		],
+		"tags": [
+			"player character",
+			"orc",
+			"male"
+		]
+	},
+	{
+		"key": "Stone of Nightsong",
+		"descriptions": [
+			"BRENNAN\nThe Stone of Nightsong was an artifact created by a celestial, which was basically a celestial servant of Sylandri, the shaper of the elves, the goddess of life in the woodland. →\nTo her children, the elves, did she alone grant immortality that they would not die of age or infirm, that they would live lest accident or injury befell them. →\nBut for those elves that it did befall, she crafted a stone that their spirits would be brought to peace beyond in the Garden of the Spirit kept for her. →\nBut in traveling, there was a realm that they must pass.",
+			"BRENNAN\nThe Stone of Nightsong existed that elves and their immortal spirits need not even touch those ghastly realms, but would be ferried by a spirit of song and night swiftly through the darkness to bright dawn. →\nThe goddess of life so loved her elven children that even in catastrophe, the destruction of their bodies with their immortal souls never have to know hardship or pain.",
+			"BRENNAN\nThe Stone of Nightsong you believe was created after the original guardian spirit, that immortal nightingale, a celestial that took the wings of a nightingale, sort of like a night angel.",
+			"BRENNAN\nThe stone was created after that celestial's destruction in the Shapers' War.",
+			"BRENNAN\n21, Stone of Nightsong. →\nYeah, there is a reference to that in the Penteveral. →\nBack at the school, there is-- The Stone of Nightsong is referenced as some relic. →\nIt came up in something about the Shapers' War. →\nIt was used by, if you're not mistaken, it was an elven artifact."
+		],
+		"tags": [
+			"object"
+		]
+	}
+]

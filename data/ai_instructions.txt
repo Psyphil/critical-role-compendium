@@ -1,0 +1,26 @@
+The html file contains a transcript of a dungeons and dragons stream for Critical Role.
+Analyze the transcript, look for characters, locations, objects, weapons with descriptions and put them in json with descriptions and tags.
+Follow the format of the example file episode_1_example.json. Start each description with the name of the person quoted, keep the whole row of each row containing information.
+Do not generate, infer, speculate, or summarize content, only quote with minor grammatical fixes such as removing stuttering.
+
+alt:
+### **Prompt Goal**
+You are an entity extraction engine specializing in Dungeons & Dragons transcripts. Analyze the provided Critical Role transcript content and extract specific entities into a **strict JSON format**.
+
+### **Entity Extraction Task**
+Identify the following entities along with their descriptive quotes and tags:
+1.  **Characters** (Player Characters, NPCs)
+2.  **Locations** (Cities, specific buildings, geographical features)
+3.  **Objects & Items** (Weapons, artifacts, non-magical and magical items)
+4.  **Concepts/Factions** (Organizations, deities, major plot concepts)
+
+### **Output Constraints (MUST be Followed)**
+
+*   **Format:** The final output **MUST** be a valid JSON object that **STRICTLY adheres** to the structure defined in the `episode_1_example.json` file.
+*   **Content Fidelity (No Inference):**
+    *   Do **NOT** generate, infer, speculate, or summarize content.
+    *   The `description` field **MUST** contain **ONLY** direct, complete quotes from the transcript.
+    *   Minor grammatical cleanup is permitted (e.g., removing stuttering like "uh," "um," "like," or fixing run-on sentences for clarity).
+*   **Description Formatting:**
+    *   The quote for each entity's `description` **MUST begin** with the name of the person speaking (e.g., "Liam\nThe sword felt cold in my hand.").
+    *   Keep the **entire row/sentence** from the transcript that contains the relevant information.
