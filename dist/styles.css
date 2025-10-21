@@ -245,10 +245,6 @@ input::placeholder {
   font-weight: 600;
 }
 
-.entry-title * {
-  flex-shrink: 0;
-}
-
 .entry-description {
   line-height: 1.8;
   margin-bottom: 15px;
