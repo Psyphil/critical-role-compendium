@@ -2,8 +2,22 @@ var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getOwnPropSymbols = Object.getOwnPropertySymbols;
 var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __propIsEnum = Object.prototype.propertyIsEnumerable;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __spreadValues = (a, b) => {
+  for (var prop in b || (b = {}))
+    if (__hasOwnProp.call(b, prop))
+      __defNormalProp(a, prop, b[prop]);
+  if (__getOwnPropSymbols)
+    for (var prop of __getOwnPropSymbols(b)) {
+      if (__propIsEnum.call(b, prop))
+        __defNormalProp(a, prop, b[prop]);
+    }
+  return a;
+};
 var __esm = (fn, res) => function __init() {
   return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;
 };
@@ -13760,12 +13774,12 @@ var init_globals = __esm({
   }
 });
 
-// src/domain/data/entry.ts
-var TermCollection;
-var init_entry = __esm({
-  "src/domain/data/entry.ts"() {
+// src/domain/data/entity.ts
+var EntityCollection;
+var init_entity = __esm({
+  "src/domain/data/entity.ts"() {
     "use strict";
-    TermCollection = class {
+    EntityCollection = class {
       constructor() {
         this.itemsMap = /* @__PURE__ */ new Map();
       }
@@ -13780,19 +13794,19 @@ var init_entry = __esm({
         const descData = {
           series,
           episode,
-          texts: descTexts
+          values: descTexts
         };
         const tagData = {
           series,
           episode,
-          texts: tagTexts
+          values: tagTexts
         };
         const existing = this.itemsMap.get(key);
         if (existing) {
           if (descTexts.length) {
             const descriptionsForEpisode = existing.descriptions.find((d) => d.series === series && d.episode === episode);
             if (descriptionsForEpisode) {
-              descriptionsForEpisode.texts.push(...descTexts);
+              descriptionsForEpisode.values.push(...descTexts);
             } else {
               existing.descriptions.push(descData);
             }
@@ -13800,7 +13814,7 @@ var init_entry = __esm({
           if (tagTexts.length) {
             const tagsForEpisode = existing.tags.find((t) => t.series === series && t.episode === episode);
             if (tagsForEpisode) {
-              tagsForEpisode.texts.push(...tagTexts);
+              tagsForEpisode.values.push(...tagTexts);
             } else {
               existing.tags.push(tagData);
             }
@@ -13808,8 +13822,8 @@ var init_entry = __esm({
         } else {
           const newEntry = {
             key,
-            descriptions: descData.texts.length ? [descData] : [],
-            tags: tagData.texts.length ? [tagData] : []
+            descriptions: descData.values.length ? [descData] : [],
+            tags: tagData.values.length ? [tagData] : []
           };
           this.itemsMap.set(key, newEntry);
         }
@@ -13819,6 +13833,9 @@ var init_entry = __esm({
       }
       get(index) {
         return Array.from(this.itemsMap.values())[index];
+      }
+      forEach(callback) {
+        this.itemsMap.forEach(callback);
       }
       toArray() {
         return Array.from(this.itemsMap.values());
@@ -13841,13 +13858,13 @@ var init_manifest = __esm({
 var init_data = __esm({
   "src/domain/data/index.ts"() {
     "use strict";
-    init_entry();
+    init_entity();
     init_manifest();
   }
 });
 
 // src/providers/dataProvider.ts
-var DataProvider;
+var DataProvider, DataSearch;
 var init_dataProvider = __esm({
   "src/providers/dataProvider.ts"() {
     "use strict";
@@ -13855,7 +13872,7 @@ var init_dataProvider = __esm({
     DataProvider = class {
       constructor(dataPath) {
         this.data = {
-          entries: new TermCollection(),
+          entries: new EntityCollection(),
           seriesWithEpisodes: /* @__PURE__ */ new Map(),
           tags: /* @__PURE__ */ new Set()
         };
@@ -13873,13 +13890,13 @@ var init_dataProvider = __esm({
             this.data.seriesWithEpisodes.set(seriesEntry.key, { series: seriesEntry, episodes });
             for (const episodeEntry of seriesEntry.episodes) {
               try {
-                const episodeResponse = await fetch(`data/${seriesEntry.key}/${episodeEntry.key}.json`);
+                const episodeResponse = await fetch(`data/${seriesEntry.key}/${episodeEntry.id}.json`);
                 if (!episodeResponse.ok) continue;
                 episodes.add(episodeEntry);
                 const entries = await episodeResponse.json();
                 const validEntries = entries.filter((e) => e && e.key);
                 validEntries.forEach((entry) => {
-                  this.data.entries.add(seriesEntry.key, episodeEntry.key, entry);
+                  this.data.entries.add(seriesEntry.key, episodeEntry.id, entry);
                 });
                 validEntries.forEach((entry) => {
                   (entry.tags || []).forEach((tag) => this.data.tags.add(tag));
@@ -13896,6 +13913,61 @@ var init_dataProvider = __esm({
           console.error(`Failed to load episodes. Make sure you have a data/manifest.json file listing your episode files. Error: ${error}`);
         }
       }
+      searchEntries(request) {
+        const searcher = new DataSearch(request);
+        return searcher.search(this.data.entries);
+      }
+    };
+    DataSearch = class {
+      constructor(searchRequest) {
+        this.searchRequest = searchRequest;
+      }
+      search(entries) {
+        const results = [];
+        entries.forEach((entry) => {
+          if (this.matchExcludeKeys(entry)) return;
+          if (!this.matchSearchKeys(entry)) return;
+          const filteredEntry = {
+            key: entry.key,
+            descriptions: this.filterSearchEntityData(entry.descriptions),
+            tags: this.filterSearchEntityData(entry.tags)
+          };
+          if (filteredEntry.descriptions.length === 0 && filteredEntry.tags.length === 0) return;
+          if (!this.matchTags(filteredEntry)) return;
+          results.push(filteredEntry);
+        });
+        return results;
+      }
+      matchExcludeKeys(item) {
+        if (!this.searchRequest.excludeKeys || this.searchRequest.excludeKeys.size === 0) return false;
+        return this.searchRequest.excludeKeys.has(item.key);
+      }
+      matchSearchKeys(item) {
+        if (!this.searchRequest.searchKeys) return true;
+        const lowerSearchTerm = this.searchRequest.searchKeys.toLowerCase();
+        return item.key.toLowerCase().includes(lowerSearchTerm);
+      }
+      filterSearchEntityData(entityData) {
+        var _a;
+        const lowerSearchTerm = (_a = this.searchRequest.searchEntityData) == null ? void 0 : _a.toLowerCase();
+        return entityData.filter(
+          (data) => this.matchSeries(data) && this.matchEpisodes(data) && (!lowerSearchTerm || data.values.some((value) => value.toLowerCase().includes(lowerSearchTerm)))
+        );
+      }
+      matchSeries(item) {
+        if (!this.searchRequest.series || this.searchRequest.series.size === 0) return true;
+        return this.searchRequest.series.has(item.series);
+      }
+      matchEpisodes(item) {
+        if (!this.searchRequest.episodes || this.searchRequest.episodes.size === 0) return true;
+        return this.searchRequest.episodes.has(`${item.series}::${item.episode}`);
+      }
+      matchTags(item) {
+        if (!this.searchRequest.tags || this.searchRequest.tags.size === 0) return true;
+        return Array.from(this.searchRequest.tags).every(
+          (tag) => item.tags.some((t) => t.values.includes(tag))
+        );
+      }
     };
   }
 });
@@ -13909,16 +13981,23 @@ var init_providers = __esm({
 });
 
 // src/domain/controls/selectpicker.ts
-var SelectPicker;
+var SelectPickerOptionsDefaults, SelectPicker;
 var init_selectpicker = __esm({
   "src/domain/controls/selectpicker.ts"() {
     "use strict";
+    SelectPickerOptionsDefaults = class {
+      constructor() {
+        this.interval = false;
+      }
+    };
     SelectPicker = class {
       constructor(selector, className, opts) {
         this.entries = /* @__PURE__ */ new Map();
         this.pauseChangeEvent = false;
         this.onChangeHandler = null;
         this.className = className || "";
+        this.options = __spreadValues(__spreadValues({}, new SelectPickerOptionsDefaults()), opts);
+        this.options.maxOptions = this.options.interval ? 1 : this.options.maxOptions;
         if (typeof selector === "string") {
           this.selectElement = $(selector);
         } else if (selector instanceof HTMLSelectElement) {
@@ -13950,16 +14029,16 @@ var init_selectpicker = __esm({
         this.render();
         return this;
       }
-      setOptions(options, selectedValues) {
+      setEntries(entries, selectedValues) {
         this.pauseChangeEvent = true;
         this.selectElement.empty();
         if (typeof selectedValues === "string") {
           selectedValues = [selectedValues];
         }
-        if (typeof options[0] === "string") {
-          options = options.map((o) => ({ value: o, text: o }));
+        if (typeof entries[0] === "string") {
+          entries = entries.map((o) => ({ value: o, text: o }));
         }
-        options.sort((a, b) => a.text > b.text ? 1 : a.text < b.text ? -1 : 0).forEach((opt) => this.addOption(opt, selectedValues ? selectedValues.includes(opt.value) : false));
+        entries.sort((a, b) => a.text > b.text ? 1 : a.text < b.text ? -1 : 0).forEach((opt) => this.addOption(opt, selectedValues ? selectedValues.includes(opt.value) : false));
         this.refresh();
         this.pauseChangeEvent = false;
         return this;
@@ -13983,15 +14062,21 @@ var init_selectpicker = __esm({
         selectedContainer.toggleClass("filter-pill-holder", true);
         if (this.selected.length === 0) return;
         selectedContainer.empty();
+        if (this.options.interval) {
+          const entry = this.entries.values().next().value;
+          const pill = this.renderPill(entry, "disabled");
+          selectedContainer.append(pill, "\xA0\u2013\xA0");
+        }
         this.selected.forEach((s) => {
           const pill = this.renderPill(s);
           selectedContainer.append(pill);
         });
       }
-      renderPill(entry) {
+      renderPill(entry, className = "") {
         var _a;
+        if (!entry) return $();
         const pill = document.createElement("span");
-        pill.className = `filter-pill ${this.className}`;
+        pill.className = `filter-pill ${className ? className : this.className}`;
         pill.setAttribute("data-value", entry.value);
         pill.setAttribute("data-type", this.className);
         pill.textContent = (_a = entry.selectedText) != null ? _a : entry.text;
@@ -14040,12 +14125,12 @@ var init_app = __esm({
           search: null
         };
         this.initControls();
-        this.setupEventListeners();
+        this.initEventListeners();
         this.initAsync();
       }
       initControls() {
         this.controls.seriesSelect = new SelectPicker("#series-select", "series");
-        this.controls.episodeSelect = new SelectPicker("#episode-select", "episode");
+        this.controls.episodeSelect = new SelectPicker("#episode-select", "episode", { interval: true });
         this.controls.tagSelect = new SelectPicker("#tag-select", "tag");
         this.controls.filterBadges = document.getElementById("filter-wrapper");
         this.controls.results = document.getElementById("key-results");
@@ -14071,7 +14156,7 @@ var init_app = __esm({
       }
       populateSeriesSelector() {
         const series = Array.from(this.dataProvider.data.seriesWithEpisodes.values()).map((s) => s.series);
-        this.controls.seriesSelect.setOptions(series.map((s) => ({ value: s.key, text: s.title, selectedText: s.shortTitle })), Array.from(this.selectedSeries));
+        this.controls.seriesSelect.setEntries(series.map((s) => ({ value: s.key, text: s.title, selectedText: s.shortTitle })), Array.from(this.selectedSeries));
         this.selectedSeries = new Set(this.controls.seriesSelect.selected.map((s) => s.value));
       }
       populateEpisodeSelector() {
@@ -14086,22 +14171,22 @@ var init_app = __esm({
         }
         const episodes = Array.from(combinedSet);
         const options = episodes.map(({ series, episode }) => ({
-          value: `${series.key}::${episode.key}`,
+          value: `${series.key}::${episode.id}`,
           text: `${episode.title} \u2014 ${series.title}`,
           selectedText: episode.shortTitle
         }));
-        this.controls.episodeSelect.setOptions(options, Array.from(this.selectedEpisodes));
+        this.controls.episodeSelect.setEntries(options, Array.from(this.selectedEpisodes));
         this.selectedEpisodes = new Set(this.controls.episodeSelect.selected.map((s) => s.value));
       }
       populateTagSelector() {
         const tags = Array.from(this.dataProvider.data.tags);
-        this.controls.tagSelect.setOptions(tags, Array.from(this.selectedTags));
+        this.controls.tagSelect.setEntries(tags, Array.from(this.selectedTags));
         this.selectedTags = new Set(this.controls.tagSelect.selected.map((s) => s.value));
       }
       formatEpisodeName(episode) {
         return episode.replace(/_/g, " ").replace(/episode/i, "Episode").replace(/\b\w/g, (l) => l.toUpperCase());
       }
-      setupEventListeners() {
+      initEventListeners() {
         if (this.controls.search) {
           this.controls.search.addEventListener("input", (e) => {
             this.searchTerm = e.target.value.toLowerCase();
@@ -14128,65 +14213,51 @@ var init_app = __esm({
           };
         }
       }
-      getFilteredEntries() {
-        const allEntries = this.dataProvider.data.entries.toArray();
-        const keyEntries = [];
-        const descriptionEntries = [];
-        allEntries.forEach((entry) => {
-          let keyMatch = false;
-          let descMatch = false;
-          const anyBucketMatches = [...entry.descriptions, ...entry.tags].some((bucket) => {
-            const seriesOk = this.selectedSeries.size === 0 || this.selectedSeries.has(bucket.series);
-            const episodeOk = this.selectedEpisodes.size === 0 || this.selectedEpisodes.has(`${bucket.series}::${bucket.episode}`);
-            return seriesOk && episodeOk;
-          });
-          if (!anyBucketMatches) return;
-          if (this.selectedTags.size > 0) {
-            const entryTagSet = new Set(entry.tags.flatMap((t) => t.texts));
-            const allTagsPresent = Array.from(this.selectedTags).every((tag) => entryTagSet.has(tag));
-            if (!allTagsPresent) return;
-          }
-          if (this.searchTerm) {
-            keyMatch = entry.key.toLowerCase().includes(this.searchTerm);
-            descMatch = !keyMatch && entry.descriptions.some(
-              (d) => d.texts.some((t) => t.toLowerCase().includes(this.searchTerm))
-            );
-          } else {
-            keyMatch = true;
-          }
-          if (keyMatch) {
-            keyEntries.push(entry);
-          } else if (descMatch) {
-            descriptionEntries.push(entry);
-          }
-        });
-        return { keyMatches: keyEntries, descriptionMatches: descriptionEntries };
-      }
-      formatDescription(description) {
-        const parts = description.split(/→|\n/).map((s) => s.trim()).filter((s) => s);
-        let html = "";
-        let currentSpeaker = "";
-        parts.forEach((part) => {
-          if (part === part.toUpperCase() && part.length < 30 && !part.includes(".")) {
-            currentSpeaker = part;
-          } else {
-            if (currentSpeaker) {
-              html += `<span class="speaker">${this.escapeHtml(currentSpeaker)}</span>`;
-              currentSpeaker = "";
+      formatDescription(item) {
+        return item.descriptions.map((d) => {
+          var _a, _b, _c;
+          const description = d.values.join("\n");
+          const parts = description.split(/→|\n/).map((s) => s.trim()).filter((s) => s);
+          const series = (_a = this.dataProvider.data.seriesWithEpisodes.get(d.series)) == null ? void 0 : _a.series;
+          const seriesName = this.dataProvider.data.seriesWithEpisodes.size == 1 || ((_b = this.selectedSeries) == null ? void 0 : _b.size) == 1 ? "" : (_c = series == null ? void 0 : series.shortTitle) != null ? _c : "";
+          const episode = series == null ? void 0 : series.episodes.find((e) => e.id === d.episode);
+          let html = "";
+          let currentSpeaker = "";
+          parts.forEach((part) => {
+            var _a2;
+            if (part === part.toUpperCase() && part.length < 30 && !part.includes(".")) {
+              currentSpeaker = part;
+            } else {
+              if (currentSpeaker) {
+                html += `<span class="speaker"><span>${this.escapeHtml(currentSpeaker)}</span>${this.filterPill("series", seriesName, "mini")}${this.filterPill("episode", (_a2 = episode == null ? void 0 : episode.shortTitle) != null ? _a2 : "", "mini")}</span>`;
+                currentSpeaker = "";
+              }
+              html += `<p>${this.highlightText(this.escapeHtml(part), this.searchTerm)}</p>`;
             }
-            html += `<p>${this.highlightText(this.escapeHtml(part), this.searchTerm)}</p>`;
-          }
-        });
-        return html;
+          });
+          return html;
+        }).join("");
       }
       render() {
         const keyResultsEl = document.getElementById("key-results");
         const descriptionResultsEl = document.getElementById("description-results");
         const statsEl = document.getElementById("stats");
-        const entries = this.getFilteredEntries();
-        statsEl.textContent = `Showing ${entries.keyMatches.length} direct ${entries.keyMatches.length === 1 ? "match" : "matches"} and ${entries.descriptionMatches.length} related ${entries.descriptionMatches.length === 1 ? "entry" : "entries"}.`;
-        this.renderResults(keyResultsEl, entries.keyMatches);
-        this.renderResults(descriptionResultsEl, entries.descriptionMatches);
+        const keyEntries = this.dataProvider.searchEntries({
+          searchKeys: this.searchTerm,
+          series: this.selectedSeries,
+          episodes: this.selectedEpisodes,
+          tags: this.selectedTags
+        });
+        const mentionEntries = this.dataProvider.searchEntries({
+          excludeKeys: new Set(keyEntries.map((e) => e.key)),
+          searchEntityData: this.searchTerm,
+          series: this.selectedSeries,
+          episodes: this.selectedEpisodes,
+          tags: this.selectedTags
+        });
+        statsEl.textContent = `Showing ${keyEntries.length} direct ${keyEntries.length === 1 ? "match" : "matches"} and ${mentionEntries.length} related ${mentionEntries.length === 1 ? "entry" : "entries"}.`;
+        this.renderResults(keyResultsEl, keyEntries);
+        this.renderResults(descriptionResultsEl, mentionEntries);
       }
       renderResults(container, entries) {
         if (entries.length === 0) {
@@ -14194,29 +14265,24 @@ var init_app = __esm({
           return;
         }
         container.innerHTML = entries.map((entry) => {
-          const descHtml = entry.descriptions.map((d) => {
-            const combined = d.texts.join("\n");
-            return this.formatDescription(combined);
-          }).join("");
-          const tagsFlat = Array.from(new Set(entry.tags.flatMap((t) => t.texts)));
-          const tagsHtml = tagsFlat.length > 0 ? `
-                <div class="entry-tags">
-                    ${tagsFlat.map((tag) => `<span class="tag">${this.escapeHtml(tag)}</span>`).join("")}
-                </div>
-            ` : "";
+          const descHtml = this.formatDescription(entry);
+          const tagsFlat = Array.from(new Set(entry.tags.flatMap((t) => t.values)));
+          const tagsHtml = tagsFlat.length > 0 ? (
+            // `<div class="entry-tags">` +
+            `${tagsFlat.map((tag) => this.filterPill("tag", tag)).join("")}`
+          ) : "";
           return `
                 <div class="entry-card">
-                    <div class="entry-title">${this.escapeHtml(entry.key)}</div>
-                    <div class="entry-description">${descHtml}</div>
-                    ${tagsHtml}
-                </div>
+                    <div class="entry-title"><span>${this.escapeHtml(entry.key)}</span>${tagsHtml}</div>
+                	<div class="entry-description">${descHtml}</div>
+				</div>
             `;
         }).join("");
       }
       showError(message) {
         const errorContainer = document.getElementById("error-container");
         errorContainer.innerHTML = `<div class="error">${this.escapeHtml(message)}</div>`;
-        document.getElementById("results").innerHTML = "";
+        document.getElementById("key-results").innerHTML = "";
       }
       escapeHtml(text) {
         const div = document.createElement("div");
@@ -14230,6 +14296,10 @@ var init_app = __esm({
           return newText;
         }
         return text;
+      }
+      filterPill(type, value, className = "") {
+        if (!value) return "";
+        return `<span class="filter-pill ${type} ${className}">${this.escapeHtml(value)}</span>`;
       }
     };
     new CampaignLookup();
