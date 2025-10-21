@@ -14168,16 +14168,15 @@ var init_app = __esm({
         this.controls.results.innerHTML = '<div class="loading">Loading episodes...</div>';
         await this.dataProvider.loadData();
         await this.loadEpisodes();
-        if (this.controls.search) {
-          setTimeout(() => this.controls.search.focus(), 50);
-        }
+        this.searchTerm = this.controls.search.value.toLowerCase();
+        this.render();
+        setTimeout(() => this.controls.search.focus(), 50);
       }
       async loadEpisodes() {
         try {
           this.populateSeriesSelector();
           this.populateEpisodeSelector();
           this.populateTagSelector();
-          this.render();
         } catch (error) {
           this.showError(`Failed to load episodes. Make sure you have a data/manifest.json file listing your episode files. Error: ${error}`);
         }
