@@ -13995,6 +13995,7 @@ var init_selectpicker = __esm({
         this.entries = /* @__PURE__ */ new Map();
         this.pauseChangeEvent = false;
         this.onChangeHandler = null;
+        this.m_values = [];
         this.className = className || "";
         this.options = __spreadValues(__spreadValues({}, new SelectPickerOptionsDefaults()), opts);
         this.options.maxOptions = this.options.interval ? 1 : this.options.maxOptions;
@@ -14009,19 +14010,35 @@ var init_selectpicker = __esm({
         this.buttonElement = this.selectElement.siblings(".dropdown-toggle");
         this.selectElement.on("changed.bs.select", (e, clickedIndex, isSelected, previousValue) => {
           var _a;
+          this.render();
           if (!this.pauseChangeEvent) {
             (_a = this.onChangeHandler) == null ? void 0 : _a.call(this, e, clickedIndex, isSelected, previousValue);
           }
-          this.render();
         });
       }
-      get selected() {
+      selected() {
         const selectedValues = this.selectElement.val();
         if (!selectedValues || selectedValues.length == 0) return [];
-        return typeof selectedValues === "string" ? [this.entries.get(selectedValues)] : selectedValues.map((v) => this.entries.get(v)).filter((o) => o !== void 0);
+        const selectedValuesArray = typeof selectedValues === "string" ? [selectedValues] : selectedValues;
+        return selectedValuesArray.map((v) => this.entries.get(v)).filter((o) => o !== void 0);
+      }
+      set values(value) {
+        var _a;
+        const selectedValuesArray = value.map((e) => e.value);
+        if (this.options.interval && selectedValuesArray.length != 0) {
+          let selectedOptionElement = this.selectElement.find(`option[value="${selectedValuesArray[0]}`).prev();
+          while (selectedOptionElement.length > 0) {
+            selectedValuesArray.push((_a = selectedOptionElement.attr("value")) != null ? _a : "");
+            selectedOptionElement = selectedOptionElement.prev();
+          }
+        }
+        this.m_values = selectedValuesArray.filter((s) => s);
+      }
+      get values() {
+        return this.m_values;
       }
       deselectEntry(value) {
-        const newSelected = this.selected.filter((s) => s.value !== value).map((s) => s.value);
+        const newSelected = this.selected().filter((s) => s.value !== value).map((s) => s.value);
         this.selectElement.selectpicker("deselectAll");
         if (newSelected.length > 0) {
           this.selectElement.selectpicker("val", newSelected);
@@ -14031,13 +14048,16 @@ var init_selectpicker = __esm({
       }
       setEntries(entries, selectedValues) {
         this.pauseChangeEvent = true;
-        this.selectElement.empty();
+        if (selectedValues === void 0) {
+          selectedValues = this.selected().map((e) => e.value);
+        }
         if (typeof selectedValues === "string") {
           selectedValues = [selectedValues];
         }
         if (typeof entries[0] === "string") {
           entries = entries.map((o) => ({ value: o, text: o }));
         }
+        this.selectElement.empty();
         entries.sort((a, b) => a.text > b.text ? 1 : a.text < b.text ? -1 : 0).forEach((opt) => this.addOption(opt, selectedValues ? selectedValues.includes(opt.value) : false));
         this.refresh();
         this.pauseChangeEvent = false;
@@ -14049,8 +14069,17 @@ var init_selectpicker = __esm({
         if (selected) {
           option.prop("selected", true);
         }
-        option.appendTo(this.selectElement);
-        return this;
+        if (this.options.interval && opt.group === void 0) {
+          opt.group = "";
+        }
+        const parentElement = opt.group === void 0 ? this.selectElement : this.getOrAddOptionGroup(opt.group);
+        return option.appendTo(parentElement);
+      }
+      getOrAddOptionGroup(label) {
+        const optGroupElement = this.selectElement.find(`optgroup[label="${label}"]`);
+        if (optGroupElement.length == 1) return optGroupElement;
+        const maxOptions = this.options.interval ? ' data-max-options="1"' : "";
+        return $(`<optgroup label="${label}"${maxOptions} />`).appendTo(this.selectElement);
       }
       refresh() {
         this.selectElement.selectpicker("refresh");
@@ -14060,14 +14089,16 @@ var init_selectpicker = __esm({
       render() {
         const selectedContainer = this.buttonElement.find(".filter-option-inner-inner");
         selectedContainer.toggleClass("filter-pill-holder", true);
-        if (this.selected.length === 0) return;
+        const selected = this.selected();
+        this.values = selected;
+        if (selected.length === 0) return;
         selectedContainer.empty();
         if (this.options.interval) {
           const entry = this.entries.values().next().value;
           const pill = this.renderPill(entry, "disabled");
           selectedContainer.append(pill, "\xA0\u2013\xA0");
         }
-        this.selected.forEach((s) => {
+        selected.forEach((s) => {
           const pill = this.renderPill(s);
           selectedContainer.append(pill);
         });
@@ -14113,9 +14144,6 @@ var init_app = __esm({
       constructor() {
         this.dataProvider = new DataProvider("data/manifest.json");
         this.searchTerm = "";
-        this.selectedTags = /* @__PURE__ */ new Set();
-        this.selectedSeries = /* @__PURE__ */ new Set();
-        this.selectedEpisodes = /* @__PURE__ */ new Set();
         this.controls = {
           results: null,
           seriesSelect: SelectPicker.Null,
@@ -14156,15 +14184,14 @@ var init_app = __esm({
       }
       populateSeriesSelector() {
         const series = Array.from(this.dataProvider.data.seriesWithEpisodes.values()).map((s) => s.series);
-        this.controls.seriesSelect.setEntries(series.map((s) => ({ value: s.key, text: s.title, selectedText: s.shortTitle })), Array.from(this.selectedSeries));
-        this.selectedSeries = new Set(this.controls.seriesSelect.selected.map((s) => s.value));
+        this.controls.seriesSelect.setEntries(series.map((s) => ({ value: s.key, text: s.title, selectedText: s.shortTitle })));
       }
       populateEpisodeSelector() {
         const combinedSet = /* @__PURE__ */ new Set();
-        if (this.selectedSeries.size === 0) {
+        if (this.controls.seriesSelect.values.length === 0) {
           this.dataProvider.data.seriesWithEpisodes.forEach((series) => series.episodes.forEach((episode) => combinedSet.add({ series: series.series, episode })));
         } else {
-          this.selectedSeries.forEach((seriesKey) => {
+          this.controls.seriesSelect.values.forEach((seriesKey) => {
             const series = this.dataProvider.data.seriesWithEpisodes.get(seriesKey);
             series.episodes.forEach((episode) => combinedSet.add({ series: series.series, episode }));
           });
@@ -14172,16 +14199,15 @@ var init_app = __esm({
         const episodes = Array.from(combinedSet);
         const options = episodes.map(({ series, episode }) => ({
           value: `${series.key}::${episode.id}`,
-          text: `${episode.title} \u2014 ${series.title}`,
-          selectedText: episode.shortTitle
+          text: episode.title,
+          selectedText: episode.shortTitle,
+          group: series.title
         }));
-        this.controls.episodeSelect.setEntries(options, Array.from(this.selectedEpisodes));
-        this.selectedEpisodes = new Set(this.controls.episodeSelect.selected.map((s) => s.value));
+        this.controls.episodeSelect.setEntries(options);
       }
       populateTagSelector() {
         const tags = Array.from(this.dataProvider.data.tags);
-        this.controls.tagSelect.setEntries(tags, Array.from(this.selectedTags));
-        this.selectedTags = new Set(this.controls.tagSelect.selected.map((s) => s.value));
+        this.controls.tagSelect.setEntries(tags);
       }
       formatEpisodeName(episode) {
         return episode.replace(/_/g, " ").replace(/episode/i, "Episode").replace(/\b\w/g, (l) => l.toUpperCase());
@@ -14195,31 +14221,28 @@ var init_app = __esm({
         }
         if (this.controls.seriesSelect) {
           this.controls.seriesSelect.onChangeHandler = (_) => {
-            this.selectedSeries = new Set(this.controls.seriesSelect.selected.map((s) => s.value));
             this.populateEpisodeSelector();
             this.render();
           };
         }
         if (this.controls.episodeSelect) {
           this.controls.episodeSelect.onChangeHandler = (_) => {
-            this.selectedEpisodes = new Set(this.controls.episodeSelect.selected.map((s) => s.value));
             this.render();
           };
         }
         if (this.controls.tagSelect) {
           this.controls.tagSelect.onChangeHandler = (_) => {
-            this.selectedTags = new Set(this.controls.tagSelect.selected.map((s) => s.value));
             this.render();
           };
         }
       }
       formatDescription(item) {
         return item.descriptions.map((d) => {
-          var _a, _b, _c;
+          var _a, _b;
           const description = d.values.join("\n");
           const parts = description.split(/→|\n/).map((s) => s.trim()).filter((s) => s);
           const series = (_a = this.dataProvider.data.seriesWithEpisodes.get(d.series)) == null ? void 0 : _a.series;
-          const seriesName = this.dataProvider.data.seriesWithEpisodes.size == 1 || ((_b = this.selectedSeries) == null ? void 0 : _b.size) == 1 ? "" : (_c = series == null ? void 0 : series.shortTitle) != null ? _c : "";
+          const seriesName = this.dataProvider.data.seriesWithEpisodes.size == 1 || this.controls.seriesSelect.values.length == 1 ? "" : (_b = series == null ? void 0 : series.shortTitle) != null ? _b : "";
           const episode = series == null ? void 0 : series.episodes.find((e) => e.id === d.episode);
           let html = "";
           let currentSpeaker = "";
@@ -14244,16 +14267,16 @@ var init_app = __esm({
         const statsEl = document.getElementById("stats");
         const keyEntries = this.dataProvider.searchEntries({
           searchKeys: this.searchTerm,
-          series: this.selectedSeries,
-          episodes: this.selectedEpisodes,
-          tags: this.selectedTags
+          series: new Set(this.controls.seriesSelect.values),
+          episodes: new Set(this.controls.episodeSelect.values),
+          tags: new Set(this.controls.tagSelect.values)
         });
         const mentionEntries = this.dataProvider.searchEntries({
           excludeKeys: new Set(keyEntries.map((e) => e.key)),
           searchEntityData: this.searchTerm,
-          series: this.selectedSeries,
-          episodes: this.selectedEpisodes,
-          tags: this.selectedTags
+          series: new Set(this.controls.seriesSelect.values),
+          episodes: new Set(this.controls.episodeSelect.values),
+          tags: new Set(this.controls.tagSelect.values)
         });
         statsEl.textContent = `Showing ${keyEntries.length} direct ${keyEntries.length === 1 ? "match" : "matches"} and ${mentionEntries.length} related ${mentionEntries.length === 1 ? "entry" : "entries"}.`;
         this.renderResults(keyResultsEl, keyEntries);
