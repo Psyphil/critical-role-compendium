@@ -13980,6 +13980,74 @@ var init_providers = __esm({
   }
 });
 
+// src/domain/controls/modeswitch.ts
+var ModeSwitch;
+var init_modeswitch = __esm({
+  "src/domain/controls/modeswitch.ts"() {
+    "use strict";
+    ModeSwitch = class {
+      constructor(selector, options) {
+        this.options = options;
+        this.currentButton = null;
+        if (typeof selector === "string") {
+          this.inputElement = $(selector);
+        } else if (selector instanceof HTMLInputElement) {
+          this.inputElement = $(selector);
+        } else {
+          throw new Error("Dropdown selector must be a string or HTMLInputElement");
+        }
+        this.inputElement.attr("style", "pointer-events: none !important;position: absolute !important;display: block !important;opacity: 0 !important;border: none;z-index: 0 !important;");
+        this.items = /* @__PURE__ */ new Map([
+          [this.options.defaultItem.key, this.options.defaultItem.icon],
+          [this.options.alternativeItem.key, this.options.alternativeItem.icon]
+        ]);
+        const selected = this.inputElement.prop("checked");
+        this.changeMode(selected ? this.options.alternativeItem.key : this.options.defaultItem.key);
+      }
+      changeMode(mode) {
+        this.inputElement.prop("checked", mode != this.options.defaultItem.key);
+        this.options.setModeHandler.call(this, mode);
+        this.createButton(mode);
+      }
+      createButton(mode) {
+        var _a;
+        mode = this.not(mode);
+        (_a = this.currentButton) == null ? void 0 : _a.remove();
+        this.currentButton = $(`<button class="btn" aria-label="Activate ${mode} mode">${this.items.get(mode)}</button>`).insertAfter(this.inputElement).on("click", (_) => {
+          this.changeMode(mode);
+        });
+      }
+      not(mode) {
+        return mode == this.options.defaultItem.key ? this.options.alternativeItem.key : this.options.defaultItem.key;
+      }
+    };
+  }
+});
+
+// src/domain/controls/lightswitch.ts
+var LightSwitch;
+var init_lightswitch = __esm({
+  "src/domain/controls/lightswitch.ts"() {
+    "use strict";
+    init_modeswitch();
+    ((LightSwitch2) => {
+      function Init(selector, defaultTheme, setTheme) {
+        const icons = {
+          light: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-4ym8mv"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>',
+          dark: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-4ym8mv"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>'
+        };
+        const alternativeTheme = defaultTheme == "light" ? "dark" : "light";
+        return new ModeSwitch(selector, {
+          defaultItem: { key: defaultTheme, icon: icons[defaultTheme] },
+          alternativeItem: { key: alternativeTheme, icon: icons[alternativeTheme] },
+          setModeHandler: setTheme
+        });
+      }
+      LightSwitch2.Init = Init;
+    })(LightSwitch || (LightSwitch = {}));
+  }
+});
+
 // src/domain/controls/selectpicker.ts
 var SelectPickerOptionsDefaults, SelectPicker;
 var init_selectpicker = __esm({
@@ -14128,6 +14196,7 @@ var init_selectpicker = __esm({
 var init_controls = __esm({
   "src/domain/controls/index.ts"() {
     "use strict";
+    init_lightswitch();
     init_selectpicker();
   }
 });
@@ -14163,6 +14232,7 @@ var init_app = __esm({
         this.controls.filterBadges = document.getElementById("filter-wrapper");
         this.controls.results = document.getElementById("key-results");
         this.controls.search = document.getElementById("search-input");
+        LightSwitch.Init("#dark-mode-checkbox", "light", (theme) => document.documentElement.setAttribute("data-theme", theme));
       }
       async initAsync() {
         this.controls.results.innerHTML = '<div class="loading">Loading episodes...</div>';
@@ -14251,7 +14321,7 @@ var init_app = __esm({
               currentSpeaker = part;
             } else {
               if (currentSpeaker) {
-                html += `<span class="speaker"><span>${this.escapeHtml(currentSpeaker)}</span>${this.filterPill("series", seriesName, "mini")}${this.filterPill("episode", (_a2 = episode == null ? void 0 : episode.shortTitle) != null ? _a2 : "", "mini")}</span>`;
+                html += `<span class="speaker"><span>${this.escapeHtml(currentSpeaker)}</span>${this.filterPill("series", seriesName, "mini", "light")}${this.filterPill("episode", (_a2 = episode == null ? void 0 : episode.shortTitle) != null ? _a2 : "", "mini", "light")}</span>`;
                 currentSpeaker = "";
               }
               html += `<p>${this.highlightText(this.escapeHtml(part), this.searchTerm)}</p>`;
@@ -14291,7 +14361,7 @@ var init_app = __esm({
           const tagsFlat = Array.from(new Set(entry.tags.flatMap((t) => t.values)));
           const tagsHtml = tagsFlat.length > 0 ? (
             // `<div class="entry-tags">` +
-            `${tagsFlat.map((tag) => this.filterPill("tag", tag)).join("")}`
+            `${tagsFlat.map((tag) => this.filterPill("tag", tag, "solid")).join("")}`
           ) : "";
           return `
                 <div class="entry-card">
@@ -14319,9 +14389,9 @@ var init_app = __esm({
         }
         return text;
       }
-      filterPill(type, value, className = "") {
+      filterPill(type, value, ...classes) {
         if (!value) return "";
-        return `<span class="filter-pill ${type} ${className}">${this.escapeHtml(value)}</span>`;
+        return `<span class="filter-pill ${type} ${classes == null ? void 0 : classes.join(" ")}">${this.escapeHtml(value)}</span>`;
       }
     };
     new CampaignLookup();

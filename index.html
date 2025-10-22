@@ -12,11 +12,19 @@
   <body>
     <div class="container py-4">
       <header class="mb-3 text-center">
-        <h1>Critical Role Compendium</h1>
+        <h1>CRITICAL ROLE Compendium</h1>
         <p class="subtitle">Search characters, locations, objects, and lore</p>
       </header>
 
-      <div class="search-row m-auto" style="max-width: 900px">
+      <div class="search-row mb-3 mx-auto" style="max-width: 900px">
+        <div class="options-wrapper">
+          <input
+            id="dark-mode-checkbox"
+            autocomplete="on"
+            type="checkbox"
+            value=""
+          />
+        </div>
         <div class="search-wrapper w-100">
           <input
             id="search-input"
@@ -26,7 +34,7 @@
             autofocus
           />
         </div>
-        <div id="filter-wrapper" class="mb-3">
+        <div id="filter-wrapper">
           <div class="filter-group">
             <select
               id="series-select"
