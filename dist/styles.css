@@ -53,7 +53,6 @@ header {
 
 h1 {
   font-family: itc-benguiat-condensed-bold;
-  font-size: 7em;
   color: var(--font-color-1);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
@@ -320,11 +319,23 @@ mark {
   color: var(--white);
 }
 
-/* small responsive tweak */
-@media (max-width: 680px) {
-  #filter-wrapper .filter-group {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 6px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 7rem;
   }
 }
