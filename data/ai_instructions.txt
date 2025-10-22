@@ -28,7 +28,7 @@ Exclude lines that are solely:
 
 Quote lines from the transcript and add them as descriptions, following the format of the example file (_example.json):
 
-*   Start each description with the name of the person quoted. The speaker's name must be followed immediately by a literal newline character (\n) and then the quote's text. Do not add any colon, space, or other punctuation between the speaker's name and the newline.
+*   Start each description with the name of the speaker. The speaker's name **MUST** be followed *immediately* by a literal newline character (`\n`). The required format is strictly `SPEAKER\nQUOTE TEXT`. There must be **NO** colon, **NO** space, and **NO** other characters between the speaker's name and the `\n`.
 *   Combine lines spoken by the same speaker without interruption in-between, separated by `\n`.
 *   Keep the **full line** as a verbatim quote  of each line containing information. All information must be a direct quote from the text, with only minor grammatical fixes (e.g. repeated sentences).
 *   Ensure that any double quotes (") that appear within the quoted line (e.g., for dialogue) are escaped with a backslash (\), as they are in the transcript, so that the resulting JSON string remains valid
