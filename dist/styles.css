@@ -67,6 +67,7 @@ h1 {
   padding: 6px 12px;
   display: flex;
   flex-direction: row-reverse;
+  margin-top: -50px;
 }
 
 .options-wrapper .btn {
