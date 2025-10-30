@@ -1,26 +1,46 @@
 {
-	"series": [
-		{
-			"key": "campaign_4",
-			"title": "Campaign 4",
-			"shortTitle": "Campaign 4",
-			"episodes": [
-				{
-					"id": 1,
-					"title": "Episode 1: The Fall of Thjazi Fang",
-					"shortTitle": "Episode 1"
-				},
-				{
-					"id": 2,
-					"title": "Episode 2: Broken Wing",
-					"shortTitle": "Episode 2"
-				},
-				{
-					"id": 3,
-					"title": "Episode 3: The Snipping of Shears",
-					"shortTitle": "Episode 3"
-				}
-			]
-		}
-	]
+  "tagConversions": {
+    "Allies": "NPCs",
+    "Antagonists": "NPCs",
+    "Other": "NPCs",
+    "Familiars/Companions": "Companions",
+    "Places": "Locations"
+  },
+  "series": [
+    {
+      "key": "campaign_4",
+      "title": "Campaign 4",
+      "shortTitle": "Campaign 4",
+      "nav": "C4Arc1-storynav",
+      "rss": "https://pocketbeacon.memberfulcontent.com/rss/24418?auth=",
+      "episodes": [
+        {
+          "id": 1,
+          "title": "C4 E001 | The Fall of Thjazi Fang",
+          "shortTitle": "C4 E001"
+        },
+        {
+          "id": 2,
+          "title": "C4 E002 | Broken Wing",
+          "shortTitle": "C4 E002"
+        },
+        {
+          "id": 3,
+          "title": "C4 E003 | The Snipping of Shears",
+          "shortTitle": "C4 E003"
+        },
+        {
+          "id": 4,
+          "title": "C4 E004 | Stone-Faced",
+          "shortTitle": "C4 E004"
+        }
+      ],
+      "content": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  ]
 }

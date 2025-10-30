@@ -1,0 +1,2952 @@
+{
+	"entities": [
+		{
+			"key": "Aetheon",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Aetheon",
+				"https://criticalrole.miraheze.org/wiki/Aetheon"
+			],
+			"tags": {
+				"2": [
+					"Imprisoned",
+					"Creatures",
+					"Angel"
+				]
+			},
+			"depiction": {
+				"2": "An ancient, 30-foot tall angel with featherless wings, imprisoned and \"milked\" for his blood by House Halovar in a machine called the Prismatic Retort. He is the grandfather of Wicander Halovar.",
+				"3": "An ancient angel, servant of the dead sun god Tansul. Imprisoned by House Halovar, his 'blood' is the source of the Candescent Creed's Filament. He fathered Godard Halovar via a magic ritual performed by Yanessa Halovar, making him Wicander's grandfather."
+			},
+			"connections": {
+				"2": [
+					"Grandfather of Wicander Halovar",
+					"Husband of Yanessa Halovar",
+					"Father of Godard Halovar",
+					"Imprisoned within the Prismatic Retort by House Halovar"
+				],
+				"3": [
+					"Servant of the dead sun god, Tansul"
+				]
+			}
+		},
+		{
+			"key": "Agony",
+			"depiction": {
+				"2": "A clumsy demon with bright blue skin and spectacles, dressed in monkish robes. She is the sister of Tyranny, Enmity, and Cruelty, and serves House Halovar as an Aspirant."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Sister of Tyranny",
+					"Sister of Enmity",
+					"Sister of Cruelty",
+					"Serves House Halovar"
+				],
+				"3": [
+					"Maker is Ksha'aravi, High Prince of Demonkind"
+				]
+			},
+			"tags": {
+				"2": [
+					"NPC",
+					"Demon",
+					"Fiend"
+				]
+			}
+		},
+		{
+			"key": "Alogar Fang",
+			"depiction": {
+				"1": "The son of Halandil Fang and Thaisha Lloy, and brother to Shadia. He is not present at his uncle's execution or wake.",
+				"3": "The son of Halandil Fang and Thaisha Lloy. A warrior who chose to \"protect this world with his blade.\" His sister Shadia is worried for him."
+			},
+			"alias": {
+				"1": [
+					"Al"
+				]
+			},
+			"connections": {
+				"1": [
+					"Son of Halandil Fang",
+					"Son of Thaisha Lloy",
+					"Brother of Shadia Fang",
+					"Half-brother of Hero Fang"
+				]
+			},
+			"tags": {
+				"1": [
+					"NPC",
+					"Orc"
+				],
+				"3": [
+					"Warrior"
+				]
+			}
+		},
+		{
+			"key": "Angel",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Angel",
+				"https://criticalrole.miraheze.org/wiki/Angel"
+			],
+			"tags": {
+				"2": [
+					"Creatures",
+					"Celestial"
+				]
+			},
+			"depiction": {
+				"2": "Celestials who came into existence with the gods. After the gods' death in the Shapers' War, they went feral, becoming ravening monsters. To encounter one is now considered a death sentence."
+			},
+			"connections": {
+				"3": [
+					"Aetheon, a celestial servant of the sun god Tansul, is the source of the Candescent Creed's Filament."
+				]
+			}
+		},
+		{
+			"key": "Aramán",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Aramán",
+				"https://criticalrole.miraheze.org/wiki/Aramán"
+			],
+			"tags": {
+				"1": [
+					"Locations",
+					"Worlds"
+				]
+			},
+			"depiction": {
+				"1": "The world in which Campaign 4 is set."
+			},
+			"connections": {}
+		},
+		{
+			"key": "Aranessa Royce",
+			"alias": {
+				"1": [
+					"Lady Aranessa"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Aranessa_Royce",
+				"https://criticalrole.miraheze.org/wiki/Aranessa_Royce"
+			],
+			"tags": {
+				"1": [
+					"NPCs",
+					"Human",
+					"Nobility",
+					"House Royce"
+				]
+			},
+			"depiction": {
+				"1": "A human noblewoman of House Royce, in her forties. The grieving widow of Thjazi Fang and a childhood friend of Sir Julien Davinos.",
+				"4": "A human noblewoman of House Royce, widow of Thjazi Fang. A childhood friend of Sir Julien Davinos, she possesses druidic magical abilities, including casting spells like Haste and Tree Stride to aid her allies."
+			},
+			"connections": {
+				"1": [
+					"Widow of Thjazi Fang",
+					"Childhood friend of Sir Julien Davinos",
+					"Member of House Royce"
+				],
+				"3": [
+					"Instructed Sir Julien Davinos to find Occtis Tachonis."
+				]
+			}
+		},
+		{
+			"key": "Azgra",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Azgra",
+				"https://criticalrole.miraheze.org/wiki/Azgra"
+			],
+			"tags": {
+				"1": [
+					"NPCs",
+					"Shapers"
+				]
+			},
+			"depiction": {
+				"1": "An ancient Shaper for whom a theater in Dol-Makjar, the Dithyramb of Azgra, is named.",
+				"3": "An ancient, tyrannical Shaper god who was worshipped by the orcs of Dol-Makjar in a dithyramb later named for him. He was fought and presumably killed during the Shapers' War."
+			},
+			"connections": {}
+		},
+		{
+			"key": "Azune Nayar",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Azune_Nayar",
+				"https://criticalrole.miraheze.org/wiki/Azune_Nayar"
+			],
+			"tags": {
+				"1": [
+					"Player characters",
+					"Human",
+					"Sorcerer"
+				],
+				"3": [
+					"Schemers"
+				]
+			},
+			"depiction": {
+				"1": "A proud human man, 5'10\", with medium brown skin and coppery auburn hair. An Arcane Marshal of the Revolutionary Guard in Dol-Makjar, he wears full armor with his arms exposed, revealing a tattoo. Played by Luis Carazo."
+			},
+			"connections": {
+				"1": [
+					"Arcane Marshal of the Revolutionary Guard",
+					"Served in the Falconer's Rebellion"
+				],
+				"2": [
+					"Father passed him off to mercenaries as a child"
+				],
+				"3": [
+					"Met with Lord Knight Einfasen of the Sundered Houses."
+				]
+			}
+		},
+		{
+			"key": "Bolaire Lathalia",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Bolaire_Lathalia",
+				"https://criticalrole.miraheze.org/wiki/Bolaire_Lathalia"
+			],
+			"tags": {
+				"1": [
+					"Player characters",
+					"Curator"
+				],
+				"3": [
+					"Schemers"
+				]
+			},
+			"depiction": {
+				"1": "A figure who wears a gray, expressive clay mask with large, empty black eyes. He has long, curly, dark red hair and dresses in fine black leather and suede over deep crimson. He is a curator at a museum. Played by Taliesin Jaffe.",
+				"2": "A figure who wears a gray, expressive clay mask. He has long, curly, dark red hair and dresses in fine black leather and suede. He is the curator of the Lloy Wing at The Archanade museum. Played by Taliesin Jaffe.",
+				"4": "A sentient magical mask created during the Shapers' War to kill the goddess Rauwyn. It possesses host bodies, its current one being a former criminal named Aubrus Drime. Its true form is a gray clay mask with empty eyes. Played by Taliesin Jaffe."
+			},
+			"connections": {
+				"1": [
+					"Curator at a museum"
+				],
+				"2": [
+					"Curator of the Lloy Wing at The Archanade",
+					"Procured artifacts for Thjazi Fang",
+					"Assisted Vaelus in entering Dol-Makjar"
+				],
+				"3": [
+					"Acquainted with Olgud Akarat through The Archanade's Lyceum."
+				],
+				"4": [
+					"Blackmailed and forced to work for Thjazi Fang",
+					"Possesses the body of the criminal Aubrus Drime",
+					"Has unseen 'brothers and sisters' (other masks)"
+				]
+			}
+		},
+		{
+			"key": "Brethren Hall",
+			"depiction": {
+				"2": "The headquarters of the Revolutionary Guard, located in the Rubble Cliff neighborhood. It is dedicated to the legacy of the Shapers' War."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Headquarters of the Revolutionary Guard"
+				]
+			},
+			"tags": {
+				"2": [
+					"Locations",
+					"Government building",
+					"Military"
+				]
+			}
+		},
+		{
+			"key": "Broken Wing",
+			"depiction": {
+				"2": "A famous song from the early, hopeful days of the Falconer's Rebellion, played in taverns and military tents by the rebels."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Associated with the Falconer's Rebellion",
+					"Known by Hal and Hero Fang"
+				]
+			},
+			"tags": {
+				"2": [
+					"Items",
+					"Song"
+				]
+			}
+		},
+		{
+			"key": "Candescent Creed",
+			"alias": {
+				"2": [
+					"The CC",
+					"Candy Creed"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Candescent_Creed",
+				"https://criticalrole.miraheze.org/wiki/Candescent_Creed"
+			],
+			"tags": {
+				"1": [
+					"Factions",
+					"Religions"
+				]
+			},
+			"depiction": {
+				"1": "A religious faction in Dol-Makjar associated with House Halovar. Led by the Photarch, the matriarch of House Halovar, they worship a divinity called \"the Light.\"",
+				"3": "A fraudulent religious faction created by Yanessa Halovar as a political and financial tool. They worship 'the Light' and use a substance called the Filament, which is secretly harvested from the imprisoned angel Aetheon."
+			},
+			"connections": {
+				"1": [
+					"Associated with House Halovar"
+				],
+				"3": [
+					"Secretly allied with the demon prince Ksha'aravi"
+				]
+			}
+		},
+		{
+			"key": "Caravan Hill",
+			"depiction": {
+				"2": "A lower neighborhood in Dol-Makjar that serves as a hub for merchant caravans. It is home to The Guard Tower tavern, a known Crow Keepers haunt."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Location of The Guard Tower"
+				]
+			},
+			"tags": {
+				"2": [
+					"Locations",
+					"Dol-Makjar",
+					"Neighborhoods"
+				]
+			}
+		},
+		{
+			"key": "Casimir Gavendale",
+			"alias": {
+				"1": [
+					"Cas"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Casimir_Gavendale",
+				"https://criticalrole.miraheze.org/wiki/Casimir_Gavendale"
+			],
+			"tags": {
+				"1": [
+					"NPCs",
+					"Torn Banner"
+				],
+				"2": [
+					"Crow Keepers"
+				]
+			},
+			"depiction": {
+				"1": "An old member of the Torn Banner mercenary company who was supposed to provide a wagon for Thjazi Fang's escape.",
+				"2": "An old member of the Torn Banner who was part of Thjazi Fang's failed escape plan. He is also a member of the Crow Keepers thieves' guild. A flashback shows him saving Thjazi during the Falconer's Rebellion."
+			},
+			"connections": {
+				"1": [
+					"Member of the Torn Banner"
+				],
+				"2": [
+					"Member of the Crow Keepers",
+					"Befriended Thjazi Fang in the Torn Banner",
+					"Saved Thjazi Fang during the Falconer's Rebellion"
+				],
+				"3": [
+					"Previously worked at the Underwallen & Sisters wainwrights",
+					"Acquired a deed to a stronghouse in Gormalay"
+				]
+			}
+		},
+		{
+			"key": "Chamber of Lords-Advisory",
+			"alias": {},
+			"links": [],
+			"tags": {
+				"1": [
+					"NPCs",
+					"Factions",
+					"Government"
+				]
+			},
+			"depiction": {
+				"1": "A governing body in Dol-Makjar composed of nobles from the Sundered Houses. It serves as an advisory council to the Revolutionary Council."
+			},
+			"connections": {
+				"1": [
+					"Advisory to the Revolutionary Council"
+				],
+				"4": [
+					"Lady Amariya Cormoray is one of its representatives"
+				]
+			}
+		},
+		{
+			"key": "Crow Keepers",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Crow_Keepers",
+				"https://criticalrole.miraheze.org/wiki/Crow_Keepers"
+			],
+			"tags": {
+				"1": [
+					"Factions",
+					"Thieves' guilds"
+				]
+			},
+			"depiction": {
+				"1": "One of the oldest thieves' guilds in Dol-Makjar, suspected by Kattigan Vale of being involved in the attack on Thimble's hideout.",
+				"2": "One of the oldest thieves' guilds in Dol-Makjar. They have a code of conduct and are known to frequent The Guard Tower tavern in Caravan Hill. They are suspected of attacking Thimble's hideout."
+			},
+			"connections": {
+				"3": [
+					"Led by a guildmaster named Solomon",
+					"Operate out of The Guard Tower tavern"
+				]
+			}
+		},
+		{
+			"key": "Cruelty",
+			"depiction": {
+				"2": "A demon with ruby red lips, small silvery horns, and a whipping tail. She is the sister of Tyranny, Enmity, and Agony, and serves House Halovar as an Aspirant."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Sister of Tyranny",
+					"Sister of Enmity",
+					"Sister of Agony",
+					"Serves House Halovar"
+				],
+				"3": [
+					"Maker is Ksha'aravi, High Prince of Demonkind"
+				]
+			},
+			"tags": {
+				"2": [
+					"NPC",
+					"Demon",
+					"Fiend"
+				]
+			}
+		},
+		{
+			"key": "Davrasi Gaunt",
+			"depiction": {
+				"1": "A sallow-faced arcanist with a leather vest, no shirt, and a ruffle tie. An associate of Thjazi Fang and Murray Mag'Nesson who deals in items such as skulls."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"Associate of Thjazi Fang",
+					"Acquaintance of Murray Mag'Nesson"
+				]
+			},
+			"tags": {
+				"1": [
+					"NPC",
+					"Human",
+					"Arcanist"
+				]
+			}
+		},
+		{
+			"key": "Dol-Makjar",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Dol-Makjar",
+				"https://criticalrole.miraheze.org/wiki/Dol-Makjar"
+			],
+			"tags": {
+				"1": [
+					"Locations",
+					"Kahad",
+					"Cities"
+				]
+			},
+			"depiction": {
+				"1": "A city of gray stone at the eastern edge of Kahad, built along the River Vrosh. It is the seat of the Revolutionary Council and is known for its history of heroism, particularly from the Shapers' War."
+			},
+			"connections": {
+				"1": [
+					"Location of The Rookery",
+					"Location of the Guardian Wall"
+				],
+				"2": [
+					"Location of The Archanade",
+					"Location of The Guard Tower tavern"
+				],
+				"3": [
+					"Location of the Palazzo Davinos",
+					"Location of The Hallowed Round",
+					"Location of Obrimus Manor"
+				],
+				"4": [
+					"Location of The Fray neighborhood",
+					"Location of the Potter's Field tavern",
+					"Location of the Lloy Estate"
+				]
+			}
+		},
+		{
+			"key": "Dol-Rungja",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Dol-Rungja"
+			],
+			"tags": {
+				"1": [
+					"Locations",
+					"Kahad"
+				]
+			},
+			"depiction": {
+				"1": "A settlement in the region of Kahad where the family of the orcish warrior Loza Blade resides."
+			},
+			"connections": {
+				"1": [
+					"Home of Loza Blade's family"
+				],
+				"2": [
+					"Retirement home of Loza Blade",
+					"Home of Thaisha Lloy's grandmother"
+				]
+			}
+		},
+		{
+			"key": "Dvalmar Pass",
+			"depiction": {
+				"2": "A mountain pass where resupply carriages for House Davinos and House Royce were stopped."
+			},
+			"alias": {},
+			"connections": {
+				"4": [
+					"Site of a confrontation between House Royce carriages and House Tachonis forces, according to a vision"
+				]
+			},
+			"tags": {
+				"2": [
+					"Locations",
+					"Geographical features",
+					"Passes"
+				]
+			}
+		},
+		{
+			"key": "Edrian Fazir",
+			"depiction": {
+				"2": "An older, rotund human man who is the Captain of the Arcane Marshals, a division of the Revolutionary Guard."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Captain of the Arcane Marshals",
+					"Superior of Azune Nayar"
+				]
+			},
+			"tags": {
+				"2": [
+					"NPC",
+					"Human",
+					"Revolutionary Guard",
+					"Arcane Marshal"
+				]
+			}
+		},
+		{
+			"key": "Ellipides Tallbarrel",
+			"depiction": {
+				"2": "A halfling professor and the Dean of the Penteveral. He is forced to resign his position by the Chamber of Lords-Advisory."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Dean of the Penteveral",
+					"Mentor to Murray Mag'Nesson"
+				]
+			},
+			"tags": {
+				"2": [
+					"NPC",
+					"Halfling",
+					"Dean",
+					"Penteveral"
+				]
+			}
+		},
+		{
+			"key": "Elodie",
+			"depiction": {
+				"1": "A beautiful human merchant woman in her early forties. She is Halandil Fang's former partner and the mother of their half-orc daughter, Hero."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"Mother of Hero Fang",
+					"Former partner of Halandil Fang"
+				]
+			},
+			"tags": {
+				"1": [
+					"NPC",
+					"Human",
+					"Merchant"
+				]
+			}
+		},
+		{
+			"key": "Enmity",
+			"depiction": {
+				"1": "A demon Aspirant of the Candescent Creed and sibling to Tyranny. Has deep, speckled red and black skin and ram-like curling horns.",
+				"2": "A towering demon Aspirant of the Candescent Creed and sister to Tyranny, Cruelty, and Agony. She has deep, speckled red and black skin and ram-like curling horns."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"Sibling of Tyranny",
+					"Aspirant of the Candescent Creed"
+				],
+				"2": [
+					"Sibling of Cruelty",
+					"Sibling of Agony"
+				],
+				"3": [
+					"Maker is Ksha'aravi, High Prince of Demonkind"
+				]
+			},
+			"tags": {
+				"1": [
+					"NPC",
+					"Demon",
+					"Fiend",
+					"Candescent Creed"
+				]
+			}
+		},
+		{
+			"key": "Ethrand Tachonis",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Ethrand_Tachonis",
+				"https://criticalrole.miraheze.org/wiki/Ethrand_Tachonis"
+			],
+			"tags": {
+				"3": [
+					"NPCs",
+					"NPCs",
+					"House Tachonis"
+				]
+			},
+			"depiction": {
+				"3": "The brother of Occtis Tachonis. Leading a squad of ghouls on behalf of House Tachonis, he ambushes Occtis at the Palazzo Davinos, wielding an artifact that appears to be the Stone of Nightsong."
+			},
+			"connections": {
+				"3": [
+					"Brother of Occtis Tachonis",
+					"Commands a squad of ghouls"
+				],
+				"4": [
+					"Murderer of his brother, Occtis Tachonis"
+				]
+			}
+		},
+		{
+			"key": "Falconer's Rebellion",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Falconer's_Rebellion",
+				"https://criticalrole.miraheze.org/wiki/Falconer's_Rebellion"
+			],
+			"tags": {
+				"1": [
+					"Events",
+					"Wars"
+				]
+			},
+			"depiction": {
+				"1": "A past war or rebellion. Many notable figures fought in it, including Thjazi Fang, Azune Nayar, Teor Pridesire, Loza Blade, and Kattigan Vale."
+			},
+			"connections": {
+				"3": [
+					"The Falcon's Rest in Dol-Makjar is a monument to its fallen."
+				]
+			}
+		},
+		{
+			"key": "Farramh",
+			"depiction": {
+				"1": "An orcish grieving custom in Kahad, essentially a wake held as soon as possible after a death, where the body is put on display for respects."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"Orcish custom in Kahad"
+				]
+			},
+			"tags": {
+				"1": [
+					"Events",
+					"Customs",
+					"Orcish"
+				]
+			}
+		},
+		{
+			"key": "Filament",
+			"depiction": {
+				"2": "A glowing white liquid substance used by the Candescent Creed for rituals and magic. It is created by the Prismatic Retort and can be tattooed onto skin.",
+				"3": "A glowing white liquid; the harvested celestial essence of the imprisoned angel Aetheon. Used by the Candescent Creed for rituals and magic, it can be diluted using an alchemical element from the D'Antonio vineyards."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Created by the Prismatic Retort",
+					"Used by the Candescent Creed"
+				]
+			},
+			"tags": {
+				"2": [
+					"Items",
+					"Magical substance"
+				]
+			}
+		},
+		{
+			"key": "Gallant",
+			"depiction": {
+				"2": "A young gnomish grad student at the Penteveral who informs Murray Mag'Nesson of Dean Tallbarrel's resignation."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Student at the Penteveral"
+				]
+			},
+			"tags": {
+				"2": [
+					"NPC",
+					"Gnome",
+					"Student",
+					"Penteveral"
+				]
+			}
+		},
+		{
+			"key": "Ghoul",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Ghoul",
+				"https://criticalrole.miraheze.org/wiki/Ghoul"
+			],
+			"tags": {
+				"3": [
+					"Creatures",
+					"Undead"
+				]
+			},
+			"depiction": {
+				"3": "Undead creatures in the service of House Tachonis. A squad of six ghouls, led by Ethrand Tachonis, was sent to capture Occtis Tachonis at the Palazzo Davinos.",
+				"4": "Undead creatures in the service of House Tachonis. A squad was sent to capture Occtis Tachonis, magically enhanced to be stronger and more resilient than normal ghouls."
+			},
+			"connections": {
+				"3": [
+					"In the service of House Tachonis"
+				]
+			}
+		},
+		{
+			"key": "Godard Halovar",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Godard_Halovar",
+				"https://criticalrole.miraheze.org/wiki/Godard_Halovar"
+			],
+			"tags": {
+				"1": [
+					"NPCs",
+					"Human",
+					"House Halovar",
+					"Candescent Creed"
+				]
+			},
+			"depiction": {
+				"1": "An enormous, powerful man with white hair, son of the Photarch of the Candescent Creed. He has a notable spinal curvature and wears a black blindfold. He is Wicander Halovar's father.",
+				"2": "An enormous, powerful man with white hair, son of the Photarch of the Candescent Creed. His eyes are lidless and emit beams of light, which he usually keeps hidden behind a black blindfold. He is Wicander Halovar's father.",
+				"3": "Son of Yanessa Halovar and the angel Aetheon, born via a magic ritual. An enormous man with white hair and light-emitting eyes, he also possesses stunted wings that can sprout luminous feathers. He is Wicander Halovar's father."
+			},
+			"connections": {
+				"1": [
+					"Son of the Photarch of the Candescent Creed",
+					"Father of Wicander Halovar"
+				],
+				"3": [
+					"Son of Aetheon"
+				]
+			}
+		},
+		{
+			"key": "Gormalay",
+			"alias": {},
+			"links": [],
+			"tags": {
+				"3": [
+					"Locations",
+					"Timmony"
+				]
+			},
+			"depiction": {
+				"3": "A settlement located in the northern region of Timmony. The rogue Casimir Gavendale acquired a deed to a stronghouse there, intending to flee there after betraying Thjazi Fang's group."
+			},
+			"connections": {
+				"3": [
+					"Location of a stronghouse owned by Casimir Gavendale"
+				]
+			}
+		},
+		{
+			"key": "Guardian Wall",
+			"depiction": {
+				"1": "A massive wall at the eastern edge of Dol-Makjar, featuring 80-foot-tall statues of heroes from the Shapers' War carved into its masonry."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"Landmark in Dol-Makjar"
+				]
+			},
+			"tags": {
+				"1": [
+					"Locations",
+					"Dol-Makjar",
+					"Monuments"
+				]
+			}
+		},
+		{
+			"key": "Hala",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Hala"
+			],
+			"tags": {
+				"1": [
+					"Companions",
+					"Beasts",
+					"Druid companions"
+				]
+			},
+			"depiction": {
+				"1": "A deer that is the wild companion of the druid Thaisha Lloy. She can be summoned via Wild Shape and can continue performing rites in Thaisha's stead."
+			},
+			"connections": {
+				"1": [
+					"Companion of Thaisha Lloy"
+				]
+			}
+		},
+		{
+			"key": "Halandil Fang",
+			"alias": {
+				"1": [
+					"Hal"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Halandil_Fang",
+				"https://criticalrole.miraheze.org/wiki/Halandil_Fang"
+			],
+			"tags": {
+				"1": [
+					"Player characters",
+					"Orc",
+					"Bard"
+				]
+			},
+			"depiction": {
+				"1": "An older orc gentleman with dark hair streaked with white and kind smile lines. A bard and theater owner in Dol-Makjar, he is the brother of the executed Thjazi Fang. Played by Liam O'Brien."
+			},
+			"connections": {
+				"1": [
+					"Brother of Thjazi Fang",
+					"Father of Shadia Fang, Hero Fang, and Alogar Fang",
+					"Former partner of Thaisha Lloy",
+					"Business partner of Olgud Akarat",
+					"Owner of the Dithyramb of Azgra"
+				],
+				"3": [
+					"Wielder of the Liar's Blade"
+				]
+			}
+		},
+		{
+			"key": "Hero Fang",
+			"depiction": {
+				"1": "A young half-orc woman, the daughter of Halandil Fang and the human merchant Elodie.",
+				"2": "A young half-orc woman, daughter of Halandil Fang and the human merchant Elodie. She is a skilled lyre player who sometimes performs with her father."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"Daughter of Halandil Fang",
+					"Daughter of Elodie",
+					"Half-sister of Shadia Fang",
+					"Half-sister of Alogar Fang"
+				]
+			},
+			"tags": {
+				"1": [
+					"NPC",
+					"Half-orc"
+				],
+				"2": [
+					"Musician"
+				]
+			}
+		},
+		{
+			"key": "House Cormoray",
+			"depiction": {
+				"2": "One of the Sundered Houses of Aramán, known for its powerful sorcerers who fought for the established powers during the Falconer's Rebellion."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Member of the Sundered Houses"
+				],
+				"4": [
+					"Lady Amariya Cormoray, a member of the Chamber of Lords-Advisory, belongs to this house"
+				]
+			},
+			"tags": {
+				"2": [
+					"Factions",
+					"Nobility",
+					"Sundered Houses"
+				]
+			}
+		},
+		{
+			"key": "House Einfasen",
+			"depiction": {
+				"2": "One of the five Sundered Houses that sits on the Chamber of Lords-Advisory. They are seeking to expand their power and influence in Dol-Makjar."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Member of the Sundered Houses",
+					"Member of the Chamber of Lords-Advisory"
+				]
+			},
+			"tags": {
+				"2": [
+					"Factions",
+					"Nobility",
+					"Sundered Houses"
+				]
+			}
+		},
+		{
+			"key": "Julien Davinos",
+			"alias": {
+				"1": [
+					"Sir Julien Davinos"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Julien_Davinos",
+				"https://criticalrole.miraheze.org/wiki/Julien_Davinos"
+			],
+			"tags": {
+				"1": [
+					"Player characters",
+					"Human",
+					"Knight",
+					"House Davinos"
+				],
+				"3": [
+					"Cursed"
+				]
+			},
+			"depiction": {
+				"1": "A stoic human man in his late 20s with long, curly black hair. A knight of the Vassal House Davinos, serving House Royce. He wears a distinctive metal gauntlet on his left hand. Played by Matthew Mercer."
+			},
+			"connections": {
+				"1": [
+					"Knight of House Davinos",
+					"Vassal to House Royce",
+					"Childhood friend of Aranessa Royce",
+					"Captured Thjazi Fang at Maharlian Falls",
+					"Teacher of Alogar Fang"
+				],
+				"2": [
+					"Son of General Raimond Davinos"
+				],
+				"3": [
+					"Cursed by an unknown source"
+				],
+				"4": [
+					"His aides Jahar, Ilondria, and Mardonus were killed by Primus Tachonis"
+				]
+			}
+		},
+		{
+			"key": "Kahad",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Kahad",
+				"https://criticalrole.miraheze.org/wiki/Kahad"
+			],
+			"tags": {
+				"1": [
+					"Locations",
+					"Regions"
+				]
+			},
+			"depiction": {
+				"1": "A region of Aramán. The city of Dol-Makjar is located at its eastern edge. It also contains the settlements of Dol-Rungja and Pinebrough."
+			},
+			"connections": {
+				"1": [
+					"Contains Dol-Makjar",
+					"Contains Dol-Rungja",
+					"Contains Pinebrough"
+				],
+				"3": [
+					"Contains The Hallowed Round theater.",
+					"Contains the Tintazy Wood."
+				]
+			}
+		},
+		{
+			"key": "Kattigan Vale",
+			"alias": {
+				"1": [
+					"Kat"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Kattigan_Vale",
+				"https://criticalrole.miraheze.org/wiki/Kattigan_Vale"
+			],
+			"tags": {
+				"1": [
+					"Player characters",
+					"Human",
+					"Ranger",
+					"Bounty hunter",
+					"Player characters",
+					"Human",
+					"Ranger",
+					"Bounty hunter"
+				],
+				"3": [
+					"Seekers"
+				]
+			},
+			"depiction": {
+				"1": "A human ranger and bounty hunter played by Robbie Daymond. An older, weathered man of 6'4\" who lives a wild life with his wolf companion, Wulfric. Wears a cowl and hood."
+			},
+			"connections": {
+				"1": [
+					"Served in the Falconer's Rebellion",
+					"Served in the Falconer's Rebellion",
+					"Companion of Wulfric"
+				]
+			}
+		},
+		{
+			"key": "Kora",
+			"depiction": {
+				"2": "A dwarven woman with platinum blonde hair. She is chosen by the Chamber of Lords-Advisory to replace Ellipides Tallbarrel as Dean of the Penteveral."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Appointed Dean of the Penteveral"
+				]
+			},
+			"tags": {
+				"2": [
+					"NPC",
+					"Dwarf",
+					"Dean",
+					"Penteveral"
+				]
+			}
+		},
+		{
+			"key": "Liar's Blade",
+			"alias": {},
+			"links": [
+				"https://criticalrole.miraheze.org/wiki/Liar's_Blade"
+			],
+			"tags": {
+				"3": [
+					"Items",
+					"Weapons"
+				]
+			},
+			"depiction": {
+				"3": "A scimitar forged by the Lloy family, formerly wielded by Thjazi Fang and now possessed by Halandil Fang. It has a distinctive maker's mark that looks like a smirking, half-masked face."
+			},
+			"connections": {
+				"3": [
+					"Formerly wielded by Thjazi Fang",
+					"Currently possessed by Halandil Fang",
+					"Forged by the Lloy family"
+				]
+			}
+		},
+		{
+			"key": "Loza Blade",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Loza_Blade",
+				"https://criticalrole.miraheze.org/wiki/Loza_Blade"
+			],
+			"tags": {
+				"1": [
+					"NPCs",
+					"Orc",
+					"Fighter",
+					"Old Path",
+					"Torn Banner"
+				]
+			},
+			"depiction": {
+				"1": "An ancient, broad-shouldered orcish warrior woman with graying hair and filigreed gold rings in her tusks. She is the former commander of the Torn Banner mercenary company and a follower of the Old Path."
+			},
+			"connections": {
+				"1": [
+					"Former Commander of the Torn Banner"
+				],
+				"2": [
+					"Passed leadership of the Torn Banner to Teor Pridesire",
+					"Her family (the Blades) was looked after by the Lloy family"
+				]
+			}
+		},
+		{
+			"key": "Lugzash",
+			"depiction": {
+				"2": "A neighborhood in the city of Kahad, located across the River Vrosh from Dol-Makjar. It is home to The Archanade museum."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Location of The Archanade"
+				]
+			},
+			"tags": {
+				"2": [
+					"Locations",
+					"Kahad",
+					"Neighborhoods"
+				]
+			}
+		},
+		{
+			"key": "Madam Gurlistra",
+			"depiction": {
+				"2": "An older gnomish woman who is the proprietor of The Tangled Sheet, a house of companionship in Dol-Makjar."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Proprietor of The Tangled Sheet"
+				]
+			},
+			"tags": {
+				"2": [
+					"NPC",
+					"Gnome",
+					"Proprietor"
+				]
+			}
+		},
+		{
+			"key": "Maharlian Falls",
+			"alias": {},
+			"links": [],
+			"tags": {
+				"1": [
+					"Locations",
+					"Battlefields"
+				]
+			},
+			"depiction": {
+				"1": "The location of a battle where Sir Julien Davinos became known as a hero for capturing Thjazi Fang."
+			},
+			"connections": {
+				"1": [
+					"Site of a battle involving Sir Julien Davinos and Thjazi Fang"
+				]
+			}
+		},
+		{
+			"key": "Marud",
+			"depiction": {
+				"2": "The highest neighborhood of Dol-Makjar, located near the River Vrosh. It is the location of The Grey Tower."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Location of The Grey Tower"
+				]
+			},
+			"tags": {
+				"2": [
+					"Locations",
+					"Dol-Makjar",
+					"Neighborhoods"
+				]
+			}
+		},
+		{
+			"key": "Mountains of Kavros",
+			"depiction": {
+				"1": "A mountain range on the eastern edge of Kahad, held at bay by Dol-Makjar's Guardian Wall."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"Borders Kahad"
+				]
+			},
+			"tags": {
+				"1": [
+					"Locations",
+					"Geographical features",
+					"Mountains"
+				]
+			}
+		},
+		{
+			"key": "Mournvale",
+			"alias": {},
+			"links": [],
+			"tags": {
+				"1": [
+					"Locations"
+				]
+			},
+			"depiction": {
+				"1": "The homeland of Vaelus and the Sisters of Sylandri."
+			},
+			"connections": {
+				"1": [
+					"Home of the Sisters of Sylandri"
+				]
+			}
+		},
+		{
+			"key": "Murray Mag'Nesson",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Murray_Mag'Nesson",
+				"https://criticalrole.miraheze.org/wiki/Murray_Mag'Nesson"
+			],
+			"tags": {
+				"1": [
+					"Player characters",
+					"Dwarf",
+					"Wizard",
+					"Penteveral"
+				],
+				"2": [
+					"Bursar"
+				],
+				"3": [
+					"Schemers"
+				]
+			},
+			"depiction": {
+				"1": "A dwarf wizard with long auburn hair, a braided chin strap, and several front teeth replaced with gemstones. She favors colorful, sleeveless duster jackets and works at the Penteveral. Played by Marisha Ray.",
+				"2": "A dwarf wizard with auburn hair, braided chin strap, and teeth replaced with gemstones. She favors colorful, sleeveless duster jackets and works as the Bursar at the Penteveral. Played by Marisha Ray.",
+				"4": "A dwarf wizard of the Divination School and Bursar at the Penteveral. She has long auburn hair, a braided chin strap, and teeth replaced with gemstones. Played by Marisha Ray."
+			},
+			"connections": {
+				"1": [
+					"Works at The Penteveral",
+					"Friend of Thjazi Fang"
+				],
+				"2": [
+					"Bursar at The Penteveral"
+				],
+				"3": [
+					"Had Solomon of the Crow Keepers as an underworld contact."
+				],
+				"4": [
+					"Resurrected Occtis Tachonis in collaboration with Bolaire"
+				]
+			}
+		},
+		{
+			"key": "Norma",
+			"depiction": {
+				"2": "A dwarven woman and medic who served with the Torn Banner during the Falconer's Rebellion. She has a thick, braided beard and an empty upper lip."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Served with the Torn Banner"
+				]
+			},
+			"tags": {
+				"2": [
+					"NPC",
+					"Dwarf",
+					"Medic",
+					"Torn Banner"
+				]
+			}
+		},
+		{
+			"key": "Occtis Tachonis",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Occtis_Tachonis",
+				"https://criticalrole.miraheze.org/wiki/Occtis_Tachonis"
+			],
+			"tags": {
+				"1": [
+					"Player characters",
+					"Human",
+					"Wizard",
+					"Necromancer",
+					"House Tachonis",
+					"Penteveral"
+				]
+			},
+			"depiction": {
+				"1": "A young, thin human man (5'11\") from House Tachonis, with dark hair, olive skin, and green eyes. An academic necromancer with a constructed fox familiar named Pincushion. Played by Alexander Ward.",
+				"2": "A young human necromancer from House Tachonis with a constructed fox familiar. He is the son of Lord Primus Tachonis but is being hunted by his own family for his involvement in Thjazi's escape plot. Played by Alexander Ward.",
+				"4": "A young human necromancer from House Tachonis. After being murdered by his brother Ethrand, he was resurrected into an undead state via the Stone of Nightsong, no longer possessing a heart or needing to breathe. Played by Alexander Ward."
+			},
+			"connections": {
+				"1": [
+					"Member of House Tachonis",
+					"Studied at The Penteveral"
+				],
+				"2": [
+					"Son of Lord Primus Tachonis",
+					"Sent to Venatus with Thaisha Lloy to retrieve an artifact for Thjazi Fang"
+				],
+				"3": [
+					"Brother of Ethrand Tachonis"
+				],
+				"4": [
+					"Murdered by his brother, Ethrand Tachonis",
+					"Resurrected by Bolaire Lathalia and Murray Mag'Nesson"
+				]
+			}
+		},
+		{
+			"key": "Olbalad",
+			"alias": {
+				"2": [
+					"Sister of Mists"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Olbalad"
+			],
+			"tags": {
+				"2": [
+					"Creatures",
+					"Angel",
+					"Celestial",
+					"Halfling Lore",
+					"Psychopomp"
+				]
+			},
+			"depiction": {
+				"2": "A celestial who served as the halfling Angel of Death, a psychopomp known as the Sister of Mists who guided souls to their final rest before the Shapers' War."
+			},
+			"connections": {
+				"2": [
+					"The Coffin of Olbalad is named after her"
+				]
+			}
+		},
+		{
+			"key": "Old Path",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Old_Path"
+			],
+			"tags": {
+				"1": [
+					"Factions",
+					"Religions",
+					"Druidism"
+				]
+			},
+			"depiction": {
+				"1": "An ancient, likely Orcish, belief system with druidic elements focused on the natural cycle of life and death."
+			},
+			"connections": {
+				"1": [
+					"Followed by Thaisha Lloy",
+					"Customs known by Loza Blade"
+				]
+			}
+		},
+		{
+			"key": "Olgud Akarat",
+			"alias": {
+				"1": [
+					"Uncle Olgud"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Olgud_Akarat",
+				"https://criticalrole.miraheze.org/wiki/Olgud_Akarat"
+			],
+			"tags": {
+				"1": [
+					"NPCs",
+					"Orc",
+					"Producer"
+				]
+			},
+			"depiction": {
+				"1": "An older orcish gentleman with silver at his temples. He is a theater producer and Halandil Fang's business partner."
+			},
+			"connections": {
+				"1": [
+					"Business partner of Halandil Fang"
+				],
+				"3": [
+					"Works with Halandil Fang at The Hallowed Round."
+				]
+			}
+		},
+		{
+			"key": "Palazzo Davinos",
+			"depiction": {
+				"2": "The estate and residence of House Davinos within Dol-Makjar.",
+				"3": "The estate of House Davinos in Dol-Makjar. It features gardens with trees from Faerie and abuts the River Vrosh."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Residence of House Davinos"
+				],
+				"3": [
+					"Site of General Raimond Davinos's assassination"
+				],
+				"4": [
+					"Assaulted by Primus Tachonis, who assassinated General Raimond Davinos and killed numerous staff with a Circle of Death ritual"
+				]
+			},
+			"tags": {
+				"2": [
+					"Locations",
+					"Dol-Makjar",
+					"Estates"
+				]
+			}
+		},
+		{
+			"key": "Pariah Blades",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Pariah_Blades",
+				"https://criticalrole.miraheze.org/wiki/Pariah_Blades"
+			],
+			"tags": {
+				"1": [
+					"Items"
+				]
+			},
+			"depiction": {
+				"4": "Magical weapons crafted by the orcish smiths of the Lloy family to defeat the Shaper gods, most notably Azgra the Conqueror. The surviving blades are now on display in The Archanade museum."
+			},
+			"connections": {
+				"1": [
+					"Part of the history of the city of Dol-Makjar"
+				],
+				"2": [
+					"Crafted by the orcish smiths of the Lloy family to defeat Azgra the Conqueror"
+				],
+				"4": [
+					"The exhibit is being reviewed by Lady Amariya Cormoray"
+				]
+			}
+		},
+		{
+			"key": "Pasitar",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Pasitar",
+				"https://criticalrole.miraheze.org/wiki/Pasitar"
+			],
+			"tags": {
+				"1": [
+					"Locations"
+				]
+			},
+			"depiction": {},
+			"connections": {
+				"1": [
+					"Teor Pridesire has worked as a mercenary there"
+				]
+			}
+		},
+		{
+			"key": "Penteveral",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Penteveral",
+				"https://criticalrole.miraheze.org/wiki/Penteveral"
+			],
+			"tags": {
+				"1": [
+					"Factions",
+					"Organizations",
+					"Arcane"
+				]
+			},
+			"depiction": {
+				"1": "An institution of an academic or arcane nature. Occtis Tachonis studied there, and Murray Mag'Nesson works there."
+			},
+			"connections": {
+				"1": [
+					"Place of study for Occtis Tachonis",
+					"Place of work for Murray Mag'Nesson"
+				],
+				"3": [
+					"Dean Tallbarrel is resigning his position",
+					"Dean Kora is the incoming Dean"
+				]
+			}
+		},
+		{
+			"key": "Pincushion",
+			"alias": {
+				"1": [
+					"Pin"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Pincushion",
+				"https://criticalrole.miraheze.org/wiki/Pincushion"
+			],
+			"tags": {
+				"1": [
+					"Companions",
+					"Constructs",
+					"Familiars"
+				],
+				"3": [
+					"Undead"
+				]
+			},
+			"depiction": {
+				"1": "A small, mostly white fox familiar constructed from the parts of different foxes. It has purple button eyes and is the companion of Occtis Tachonis.",
+				"2": "A small constructed fox familiar made from parts of different arctic and red foxes. It has purple button eyes, a purple scarf, and is the companion of Occtis Tachonis.",
+				"3": "A small constructed fox familiar made from parts of different foxes. It has purple button eyes and a purple scarf. It is an undead spirit and is the companion of Occtis Tachonis.",
+				"4": "A small constructed fox familiar made from parts of different foxes. An undead spirit, he is the companion of Occtis Tachonis. He was destroyed upon Occtis's death and reborn from his master's body upon his resurrection."
+			},
+			"connections": {
+				"1": [
+					"Companion of Occtis Tachonis"
+				]
+			}
+		},
+		{
+			"key": "Pinebrough",
+			"alias": {},
+			"links": [
+				"https://criticalrole.miraheze.org/wiki/Pinebrough"
+			],
+			"tags": {
+				"1": [
+					"Locations",
+					"Kahad",
+					"Towns"
+				]
+			},
+			"depiction": {
+				"1": "A small agricultural and crafting community located in the region of Kahad. Mentioned by Kattigan Vale."
+			},
+			"connections": {}
+		},
+		{
+			"key": "Primus Tachonis",
+			"alias": {
+				"2": [
+					"Lord Primus Tachonis"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Primus_Tachonis",
+				"https://criticalrole.miraheze.org/wiki/Primus_Tachonis"
+			],
+			"tags": {
+				"2": [
+					"NPCs",
+					"House Tachonis"
+				]
+			},
+			"depiction": {
+				"2": "The head of House Tachonis and father of Occtis. A tall, grave figure with sallow skin, described as a dangerous political mover who is actively searching for his son.",
+				"4": "The head of House Tachonis and a powerful necromancer. He murdered General Raimond Davinos and led the assault on the Palazzo Davinos, summoning shadows and casting Circle of Death before escaping via Plane Shift."
+			},
+			"connections": {
+				"2": [
+					"Father of Occtis Tachonis"
+				],
+				"3": [
+					"Resides at Obrimus Manor while in Dol-Makjar"
+				],
+				"4": [
+					"Murderer of General Raimond Davinos"
+				]
+			}
+		},
+		{
+			"key": "Prismatic Retort",
+			"depiction": {
+				"2": "A machine in the Villa Aurora used by House Halovar to distill Filament from a captive angel. It appears as a 40-foot-tall sarcophagus or iron maiden."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Contains the grandfather of Wicander Halovar",
+					"Used by House Halovar to create Filament"
+				],
+				"3": [
+					"Contains the angel Aetheon"
+				]
+			},
+			"tags": {
+				"2": [
+					"Items",
+					"Magical device"
+				]
+			}
+		},
+		{
+			"key": "Raimond Davinos",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Raimond_Davinos",
+				"https://criticalrole.miraheze.org/wiki/Raimond_Davinos"
+			],
+			"tags": {
+				"2": [
+					"NPCs",
+					"House Davinos",
+					"NPCs"
+				]
+			},
+			"depiction": {
+				"2": "Father of Sir Julien Davinos and a General of House Davinos. A scarred veteran of the War of Axe and Vine with a silvering mustache and goatee.",
+				"3": "Father of Sir Julien Davinos and a General. A scarred veteran of the War of Axe and Vine, he was assassinated in his home, the Palazzo Davinos, by an agent of House Tachonis."
+			},
+			"connections": {
+				"2": [
+					"Father of Sir Julien Davinos",
+					"Served with Thjazi Fang during the War of Axe and Vine"
+				],
+				"4": [
+					"Murdered by Primus Tachonis"
+				]
+			}
+		},
+		{
+			"key": "Rauwyn",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Rauwyn",
+				"https://criticalrole.miraheze.org/wiki/Rauwyn"
+			],
+			"tags": {
+				"2": [
+					"NPCs",
+					"Shapers",
+					"Deity",
+					"Halfling Lore"
+				]
+			},
+			"depiction": {
+				"2": "An ancient halfling goddess known as the Trickster, to whom temples were dedicated."
+			},
+			"connections": {
+				"4": [
+					"The intended assassination target of the sentient mask, Bolaire"
+				]
+			}
+		},
+		{
+			"key": "Revolutionary Council",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Revolutionary_Council"
+			],
+			"tags": {
+				"1": [
+					"Factions",
+					"Government"
+				]
+			},
+			"depiction": {
+				"1": "The primary governing body of Dol-Makjar, advised by the Chamber of Lords-Advisory."
+			},
+			"connections": {
+				"1": [
+					"Governing body of Dol-Makjar"
+				],
+				"3": [
+					"Employs Cyd Pridesire as a wagon driver."
+				]
+			}
+		},
+		{
+			"key": "Revolutionary Guard",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Revolutionary_Guard"
+			],
+			"tags": {
+				"1": [
+					"Factions",
+					"Revolutionary Council",
+					"Military",
+					"Law enforcement"
+				]
+			},
+			"depiction": {
+				"1": "A military and law-enforcement body serving the Revolutionary Council in Dol-Makjar."
+			},
+			"connections": {
+				"1": [
+					"Serves the Revolutionary Council"
+				]
+			}
+		},
+		{
+			"key": "River Vrosh",
+			"depiction": {
+				"1": "A river that flows step-by-step down from the mountains through the city of Dol-Makjar.",
+				"3": "A river flowing through Dol-Makjar from the mountains to Lake Nahami."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"River in Dol-Makjar"
+				],
+				"3": [
+					"Flows into Lake Nahami"
+				]
+			},
+			"tags": {
+				"1": [
+					"Locations",
+					"Geographical features"
+				]
+			}
+		},
+		{
+			"key": "Rozigar",
+			"depiction": {
+				"2": "A neighborhood in Dol-Makjar where The Tangled Sheet is located. It borders the Embers and the Penteveral."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Location of The Tangled Sheet"
+				]
+			},
+			"tags": {
+				"2": [
+					"Locations",
+					"Dol-Makjar",
+					"Neighborhoods"
+				]
+			}
+		},
+		{
+			"key": "Rubble Cliff",
+			"depiction": {
+				"2": "A neighborhood in Kahad, home to the Brethren Hall, the headquarters of the Revolutionary Guard."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Location of the Brethren Hall"
+				]
+			},
+			"tags": {
+				"2": [
+					"Locations",
+					"Kahad",
+					"Neighborhoods"
+				]
+			}
+		},
+		{
+			"key": "Schemers",
+			"alias": {},
+			"links": [],
+			"tags": {
+				"5": [
+					"Parties"
+				]
+			},
+			"depiction": {},
+			"connections": {}
+		},
+		{
+			"key": "Seekers",
+			"alias": {},
+			"links": [],
+			"tags": {
+				"5": [
+					"Parties"
+				]
+			},
+			"depiction": {},
+			"connections": {}
+		},
+		{
+			"key": "Seven Shining Tenets",
+			"depiction": {
+				"2": "The central tenets of the Candescent Creed, a religious doctrine followed by House Halovar. They include principles such as forgiveness."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Doctrine of the Candescent Creed"
+				]
+			},
+			"tags": {
+				"2": [
+					"Items",
+					"Religious text"
+				]
+			}
+		},
+		{
+			"key": "Shadia Fang",
+			"depiction": {
+				"1": "A young orcish woman, daughter of Halandil Fang and Thaisha Lloy. She wears harlequin-patterned breeches and studies to be a performer like her father.",
+				"2": "A 25-year-old half-orc woman, daughter of Halandil Fang and Thaisha Lloy. She wears harlequin-patterned breeches and studies to be a performer like her father."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"Daughter of Halandil Fang",
+					"Daughter of Thaisha Lloy",
+					"Sister of Alogar Fang",
+					"Half-sister of Hero Fang"
+				],
+				"4": [
+					"Proposed painting murals of legendary figures like Bolan D'Varstrey and Lugzub Kettlehelm in The Hallowed Round"
+				]
+			},
+			"tags": {
+				"1": [
+					"NPC",
+					"Orc"
+				],
+				"2": [
+					"Half-orc"
+				]
+			}
+		},
+		{
+			"key": "Shadow",
+			"alias": {
+				"4": [
+					"Shades"
+				]
+			},
+			"links": [
+				"https://criticalrole.miraheze.org/wiki/Shadow"
+			],
+			"tags": {
+				"1": [
+					"Undead"
+				],
+				"4": [
+					"Creatures"
+				]
+			},
+			"depiction": {
+				"1": "A shadowy entity of unknown origin, born from a desecrated Orcish funereal rite. It was seen by Bolaire Lathalia following Sir Julien Davinos from Thjazi Fang's wake.",
+				"4": "Incorporeal undead summoned by Primus Tachonis at the Palazzo Davinos. They drain the life and strength from their victims and are vulnerable to radiant damage."
+			},
+			"connections": {
+				"4": [
+					"Summoned by Primus Tachonis"
+				]
+			}
+		},
+		{
+			"key": "Shapers' War",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Shapers'_War",
+				"https://criticalrole.miraheze.org/wiki/Shapers'_War"
+			],
+			"tags": {
+				"1": [
+					"Events",
+					"Wars"
+				]
+			},
+			"depiction": {
+				"1": "A historic revolution whose heroes are immortalized in the Guardian Wall of Dol-Makjar. It involved the destruction of a celestial being, leading to the creation of the Stone of Nightsong."
+			},
+			"connections": {}
+		},
+		{
+			"key": "Shapers",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Shapers",
+				"https://criticalrole.miraheze.org/wiki/Shapers"
+			],
+			"tags": {
+				"1": [
+					"NPCs"
+				]
+			},
+			"depiction": {
+				"1": "Ancient, powerful beings who shaped the world and its peoples, such as the goddess Sylandri who shaped the elves, and Azgra. They were fought in the Shapers' War.",
+				"3": "Ancient beings who shaped the world. The orcish Shaper, Azgra, was a god of war who demanded conquest and was killed in a revolution by his people, aided by the Lloy family.",
+				"4": "Ancient god-like beings who shaped the world's peoples. Notable Shapers include Azgra (Orcs), Rauwyn (Halflings), an unnamed sun god (Humans), and Sylandri (Elves). Mortals created special weapons to kill them in the Shapers' War."
+			},
+			"connections": {
+				"3": [
+					"Azgra was the Shaper of the Orcs."
+				],
+				"4": [
+					"Rauwyn was the Shaper of the Halflings",
+					"An unnamed Sun God was the Shaper of the Humans"
+				]
+			}
+		},
+		{
+			"key": "Sir Filoneus",
+			"depiction": {
+				"2": "The uncle of Wicander Halovar and the head of security for House Halovar and the Candescent Creed.",
+				"3": "Uncle of Wicander Halovar and head of security for House Halovar. A gray-bearded knight with luminous tattoos around his neck and eyes. He is accompanied by two magically-attuned dogs, Wrath and Judgment."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Uncle of Wicander Halovar",
+					"Head of Security for House Halovar"
+				],
+				"3": [
+					"Master of the dogs Wrath and Judgment"
+				]
+			},
+			"tags": {
+				"2": [
+					"NPC",
+					"Human",
+					"House Halovar",
+					"Candescent Creed"
+				]
+			}
+		},
+		{
+			"key": "Sir Harondus Einfasen",
+			"depiction": {
+				"2": "A Lord Knight of House Einfasen and a member of the Chamber of Lords-Advisory. He seeks to increase the influence of the Sundered Houses over Dol-Makjar's security."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Member of House Einfasen",
+					"Member of the Chamber of Lords-Advisory"
+				]
+			},
+			"tags": {
+				"2": [
+					"NPC",
+					"Human",
+					"Nobility",
+					"House Einfasen"
+				]
+			}
+		},
+		{
+			"key": "Sisters of Sylandri",
+			"alias": {},
+			"links": [],
+			"tags": {
+				"1": [
+					"Factions",
+					"Religious orders"
+				]
+			},
+			"depiction": {
+				"1": "A religious order of elves who worship Sylandri, the Fallen Goddess of Life. Vaelus is a member. They are based in the Mournvale."
+			},
+			"connections": {
+				"1": [
+					"Based in the Mournvale"
+				]
+			}
+		},
+		{
+			"key": "Soldiers",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Soldiers"
+			],
+			"tags": {
+				"5": [
+					"Parties"
+				]
+			},
+			"depiction": {
+				"3": "The name given to the adventuring party who fled Dol-Makjar together, consisting of Teor Pridesire, Wicander Halovar, Tyranny, Thimble, and Kattigan Vale."
+			},
+			"connections": {}
+		},
+		{
+			"key": "Solomon",
+			"depiction": {
+				"2": "An older, high-ranking member of the Crow Keepers thieves' guild, identifiable by his black felt hat and long coat. He operates out of The Guard Tower tavern.",
+				"3": "A guildmaster of the Crow Keepers who operated out of The Guard Tower. He was killed by Vaelus during a confrontation."
+			},
+			"alias": {
+				"2": [
+					"Sol"
+				]
+			},
+			"connections": {
+				"2": [
+					"Member of the Crow Keepers"
+				]
+			},
+			"tags": {
+				"2": [
+					"NPC",
+					"Human",
+					"Thieves' guilds",
+					"Crow Keepers"
+				],
+				"3": [
+					"Deceased"
+				]
+			}
+		},
+		{
+			"key": "Stone of Nightsong",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Stone_of_Nightsong",
+				"https://criticalrole.miraheze.org/wiki/Stone_of_Nightsong"
+			],
+			"tags": {
+				"1": [
+					"Items",
+					"Artifact",
+					"Elven"
+				]
+			},
+			"depiction": {
+				"1": "A black stone carved to look like a nightingale embracing itself. An elven artifact from the Shapers' War, it was created to safely ferry elven souls through the Tenebral Reaches, the underworld, to their afterlife."
+			},
+			"connections": {
+				"1": [
+					"Created by a celestial servant of Sylandri",
+					"Stolen by Thjazi Fang and Thimble",
+					"Sought by Vaelus of the Sisters of Sylandri"
+				],
+				"3": [
+					"Possessed by Ethrand Tachonis."
+				],
+				"4": [
+					"Placed inside the corpse of Occtis Tachonis by his brother Ethrand",
+					"Used to restore Occtis Tachonis to a state of unlife"
+				]
+			}
+		},
+		{
+			"key": "Sundered Houses",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Sundered_Houses",
+				"https://criticalrole.miraheze.org/wiki/Sundered_Houses"
+			],
+			"tags": {
+				"1": [
+					"Factions"
+				]
+			},
+			"depiction": {
+				"1": "A powerful faction of noble houses in Dol-Makjar, including House Tachonis, House Halovar, and House Royce. They exercise significant authority through their Chamber of Lords-Advisory."
+			},
+			"connections": {
+				"1": [
+					"Their Chamber of Lords-Advisory sentenced Thjazi Fang to death",
+					"Includes House Tachonis, House Halovar, House Royce, House Einfasen, and House Cormoray"
+				]
+			}
+		},
+		{
+			"key": "Sylandri",
+			"alias": {
+				"1": [
+					"The Green Mother",
+					"Shaper of the Elves",
+					"Fallen Goddess of Life"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Sylandri",
+				"https://criticalrole.miraheze.org/wiki/Sylandri"
+			],
+			"tags": {
+				"1": [
+					"NPCs",
+					"Shapers",
+					"Deity"
+				]
+			},
+			"depiction": {},
+			"connections": {
+				"1": [
+					"Her celestial servant created the Stone of Nightsong",
+					"Worshipped by the Sisters of Sylandri"
+				],
+				"2": [
+					"The Wastes are the site of her death",
+					"Vaelus is a member of her order, the Sisters of Sylandri"
+				]
+			}
+		},
+		{
+			"key": "Talcydimir Pridesire",
+			"alias": {
+				"1": [
+					"Cyd"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Talcydimir_Pridesire",
+				"https://criticalrole.miraheze.org/wiki/Talcydimir_Pridesire"
+			],
+			"tags": {
+				"1": [
+					"NPCs"
+				]
+			},
+			"depiction": {
+				"3": "Younger brother of Teor Pridesire. After being betrayed by Casimir in Thjazi's failed rescue, he stole a deed from Casimir and is now being pursued by him."
+			},
+			"connections": {
+				"1": [
+					"Younger brother of Teor Pridesire",
+					"Was supposed to drive the getaway wagon in the failed rescue of Thjazi Fang"
+				],
+				"3": [
+					"Betrayed by Casimir of the Crow Keepers."
+				]
+			}
+		},
+		{
+			"key": "Tansul",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Tansul",
+				"https://criticalrole.miraheze.org/wiki/Tansul"
+			],
+			"tags": {
+				"2": [
+					"NPCs",
+					"Shapers",
+					"Deity",
+					"Obridimian Empire"
+				]
+			},
+			"depiction": {
+				"2": "The ancient god of the sun, once worshipped by the Obridimian empire but now considered a false god by factions like the Candescent Creed."
+			},
+			"connections": {
+				"3": [
+					"The celestial Aetheon was one of his servants."
+				]
+			}
+		},
+		{
+			"key": "Tenebral Reaches",
+			"alias": {
+				"1": [
+					"Underworld"
+				],
+				"2": [
+					"Obsidia"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Tenebral_Reaches",
+				"https://criticalrole.miraheze.org/wiki/Tenebral_Reaches"
+			],
+			"tags": {
+				"1": [
+					"Locations"
+				]
+			},
+			"depiction": {},
+			"connections": {
+				"1": [
+					"The Stone of Nightsong was created to bypass this realm for elven souls"
+				],
+				"4": [
+					"Site of a war being waged by the forces of House Tachonis"
+				]
+			}
+		},
+		{
+			"key": "Teor Pridesire",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Teor_Pridesire",
+				"https://criticalrole.miraheze.org/wiki/Teor_Pridesire"
+			],
+			"tags": {
+				"1": [
+					"Player characters",
+					"Nama",
+					"Vanguard Marshal"
+				],
+				"3": [
+					"Seekers"
+				]
+			},
+			"depiction": {
+				"1": "A very tall, powerfully-built lion man (nama) with dark silver fur and a long mane. As a Vanguard Marshal, he wears a golden breastplate and purple vestments. Portrayed by Travis Willingham."
+			},
+			"connections": {
+				"1": [
+					"Served with Thjazi Fang in the Falconer's Rebellion",
+					"Served with Azune Nayar in the Falconer's Rebellion",
+					"Companion to Loza Blade, former Commander of the Torn Banner",
+					"Has taken contracts throughout Pasitar",
+					"Older brother of Talcydimir \"Cyd\" Pridesire"
+				],
+				"2": [
+					"Became the new leader of the Torn Banner",
+					"Hired as a bodyguard for Wicander Halovar"
+				],
+				"3": [
+					"Pledged a life debt to Wicander Halovar."
+				]
+			}
+		},
+		{
+			"key": "Thaisha Lloy",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Thaisha_Lloy",
+				"https://criticalrole.miraheze.org/wiki/Thaisha_Lloy"
+			],
+			"tags": {
+				"1": [
+					"Player characters",
+					"Orc",
+					"Druid",
+					"Lloy family",
+					"Old Path"
+				],
+				"2": [
+					"Circle of Ancients"
+				],
+				"3": [
+					"Schemers"
+				]
+			},
+			"depiction": {
+				"1": "A tall orc druid with desaturated green skin and long, dark, graying hair. Her eyes have black scleras and silver irises ringed in red. She is from the prominent Lloy family. Portrayed by Aabria Iyengar.",
+				"2": "A tall orc druid of the prominent Lloy family and a member of the Circle of Ancients. She has dark, graying hair and eyes with black scleras and silver irises. Portrayed by Aabria Iyengar."
+			},
+			"connections": {
+				"1": [
+					"Former partner of Halandil Fang",
+					"Mother of Shadia and Alogar Fang",
+					"Follower of the Old Path",
+					"Part of the failed plot to rescue Thjazi Fang"
+				],
+				"2": [
+					"Member of the Circle of Ancients",
+					"Sent to Venatus with Occtis Tachonis to retrieve an artifact for Thjazi Fang"
+				],
+				"4": [
+					"Her family's ancestral estate is in the Mirzash neighborhood",
+					"Her family, the Lloys, forged the Pariah Blades during the Shapers' War"
+				]
+			}
+		},
+		{
+			"key": "The Archanade",
+			"depiction": {
+				"2": "A massive museum in the Lugzash neighborhood of Kahad. It contains multiple wings, including the Lloy Wing, and is situated by the River Vrosh."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Bolaire Lathalia is the curator of its Lloy Wing"
+				],
+				"4": [
+					"Contains a secret vault storing powerful artifacts, including the fossilized hand of a primordial giant"
+				]
+			},
+			"tags": {
+				"2": [
+					"Locations",
+					"Kahad",
+					"Museum"
+				]
+			}
+		},
+		{
+			"key": "The Faye",
+			"depiction": {
+				"1": "A dive bar in Dol-Makjar that Murray Mag'Nesson uses as a meeting spot on certain days."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"Bar in Dol-Makjar"
+				]
+			},
+			"tags": {
+				"1": [
+					"Locations",
+					"Dol-Makjar",
+					"Taverns"
+				]
+			}
+		},
+		{
+			"key": "The Grey Tower",
+			"depiction": {
+				"2": "The hall of the Revolutionary Council, located in the Marud neighborhood of Dol-Makjar. It is considered the center of power in the city."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Seat of the Revolutionary Council"
+				],
+				"3": [
+					"Site of the Falcon's Rest stables"
+				]
+			},
+			"tags": {
+				"2": [
+					"Locations",
+					"Dol-Makjar",
+					"Government building"
+				]
+			}
+		},
+		{
+			"key": "The Guard Tower",
+			"depiction": {
+				"2": "A tavern located in the Caravan Hill neighborhood of Dol-Makjar. It is a known meeting place and base of operations for the Crow Keepers thieves' guild.",
+				"3": "A tavern in Caravan Hill that serves as the home base of the Crow Keepers thieves' guild."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"A frequent haunt of the Crow Keepers"
+				],
+				"3": [
+					"Site of the killing of guildmaster Solomon"
+				]
+			},
+			"tags": {
+				"2": [
+					"Locations",
+					"Dol-Makjar",
+					"Taverns"
+				]
+			}
+		},
+		{
+			"key": "The Pit",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/The_Pit"
+			],
+			"tags": {
+				"2": [
+					"Locations"
+				],
+				"3": [
+					"Planes"
+				]
+			},
+			"depiction": {
+				"3": "The fiendish home realm of Tyranny and her sisters, ruled by Ksha'aravi, the High Prince of Demonkind."
+			},
+			"connections": {
+				"2": [
+					"The realm from which Tyranny and her demon sisters originate"
+				],
+				"3": [
+					"Home of the demon prince Ksha'aravi."
+				]
+			}
+		},
+		{
+			"key": "The Rookery",
+			"depiction": {
+				"1": "A neighborhood in Dol-Makjar known for its many towers, sky bridges, aviaries, and community of poets and performers. It is Halandil Fang's home."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"Neighborhood in Dol-Makjar"
+				]
+			},
+			"tags": {
+				"1": [
+					"Locations",
+					"Dol-Makjar",
+					"Neighborhoods"
+				]
+			}
+		},
+		{
+			"key": "The Tangled Sheet",
+			"depiction": {
+				"2": "A house of companionship in the Rozigar neighborhood of Dol-Makjar, run by Madam Gurlistra and frequented by Sir Julien Davinos."
+			},
+			"alias": {},
+			"connections": {
+				"2": [
+					"Frequented by Sir Julien Davinos",
+					"Run by Madam Gurlistra"
+				]
+			},
+			"tags": {
+				"2": [
+					"Locations",
+					"Dol-Makjar",
+					"Brothel"
+				]
+			}
+		},
+		{
+			"key": "The Wastes",
+			"alias": {},
+			"links": [],
+			"tags": {
+				"2": [
+					"Locations"
+				]
+			},
+			"depiction": {},
+			"connections": {
+				"2": [
+					"The site of Sylandri's death",
+					"The wood for the Coffin of Olbalad was sourced from here"
+				]
+			}
+		},
+		{
+			"key": "Thimble",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Thimble",
+				"https://criticalrole.miraheze.org/wiki/Thimble"
+			],
+			"tags": {
+				"1": [
+					"Player characters",
+					"Pixie",
+					"Fey"
+				],
+				"3": [
+					"Seekers"
+				]
+			},
+			"depiction": {
+				"1": "A small, four-inch-tall pixie with short brown hair and spring green wings, appearing to be around 18 years old. She wields two needle-like swords. Portrayed by Laura Bailey.",
+				"2": "A small pixie with short brown hair and spring green wings. She was originally a 'wedding gift' from Aranessa Royce to Thjazi Fang, but became his equal partner. Wields two needle-like swords. Portrayed by Laura Bailey."
+			},
+			"connections": {
+				"1": [
+					"Partner of Thjazi Fang",
+					"From Tír Cruthú (Faerie)",
+					"Attacked by the Crow Keepers in Thjazi's hideout",
+					"Was responsible for the teleportation glyph in Thjazi's failed escape"
+				],
+				"2": [
+					"Was a wedding gift to Thjazi Fang from Aranessa Royce"
+				],
+				"4": [
+					"Acted as a go-between for Thjazi Fang and the artifact collector Bolaire Lathalia"
+				]
+			}
+		},
+		{
+			"key": "Thjazi Fang",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Thjazi_Fang",
+				"https://criticalrole.miraheze.org/wiki/Thjazi_Fang"
+			],
+			"tags": {
+				"1": [
+					"NPCs",
+					"Orc",
+					"Arcanist"
+				]
+			},
+			"depiction": {
+				"1": "A handsome orc, brother to Halandil Fang. Known as a traitor and arcanist by the state but a hero to many, including veterans of the Falconer's Rebellion. He was executed at the start of the campaign."
+			},
+			"connections": {
+				"1": [
+					"Brother of Halandil Fang",
+					"Commander to Azune Nayar in the Falconer's Rebellion",
+					"Served under Loza Blade in the Torn Banner",
+					"Estranged husband of Aranessa Royce",
+					"Partner of Thimble",
+					"Captured by Sir Julien Davinos",
+					"Mentor to Occtis"
+				],
+				"2": [
+					"Tasked Thaisha and Occtis with retrieving an artifact from Venatus"
+				],
+				"4": [
+					"Blackmailed the ancient being Bolaire Lathalia into stealing items for him",
+					"Had a working relationship with bursar Murray Mag'Nesson"
+				]
+			}
+		},
+		{
+			"key": "Timmony",
+			"alias": {},
+			"links": [],
+			"tags": {
+				"3": [
+					"Locations"
+				]
+			},
+			"depiction": {
+				"3": "A northern region containing the settlement of Gormalay. Kattigan Vale reports that the wilderness there is dangerous."
+			},
+			"connections": {
+				"3": [
+					"Contains the town of Gormalay."
+				]
+			}
+		},
+		{
+			"key": "Torn Banner",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Torn_Banner",
+				"https://criticalrole.miraheze.org/wiki/Torn_Banner"
+			],
+			"tags": {
+				"1": [
+					"Factions"
+				]
+			},
+			"depiction": {},
+			"connections": {
+				"1": [
+					"Formerly commanded by Loza Blade",
+					"Casimir and Tunk are members"
+				],
+				"2": [
+					"Fought against the Sundered Houses during the Falconer's Rebellion",
+					"Loza Blade passed on the tattered banner of the company to Teor Pridesire"
+				]
+			}
+		},
+		{
+			"key": "Tunk",
+			"depiction": {
+				"1": "A brawny, boar-headed beastfolk warrior and a member of the old Torn Banner mercenary company, acquainted with Loza Blade."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"Member of Torn Banner"
+				]
+			},
+			"tags": {
+				"1": [
+					"NPC",
+					"Beastfolk",
+					"Torn Banner"
+				],
+				"2": [
+					"Boarfolk"
+				]
+			}
+		},
+		{
+			"key": "Tyranny",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Tyranny",
+				"https://criticalrole.miraheze.org/wiki/Tyranny"
+			],
+			"tags": {
+				"1": [
+					"Player characters",
+					"Demon",
+					"Fiend",
+					"Candescent Creed"
+				],
+				"3": [
+					"Seekers"
+				]
+			},
+			"depiction": {
+				"1": "A demon with bubblegum-pink skin, white hair, yellow goat's eyes, ears, horns, and hooves. An Aspirant to the Candescent Creed, she serves as the ward of Wicander Halovar. Portrayed by Whitney Moore."
+			},
+			"connections": {
+				"1": [
+					"Aspirant to the Candescent Creed",
+					"Ward of Wicander Halovar",
+					"Sister to Enmity"
+				],
+				"2": [
+					"Sister of Tyranny",
+					"Sister of Agony"
+				],
+				"3": [
+					"Her creator is Ksha'aravi, the High Prince of Demonkind."
+				]
+			}
+		},
+		{
+			"key": "Tír Cruthú",
+			"alias": {
+				"1": [
+					"Faerie"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Tír_Cruthú",
+				"https://criticalrole.miraheze.org/wiki/Tír_Cruthú"
+			],
+			"tags": {
+				"1": [
+					"Locations"
+				]
+			},
+			"depiction": {},
+			"connections": {
+				"1": [
+					"Thimble's homeland",
+					"Its doors have closed to the mortal world"
+				],
+				"3": [
+					"Seeds from Tír Cruthú grow in the gardens of the Palazzo Davinos."
+				]
+			}
+		},
+		{
+			"key": "Vaelus",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Vaelus",
+				"https://criticalrole.miraheze.org/wiki/Vaelus"
+			],
+			"tags": {
+				"1": [
+					"Player characters",
+					"Elf",
+					"Cleric",
+					"Sisters of Sylandri"
+				]
+			},
+			"depiction": {
+				"1": "A tall elven woman with arcane scars on her face, hidden by a black hood and a chainmail veil. A cleric of the fallen goddess Sylandri, she wields a censer on a long chain. Portrayed by Ashley Johnson."
+			},
+			"connections": {
+				"1": [
+					"Member of the Sisters of Sylandri",
+					"Follower of the fallen goddess Sylandri",
+					"Traveled from the Mournvale seeking the Stone of Nightsong"
+				]
+			}
+		},
+		{
+			"key": "Venatus",
+			"depiction": {
+				"2": "A location where Thaisha Lloy and Occtis Tachonis were sent by Thjazi Fang to retrieve a mysterious halfling-sized coffin."
+			},
+			"alias": {},
+			"connections": {},
+			"tags": {
+				"2": [
+					"Locations"
+				]
+			}
+		},
+		{
+			"key": "Villa Aurora",
+			"depiction": {
+				"1": "The estate of the House of Halovar located in the city of Dol-Makjar.",
+				"2": "The estate of House Halovar and home of the Candescent Creed in the Mirzash ward of Dol-Makjar. It is a palatial building of white stone with a central tower topped with prismatic glass."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"Estate of House Halovar"
+				],
+				"2": [
+					"Home of the Candescent Creed",
+					"Located in Mirzash"
+				]
+			},
+			"tags": {
+				"1": [
+					"Locations",
+					"Dol-Makjar",
+					"Estates"
+				],
+				"2": [
+					"Candescent Creed",
+					"Mirzash"
+				]
+			}
+		},
+		{
+			"key": "War hound",
+			"alias": {},
+			"links": [],
+			"tags": {
+				"3": [
+					"Creatures"
+				]
+			},
+			"depiction": {
+				"2": "Enormous hounds with bioluminescent drool and golden plates over their eyes. They serve as guardians for House Halovar and can innately cast Dispel Magic."
+			},
+			"connections": {
+				"2": [
+					"Used as guardians by House Halovar in the Villa Aurora"
+				]
+			}
+		},
+		{
+			"key": "War of Axe and Vine",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/War_of_Axe_and_Vine"
+			],
+			"tags": {
+				"1": [
+					"Events"
+				]
+			},
+			"depiction": {},
+			"connections": {
+				"1": [
+					"Halandil Fang and Thjazi Fang were veterans"
+				],
+				"2": [
+					"Raimond Davinos is a veteran",
+					"Thjazi Fang saved Raimond Davinos's cousin's life during this war"
+				]
+			}
+		},
+		{
+			"key": "Wicander Halovar",
+			"alias": {
+				"1": [
+					"Wick",
+					"Wicky",
+					"Your Radiance",
+					"Bearer of the Filament"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Wicander_Halovar",
+				"https://criticalrole.miraheze.org/wiki/Wicander_Halovar"
+			],
+			"tags": {
+				"1": [
+					"Player characters",
+					"Human",
+					"Light Priest",
+					"Candescent Creed",
+					"House Halovar"
+				]
+			},
+			"depiction": {
+				"1": "A beautiful human man in his late 20s with light teal and white hair. A Light Priest of the Candescent Creed, he wears matching robes and has pearlescent, shimmering tattoos on his face. Portrayed by Sam Riegel.",
+				"2": "A beautiful human man, a Light Priest of the Candescent Creed. He is the grandson of Photarch Yanessa Halovar and son of Godard Halovar. His grandfather is a celestial being imprisoned by his family to harvest its power. Portrayed by Sam Riegel.",
+				"3": "A human Light Priest from House Halovar. Son of Godard and Iris, brother to Zebani. His power stems from his celestial bloodline, inherited from his grandfather, the imprisoned angel Aetheon. Portrayed by Sam Riegel."
+			},
+			"connections": {
+				"1": [
+					"Member of House Halovar",
+					"Grandson of Photarch Yanessa Halovar",
+					"Guardian to the demon Aspirant, Tyranny",
+					"Had dealings with Halandil Fang regarding his theater"
+				],
+				"2": [
+					"Nephew of Sir Filoneus",
+					"Grandson of an imprisoned celestial being"
+				],
+				"3": [
+					"Son of Iris Halovar",
+					"Brother of Zebani Halovar",
+					"Arranged to marry Ebecca D'Antonio",
+					"Grandson of the angel Aetheon"
+				]
+			}
+		},
+		{
+			"key": "Wulfric",
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Wulfric",
+				"https://criticalrole.miraheze.org/wiki/Wulfric"
+			],
+			"tags": {
+				"1": [
+					"Companions",
+					"Animal",
+					"Wolf",
+					"Companions",
+					"Animal",
+					"Wolf"
+				]
+			},
+			"depiction": {
+				"1": "A massive juvenile wolf, the animal companion of Kattigan Vale. He wears armor that mirrors Kattigan's, including a tattered cowl.",
+				"2": "A massive juvenile wolf, the animal companion of Kattigan Vale. He wears armor that mirrors Kattigan's and has a magical prosthetic for one of his front paws."
+			},
+			"connections": {
+				"1": [
+					"Companion of Kattigan Vale",
+					"Companion of Kattigan Vale"
+				]
+			}
+		},
+		{
+			"key": "Yanessa Halovar",
+			"alias": {
+				"1": [
+					"Photarch Yanessa",
+					"Scion of the Candescent Creed"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Yanessa_Halovar",
+				"https://criticalrole.miraheze.org/wiki/Yanessa_Halovar"
+			],
+			"tags": {
+				"1": [
+					"NPCs",
+					"Candescent Creed",
+					"House Halovar"
+				]
+			},
+			"depiction": {
+				"2": "The Photarch of the Candescent Creed and ruthless matriarch of House Halovar. She holds the family's darkest secrets, including the imprisonment of her husband, the angel Aetheon, as the source of their power.",
+				"3": "Photarch of the Candescent Creed and matriarch of House Halovar. She imprisoned the angel Aetheon and used his celestial essence to magically conceive her son, Godard, and create the Filament, the source of her family's power."
+			},
+			"connections": {
+				"1": [
+					"Matriarch of House Halovar",
+					"Grandmother of Wicander Halovar"
+				],
+				"2": [
+					"Wife of Aetheon",
+					"Mother of Godard Halovar"
+				],
+				"3": [
+					"Grandmother of Zebani Halovar",
+					"Mother-in-law to Iris Halovar"
+				]
+			}
+		},
+		{
+			"key": "dithyramb of Azgra",
+			"depiction": {
+				"1": "An ancient and seemingly forbidden public space in Dol-Makjar, deeded to Halandil Fang by the Revolutionary Council to be used as a theater.",
+				"3": "An ancient amphitheater, formerly a site for rituals to the Shaper Azgra, now being converted into \"The Hallowed Round\" theater by Halandil Fang. A massive, gnarled cedar tree stands at its center, overlooking the Tintazy Wood."
+			},
+			"alias": {
+				"3": [
+					"The Hallowed Round"
+				]
+			},
+			"connections": {
+				"1": [
+					"Theater run by Halandil Fang",
+					"Located in Dol-Makjar"
+				],
+				"2": [
+					"Serves as Halandil Fang's home",
+					"Located in The Rookery neighborhood"
+				],
+				"3": [
+					"Overlooks the Tintazy Wood"
+				],
+				"4": [
+					"Shadia Fang proposed decorating its walls with murals of legendary figures"
+				]
+			},
+			"tags": {
+				"1": [
+					"Locations",
+					"Dol-Makjar",
+					"Theaters"
+				]
+			}
+		},
+		{
+			"key": "the Embers",
+			"depiction": {
+				"2": "The dwarven neighborhood in Dol-Makjar, built into the side of the Kavrosi Mountains. It borders the Penteveral."
+			},
+			"alias": {},
+			"connections": {
+				"3": [
+					"Location of the Underwallen & Sisters wainwrights"
+				]
+			},
+			"tags": {
+				"2": [
+					"Locations",
+					"Dol-Makjar",
+					"Neighborhoods",
+					"Dwarven"
+				]
+			}
+		}
+	]
+}

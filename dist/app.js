@@ -6391,6 +6391,12 @@ var require_jquery = __commonJS({
   }
 });
 
+// src/styles/styles.css
+var init_styles = __esm({
+  "src/styles/styles.css"() {
+  }
+});
+
 // node_modules/bootstrap/dist/js/bootstrap.bundle.js
 var require_bootstrap_bundle = __commonJS({
   "node_modules/bootstrap/dist/js/bootstrap.bundle.js"(exports, module) {
@@ -13769,79 +13775,87 @@ var import_bootstrap_bundle;
 var init_globals = __esm({
   "src/globals.ts"() {
     "use strict";
+    init_styles();
     import_bootstrap_bundle = __toESM(require_bootstrap_bundle());
     init_bootstrap_select();
   }
 });
 
 // src/domain/data/entity.ts
+function episodeKey(seriesKey2, episodeId2) {
+  return `${seriesKey2}::${episodeId2}`;
+}
+function seriesKey(entityKey) {
+  return entityKey.split("::")[0];
+}
+function episodeId(entityKey) {
+  return entityKey.split("::")[1];
+}
+function entityDataDtoToMap(data, seriesKey2) {
+  return new Map(Object.keys(data || {}).map((episodeId2) => [episodeKey(seriesKey2, episodeId2), data[episodeId2]]));
+}
+function mergeEntities(entity1, entity2) {
+  return {
+    key: entity1.key,
+    links: [...new Set(entity1.links.concat(entity2.links))],
+    depiction: new Map([...entity1.depiction, ...entity2.depiction]),
+    alias: new Map([...entity1.alias, ...entity2.alias]),
+    connections: new Map([...entity1.connections, ...entity2.connections]),
+    tags: new Map([...entity1.tags, ...entity2.tags])
+  };
+}
 var EntityCollection;
 var init_entity = __esm({
   "src/domain/data/entity.ts"() {
     "use strict";
     EntityCollection = class {
       constructor() {
-        this.itemsMap = /* @__PURE__ */ new Map();
+        this.entitiesMap = /* @__PURE__ */ new Map();
       }
       get length() {
-        return this.itemsMap.size;
+        return this.entitiesMap.size;
       }
-      add(series, episode, entry) {
-        if (!entry || !entry.key) return;
-        const key = entry.key;
-        const descTexts = Array.isArray(entry.descriptions) ? [...entry.descriptions] : [];
-        const tagTexts = Array.isArray(entry.tags) ? [...entry.tags] : [];
-        const descData = {
-          series,
-          episode,
-          values: descTexts
-        };
-        const tagData = {
-          series,
-          episode,
-          values: tagTexts
-        };
-        const existing = this.itemsMap.get(key);
-        if (existing) {
-          if (descTexts.length) {
-            const descriptionsForEpisode = existing.descriptions.find((d) => d.series === series && d.episode === episode);
-            if (descriptionsForEpisode) {
-              descriptionsForEpisode.values.push(...descTexts);
-            } else {
-              existing.descriptions.push(descData);
-            }
-          }
-          if (tagTexts.length) {
-            const tagsForEpisode = existing.tags.find((t) => t.series === series && t.episode === episode);
-            if (tagsForEpisode) {
-              tagsForEpisode.values.push(...tagTexts);
-            } else {
-              existing.tags.push(tagData);
-            }
-          }
-        } else {
-          const newEntry = {
-            key,
-            descriptions: descData.values.length ? [descData] : [],
-            tags: tagData.values.length ? [tagData] : []
+      setSeries(series, entries) {
+        for (const entry of entries) {
+          const entity2 = {
+            key: entry.key,
+            links: entry.links || [],
+            depiction: entityDataDtoToMap(entry.depiction, series),
+            alias: entityDataDtoToMap(entry.alias, series),
+            connections: entityDataDtoToMap(entry.connections, series),
+            tags: entityDataDtoToMap(entry.tags, series)
           };
-          this.itemsMap.set(key, newEntry);
+          this.set(entity2);
         }
       }
+      set(entity2) {
+        if (!entity2 || !entity2.key) return;
+        if (this.entitiesMap.has(entity2.key)) {
+          this.entitiesMap.set(entity2.key, mergeEntities(this.entitiesMap.get(entity2.key), entity2));
+          return;
+        }
+        this.entitiesMap.set(entity2.key, entity2);
+      }
       find(key) {
-        return this.itemsMap.get(key);
+        return this.entitiesMap.get(key);
       }
       get(index) {
-        return Array.from(this.itemsMap.values())[index];
+        return Array.from(this.entitiesMap.values())[index];
       }
       forEach(callback) {
-        this.itemsMap.forEach(callback);
+        this.entitiesMap.forEach(callback);
       }
       toArray() {
-        return Array.from(this.itemsMap.values());
+        return Array.from(this.entitiesMap.values());
       }
       sort() {
-        this.itemsMap = new Map([...this.itemsMap.entries()].sort());
+        this.entitiesMap = new Map([...this.entitiesMap.entries()].sort());
+      }
+      getAllTags() {
+        const result = [...new Set(this.toArray().map(
+          (e) => Array.from(e.tags.values()).flat()
+        ).flat())];
+        return result;
       }
     };
   }
@@ -13854,12 +13868,20 @@ var init_manifest = __esm({
   }
 });
 
+// src/domain/data/indexDto.ts
+var init_indexDto = __esm({
+  "src/domain/data/indexDto.ts"() {
+    "use strict";
+  }
+});
+
 // src/domain/data/index.ts
 var init_data = __esm({
   "src/domain/data/index.ts"() {
     "use strict";
     init_entity();
     init_manifest();
+    init_indexDto();
   }
 });
 
@@ -13874,7 +13896,7 @@ var init_dataProvider = __esm({
         this.data = {
           entries: new EntityCollection(),
           seriesWithEpisodes: /* @__PURE__ */ new Map(),
-          tags: /* @__PURE__ */ new Set()
+          tags: []
         };
         this.manifestPath = dataPath;
       }
@@ -13890,22 +13912,17 @@ var init_dataProvider = __esm({
             this.data.seriesWithEpisodes.set(seriesEntry.key, { series: seriesEntry, episodes });
             for (const episodeEntry of seriesEntry.episodes) {
               try {
-                const episodeResponse = await fetch(`data/${seriesEntry.key}/${episodeEntry.id}.json`);
-                if (!episodeResponse.ok) continue;
+                const indexResponse = await fetch(`data/${seriesEntry.key}/index.json`);
+                if (!indexResponse.ok) continue;
                 episodes.add(episodeEntry);
-                const entries = await episodeResponse.json();
-                const validEntries = entries.filter((e) => e && e.key);
-                validEntries.forEach((entry) => {
-                  this.data.entries.add(seriesEntry.key, episodeEntry.id, entry);
-                });
-                validEntries.forEach((entry) => {
-                  (entry.tags || []).forEach((tag) => this.data.tags.add(tag));
-                });
+                const index = await indexResponse.json();
+                this.data.entries.setSeries(seriesEntry.key, index.entities);
               } catch (err) {
               }
             }
           }
           this.data.entries.sort();
+          this.data.tags.push(...this.data.entries.getAllTags());
           if (this.data.entries.length === 0) {
             throw new Error("No episodes loaded");
           }
@@ -13926,14 +13943,19 @@ var init_dataProvider = __esm({
         const results = [];
         entries.forEach((entry) => {
           if (this.matchExcludeKeys(entry)) return;
-          if (!this.matchSearchKeys(entry)) return;
+          const filteredAliases = this.filterEntityData(entry.alias);
+          if (!this.matchSearchName(entry, filteredAliases)) return;
           const filteredEntry = {
             key: entry.key,
-            descriptions: this.filterSearchEntityData(entry.descriptions),
-            tags: this.filterSearchEntityData(entry.tags)
+            links: entry.links,
+            depiction: this.filterEntityData(entry.depiction),
+            alias: filteredAliases,
+            connections: this.filterEntityData(entry.connections),
+            tags: this.filterEntityData(entry.tags)
           };
-          if (filteredEntry.descriptions.length === 0 && filteredEntry.tags.length === 0) return;
+          if (filteredEntry.depiction.size === 0 && filteredEntry.tags.size === 0 && filteredEntry.connections.size === 0) return;
           if (!this.matchTags(filteredEntry)) return;
+          if (!this.matchSearchRelated(filteredEntry.depiction, filteredEntry.tags, filteredEntry.connections)) return;
           results.push(filteredEntry);
         });
         return results;
@@ -13942,30 +13964,37 @@ var init_dataProvider = __esm({
         if (!this.searchRequest.excludeKeys || this.searchRequest.excludeKeys.size === 0) return false;
         return this.searchRequest.excludeKeys.has(item.key);
       }
-      matchSearchKeys(item) {
-        if (!this.searchRequest.searchKeys) return true;
-        const lowerSearchTerm = this.searchRequest.searchKeys.toLowerCase();
-        return item.key.toLowerCase().includes(lowerSearchTerm);
+      matchSearchName(item, ...entityData) {
+        if (!this.searchRequest.searchName) return true;
+        const lowerSearchTerm = this.searchRequest.searchName.toLowerCase();
+        return item.key.toLowerCase().includes(lowerSearchTerm) || entityData.some((data) => this.searchEntityData(data, lowerSearchTerm));
       }
-      filterSearchEntityData(entityData) {
-        var _a;
-        const lowerSearchTerm = (_a = this.searchRequest.searchEntityData) == null ? void 0 : _a.toLowerCase();
-        return entityData.filter(
-          (data) => this.matchSeries(data) && this.matchEpisodes(data) && (!lowerSearchTerm || data.values.some((value) => value.toLowerCase().includes(lowerSearchTerm)))
+      filterEntityData(entityData) {
+        return new Map([...entityData].filter(([entityKey, _]) => this.matchSeries(entityKey) && this.matchEpisodes(entityKey)));
+      }
+      matchSearchRelated(...entityData) {
+        if (!this.searchRequest.searchRelated) return true;
+        const lowerSearchTerm = this.searchRequest.searchRelated.toLowerCase();
+        return entityData.some((data) => this.searchEntityData(data, lowerSearchTerm));
+      }
+      searchEntityData(entityData, searchTerm) {
+        if (!searchTerm) return true;
+        return [...entityData].some(
+          ([_, data]) => typeof data === "string" ? data.toLowerCase().includes(searchTerm) : data.some((value) => value.toLowerCase().includes(searchTerm))
         );
       }
-      matchSeries(item) {
+      matchSeries(entityKey) {
         if (!this.searchRequest.series || this.searchRequest.series.size === 0) return true;
-        return this.searchRequest.series.has(item.series);
+        return this.searchRequest.series.has(seriesKey(entityKey));
       }
-      matchEpisodes(item) {
+      matchEpisodes(entityKey) {
         if (!this.searchRequest.episodes || this.searchRequest.episodes.size === 0) return true;
-        return this.searchRequest.episodes.has(`${item.series}::${item.episode}`);
+        return this.searchRequest.episodes.has(entityKey);
       }
       matchTags(item) {
         if (!this.searchRequest.tags || this.searchRequest.tags.size === 0) return true;
         return Array.from(this.searchRequest.tags).every(
-          (tag) => item.tags.some((t) => t.values.includes(tag))
+          (tag) => Array.from(item.tags.values()).some((t) => t.includes(tag))
         );
       }
     };
@@ -14163,27 +14192,27 @@ var init_selectpicker = __esm({
         selectedContainer.empty();
         if (this.options.interval) {
           const entry = this.entries.values().next().value;
-          const pill = this.renderPill(entry, "disabled");
-          selectedContainer.append(pill, "\xA0\u2013\xA0");
+          const pill2 = this.renderPill(entry, "disabled");
+          selectedContainer.append(pill2, "\xA0\u2013\xA0");
         }
         selected.forEach((s) => {
-          const pill = this.renderPill(s);
-          selectedContainer.append(pill);
+          const pill2 = this.renderPill(s);
+          selectedContainer.append(pill2);
         });
       }
       renderPill(entry, className = "") {
         var _a;
         if (!entry) return $();
-        const pill = document.createElement("span");
-        pill.className = `filter-pill ${className ? className : this.className}`;
-        pill.setAttribute("data-value", entry.value);
-        pill.setAttribute("data-type", this.className);
-        pill.textContent = (_a = entry.selectedText) != null ? _a : entry.text;
-        pill.addEventListener("click", (ev) => {
+        const pill2 = document.createElement("span");
+        pill2.className = `filter-pill ${className ? className : this.className}`;
+        pill2.setAttribute("data-value", entry.value);
+        pill2.setAttribute("data-type", this.className);
+        pill2.textContent = (_a = entry.selectedText) != null ? _a : entry.text;
+        pill2.addEventListener("click", (ev) => {
           ev.stopPropagation();
           this.deselectEntry(entry.value);
         });
-        return $(pill);
+        return $(pill2);
       }
     };
     ((SelectPicker2) => {
@@ -14201,15 +14230,90 @@ var init_controls = __esm({
   }
 });
 
-// src/app.ts
-var app_exports = {};
-var CampaignLookup;
-var init_app = __esm({
-  "src/app.ts"() {
+// src/renderers/entityRenderer.ts
+function entity(entity2, textToHighlight) {
+  var _a, _b;
+  const highlight = (text) => highlightText(text, textToHighlight);
+  const tagsHtml = [...entity2.tags].map(
+    ([_, tags]) => tags.map((tag) => pill("tag", tag, "solid")).join("")
+  ).join("");
+  const getIcon = (url) => {
+    var _a2;
+    return (_a2 = ["fandom", "miraheze"].find((icon) => url.includes(icon))) != null ? _a2 : "link";
+  };
+  const linksHtml = entity2.links.map((link) => `<a href="${link}" target="_blank"><i class="icon icon-${getIcon(link)}"></i></a>`).join("");
+  const lastAlias = (_b = (_a = [...entity2.alias].pop()) == null ? void 0 : _a[1].slice().pop()) != null ? _b : "";
+  let aliasesHtml = [...entity2.alias].map(
+    ([_, aliases]) => aliases.map((alias) => `<span class="entry-alias">"${alias}"${alias != lastAlias ? "," : ""}</span>`).join("")
+  ).join("");
+  if (aliasesHtml.length > 0) {
+    aliasesHtml = "" + aliasesHtml;
+  }
+  const depictions = [...entity2.depiction].map(([key, value]) => [key, highlight(value)]);
+  const latestDepiction = depictions.shift();
+  let descriptionHtml = !latestDepiction ? "" : `<button class="btn btn-block entry-depiction-latest" data-toggle="collapse" data-target="#entry-depiction-old-${entity2.key.replace(" ", "")}" aria-expanded="false" aria-controls="entry-depiction-old-${entity2.key.replace(" ", "")}">
+            ${latestDepiction == null ? void 0 : latestDepiction[1]}
+		</button>`;
+  descriptionHtml += !latestDepiction ? "" : `<div id="entry-depiction-old-${entity2.key.replace(" ", "")}" class="collapse entry-depiction-old">${depictions.reverse().map(([episodeKey2, depiction]) => `<p>${bullet(episodeId(episodeKey2))}<span>${depiction}</span></p>`).join("")}</div>`;
+  const connectionsHtml = [...entity2.connections].reverse().map(
+    ([episodeKey2, connections]) => connections.map((connection) => `<div class="entry-connection">${bullet(episodeId(episodeKey2))}${highlight(connection)}</div>`).join("")
+  ).join("");
+  return `<div class="entry-card">
+				<div class="entry-header">
+					<div class="entry-title">
+						<div class="entry-name">${entity2.key}</div>
+						<div class="entry-aliases">${aliasesHtml}</div>
+					</div>
+					<div class="entry-links">${linksHtml}</div>
+				</div>
+				<div class="entry-depictions">${descriptionHtml}</div>
+				<div class="entry-connections">${connectionsHtml}</div>
+				<div class="entry-tags">${tagsHtml}</div>
+			</div>`;
+}
+function pill(type, value, ...classes) {
+  if (!value) return "";
+  return `<span class="filter-pill ${type} ${classes == null ? void 0 : classes.join(" ")}">${value}</span>`;
+}
+function noResults() {
+  return '<div class="no-results">No entries found. Try adjusting your search or filters.</div>';
+}
+function bullet(text, title = "Episode ") {
+  return `<i class="bullet" title="${title + text}">${text}</i>`;
+}
+function highlightText(text, term) {
+  if (term !== "") {
+    const re = new RegExp(term, "gi");
+    const newText = text.replace(re, (match) => `<mark class="p-0">${match}</mark>`);
+    return newText;
+  }
+  return text;
+}
+var init_entityRenderer = __esm({
+  "src/renderers/entityRenderer.ts"() {
+    "use strict";
+    init_data();
+  }
+});
+
+// src/renderers/index.ts
+var init_renderers = __esm({
+  "src/renderers/index.ts"() {
+    "use strict";
+    init_entityRenderer();
+  }
+});
+
+// src/main.ts
+var main_exports = {};
+var CriticalRoleCompendium;
+var init_main = __esm({
+  "src/main.ts"() {
     "use strict";
     init_providers();
     init_controls();
-    CampaignLookup = class {
+    init_renderers();
+    CriticalRoleCompendium = class {
       constructor() {
         this.dataProvider = new DataProvider("data/manifest.json");
         this.searchTerm = "";
@@ -14260,8 +14364,8 @@ var init_app = __esm({
         if (this.controls.seriesSelect.values.length === 0) {
           this.dataProvider.data.seriesWithEpisodes.forEach((series) => series.episodes.forEach((episode) => combinedSet.add({ series: series.series, episode })));
         } else {
-          this.controls.seriesSelect.values.forEach((seriesKey) => {
-            const series = this.dataProvider.data.seriesWithEpisodes.get(seriesKey);
+          this.controls.seriesSelect.values.forEach((seriesKey2) => {
+            const series = this.dataProvider.data.seriesWithEpisodes.get(seriesKey2);
             series.episodes.forEach((episode) => combinedSet.add({ series: series.series, episode }));
           });
         }
@@ -14275,8 +14379,7 @@ var init_app = __esm({
         this.controls.episodeSelect.setEntries(options);
       }
       populateTagSelector() {
-        const tags = Array.from(this.dataProvider.data.tags);
-        this.controls.tagSelect.setEntries(tags);
+        this.controls.tagSelect.setEntries(this.dataProvider.data.tags);
       }
       formatEpisodeName(episode) {
         return episode.replace(/_/g, " ").replace(/episode/i, "Episode").replace(/\b\w/g, (l) => l.toUpperCase());
@@ -14305,105 +14408,43 @@ var init_app = __esm({
           };
         }
       }
-      formatDescription(item) {
-        return item.descriptions.map((d) => {
-          var _a, _b;
-          const description = d.values.join("\n");
-          const parts = description.split(/→|\n/).map((s) => s.trim()).filter((s) => s);
-          const series = (_a = this.dataProvider.data.seriesWithEpisodes.get(d.series)) == null ? void 0 : _a.series;
-          const seriesName = this.dataProvider.data.seriesWithEpisodes.size == 1 || this.controls.seriesSelect.values.length == 1 ? "" : (_b = series == null ? void 0 : series.shortTitle) != null ? _b : "";
-          const episode = series == null ? void 0 : series.episodes.find((e) => e.id === d.episode);
-          let html = "";
-          let currentSpeaker = "";
-          parts.forEach((part) => {
-            var _a2;
-            if (part === part.toUpperCase() && part.length < 30 && !part.includes(".")) {
-              currentSpeaker = part;
-            } else {
-              if (currentSpeaker) {
-                html += `<span class="speaker"><span>${this.escapeHtml(currentSpeaker)}</span>${this.filterPill("series", seriesName, "mini", "light")}${this.filterPill("episode", (_a2 = episode == null ? void 0 : episode.shortTitle) != null ? _a2 : "", "mini", "light")}</span>`;
-                currentSpeaker = "";
-              }
-              html += `<p>${this.highlightText(this.escapeHtml(part), this.searchTerm)}</p>`;
-            }
-          });
-          return html;
-        }).join("");
-      }
       render() {
-        const keyResultsEl = document.getElementById("key-results");
-        const descriptionResultsEl = document.getElementById("description-results");
+        const directResultsEl = document.getElementById("key-results");
+        const relatedResultsEl = document.getElementById("related-results");
         const statsEl = document.getElementById("stats");
-        const keyEntries = this.dataProvider.searchEntries({
-          searchKeys: this.searchTerm,
+        const directEntries = this.dataProvider.searchEntries({
+          searchName: this.searchTerm,
           series: new Set(this.controls.seriesSelect.values),
           episodes: new Set(this.controls.episodeSelect.values),
           tags: new Set(this.controls.tagSelect.values)
         });
-        const mentionEntries = this.dataProvider.searchEntries({
-          excludeKeys: new Set(keyEntries.map((e) => e.key)),
-          searchEntityData: this.searchTerm,
+        const relatedEntries = this.dataProvider.searchEntries({
+          excludeKeys: new Set(directEntries.map((e) => e.key)),
+          searchRelated: this.searchTerm,
           series: new Set(this.controls.seriesSelect.values),
           episodes: new Set(this.controls.episodeSelect.values),
           tags: new Set(this.controls.tagSelect.values)
         });
-        statsEl.textContent = `Showing ${keyEntries.length} direct ${keyEntries.length === 1 ? "match" : "matches"} and ${mentionEntries.length} related ${mentionEntries.length === 1 ? "entry" : "entries"}.`;
-        this.renderResults(keyResultsEl, keyEntries);
-        this.renderResults(descriptionResultsEl, mentionEntries);
-      }
-      renderResults(container, entries) {
-        if (entries.length === 0) {
-          container.innerHTML = '<div class="no-results">No entries found. Try adjusting your search or filters.</div>';
-          return;
-        }
-        container.innerHTML = entries.map((entry) => {
-          const descHtml = this.formatDescription(entry);
-          const tagsFlat = Array.from(new Set(entry.tags.flatMap((t) => t.values)));
-          const tagsHtml = tagsFlat.length > 0 ? (
-            // `<div class="entry-tags">` +
-            `${tagsFlat.map((tag) => this.filterPill("tag", tag, "solid")).join("")}`
-          ) : "";
-          return `
-                <div class="entry-card">
-                    <div class="entry-title"><span>${this.escapeHtml(entry.key)}</span>${tagsHtml}</div>
-                	<div class="entry-description">${descHtml}</div>
-				</div>
-            `;
-        }).join("");
+        statsEl.textContent = `Showing ${directEntries.length} direct ${directEntries.length === 1 ? "match" : "matches"} and ${relatedEntries.length} related ${relatedEntries.length === 1 ? "entry" : "entries"}.`;
+        directResultsEl.innerHTML = directEntries.length === 0 ? noResults() : directEntries.map((e) => entity(e, this.searchTerm)).join("");
+        relatedResultsEl.innerHTML = relatedEntries.length === 0 ? "" : relatedEntries.map((e) => entity(e, this.searchTerm)).join("");
       }
       showError(message) {
         const errorContainer = document.getElementById("error-container");
-        errorContainer.innerHTML = `<div class="error">${this.escapeHtml(message)}</div>`;
+        errorContainer.innerHTML = `<div class="error">${message}</div>`;
         document.getElementById("key-results").innerHTML = "";
       }
-      escapeHtml(text) {
-        const div = document.createElement("div");
-        div.textContent = text;
-        return div.innerHTML;
-      }
-      highlightText(text, term) {
-        if (term !== "") {
-          const re = new RegExp(term, "gi");
-          const newText = text.replace(re, (match) => `<mark class="p-0">${match}</mark>`);
-          return newText;
-        }
-        return text;
-      }
-      filterPill(type, value, ...classes) {
-        if (!value) return "";
-        return `<span class="filter-pill ${type} ${classes == null ? void 0 : classes.join(" ")}">${this.escapeHtml(value)}</span>`;
-      }
     };
-    new CampaignLookup();
+    new CriticalRoleCompendium();
   }
 });
 
-// src/entry.ts
+// src/app.ts
 var import_jquery = __toESM(require_jquery());
 globalThis.$ = import_jquery.default;
 globalThis.jQuery = import_jquery.default;
 Promise.resolve().then(() => init_globals());
-Promise.resolve().then(() => init_app());
+Promise.resolve().then(() => init_main());
 /*! Bundled license information:
 
 jquery/dist/jquery.js:
@@ -14457,4 +14498,4 @@ bootstrap-select/dist/js/bootstrap-select.js:
    * Licensed under MIT (https://github.com/snapappointments/bootstrap-select/blob/master/LICENSE)
    *)
 */
-//# sourceMappingURL=bundle.js.map
+//# sourceMappingURL=app.js.map
