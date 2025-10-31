@@ -10,7 +10,7 @@
 			"tags": {
 				"2": [
 					"Imprisoned",
-					"Creatures",
+					"Creature",
 					"Angel"
 				]
 			},
@@ -93,7 +93,7 @@
 			],
 			"tags": {
 				"2": [
-					"Creatures",
+					"Creature",
 					"Celestial"
 				]
 			},
@@ -115,8 +115,8 @@
 			],
 			"tags": {
 				"1": [
-					"Locations",
-					"Worlds"
+					"Location",
+					"World"
 				]
 			},
 			"depiction": {
@@ -137,7 +137,7 @@
 			],
 			"tags": {
 				"1": [
-					"NPCs",
+					"NPC",
 					"Human",
 					"Nobility",
 					"House Royce"
@@ -167,8 +167,8 @@
 			],
 			"tags": {
 				"1": [
-					"NPCs",
-					"Shapers"
+					"NPC",
+					"Shaper"
 				]
 			},
 			"depiction": {
@@ -186,12 +186,9 @@
 			],
 			"tags": {
 				"1": [
-					"Player characters",
+					"Player character",
 					"Human",
-					"Sorcerer"
-				],
-				"3": [
-					"Schemers"
+					"Archane Marshal"
 				]
 			},
 			"depiction": {
@@ -219,11 +216,8 @@
 			],
 			"tags": {
 				"1": [
-					"Player characters",
+					"Player character",
 					"Curator"
-				],
-				"3": [
-					"Schemers"
 				]
 			},
 			"depiction": {
@@ -263,7 +257,7 @@
 			},
 			"tags": {
 				"2": [
-					"Locations",
+					"Location",
 					"Government building",
 					"Military"
 				]
@@ -283,7 +277,7 @@
 			},
 			"tags": {
 				"2": [
-					"Items",
+					"Item",
 					"Song"
 				]
 			}
@@ -302,8 +296,8 @@
 			],
 			"tags": {
 				"1": [
-					"Factions",
-					"Religions"
+					"Faction",
+					"Religion"
 				]
 			},
 			"depiction": {
@@ -332,9 +326,9 @@
 			},
 			"tags": {
 				"2": [
-					"Locations",
+					"Location",
 					"Dol-Makjar",
-					"Neighborhoods"
+					"Neighborhood"
 				]
 			}
 		},
@@ -351,7 +345,7 @@
 			],
 			"tags": {
 				"1": [
-					"NPCs",
+					"NPC",
 					"Torn Banner"
 				],
 				"2": [
@@ -383,8 +377,8 @@
 			"links": [],
 			"tags": {
 				"1": [
-					"NPCs",
-					"Factions",
+					"NPC",
+					"Faction",
 					"Government"
 				]
 			},
@@ -409,7 +403,7 @@
 			],
 			"tags": {
 				"1": [
-					"Factions",
+					"Faction",
 					"Thieves' guilds"
 				]
 			},
@@ -478,7 +472,7 @@
 			],
 			"tags": {
 				"1": [
-					"Locations",
+					"Location",
 					"Kahad",
 					"Cities"
 				]
@@ -515,7 +509,7 @@
 			],
 			"tags": {
 				"1": [
-					"Locations",
+					"Location",
 					"Kahad"
 				]
 			},
@@ -545,8 +539,8 @@
 			},
 			"tags": {
 				"2": [
-					"Locations",
-					"Geographical features",
+					"Location",
+					"Geographical feature",
 					"Passes"
 				]
 			}
@@ -651,8 +645,7 @@
 			],
 			"tags": {
 				"3": [
-					"NPCs",
-					"NPCs",
+					"NPC",
 					"House Tachonis"
 				]
 			},
@@ -678,8 +671,8 @@
 			],
 			"tags": {
 				"1": [
-					"Events",
-					"Wars"
+					"Event",
+					"War"
 				]
 			},
 			"depiction": {
@@ -704,8 +697,8 @@
 			},
 			"tags": {
 				"1": [
-					"Events",
-					"Customs",
+					"Event",
+					"Custom",
 					"Orcish"
 				]
 			}
@@ -725,7 +718,7 @@
 			},
 			"tags": {
 				"2": [
-					"Items",
+					"Item",
 					"Magical substance"
 				]
 			}
@@ -759,7 +752,7 @@
 			],
 			"tags": {
 				"3": [
-					"Creatures",
+					"Creature",
 					"Undead"
 				]
 			},
@@ -782,7 +775,7 @@
 			],
 			"tags": {
 				"1": [
-					"NPCs",
+					"NPC",
 					"Human",
 					"House Halovar",
 					"Candescent Creed"
@@ -809,7 +802,7 @@
 			"links": [],
 			"tags": {
 				"3": [
-					"Locations",
+					"Location",
 					"Timmony"
 				]
 			},
@@ -835,7 +828,7 @@
 			},
 			"tags": {
 				"1": [
-					"Locations",
+					"Location",
 					"Dol-Makjar",
 					"Monuments"
 				]
@@ -849,9 +842,8 @@
 			],
 			"tags": {
 				"1": [
-					"Companions",
-					"Beasts",
-					"Druid companions"
+					"Companion",
+					"Beast"
 				]
 			},
 			"depiction": {
@@ -876,9 +868,8 @@
 			],
 			"tags": {
 				"1": [
-					"Player characters",
-					"Orc",
-					"Bard"
+					"Player character",
+					"Orc"
 				]
 			},
 			"depiction": {
@@ -894,6 +885,9 @@
 				],
 				"3": [
 					"Wielder of the Liar's Blade"
+				],
+				"4": [
+					"Schemers"
 				]
 			}
 		},
@@ -938,7 +932,7 @@
 			},
 			"tags": {
 				"2": [
-					"Factions",
+					"Faction",
 					"Nobility",
 					"Sundered Houses"
 				]
@@ -958,7 +952,7 @@
 			},
 			"tags": {
 				"2": [
-					"Factions",
+					"Faction",
 					"Nobility",
 					"Sundered Houses"
 				]
@@ -977,13 +971,9 @@
 			],
 			"tags": {
 				"1": [
-					"Player characters",
+					"Player character",
 					"Human",
-					"Knight",
 					"House Davinos"
-				],
-				"3": [
-					"Cursed"
 				]
 			},
 			"depiction": {
@@ -1017,8 +1007,8 @@
 			],
 			"tags": {
 				"1": [
-					"Locations",
-					"Regions"
+					"Location",
+					"Region"
 				]
 			},
 			"depiction": {
@@ -1049,17 +1039,13 @@
 			],
 			"tags": {
 				"1": [
-					"Player characters",
-					"Human",
-					"Ranger",
-					"Bounty hunter",
-					"Player characters",
+					"Player character",
 					"Human",
 					"Ranger",
 					"Bounty hunter"
 				],
 				"3": [
-					"Seekers"
+					"Soldiers"
 				]
 			},
 			"depiction": {
@@ -1101,8 +1087,8 @@
 			],
 			"tags": {
 				"3": [
-					"Items",
-					"Weapons"
+					"Item",
+					"Weapon"
 				]
 			},
 			"depiction": {
@@ -1125,7 +1111,7 @@
 			],
 			"tags": {
 				"1": [
-					"NPCs",
+					"NPC",
 					"Orc",
 					"Fighter",
 					"Old Path",
@@ -1158,9 +1144,9 @@
 			},
 			"tags": {
 				"2": [
-					"Locations",
+					"Location",
 					"Kahad",
-					"Neighborhoods"
+					"Neighborhood"
 				]
 			}
 		},
@@ -1189,7 +1175,7 @@
 			"links": [],
 			"tags": {
 				"1": [
-					"Locations",
+					"Location",
 					"Battlefields"
 				]
 			},
@@ -1215,9 +1201,9 @@
 			},
 			"tags": {
 				"2": [
-					"Locations",
+					"Location",
 					"Dol-Makjar",
-					"Neighborhoods"
+					"Neighborhood"
 				]
 			}
 		},
@@ -1234,9 +1220,9 @@
 			},
 			"tags": {
 				"1": [
-					"Locations",
-					"Geographical features",
-					"Mountains"
+					"Location",
+					"Geographical feature",
+					"Mountain"
 				]
 			}
 		},
@@ -1246,7 +1232,7 @@
 			"links": [],
 			"tags": {
 				"1": [
-					"Locations"
+					"Location"
 				]
 			},
 			"depiction": {
@@ -1267,16 +1253,13 @@
 			],
 			"tags": {
 				"1": [
-					"Player characters",
+					"Player character",
 					"Dwarf",
 					"Wizard",
 					"Penteveral"
 				],
 				"2": [
 					"Bursar"
-				],
-				"3": [
-					"Schemers"
 				]
 			},
 			"depiction": {
@@ -1329,7 +1312,7 @@
 			],
 			"tags": {
 				"1": [
-					"Player characters",
+					"Player character",
 					"Human",
 					"Wizard",
 					"Necromancer",
@@ -1372,7 +1355,7 @@
 			],
 			"tags": {
 				"2": [
-					"Creatures",
+					"Creature",
 					"Angel",
 					"Celestial",
 					"Halfling Lore",
@@ -1396,8 +1379,8 @@
 			],
 			"tags": {
 				"1": [
-					"Factions",
-					"Religions",
+					"Faction",
+					"Religion",
 					"Druidism"
 				]
 			},
@@ -1424,7 +1407,7 @@
 			],
 			"tags": {
 				"1": [
-					"NPCs",
+					"NPC",
 					"Orc",
 					"Producer"
 				]
@@ -1461,7 +1444,7 @@
 			},
 			"tags": {
 				"2": [
-					"Locations",
+					"Location",
 					"Dol-Makjar",
 					"Estates"
 				]
@@ -1476,7 +1459,7 @@
 			],
 			"tags": {
 				"1": [
-					"Items"
+					"Item"
 				]
 			},
 			"depiction": {
@@ -1503,7 +1486,7 @@
 			],
 			"tags": {
 				"1": [
-					"Locations"
+					"Location"
 				]
 			},
 			"depiction": {},
@@ -1522,8 +1505,8 @@
 			],
 			"tags": {
 				"1": [
-					"Factions",
-					"Organizations",
+					"Faction",
+					"Organization",
 					"Arcane"
 				]
 			},
@@ -1554,9 +1537,9 @@
 			],
 			"tags": {
 				"1": [
-					"Companions",
-					"Constructs",
-					"Familiars"
+					"Companion",
+					"Construct",
+					"Familiar"
 				],
 				"3": [
 					"Undead"
@@ -1582,7 +1565,7 @@
 			],
 			"tags": {
 				"1": [
-					"Locations",
+					"Location",
 					"Kahad",
 					"Towns"
 				]
@@ -1605,7 +1588,7 @@
 			],
 			"tags": {
 				"2": [
-					"NPCs",
+					"NPC",
 					"House Tachonis"
 				]
 			},
@@ -1642,7 +1625,7 @@
 			},
 			"tags": {
 				"2": [
-					"Items",
+					"Item",
 					"Magical device"
 				]
 			}
@@ -1656,9 +1639,9 @@
 			],
 			"tags": {
 				"2": [
-					"NPCs",
+					"NPC",
 					"House Davinos",
-					"NPCs"
+					"NPC"
 				]
 			},
 			"depiction": {
@@ -1684,8 +1667,8 @@
 			],
 			"tags": {
 				"2": [
-					"NPCs",
-					"Shapers",
+					"NPC",
+					"Shaper",
 					"Deity",
 					"Halfling Lore"
 				]
@@ -1707,7 +1690,7 @@
 			],
 			"tags": {
 				"1": [
-					"Factions",
+					"Faction",
 					"Government"
 				]
 			},
@@ -1731,7 +1714,7 @@
 			],
 			"tags": {
 				"1": [
-					"Factions",
+					"Faction",
 					"Revolutionary Council",
 					"Military",
 					"Law enforcement"
@@ -1763,8 +1746,8 @@
 			},
 			"tags": {
 				"1": [
-					"Locations",
-					"Geographical features"
+					"Location",
+					"Geographical feature"
 				]
 			}
 		},
@@ -1781,9 +1764,9 @@
 			},
 			"tags": {
 				"2": [
-					"Locations",
+					"Location",
 					"Dol-Makjar",
-					"Neighborhoods"
+					"Neighborhood"
 				]
 			}
 		},
@@ -1800,9 +1783,9 @@
 			},
 			"tags": {
 				"2": [
-					"Locations",
+					"Location",
 					"Kahad",
-					"Neighborhoods"
+					"Neighborhood"
 				]
 			}
 		},
@@ -1812,7 +1795,7 @@
 			"links": [],
 			"tags": {
 				"5": [
-					"Parties"
+					"Player party"
 				]
 			},
 			"depiction": {},
@@ -1824,7 +1807,7 @@
 			"links": [],
 			"tags": {
 				"5": [
-					"Parties"
+					"Player party"
 				]
 			},
 			"depiction": {},
@@ -1843,7 +1826,7 @@
 			},
 			"tags": {
 				"2": [
-					"Items",
+					"Item",
 					"Religious text"
 				]
 			}
@@ -1889,9 +1872,6 @@
 			"tags": {
 				"1": [
 					"Undead"
-				],
-				"4": [
-					"Creatures"
 				]
 			},
 			"depiction": {
@@ -1913,8 +1893,8 @@
 			],
 			"tags": {
 				"1": [
-					"Events",
-					"Wars"
+					"Event",
+					"War"
 				]
 			},
 			"depiction": {
@@ -1931,7 +1911,7 @@
 			],
 			"tags": {
 				"1": [
-					"NPCs"
+					"NPC"
 				]
 			},
 			"depiction": {
@@ -2001,8 +1981,8 @@
 			"links": [],
 			"tags": {
 				"1": [
-					"Factions",
-					"Religious orders"
+					"Faction",
+					"Religious order"
 				]
 			},
 			"depiction": {
@@ -2022,7 +2002,7 @@
 			],
 			"tags": {
 				"5": [
-					"Parties"
+					"Player party"
 				]
 			},
 			"depiction": {
@@ -2050,7 +2030,7 @@
 				"2": [
 					"NPC",
 					"Human",
-					"Thieves' guilds",
+					"Thieves' guild",
 					"Crow Keepers"
 				],
 				"3": [
@@ -2067,7 +2047,7 @@
 			],
 			"tags": {
 				"1": [
-					"Items",
+					"Item",
 					"Artifact",
 					"Elven"
 				]
@@ -2099,7 +2079,7 @@
 			],
 			"tags": {
 				"1": [
-					"Factions"
+					"Faction"
 				]
 			},
 			"depiction": {
@@ -2127,8 +2107,8 @@
 			],
 			"tags": {
 				"1": [
-					"NPCs",
-					"Shapers",
+					"NPC",
+					"Shaper",
 					"Deity"
 				]
 			},
@@ -2157,7 +2137,7 @@
 			],
 			"tags": {
 				"1": [
-					"NPCs"
+					"NPC"
 				]
 			},
 			"depiction": {
@@ -2182,8 +2162,8 @@
 			],
 			"tags": {
 				"2": [
-					"NPCs",
-					"Shapers",
+					"NPC",
+					"Shaper",
 					"Deity",
 					"Obridimian Empire"
 				]
@@ -2213,7 +2193,7 @@
 			],
 			"tags": {
 				"1": [
-					"Locations"
+					"Location"
 				]
 			},
 			"depiction": {},
@@ -2235,12 +2215,12 @@
 			],
 			"tags": {
 				"1": [
-					"Player characters",
+					"Player character",
 					"Nama",
 					"Vanguard Marshal"
 				],
 				"3": [
-					"Seekers"
+					"Soldiers"
 				]
 			},
 			"depiction": {
@@ -2272,7 +2252,7 @@
 			],
 			"tags": {
 				"1": [
-					"Player characters",
+					"Player character",
 					"Orc",
 					"Druid",
 					"Lloy family",
@@ -2280,9 +2260,6 @@
 				],
 				"2": [
 					"Circle of Ancients"
-				],
-				"3": [
-					"Schemers"
 				]
 			},
 			"depiction": {
@@ -2322,7 +2299,7 @@
 			},
 			"tags": {
 				"2": [
-					"Locations",
+					"Location",
 					"Kahad",
 					"Museum"
 				]
@@ -2341,9 +2318,9 @@
 			},
 			"tags": {
 				"1": [
-					"Locations",
+					"Location",
 					"Dol-Makjar",
-					"Taverns"
+					"Tavern"
 				]
 			}
 		},
@@ -2363,7 +2340,7 @@
 			},
 			"tags": {
 				"2": [
-					"Locations",
+					"Location",
 					"Dol-Makjar",
 					"Government building"
 				]
@@ -2386,9 +2363,44 @@
 			},
 			"tags": {
 				"2": [
-					"Locations",
+					"Location",
 					"Dol-Makjar",
-					"Taverns"
+					"Tavern"
+				]
+			}
+		},
+		{
+			"key": "The Hallowed Round",
+			"depiction": {
+				"1": "An ancient and seemingly forbidden public space in Dol-Makjar, deeded to Halandil Fang by the Revolutionary Council to be used as a theater.",
+				"3": "An ancient amphitheater, formerly a site for rituals to the Shaper Azgra, now being converted into \"The Hallowed Round\" theater by Halandil Fang. A massive, gnarled cedar tree stands at its center, overlooking the Tintazy Wood."
+			},
+			"alias": {
+				"3": [
+					"dithyramb of Azgra"
+				]
+			},
+			"connections": {
+				"1": [
+					"Theater run by Halandil Fang",
+					"Located in Dol-Makjar"
+				],
+				"2": [
+					"Serves as Halandil Fang's home",
+					"Located in The Rookery neighborhood"
+				],
+				"3": [
+					"Overlooks the Tintazy Wood"
+				],
+				"4": [
+					"Shadia Fang proposed decorating its walls with murals of legendary figures"
+				]
+			},
+			"tags": {
+				"1": [
+					"Location",
+					"Dol-Makjar",
+					"Theater"
 				]
 			}
 		},
@@ -2400,7 +2412,7 @@
 			],
 			"tags": {
 				"2": [
-					"Locations"
+					"Location"
 				],
 				"3": [
 					"Planes"
@@ -2431,9 +2443,9 @@
 			},
 			"tags": {
 				"1": [
-					"Locations",
+					"Location",
 					"Dol-Makjar",
-					"Neighborhoods"
+					"Neighborhood"
 				]
 			}
 		},
@@ -2451,7 +2463,7 @@
 			},
 			"tags": {
 				"2": [
-					"Locations",
+					"Location",
 					"Dol-Makjar",
 					"Brothel"
 				]
@@ -2463,7 +2475,7 @@
 			"links": [],
 			"tags": {
 				"2": [
-					"Locations"
+					"Location"
 				]
 			},
 			"depiction": {},
@@ -2483,12 +2495,12 @@
 			],
 			"tags": {
 				"1": [
-					"Player characters",
+					"Player character",
 					"Pixie",
 					"Fey"
 				],
 				"3": [
-					"Seekers"
+					"Soldiers"
 				]
 			},
 			"depiction": {
@@ -2519,7 +2531,7 @@
 			],
 			"tags": {
 				"1": [
-					"NPCs",
+					"NPC",
 					"Orc",
 					"Arcanist"
 				]
@@ -2552,7 +2564,7 @@
 			"links": [],
 			"tags": {
 				"3": [
-					"Locations"
+					"Location"
 				]
 			},
 			"depiction": {
@@ -2573,7 +2585,7 @@
 			],
 			"tags": {
 				"1": [
-					"Factions"
+					"Faction"
 				]
 			},
 			"depiction": {},
@@ -2619,13 +2631,13 @@
 			],
 			"tags": {
 				"1": [
-					"Player characters",
+					"Player character",
 					"Demon",
 					"Fiend",
 					"Candescent Creed"
 				],
 				"3": [
-					"Seekers"
+					"Soldiers"
 				]
 			},
 			"depiction": {
@@ -2659,7 +2671,7 @@
 			],
 			"tags": {
 				"1": [
-					"Locations"
+					"Location"
 				]
 			},
 			"depiction": {},
@@ -2682,7 +2694,7 @@
 			],
 			"tags": {
 				"1": [
-					"Player characters",
+					"Player character",
 					"Elf",
 					"Cleric",
 					"Sisters of Sylandri"
@@ -2708,7 +2720,7 @@
 			"connections": {},
 			"tags": {
 				"2": [
-					"Locations"
+					"Location"
 				]
 			}
 		},
@@ -2730,7 +2742,7 @@
 			},
 			"tags": {
 				"1": [
-					"Locations",
+					"Location",
 					"Dol-Makjar",
 					"Estates"
 				],
@@ -2746,7 +2758,7 @@
 			"links": [],
 			"tags": {
 				"3": [
-					"Creatures"
+					"Creature"
 				]
 			},
 			"depiction": {
@@ -2766,7 +2778,7 @@
 			],
 			"tags": {
 				"1": [
-					"Events"
+					"Event"
 				]
 			},
 			"depiction": {},
@@ -2796,11 +2808,14 @@
 			],
 			"tags": {
 				"1": [
-					"Player characters",
+					"Player character",
 					"Human",
 					"Light Priest",
 					"Candescent Creed",
 					"House Halovar"
+				],
+				"3": [
+					"Soldiers"
 				]
 			},
 			"depiction": {
@@ -2836,10 +2851,7 @@
 			],
 			"tags": {
 				"1": [
-					"Companions",
-					"Animal",
-					"Wolf",
-					"Companions",
+					"Companion",
 					"Animal",
 					"Wolf"
 				]
@@ -2850,7 +2862,6 @@
 			},
 			"connections": {
 				"1": [
-					"Companion of Kattigan Vale",
 					"Companion of Kattigan Vale"
 				]
 			}
@@ -2869,7 +2880,7 @@
 			],
 			"tags": {
 				"1": [
-					"NPCs",
+					"NPC",
 					"Candescent Creed",
 					"House Halovar"
 				]
@@ -2894,41 +2905,6 @@
 			}
 		},
 		{
-			"key": "dithyramb of Azgra",
-			"depiction": {
-				"1": "An ancient and seemingly forbidden public space in Dol-Makjar, deeded to Halandil Fang by the Revolutionary Council to be used as a theater.",
-				"3": "An ancient amphitheater, formerly a site for rituals to the Shaper Azgra, now being converted into \"The Hallowed Round\" theater by Halandil Fang. A massive, gnarled cedar tree stands at its center, overlooking the Tintazy Wood."
-			},
-			"alias": {
-				"3": [
-					"The Hallowed Round"
-				]
-			},
-			"connections": {
-				"1": [
-					"Theater run by Halandil Fang",
-					"Located in Dol-Makjar"
-				],
-				"2": [
-					"Serves as Halandil Fang's home",
-					"Located in The Rookery neighborhood"
-				],
-				"3": [
-					"Overlooks the Tintazy Wood"
-				],
-				"4": [
-					"Shadia Fang proposed decorating its walls with murals of legendary figures"
-				]
-			},
-			"tags": {
-				"1": [
-					"Locations",
-					"Dol-Makjar",
-					"Theaters"
-				]
-			}
-		},
-		{
 			"key": "the Embers",
 			"depiction": {
 				"2": "The dwarven neighborhood in Dol-Makjar, built into the side of the Kavrosi Mountains. It borders the Penteveral."
@@ -2941,9 +2917,9 @@
 			},
 			"tags": {
 				"2": [
-					"Locations",
+					"Location",
 					"Dol-Makjar",
-					"Neighborhoods",
+					"Neighborhood",
 					"Dwarven"
 				]
 			}
