@@ -189,6 +189,9 @@
 					"Player character",
 					"Human",
 					"Archane Marshal"
+				],
+				"4": [
+					"Schemers"
 				]
 			},
 			"depiction": {
@@ -218,6 +221,9 @@
 				"1": [
 					"Player character",
 					"Curator"
+				],
+				"4": [
+					"Schemers"
 				]
 			},
 			"depiction": {
@@ -404,7 +410,7 @@
 			"tags": {
 				"1": [
 					"Faction",
-					"Thieves' guilds"
+					"Thieves' guild"
 				]
 			},
 			"depiction": {
@@ -830,7 +836,7 @@
 				"1": [
 					"Location",
 					"Dol-Makjar",
-					"Monuments"
+					"Monument"
 				]
 			}
 		},
@@ -870,6 +876,9 @@
 				"1": [
 					"Player character",
 					"Orc"
+				],
+				"4": [
+					"Schemers"
 				]
 			},
 			"depiction": {
@@ -885,9 +894,6 @@
 				],
 				"3": [
 					"Wielder of the Liar's Blade"
-				],
-				"4": [
-					"Schemers"
 				]
 			}
 		},
@@ -934,7 +940,7 @@
 				"2": [
 					"Faction",
 					"Nobility",
-					"Sundered Houses"
+					"Sundered House"
 				]
 			}
 		},
@@ -954,7 +960,7 @@
 				"2": [
 					"Faction",
 					"Nobility",
-					"Sundered Houses"
+					"Sundered House"
 				]
 			}
 		},
@@ -974,6 +980,9 @@
 					"Player character",
 					"Human",
 					"House Davinos"
+				],
+				"4": [
+					"Seekers"
 				]
 			},
 			"depiction": {
@@ -1176,7 +1185,7 @@
 			"tags": {
 				"1": [
 					"Location",
-					"Battlefields"
+					"Battlefield"
 				]
 			},
 			"depiction": {
@@ -1260,6 +1269,9 @@
 				],
 				"2": [
 					"Bursar"
+				],
+				"4": [
+					"Schemers"
 				]
 			},
 			"depiction": {
@@ -1318,6 +1330,9 @@
 					"Necromancer",
 					"House Tachonis",
 					"Penteveral"
+				],
+				"4": [
+					"Seekers"
 				]
 			},
 			"depiction": {
@@ -1446,7 +1461,7 @@
 				"2": [
 					"Location",
 					"Dol-Makjar",
-					"Estates"
+					"Estate"
 				]
 			}
 		},
@@ -2030,7 +2045,6 @@
 				"2": [
 					"NPC",
 					"Human",
-					"Thieves' guild",
 					"Crow Keepers"
 				],
 				"3": [
@@ -2071,7 +2085,7 @@
 			}
 		},
 		{
-			"key": "Sundered Houses",
+			"key": "Sundered House",
 			"alias": {},
 			"links": [
 				"https://criticalrole.fandom.com/wiki/Sundered_Houses",
@@ -2260,6 +2274,9 @@
 				],
 				"2": [
 					"Circle of Ancients"
+				],
+				"4": [
+					"Seekers"
 				]
 			},
 			"depiction": {
@@ -2698,6 +2715,9 @@
 					"Elf",
 					"Cleric",
 					"Sisters of Sylandri"
+				],
+				"4": [
+					"Seekers"
 				]
 			},
 			"depiction": {
@@ -2744,7 +2764,7 @@
 				"1": [
 					"Location",
 					"Dol-Makjar",
-					"Estates"
+					"Estate"
 				],
 				"2": [
 					"Candescent Creed",
