@@ -53,7 +53,11 @@
 					"Demon",
 					"Fiend"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Agony",
+				"https://criticalrole.miraheze.org/wiki/Agony"
+			]
 		},
 		{
 			"key": "Alogar Fang",
@@ -82,7 +86,10 @@
 				"3": [
 					"Warrior"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.miraheze.org/wiki/Alogar_Fang"
+			]
 		},
 		{
 			"key": "Angel",
@@ -189,9 +196,6 @@
 					"Player character",
 					"Human",
 					"Archane Marshal"
-				],
-				"4": [
-					"Schemers"
 				]
 			},
 			"depiction": {
@@ -221,9 +225,6 @@
 				"1": [
 					"Player character",
 					"Curator"
-				],
-				"4": [
-					"Schemers"
 				]
 			},
 			"depiction": {
@@ -267,7 +268,8 @@
 					"Government building",
 					"Military"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Broken Wing",
@@ -286,7 +288,11 @@
 					"Item",
 					"Song"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Broken_Wing",
+				"https://criticalrole.miraheze.org/wiki/Broken_Wing"
+			]
 		},
 		{
 			"key": "Candescent Creed",
@@ -336,7 +342,8 @@
 					"Dol-Makjar",
 					"Neighborhood"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Casimir Gavendale",
@@ -380,7 +387,9 @@
 		{
 			"key": "Chamber of Lords-Advisory",
 			"alias": {},
-			"links": [],
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Chamber_of_Lords-Advisory"
+			],
 			"tags": {
 				"1": [
 					"NPC",
@@ -447,7 +456,11 @@
 					"Demon",
 					"Fiend"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Cruelty",
+				"https://criticalrole.miraheze.org/wiki/Cruelty"
+			]
 		},
 		{
 			"key": "Davrasi Gaunt",
@@ -467,7 +480,8 @@
 					"Human",
 					"Arcanist"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Dol-Makjar",
@@ -549,7 +563,8 @@
 					"Geographical feature",
 					"Passes"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Edrian Fazir",
@@ -570,7 +585,10 @@
 					"Revolutionary Guard",
 					"Arcane Marshal"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Edrian_Fazir"
+			]
 		},
 		{
 			"key": "Ellipides Tallbarrel",
@@ -591,7 +609,10 @@
 					"Dean",
 					"Penteveral"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.miraheze.org/wiki/Ellipides_Tallbarrel"
+			]
 		},
 		{
 			"key": "Elodie",
@@ -611,7 +632,11 @@
 					"Human",
 					"Merchant"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Elodie",
+				"https://criticalrole.miraheze.org/wiki/Elodie"
+			]
 		},
 		{
 			"key": "Enmity",
@@ -640,7 +665,11 @@
 					"Fiend",
 					"Candescent Creed"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Enmity",
+				"https://criticalrole.miraheze.org/wiki/Enmity"
+			]
 		},
 		{
 			"key": "Ethrand Tachonis",
@@ -707,7 +736,8 @@
 					"Custom",
 					"Orcish"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Filament",
@@ -727,7 +757,11 @@
 					"Item",
 					"Magical substance"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Filament",
+				"https://criticalrole.miraheze.org/wiki/Filament"
+			]
 		},
 		{
 			"key": "Gallant",
@@ -747,7 +781,8 @@
 					"Student",
 					"Penteveral"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Ghoul",
@@ -838,7 +873,8 @@
 					"Dol-Makjar",
 					"Monument"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Hala",
@@ -876,9 +912,6 @@
 				"1": [
 					"Player character",
 					"Orc"
-				],
-				"4": [
-					"Schemers"
 				]
 			},
 			"depiction": {
@@ -920,7 +953,10 @@
 				"2": [
 					"Musician"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.miraheze.org/wiki/Hero_Fang"
+			]
 		},
 		{
 			"key": "House Cormoray",
@@ -942,7 +978,10 @@
 					"Nobility",
 					"Sundered House"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/House_Cormoray"
+			]
 		},
 		{
 			"key": "House Einfasen",
@@ -962,7 +1001,10 @@
 					"Nobility",
 					"Sundered House"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/House_Einfasen"
+			]
 		},
 		{
 			"key": "Julien Davinos",
@@ -980,9 +1022,6 @@
 					"Player character",
 					"Human",
 					"House Davinos"
-				],
-				"4": [
-					"Seekers"
 				]
 			},
 			"depiction": {
@@ -1086,7 +1125,8 @@
 					"Dean",
 					"Penteveral"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Liar's Blade",
@@ -1157,7 +1197,8 @@
 					"Kahad",
 					"Neighborhood"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Madam Gurlistra",
@@ -1176,7 +1217,8 @@
 					"Gnome",
 					"Proprietor"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Maharlian Falls",
@@ -1214,7 +1256,8 @@
 					"Dol-Makjar",
 					"Neighborhood"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Mountains of Kavros",
@@ -1233,7 +1276,8 @@
 					"Geographical feature",
 					"Mountain"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Mournvale",
@@ -1269,9 +1313,6 @@
 				],
 				"2": [
 					"Bursar"
-				],
-				"4": [
-					"Schemers"
 				]
 			},
 			"depiction": {
@@ -1313,7 +1354,8 @@
 					"Medic",
 					"Torn Banner"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Occtis Tachonis",
@@ -1330,9 +1372,6 @@
 					"Necromancer",
 					"House Tachonis",
 					"Penteveral"
-				],
-				"4": [
-					"Seekers"
 				]
 			},
 			"depiction": {
@@ -1463,7 +1502,10 @@
 					"Dol-Makjar",
 					"Estate"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.miraheze.org/wiki/Palazzo_Davinos"
+			]
 		},
 		{
 			"key": "Pariah Blades",
@@ -1643,7 +1685,8 @@
 					"Item",
 					"Magical device"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Raimond Davinos",
@@ -1764,7 +1807,8 @@
 					"Location",
 					"Geographical feature"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Rozigar",
@@ -1783,7 +1827,8 @@
 					"Dol-Makjar",
 					"Neighborhood"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Rubble Cliff",
@@ -1802,12 +1847,15 @@
 					"Kahad",
 					"Neighborhood"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Schemers",
 			"alias": {},
-			"links": [],
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Schemers"
+			],
 			"tags": {
 				"5": [
 					"Player party"
@@ -1819,7 +1867,9 @@
 		{
 			"key": "Seekers",
 			"alias": {},
-			"links": [],
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Seekers"
+			],
 			"tags": {
 				"5": [
 					"Player party"
@@ -1844,7 +1894,8 @@
 					"Item",
 					"Religious text"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Shadia Fang",
@@ -1872,7 +1923,10 @@
 				"2": [
 					"Half-orc"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.miraheze.org/wiki/Shadia_Fang"
+			]
 		},
 		{
 			"key": "Shadow",
@@ -1882,7 +1936,8 @@
 				]
 			},
 			"links": [
-				"https://criticalrole.miraheze.org/wiki/Shadow"
+				"https://criticalrole.miraheze.org/wiki/Shadow",
+				"https://criticalrole.fandom.com/wiki/Shadow"
 			],
 			"tags": {
 				"1": [
@@ -1967,7 +2022,8 @@
 					"House Halovar",
 					"Candescent Creed"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Sir Harondus Einfasen",
@@ -1988,7 +2044,8 @@
 					"Nobility",
 					"House Einfasen"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Sisters of Sylandri",
@@ -2050,7 +2107,10 @@
 				"3": [
 					"Deceased"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.miraheze.org/wiki/Solomon"
+			]
 		},
 		{
 			"key": "Stone of Nightsong",
@@ -2105,6 +2165,21 @@
 					"Includes House Tachonis, House Halovar, House Royce, House Einfasen, and House Cormoray"
 				]
 			}
+		},
+		{
+			"key": "Sundered Houses",
+			"depiction": {
+				"4": ""
+			},
+			"alias": {},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Sundered_Houses",
+				"https://criticalrole.miraheze.org/wiki/Sundered_Houses"
+			],
+			"descriptions": {
+				"4": []
+			},
+			"tags": {}
 		},
 		{
 			"key": "Sylandri",
@@ -2274,9 +2349,6 @@
 				],
 				"2": [
 					"Circle of Ancients"
-				],
-				"4": [
-					"Seekers"
 				]
 			},
 			"depiction": {
@@ -2320,7 +2392,8 @@
 					"Kahad",
 					"Museum"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "The Faye",
@@ -2339,7 +2412,8 @@
 					"Dol-Makjar",
 					"Tavern"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "The Grey Tower",
@@ -2361,7 +2435,8 @@
 					"Dol-Makjar",
 					"Government building"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "The Guard Tower",
@@ -2384,7 +2459,8 @@
 					"Dol-Makjar",
 					"Tavern"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "The Hallowed Round",
@@ -2419,7 +2495,10 @@
 					"Dol-Makjar",
 					"Theater"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/The_Hallowed_Round"
+			]
 		},
 		{
 			"key": "The Pit",
@@ -2464,7 +2543,8 @@
 					"Dol-Makjar",
 					"Neighborhood"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "The Tangled Sheet",
@@ -2484,7 +2564,10 @@
 					"Dol-Makjar",
 					"Brothel"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.miraheze.org/wiki/The_Tangled_Sheet"
+			]
 		},
 		{
 			"key": "The Wastes",
@@ -2637,7 +2720,8 @@
 				"2": [
 					"Boarfolk"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Tyranny",
@@ -2715,9 +2799,6 @@
 					"Elf",
 					"Cleric",
 					"Sisters of Sylandri"
-				],
-				"4": [
-					"Seekers"
 				]
 			},
 			"depiction": {
@@ -2742,7 +2823,8 @@
 				"2": [
 					"Location"
 				]
-			}
+			},
+			"links": []
 		},
 		{
 			"key": "Villa Aurora",
@@ -2770,7 +2852,10 @@
 					"Candescent Creed",
 					"Mirzash"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.miraheze.org/wiki/Villa_Aurora"
+			]
 		},
 		{
 			"key": "War hound",
@@ -2942,7 +3027,8 @@
 					"Neighborhood",
 					"Dwarven"
 				]
-			}
+			},
+			"links": []
 		}
 	]
 }
