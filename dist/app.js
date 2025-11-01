@@ -13783,13 +13783,13 @@ var init_globals = __esm({
 
 // src/domain/data/entity.ts
 function episodeKey(seriesKey2, episodeId2) {
-  return `${seriesKey2}::${episodeId2}`;
+  return `${seriesKey2}__${episodeId2}`;
 }
 function seriesKey(entityKey) {
-  return entityKey.split("::")[0];
+  return entityKey.split("__")[0];
 }
 function episodeId(entityKey) {
-  return entityKey.split("::")[1];
+  return entityKey.split("__")[1];
 }
 function entityDataDtoToMap(data, seriesKey2) {
   return new Map(Object.keys(data || {}).map((episodeId2) => [episodeKey(seriesKey2, episodeId2), data[episodeId2]]));
@@ -14001,75 +14001,181 @@ var init_dataProvider = __esm({
   }
 });
 
+// src/providers/storageProvider.ts
+function stringify(value) {
+  return JSON.stringify(value, replacer);
+}
+function parse(text) {
+  return JSON.parse(text, reviver);
+}
+function replacer(_, value) {
+  if (value instanceof Map) {
+    return {
+      dataType: "Map",
+      value: Array.from(value.entries())
+    };
+  } else {
+    return value;
+  }
+}
+function reviver(_, value) {
+  if (typeof value === "object" && value !== null) {
+    if (value.dataType === "Map") {
+      return new Map(value.value);
+    }
+  }
+  return value;
+}
+var storageProviderOptionsDefault, StorageProvider;
+var init_storageProvider = __esm({
+  "src/providers/storageProvider.ts"() {
+    "use strict";
+    storageProviderOptionsDefault = {
+      query: true,
+      local: true
+    };
+    StorageProvider = class {
+      constructor(key, opts) {
+        this.key = key;
+        this.firstLocalLoad = true;
+        this.firstQueryLoad = true;
+        this.options = __spreadValues(__spreadValues({}, storageProviderOptionsDefault), opts);
+      }
+      set value(value) {
+        this.cachedValue = void 0;
+        let storeValue = "";
+        if (typeof value === "number") {
+          storeValue = value.toString();
+        } else if (typeof value === "boolean") {
+          storeValue = value.toString();
+        } else if (typeof value === "string") {
+          storeValue = value;
+        } else if (value instanceof Array) {
+          storeValue = stringify(value);
+        } else {
+          try {
+            storeValue = stringify(value);
+          } catch (e) {
+          }
+        }
+        if (this.options.local) {
+          window.localStorage.setItem(this.key, storeValue);
+        }
+        if (this.options.query) {
+          this.updateLocalStorageQuery(storeValue, false);
+        }
+        this.firstLocalLoad = false;
+        this.firstQueryLoad = false;
+      }
+      get value() {
+        if (this.cachedValue) return this.cachedValue;
+        let result = void 0;
+        let value = null;
+        if (this.loadQuery) {
+          value = this.getQueryParam();
+        }
+        if (!value && this.loadLocal) {
+          value = window.localStorage.getItem(this.key);
+        }
+        if (this.loadQuery) {
+          this.updateLocalStorageQuery(value, false);
+        }
+        if (value === null) return result;
+        try {
+          result = parse(value);
+        } catch (e) {
+        }
+        this.cachedValue = result != null ? result : value;
+        this.firstLocalLoad = false;
+        this.firstQueryLoad = false;
+        return this.cachedValue;
+      }
+      delete() {
+        window.localStorage.removeItem(this.key);
+      }
+      get loadLocal() {
+        return !(this.firstLocalLoad && this.options.local === "session");
+      }
+      get loadQuery() {
+        return this.options.query && this.firstQueryLoad;
+      }
+      getQueryParam() {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        return urlParams.get(this.key);
+      }
+      updateLocalStorageQuery(value, updateUrl = true) {
+        const queryString = window.localStorage.getItem("query");
+        const queryMap = queryString ? parse(queryString) : /* @__PURE__ */ new Map();
+        if (queryMap.get(this.key) === value) return;
+        queryMap.set(this.key, value);
+        window.localStorage.setItem("query", stringify(queryMap));
+        const url = new URL(window.location.href);
+        if (!updateUrl) {
+          return;
+        }
+        const params = url.searchParams;
+        for (const query of queryMap) {
+          if (!query[1] || query[1] === "[]") {
+            params.delete(query[0]);
+          } else {
+            params.set(query[0], query[1]);
+          }
+        }
+        const newUrl = url.pathname + "?" + params.toString() + url.hash;
+        history.replaceState({}, "", newUrl);
+      }
+    };
+    ((StorageProvider2) => {
+      function QueryMap() {
+        const queryString = window.localStorage.getItem("query");
+        const queryMap = queryString ? parse(queryString) : /* @__PURE__ */ new Map();
+        return queryMap;
+      }
+      StorageProvider2.QueryMap = QueryMap;
+      function QuerySearchParams() {
+        const result = new URLSearchParams();
+        const queryMap = QueryMap();
+        for (const [key, value] of queryMap) {
+          if (!key || !value || value === "[]") continue;
+          result.set(key, value);
+        }
+        return result;
+      }
+      StorageProvider2.QuerySearchParams = QuerySearchParams;
+    })(StorageProvider || (StorageProvider = {}));
+  }
+});
+
 // src/providers/index.ts
 var init_providers = __esm({
   "src/providers/index.ts"() {
     "use strict";
     init_dataProvider();
+    init_storageProvider();
   }
 });
 
-// src/domain/controls/modeswitch.ts
-var ModeSwitch;
-var init_modeswitch = __esm({
-  "src/domain/controls/modeswitch.ts"() {
-    "use strict";
-    ModeSwitch = class {
-      constructor(selector, options) {
-        this.options = options;
-        this.currentButton = null;
-        if (typeof selector === "string") {
-          this.inputElement = $(selector);
-        } else if (selector instanceof HTMLInputElement) {
-          this.inputElement = $(selector);
-        } else {
-          throw new Error("Dropdown selector must be a string or HTMLInputElement");
-        }
-        this.inputElement.attr("style", "pointer-events: none !important;position: absolute !important;display: block !important;opacity: 0 !important;border: none;z-index: 0 !important;");
-        this.items = /* @__PURE__ */ new Map([
-          [this.options.defaultItem.key, this.options.defaultItem.icon],
-          [this.options.alternativeItem.key, this.options.alternativeItem.icon]
-        ]);
-        const selected = this.inputElement.prop("checked");
-        this.changeMode(selected ? this.options.alternativeItem.key : this.options.defaultItem.key);
-      }
-      changeMode(mode) {
-        this.inputElement.prop("checked", mode != this.options.defaultItem.key);
-        this.options.setModeHandler.call(this, mode);
-        this.createButton(mode);
-      }
-      createButton(mode) {
-        var _a;
-        mode = this.not(mode);
-        (_a = this.currentButton) == null ? void 0 : _a.remove();
-        this.currentButton = $(`<button class="btn" aria-label="Activate ${mode} mode">${this.items.get(mode)}</button>`).insertAfter(this.inputElement).on("click", (_) => {
-          this.changeMode(mode);
-        });
-      }
-      not(mode) {
-        return mode == this.options.defaultItem.key ? this.options.alternativeItem.key : this.options.defaultItem.key;
-      }
-    };
-  }
-});
-
-// src/domain/controls/lightswitch.ts
+// src/controls/lightswitch.ts
 var LightSwitch;
 var init_lightswitch = __esm({
-  "src/domain/controls/lightswitch.ts"() {
+  "src/controls/lightswitch.ts"() {
     "use strict";
-    init_modeswitch();
+    init_controls();
     ((LightSwitch2) => {
       function Init(selector, defaultTheme, setTheme) {
         const icons = {
-          light: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-4ym8mv"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>',
-          dark: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-4ym8mv"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>'
+          // light: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-4ym8mv"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>',
+          // dark: '<svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-4ym8mv"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>',
+          light: "sun",
+          dark: "moon"
         };
         const alternativeTheme = defaultTheme == "light" ? "dark" : "light";
         return new ModeSwitch(selector, {
           defaultItem: { key: defaultTheme, icon: icons[defaultTheme] },
           alternativeItem: { key: alternativeTheme, icon: icons[alternativeTheme] },
-          setModeHandler: setTheme
+          setModeHandler: setTheme,
+          localStorage: true
         });
       }
       LightSwitch2.Init = Init;
@@ -14077,24 +14183,23 @@ var init_lightswitch = __esm({
   }
 });
 
-// src/domain/controls/selectpicker.ts
-var SelectPickerOptionsDefaults, SelectPicker;
+// src/controls/selectpicker.ts
+var selectPickerOptionsDefaults, SelectPicker;
 var init_selectpicker = __esm({
-  "src/domain/controls/selectpicker.ts"() {
+  "src/controls/selectpicker.ts"() {
     "use strict";
-    SelectPickerOptionsDefaults = class {
-      constructor() {
-        this.interval = false;
-      }
+    init_providers();
+    selectPickerOptionsDefaults = {
+      interval: false,
+      localStorage: false
     };
     SelectPicker = class {
       constructor(selector, className, opts) {
         this.entries = /* @__PURE__ */ new Map();
-        this.pauseChangeEvent = false;
+        this.stopChangeEvent = false;
         this.onChangeHandler = null;
-        this.m_values = [];
         this.className = className || "";
-        this.options = __spreadValues(__spreadValues({}, new SelectPickerOptionsDefaults()), opts);
+        this.options = __spreadValues(__spreadValues({}, selectPickerOptionsDefaults), opts);
         this.options.maxOptions = this.options.interval ? 1 : this.options.maxOptions;
         if (typeof selector === "string") {
           this.selectElement = $(selector);
@@ -14103,50 +14208,55 @@ var init_selectpicker = __esm({
         } else {
           throw new Error("Dropdown selector must be a string or HTMLSelectElement");
         }
+        this.valueElement = $(`input[data-selectpicker="#${this.selectElement.attr("id")}"]`);
         this.selectElement.selectpicker(opts);
         this.buttonElement = this.selectElement.siblings(".dropdown-toggle");
+        if (this.options.localStorage) {
+          this.storage = this.options.localStorage instanceof Object ? this.options.localStorage : new StorageProvider(typeof this.options.localStorage === "string" ? this.options.localStorage : this.selectElement.attr("id"));
+        }
         this.selectElement.on("changed.bs.select", (e, clickedIndex, isSelected, previousValue) => {
           var _a;
+          this.saveValues(this.values);
           this.render();
-          if (!this.pauseChangeEvent) {
+          if (!this.stopChangeEvent) {
             (_a = this.onChangeHandler) == null ? void 0 : _a.call(this, e, clickedIndex, isSelected, previousValue);
           }
         });
       }
       selected() {
-        const selectedValues = this.selectElement.val();
-        if (!selectedValues || selectedValues.length == 0) return [];
-        const selectedValuesArray = typeof selectedValues === "string" ? [selectedValues] : selectedValues;
-        return selectedValuesArray.map((v) => this.entries.get(v)).filter((o) => o !== void 0);
-      }
-      set values(value) {
         var _a;
-        const selectedValuesArray = value.map((e) => e.value);
-        if (this.options.interval && selectedValuesArray.length != 0) {
-          let selectedOptionElement = this.selectElement.find(`option[value="${selectedValuesArray[0]}`).prev();
+        const values = this.values;
+        if (this.options.interval && values.length != 0) {
+          let selectedOptionElement = this.selectElement.find(`option[value="${values[0]}`).prev();
           while (selectedOptionElement.length > 0) {
-            selectedValuesArray.push((_a = selectedOptionElement.attr("value")) != null ? _a : "");
+            values.push((_a = selectedOptionElement.attr("value")) != null ? _a : "");
             selectedOptionElement = selectedOptionElement.prev();
           }
         }
-        this.m_values = selectedValuesArray.filter((s) => s);
+        return this.values.map((s) => this.entries.get(s)).filter((i) => i);
+      }
+      set values(value) {
+        const selectValues = value.length == 0 ? [] : typeof value[0] === "string" ? value : value.map((e) => e.value);
+        this.selectElement.val(selectValues);
+        this.saveValues(selectValues);
+        this.refresh();
+        this.selectElement.trigger("changed.bs.select");
       }
       get values() {
-        return this.m_values;
+        var _a;
+        const selectedValues = (_a = this.selectElement.val()) != null ? _a : "";
+        const values = typeof selectedValues === "string" ? [selectedValues] : selectedValues;
+        return values.filter((s) => s);
       }
       deselectEntry(value) {
-        const newSelected = this.selected().filter((s) => s.value !== value).map((s) => s.value);
-        this.selectElement.selectpicker("deselectAll");
-        if (newSelected.length > 0) {
-          this.selectElement.selectpicker("val", newSelected);
-        }
-        this.render();
+        this.values = this.values.filter((s) => s !== value);
         return this;
       }
       setEntries(entries, selectedValues) {
-        this.pauseChangeEvent = true;
-        if (selectedValues === void 0) {
-          selectedValues = this.selected().map((e) => e.value);
+        var _a;
+        this.stopChangeEvent = true;
+        if (typeof selectedValues === "undefined") {
+          selectedValues = (_a = this.loadValues()) != null ? _a : this.values;
         }
         if (typeof selectedValues === "string") {
           selectedValues = [selectedValues];
@@ -14157,7 +14267,8 @@ var init_selectpicker = __esm({
         this.selectElement.empty();
         entries.sort((a, b) => a.text > b.text ? 1 : a.text < b.text ? -1 : 0).forEach((opt) => this.addOption(opt, selectedValues ? selectedValues.includes(opt.value) : false));
         this.refresh();
-        this.pauseChangeEvent = false;
+        this.render();
+        this.stopChangeEvent = false;
         return this;
       }
       addOption(opt, selected = false) {
@@ -14166,10 +14277,10 @@ var init_selectpicker = __esm({
         if (selected) {
           option.prop("selected", true);
         }
-        if (this.options.interval && opt.group === void 0) {
+        if (this.options.interval && typeof opt.group === "undefined") {
           opt.group = "";
         }
-        const parentElement = opt.group === void 0 ? this.selectElement : this.getOrAddOptionGroup(opt.group);
+        const parentElement = typeof opt.group === "undefined" ? this.selectElement : this.getOrAddOptionGroup(opt.group);
         return option.appendTo(parentElement);
       }
       getOrAddOptionGroup(label) {
@@ -14180,14 +14291,12 @@ var init_selectpicker = __esm({
       }
       refresh() {
         this.selectElement.selectpicker("refresh");
-        this.render();
         return this;
       }
       render() {
         const selectedContainer = this.buttonElement.find(".filter-option-inner-inner");
         selectedContainer.toggleClass("filter-pill-holder", true);
         const selected = this.selected();
-        this.values = selected;
         if (selected.length === 0) return;
         selectedContainer.empty();
         if (this.options.interval) {
@@ -14214,6 +14323,20 @@ var init_selectpicker = __esm({
         });
         return $(pill2);
       }
+      saveValues(values) {
+        var _a;
+        if (this.storage) {
+          this.storage.value = values.join(",");
+        }
+        (_a = this.valueElement) == null ? void 0 : _a.val(values.join(","));
+      }
+      loadValues() {
+        var _a, _b;
+        let value = (_a = this.storage) == null ? void 0 : _a.value;
+        if (value) return value.split(",");
+        value != null ? value : value = (_b = this.valueElement) == null ? void 0 : _b.val();
+        return typeof value !== "undefined" ? value.split(",") : void 0;
+      }
     };
     ((SelectPicker2) => {
       SelectPicker2.Null = null;
@@ -14221,78 +14344,241 @@ var init_selectpicker = __esm({
   }
 });
 
-// src/domain/controls/index.ts
+// src/controls/modeswitch.ts
+var ModeSwitch;
+var init_modeswitch = __esm({
+  "src/controls/modeswitch.ts"() {
+    "use strict";
+    init_providers();
+    init_controls();
+    ModeSwitch = class {
+      constructor(selector, options) {
+        this.options = options;
+        this.currentButton = null;
+        if (typeof selector === "string") {
+          this.inputElement = $(selector);
+        } else if (selector instanceof HTMLInputElement) {
+          this.inputElement = $(selector);
+        } else {
+          throw new Error("Dropdown selector must be a string or HTMLInputElement");
+        }
+        if (this.options.localStorage) {
+          this.storage = new StorageProvider(this.inputElement.attr("id"), { query: false });
+        }
+        this.items = /* @__PURE__ */ new Map([
+          [this.options.defaultItem.key, this.options.defaultItem.icon],
+          [this.options.alternativeItem.key, this.options.alternativeItem.icon]
+        ]);
+        const selected = this.loadValue();
+        this.changeMode(selected ? this.options.alternativeItem.key : this.options.defaultItem.key);
+      }
+      changeMode(mode) {
+        this.saveValue(mode != this.options.defaultItem.key);
+        this.options.setModeHandler.call(this, mode);
+        this.createButton(mode);
+      }
+      createButton(mode) {
+        var _a;
+        mode = this.not(mode);
+        (_a = this.currentButton) == null ? void 0 : _a.remove();
+        this.currentButton = Icon.JQuery(this.items.get(mode), {
+          ariaLabel: `Activate ${mode} mode`,
+          onClick: (_) => {
+            this.changeMode(mode);
+          }
+        }).insertAfter(this.inputElement);
+      }
+      not(mode) {
+        return mode == this.options.defaultItem.key ? this.options.alternativeItem.key : this.options.defaultItem.key;
+      }
+      saveValue(value) {
+        if (this.storage) {
+          this.storage.value = value;
+        }
+        this.inputElement.prop("checked", value);
+      }
+      loadValue() {
+        var _a;
+        let value = (_a = this.storage) == null ? void 0 : _a.value;
+        if (typeof value !== "undefined") return value;
+        return this.inputElement.prop("checked");
+      }
+    };
+  }
+});
+
+// src/controls/icon.ts
+var IconOptionsDefault, Icon;
+var init_icon = __esm({
+  "src/controls/icon.ts"() {
+    "use strict";
+    IconOptionsDefault = {
+      target: "_blank"
+    };
+    Icon = class {
+      constructor(icon3, opts) {
+        this.icon = icon3;
+        this.options = __spreadValues(__spreadValues({}, IconOptionsDefault), opts);
+      }
+      render() {
+        var _a;
+        const icon3 = document.createElement("i");
+        icon3.className = `icon icon-${this.icon}`;
+        let result;
+        if (this.options.onClick) {
+          const button = document.createElement("button");
+          button.className = "btn btn-icon";
+          button.addEventListener("click", this.options.onClick);
+          result = button;
+        } else if (this.options.link) {
+          const anchor = document.createElement("a");
+          anchor.href = this.options.link;
+          anchor.target = this.options.target;
+          result = anchor;
+        }
+        if (result) {
+          if (this.options.ariaLabel) {
+            result.ariaLabel = this.options.ariaLabel;
+          }
+          result.innerHTML = icon3.outerHTML;
+        } else {
+          result = icon3;
+        }
+        result.className += ` ${(_a = this.options.className) != null ? _a : ""}`;
+        result.className = result.className.trim();
+        return result;
+      }
+      jquery() {
+        return $(this.render());
+      }
+    };
+    ((Icon2) => {
+      Icon2.Render = (icon3, opts) => new Icon2(icon3, opts).render();
+      Icon2.JQuery = (icon3, opts) => new Icon2(icon3, opts).jquery();
+    })(Icon || (Icon = {}));
+  }
+});
+
+// src/controls/index.ts
 var init_controls = __esm({
-  "src/domain/controls/index.ts"() {
+  "src/controls/index.ts"() {
     "use strict";
     init_lightswitch();
     init_selectpicker();
+    init_modeswitch();
+    init_icon();
   }
 });
 
 // src/renderers/entityRenderer.ts
-function entity(entity2, textToHighlight) {
+function entities(entries, container, textToHighlight) {
+  container.innerHTML = "";
+  if ((entries == null ? void 0 : entries.length) === 0) {
+    container.appendChild(noResults());
+    return;
+  }
+  for (const entry of entries) {
+    container.appendChild(entity(entry, textToHighlight));
+  }
+}
+function entity(entry, textToHighlight) {
   var _a, _b;
   const highlight = (text) => highlightText(text, textToHighlight);
-  const tagsHtml = [...entity2.tags].map(
+  const tagsHtml = [...entry.tags].map(
     ([_, tags]) => tags.map((tag) => pill("tag", tag, "solid")).join("")
   ).join("");
   const getIcon = (url) => {
     var _a2;
-    return (_a2 = ["fandom", "miraheze"].find((icon) => url.includes(icon))) != null ? _a2 : "link";
+    return (_a2 = ["fandom", "miraheze"].find((icon3) => url.includes(icon3))) != null ? _a2 : "link";
   };
-  const linksHtml = entity2.links.map((link) => `<a href="${link}" target="_blank"><i class="icon icon-${getIcon(link)}"></i></a>`).join("");
-  const lastAlias = (_b = (_a = [...entity2.alias].pop()) == null ? void 0 : _a[1].slice().pop()) != null ? _b : "";
-  let aliasesHtml = [...entity2.alias].map(
+  let linksHtml = entry.links.map((link) => Icon.Render(getIcon(link), { link }));
+  const lastAlias = (_b = (_a = [...entry.alias].pop()) == null ? void 0 : _a[1].slice().pop()) != null ? _b : "";
+  let aliasesHtml = [...entry.alias].map(
     ([_, aliases]) => aliases.map((alias) => `<span class="entry-alias">"${alias}"${alias != lastAlias ? "," : ""}</span>`).join("")
   ).join("");
   if (aliasesHtml.length > 0) {
     aliasesHtml = "" + aliasesHtml;
   }
-  const depictions = [...entity2.depiction].map(([key, value]) => [key, highlight(value)]);
+  const depictions = [...entry.depiction].map(([key, value]) => [key, highlight(value)]);
   const latestDepiction = depictions.shift();
-  let descriptionHtml = !latestDepiction ? "" : `<button class="btn btn-block entry-depiction-latest" data-toggle="collapse" data-target="#entry-depiction-old-${entity2.key.replace(" ", "")}" aria-expanded="false" aria-controls="entry-depiction-old-${entity2.key.replace(" ", "")}">
+  let descriptionHtml = !latestDepiction ? "" : `<button class="btn btn-block entry-depiction-latest" data-toggle="collapse" data-target="#entry-depiction-old-${entry.key.replace(" ", "")}" aria-expanded="false" aria-controls="entry-depiction-old-${entry.key.replace(" ", "")}">
             ${latestDepiction == null ? void 0 : latestDepiction[1]}
 		</button>`;
-  descriptionHtml += !latestDepiction ? "" : `<div id="entry-depiction-old-${entity2.key.replace(" ", "")}" class="collapse entry-depiction-old">${depictions.reverse().map(([episodeKey2, depiction]) => `<p>${bullet(episodeId(episodeKey2))}<span>${depiction}</span></p>`).join("")}</div>`;
-  const connectionsHtml = [...entity2.connections].reverse().map(
+  descriptionHtml += !latestDepiction ? "" : `<div id="entry-depiction-old-${entry.key.replace(" ", "")}" class="collapse entry-depiction-old">${depictions.reverse().map(([episodeKey2, depiction]) => `<p>${bullet(episodeId(episodeKey2))}<span>${depiction}</span></p>`).join("")}</div>`;
+  const connectionsHtml = [...entry.connections].reverse().map(
     ([episodeKey2, connections]) => connections.map((connection) => `<div class="entry-connection">${bullet(episodeId(episodeKey2))}${highlight(connection)}</div>`).join("")
   ).join("");
-  return `<div class="entry-card">
-				<div class="entry-header">
-					<div class="entry-title">
-						<div class="entry-name">${entity2.key}</div>
-						<div class="entry-aliases">${aliasesHtml}</div>
-					</div>
-					<div class="entry-links">${linksHtml}</div>
-				</div>
-				<div class="entry-depictions">${descriptionHtml}</div>
-				<div class="entry-connections">${connectionsHtml}</div>
-				<div class="entry-tags">${tagsHtml}</div>
-			</div>`;
+  const entryCard = createDiv("entry-card hover-container", {});
+  const entryHeader = createDiv("entry-header", { appendTo: entryCard });
+  const entryTitle = createDiv("entry-title", { appendTo: entryHeader });
+  const entryShare = createDiv("entry-share before", { content: shareButton(entry.key) });
+  createDiv("entry-name", { content: [entryShare, entry.key], appendTo: entryTitle });
+  createDiv("entry-aliases", { content: aliasesHtml, appendTo: entryTitle });
+  createDiv("entry-links", { content: linksHtml, appendTo: entryHeader });
+  createDiv("entry-depictions", { content: descriptionHtml, appendTo: entryCard });
+  createDiv("entry-connections", { content: connectionsHtml, appendTo: entryCard });
+  createDiv("entry-tags", { content: tagsHtml, appendTo: entryCard });
+  return entryCard;
 }
 function pill(type, value, ...classes) {
   if (!value) return "";
   return `<span class="filter-pill ${type} ${classes == null ? void 0 : classes.join(" ")}">${value}</span>`;
 }
 function noResults() {
-  return '<div class="no-results">No entries found. Try adjusting your search or filters.</div>';
+  return createDiv("no-results", { content: "No entries found. Try adjusting your search or filters." });
+}
+function shareButton(entryKey) {
+  return Icon.Render("link", {
+    className: "on-hover",
+    target: "_self",
+    link: ((_) => {
+      const newUrlQueryParams = StorageProvider.QuerySearchParams();
+      if (entryKey) {
+        newUrlQueryParams.set("q", entryKey);
+      }
+      const url = new URL(window.location.href);
+      const newUrl = url.origin + url.pathname + "?" + newUrlQueryParams.toString() + url.hash;
+      return newUrl;
+    })()
+  });
 }
 function bullet(text, title = "Episode ") {
   return `<i class="bullet" title="${title + text}">${text}</i>`;
 }
 function highlightText(text, term) {
-  if (term !== "") {
+  if (term) {
     const re = new RegExp(term, "gi");
     const newText = text.replace(re, (match) => `<mark class="p-0">${match}</mark>`);
     return newText;
   }
   return text;
 }
+function createDiv(className, opts) {
+  const result = document.createElement("div");
+  result.className = className;
+  if (opts == null ? void 0 : opts.content) {
+    if (!Array.isArray(opts.content)) {
+      opts.content = [opts.content];
+    }
+    for (const item of opts.content) {
+      if (typeof item == "string") {
+        result.innerHTML += item;
+      } else {
+        result.appendChild(item);
+      }
+    }
+  }
+  if (opts == null ? void 0 : opts.appendTo) {
+    opts.appendTo.appendChild(result);
+  }
+  return result;
+}
 var init_entityRenderer = __esm({
   "src/renderers/entityRenderer.ts"() {
     "use strict";
+    init_controls();
     init_data();
+    init_providers();
   }
 });
 
@@ -14310,13 +14596,14 @@ var CriticalRoleCompendium;
 var init_main = __esm({
   "src/main.ts"() {
     "use strict";
+    init_data();
     init_providers();
     init_controls();
     init_renderers();
     CriticalRoleCompendium = class {
       constructor() {
         this.dataProvider = new DataProvider("data/manifest.json");
-        this.searchTerm = "";
+        this.searchStorage = new StorageProvider("q", { local: "session" });
         this.controls = {
           results: null,
           seriesSelect: SelectPicker.Null,
@@ -14330,19 +14617,20 @@ var init_main = __esm({
         this.initAsync();
       }
       initControls() {
-        this.controls.seriesSelect = new SelectPicker("#series-select", "series");
-        this.controls.episodeSelect = new SelectPicker("#episode-select", "episode", { interval: true });
-        this.controls.tagSelect = new SelectPicker("#tag-select", "tag");
+        this.controls.seriesSelect = new SelectPicker("#series-select", "series", { localStorage: "series" });
+        this.controls.episodeSelect = new SelectPicker("#episode-select", "episode", { interval: true, localStorage: "episode" });
+        this.controls.tagSelect = new SelectPicker("#tag-select", "tag", { localStorage: new StorageProvider("tags", { local: "session" }) });
         this.controls.filterBadges = document.getElementById("filter-wrapper");
         this.controls.results = document.getElementById("key-results");
         this.controls.search = document.getElementById("search-input");
         LightSwitch.Init("#dark-mode-checkbox", "light", (theme) => document.documentElement.setAttribute("data-theme", theme));
       }
       async initAsync() {
+        var _a;
         this.controls.results.innerHTML = '<div class="loading">Loading episodes...</div>';
         await this.dataProvider.loadData();
         await this.loadEpisodes();
-        this.searchTerm = this.controls.search.value.toLowerCase();
+        this.controls.search.value = (_a = this.searchStorage.value) != null ? _a : "";
         this.render();
         setTimeout(() => this.controls.search.focus(), 50);
       }
@@ -14371,7 +14659,7 @@ var init_main = __esm({
         }
         const episodes = Array.from(combinedSet);
         const options = episodes.map(({ series, episode }) => ({
-          value: `${series.key}::${episode.id}`,
+          value: episodeKey(series.key, episode.id),
           text: episode.title,
           selectedText: episode.shortTitle,
           group: series.title
@@ -14387,7 +14675,7 @@ var init_main = __esm({
       initEventListeners() {
         if (this.controls.search) {
           this.controls.search.addEventListener("input", (e) => {
-            this.searchTerm = e.target.value.toLowerCase();
+            this.searchStorage.value = e.target.value.toLowerCase();
             this.render();
           });
         }
@@ -14413,21 +14701,21 @@ var init_main = __esm({
         const relatedResultsEl = document.getElementById("related-results");
         const statsEl = document.getElementById("stats");
         const directEntries = this.dataProvider.searchEntries({
-          searchName: this.searchTerm,
+          searchName: this.searchStorage.value,
           series: new Set(this.controls.seriesSelect.values),
           episodes: new Set(this.controls.episodeSelect.values),
           tags: new Set(this.controls.tagSelect.values)
         });
         const relatedEntries = this.dataProvider.searchEntries({
           excludeKeys: new Set(directEntries.map((e) => e.key)),
-          searchRelated: this.searchTerm,
+          searchRelated: this.searchStorage.value,
           series: new Set(this.controls.seriesSelect.values),
           episodes: new Set(this.controls.episodeSelect.values),
           tags: new Set(this.controls.tagSelect.values)
         });
         statsEl.textContent = `Showing ${directEntries.length} direct ${directEntries.length === 1 ? "match" : "matches"} and ${relatedEntries.length} related ${relatedEntries.length === 1 ? "entry" : "entries"}.`;
-        directResultsEl.innerHTML = directEntries.length === 0 ? noResults() : directEntries.map((e) => entity(e, this.searchTerm)).join("");
-        relatedResultsEl.innerHTML = relatedEntries.length === 0 ? "" : relatedEntries.map((e) => entity(e, this.searchTerm)).join("");
+        entities(directEntries, directResultsEl, this.searchStorage.value);
+        entities(relatedEntries, relatedResultsEl, this.searchStorage.value);
       }
       showError(message) {
         const errorContainer = document.getElementById("error-container");
