@@ -14509,13 +14509,14 @@ function entity(entry, textToHighlight) {
     ([episodeKey2, connections]) => connections.map((connection) => `<div class="entry-connection">${bullet(episodeId(episodeKey2))}${highlight(connection)}</div>`).join("")
   ).join("");
   const entryCard = createDiv("entry-card hover-container", {});
-  const entryHeader = createDiv("entry-header", { appendTo: entryCard });
+  const entryRow = createDiv("entry-row", { appendTo: entryCard });
+  const entryHeader = createDiv("entry-header", { appendTo: entryRow });
   const entryTitle = createDiv("entry-title", { appendTo: entryHeader });
   const entryShare = createDiv("entry-share before", { content: shareButton(entry.key) });
   createDiv("entry-name", { content: [entryShare, entry.key], appendTo: entryTitle });
   createDiv("entry-aliases", { content: aliasesHtml, appendTo: entryTitle });
   createDiv("entry-links", { content: linksHtml, appendTo: entryHeader });
-  createDiv("entry-depictions", { content: descriptionHtml, appendTo: entryCard });
+  createDiv("entry-depictions", { content: descriptionHtml, appendTo: entryRow });
   createDiv("entry-connections", { content: connectionsHtml, appendTo: entryCard });
   createDiv("entry-tags", { content: tagsHtml, appendTo: entryCard });
   return entryCard;
