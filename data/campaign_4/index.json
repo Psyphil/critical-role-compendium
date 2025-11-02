@@ -494,7 +494,7 @@
 				"1": [
 					"Location",
 					"Kahad",
-					"Cities"
+					"City"
 				]
 			},
 			"depiction": {
@@ -984,6 +984,39 @@
 			]
 		},
 		{
+			"key": "House Davinos",
+			"depiction": {
+				"1": "A noble house, vassal to the Sundered House of Royce. Their military uniform is dark purple and gray with red trim.",
+				"2": "A noble house, vassal to House Royce. Notable members include General Raimond Davinos and his son, Sir Julien Davinos. Their soldiers wear dark purple and gray with red trim, and their estate in Dol-Makjar is the Palazzo Davinos.",
+				"3": "A noble house, vassal to House Royce. The late General Raimond Davinos and his son, Sir Julien Davinos, are key members. Their estate in Dol-Makjar, the Palazzo Davinos, features gardens with trees from the Faerie realm, Tír Cruthú. Their soldiers wear dark purple and gray with red trim."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"Vassal to House Royce"
+				],
+				"2": [
+					"General Raimond Davinos is a member",
+					"Sir Julien Davinos is the son of General Raimond",
+					"Owns the Palazzo Davinos estate in Dol-Makjar"
+				],
+				"3": [
+					"General Raimond Davinos was assassinated by agents of House Tachonis"
+				],
+				"4": [
+					"Patriarch General Raimond Davinos was assassinated by Lord Primus Tachonis",
+					"Targeted for elimination by House Tachonis"
+				]
+			},
+			"tags": {
+				"1": [
+					"Faction",
+					"Nobility",
+					"Noble House"
+				]
+			}
+		},
+		{
 			"key": "House Einfasen",
 			"depiction": {
 				"2": "One of the five Sundered Houses that sits on the Chamber of Lords-Advisory. They are seeking to expand their power and influence in Dol-Makjar."
@@ -1005,6 +1038,134 @@
 			"links": [
 				"https://criticalrole.fandom.com/wiki/House_Einfasen"
 			]
+		},
+		{
+			"key": "House Halovar",
+			"depiction": {
+				"1": "One of the Sundered Houses, led by its matriarch, the Photarch. The house is now closely associated with, or synonymous with, the Candescent Creed, a new faith. Its estate in Dol-Makjar is the Villa Aurora. Wicander Halovar is a Light Priest of the house.",
+				"2": "A Sundered House, led by the Photarch Yanessa, synonymous with the Candescent Creed. Their power comes from a tortured, captive angel imprisoned beneath their Villa Aurora estate, from whom they harvest a magical substance called Filament. Key members include Godard, Wicander, and Sir Filoneus.",
+				"3": "A Sundered House, led by Photarch Yanessa, synonymous with the Candescent Creed. Their power comes from Aetheon, a captive angel. Yanessa used Aetheon's blood to magically conceive her son Godard, making Wicander the angel's grandson. Key members include Sir Filoneus, Zebani, and Iris."
+			},
+			"alias": {
+				"1": [
+					"Candescent Creed"
+				],
+				"2": [
+					"Candy Creed",
+					"CC"
+				]
+			},
+			"connections": {
+				"1": [
+					"Leader of the Candescent Creed",
+					"Wicander Halovar is a member",
+					"Owns the Villa Aurora estate"
+				],
+				"2": [
+					"The Photarch Yanessa is the matriarch",
+					"Lord Godard is a member",
+					"Sir Filoneus is the head of security",
+					"Employs demons as servants and aspirants",
+					"Power source is a captive angel",
+					"Allied with House Tachonis"
+				],
+				"3": [
+					"Sir Filoneus Halovar is a member",
+					"Lady Zebani Halovar is a member",
+					"Iris is a member (Wicander's mother)",
+					"Descended from the angel Aetheon",
+					"Formerly served the Obridimian royal house",
+					"Formerly worshipped the sun god Tansul",
+					"Allied with Ksha'aravi, High Prince of Demonkind",
+					"Arranged marriage alliance with House D'Antonio"
+				]
+			},
+			"tags": {
+				"1": [
+					"Noble House",
+					"Sundered House"
+				],
+				"2": [
+					"Religion",
+					"Magical substance"
+				]
+			}
+		},
+		{
+			"key": "House Royce",
+			"depiction": {
+				"1": "A Sundered House of Dol-Makjar with green and golden heraldry. It appears to have connections to the Faerie realm and the Golden Orchard. Aranessa is a prominent member, and House Davinos is one of its vassal houses.",
+				"2": "A Sundered House of Dol-Makjar. Seen as a voice of moderation in the Chamber of Lords-Advisory. Prominent member Lady Aranessa was married to the late Thjazi Fang. The house has known connections to the Fae. House Davinos is one of its vassals.",
+				"4": "A Sundered House with known connections to the Fae. Prominent member Lady Aranessa, a druid, was married to the late Thjazi Fang. House Davinos is a vassal house. They were targeted for slaughter by House Tachonis at the Palazzo Davinos."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"House Davinos is a Vassal House",
+					"Aranessa is a member",
+					"Connected to the Golden Orchard"
+				],
+				"2": [
+					"Lady Aranessa was married to Thjazi Fang",
+					"Sits on the Chamber of Lords-Advisory"
+				],
+				"3": [
+					"Lady Aranessa is offering protection to Occtis Tachonis"
+				],
+				"4": [
+					"Targeted for elimination by House Tachonis",
+					"Lady Aranessa was attacked by Ethrand Tachonis and his ghouls"
+				]
+			},
+			"tags": {
+				"1": [
+					"Noble House",
+					"Sundered House"
+				],
+				"4": [
+					"Druidism"
+				]
+			}
+		},
+		{
+			"key": "House Tachonis",
+			"depiction": {
+				"1": "One of the Sundered Houses of Dol-Makjar. Its soldiers and herald were the primary enforcers of Thjazi Fang's execution. Occtis is a member of this house, though far down the line of succession.",
+				"2": "A powerful and feared Sundered House of Dol-Makjar, led by the Lord Primus Tachonis. They were the primary drivers of Thjazi Fang's execution. Their ancestral lands are destroyed and sundered. Occtis Tachonis is a member, though seemingly estranged from his family.",
+				"3": "A Sundered House led by Lord Primus Tachonis, with a castle in the realm of Death. Formerly the Priestly Family of Shadow, they now use ghouls and assassins. Key members include the estranged Occtis and his brother Ethrand. They reside at Obrimus Manor while in Dol-Makjar."
+			},
+			"alias": {},
+			"connections": {
+				"1": [
+					"Occtis is a member",
+					"Enforced the execution of Thjazi Fang"
+				],
+				"2": [
+					"Led by the Lord Primus Tachonis",
+					"Allied with House Halovar"
+				],
+				"3": [
+					"Ethrand Tachonis is a member",
+					"Reside at Obrimus Manor",
+					"Actively hunting Occtis Tachonis",
+					"Assassinated General Raimond Davinos",
+					"Attacked Lady Aranessa Royce at the Palazzo Davinos",
+					"Commands ghouls"
+				],
+				"4": [
+					"Attempted to slaughter House Royce and House Davinos",
+					"Ethrand Tachonis murdered his brother, Occtis Tachonis"
+				]
+			},
+			"tags": {
+				"1": [
+					"Noble House",
+					"Sundered House"
+				],
+				"3": [
+					"Undead"
+				]
+			}
 		},
 		{
 			"key": "Julien Davinos",
@@ -1624,7 +1785,7 @@
 				"1": [
 					"Location",
 					"Kahad",
-					"Towns"
+					"Town"
 				]
 			},
 			"depiction": {
@@ -1698,8 +1859,7 @@
 			"tags": {
 				"2": [
 					"NPC",
-					"House Davinos",
-					"NPC"
+					"House Davinos"
 				]
 			},
 			"depiction": {
@@ -2145,41 +2305,29 @@
 			}
 		},
 		{
-			"key": "Sundered House",
+			"key": "Sundered Houses",
+			"depiction": {
+				"1": "A coalition of noble houses in Dol-Makjar, including Tachonis, Halovar, and Royce. They command soldiers and hold significant political power through their Chamber of Lords-Advisory, capable of ordering public executions."
+			},
 			"alias": {},
 			"links": [
 				"https://criticalrole.fandom.com/wiki/Sundered_Houses",
 				"https://criticalrole.miraheze.org/wiki/Sundered_Houses"
 			],
+			"connections": {
+				"1": [
+					"Includes House Tachonis",
+					"Includes House Halovar",
+					"Includes House Royce",
+					"Governed by the Chamber of Lords-Advisory",
+					"Ordered the execution of Thjazi Fang"
+				]
+			},
 			"tags": {
 				"1": [
 					"Faction"
 				]
-			},
-			"depiction": {
-				"1": "A powerful faction of noble houses in Dol-Makjar, including House Tachonis, House Halovar, and House Royce. They exercise significant authority through their Chamber of Lords-Advisory."
-			},
-			"connections": {
-				"1": [
-					"Their Chamber of Lords-Advisory sentenced Thjazi Fang to death",
-					"Includes House Tachonis, House Halovar, House Royce, House Einfasen, and House Cormoray"
-				]
 			}
-		},
-		{
-			"key": "Sundered Houses",
-			"depiction": {
-				"4": ""
-			},
-			"alias": {},
-			"links": [
-				"https://criticalrole.fandom.com/wiki/Sundered_Houses",
-				"https://criticalrole.miraheze.org/wiki/Sundered_Houses"
-			],
-			"descriptions": {
-				"4": []
-			},
-			"tags": {}
 		},
 		{
 			"key": "Sylandri",
@@ -2497,7 +2645,8 @@
 				]
 			},
 			"links": [
-				"https://criticalrole.fandom.com/wiki/The_Hallowed_Round"
+				"https://criticalrole.fandom.com/wiki/The_Hallowed_Round",
+				"https://criticalrole.miraheze.org/wiki/The_Hallowed_Round"
 			]
 		},
 		{
@@ -3030,5 +3179,442 @@
 			},
 			"links": []
 		}
-	]
+	],
+	"content": {
+		"1": [
+			"Alogar Fang",
+			"Aramán",
+			"Aranessa Royce",
+			"Azgra",
+			"Azune Nayar",
+			"Bolaire Lathalia",
+			"Candescent Creed",
+			"Casimir Gavendale",
+			"Chamber of Lords-Advisory",
+			"Crow Keepers",
+			"Davrasi Gaunt",
+			"Dol-Makjar",
+			"Dol-Rungja",
+			"Elodie",
+			"Enmity",
+			"Falconer's Rebellion",
+			"Farramh",
+			"Godard Halovar",
+			"Guardian Wall",
+			"Hala",
+			"Halandil Fang",
+			"Hero Fang",
+			"Julien Davinos",
+			"Kahad",
+			"Kattigan Vale",
+			"Loza Blade",
+			"Maharlian Falls",
+			"Mountains of Kavros",
+			"Mournvale",
+			"Murray Mag'Nesson",
+			"Occtis Tachonis",
+			"Old Path",
+			"Olgud Akarat",
+			"Pariah Blades",
+			"Pasitar",
+			"Penteveral",
+			"Pincushion",
+			"Pinebrough",
+			"Revolutionary Council",
+			"Revolutionary Guard",
+			"River Vrosh",
+			"Shadia Fang",
+			"Shadow",
+			"Shapers' War",
+			"Shapers",
+			"Sisters of Sylandri",
+			"Stone of Nightsong",
+			"Sundered Houses",
+			"Sylandri",
+			"Talcydimir Pridesire",
+			"Tenebral Reaches",
+			"Teor Pridesire",
+			"Thaisha Lloy",
+			"The Faye",
+			"The Hallowed Round",
+			"The Rookery",
+			"Thimble",
+			"Thjazi Fang",
+			"Torn Banner",
+			"Tunk",
+			"Tyranny",
+			"Tír Cruthú",
+			"Vaelus",
+			"Villa Aurora",
+			"War of Axe and Vine",
+			"Wicander Halovar",
+			"Wulfric",
+			"Yanessa Halovar",
+			"new",
+			"House Halovar",
+			"House Royce",
+			"House Tachonis",
+			"House Davinos"
+		],
+		"2": [
+			"Aetheon",
+			"Agony",
+			"Alogar Fang",
+			"Angel",
+			"Aramán",
+			"Aranessa Royce",
+			"Azgra",
+			"Azune Nayar",
+			"Bolaire Lathalia",
+			"Brethren Hall",
+			"Broken Wing",
+			"Candescent Creed",
+			"Caravan Hill",
+			"Casimir Gavendale",
+			"Chamber of Lords-Advisory",
+			"Crow Keepers",
+			"Cruelty",
+			"Davrasi Gaunt",
+			"Dol-Makjar",
+			"Dol-Rungja",
+			"Dvalmar Pass",
+			"Edrian Fazir",
+			"Ellipides Tallbarrel",
+			"Elodie",
+			"Enmity",
+			"Falconer's Rebellion",
+			"Farramh",
+			"Filament",
+			"Gallant",
+			"Godard Halovar",
+			"Guardian Wall",
+			"Hala",
+			"Halandil Fang",
+			"Hero Fang",
+			"House Cormoray",
+			"House Einfasen",
+			"Julien Davinos",
+			"Kahad",
+			"Kattigan Vale",
+			"Kora",
+			"Loza Blade",
+			"Lugzash",
+			"Madam Gurlistra",
+			"Maharlian Falls",
+			"Marud",
+			"Mountains of Kavros",
+			"Mournvale",
+			"Murray Mag'Nesson",
+			"Norma",
+			"Occtis Tachonis",
+			"Olbalad",
+			"Old Path",
+			"Olgud Akarat",
+			"Palazzo Davinos",
+			"Pariah Blades",
+			"Pasitar",
+			"Penteveral",
+			"Pincushion",
+			"Pinebrough",
+			"Primus Tachonis",
+			"Prismatic Retort",
+			"Raimond Davinos",
+			"Rauwyn",
+			"Revolutionary Council",
+			"Revolutionary Guard",
+			"River Vrosh",
+			"Rozigar",
+			"Rubble Cliff",
+			"Seven Shining Tenets",
+			"Shadia Fang",
+			"Shadow",
+			"Shapers' War",
+			"Shapers",
+			"Sir Filoneus",
+			"Sir Harondus Einfasen",
+			"Sisters of Sylandri",
+			"Solomon",
+			"Stone of Nightsong",
+			"Sundered Houses",
+			"Sylandri",
+			"Talcydimir Pridesire",
+			"Tansul",
+			"Tenebral Reaches",
+			"Teor Pridesire",
+			"Thaisha Lloy",
+			"The Archanade",
+			"The Faye",
+			"The Grey Tower",
+			"The Guard Tower",
+			"The Hallowed Round",
+			"The Pit",
+			"The Rookery",
+			"The Tangled Sheet",
+			"The Wastes",
+			"Thimble",
+			"Thjazi Fang",
+			"Torn Banner",
+			"Tunk",
+			"Tyranny",
+			"Tír Cruthú",
+			"Vaelus",
+			"Venatus",
+			"Villa Aurora",
+			"War hound",
+			"War of Axe and Vine",
+			"Wicander Halovar",
+			"Wulfric",
+			"Yanessa Halovar",
+			"the Embers",
+			"new",
+			"House Davinos",
+			"House Halovar",
+			"House Royce",
+			"House Tachonis"
+		],
+		"3": [
+			"Aetheon",
+			"Agony",
+			"Alogar Fang",
+			"Angel",
+			"Aramán",
+			"Aranessa Royce",
+			"Azgra",
+			"Azune Nayar",
+			"Bolaire Lathalia",
+			"Brethren Hall",
+			"Broken Wing",
+			"Candescent Creed",
+			"Caravan Hill",
+			"Casimir Gavendale",
+			"Chamber of Lords-Advisory",
+			"Crow Keepers",
+			"Cruelty",
+			"Davrasi Gaunt",
+			"Dol-Makjar",
+			"Dol-Rungja",
+			"Dvalmar Pass",
+			"Edrian Fazir",
+			"Ellipides Tallbarrel",
+			"Elodie",
+			"Enmity",
+			"Ethrand Tachonis",
+			"Falconer's Rebellion",
+			"Farramh",
+			"Filament",
+			"Gallant",
+			"Ghoul",
+			"Godard Halovar",
+			"Gormalay",
+			"Guardian Wall",
+			"Hala",
+			"Halandil Fang",
+			"Hero Fang",
+			"House Cormoray",
+			"House Einfasen",
+			"Julien Davinos",
+			"Kahad",
+			"Kattigan Vale",
+			"Kora",
+			"Liar's Blade",
+			"Loza Blade",
+			"Lugzash",
+			"Madam Gurlistra",
+			"Maharlian Falls",
+			"Marud",
+			"Mountains of Kavros",
+			"Mournvale",
+			"Murray Mag'Nesson",
+			"Norma",
+			"Occtis Tachonis",
+			"Olbalad",
+			"Old Path",
+			"Olgud Akarat",
+			"Palazzo Davinos",
+			"Pariah Blades",
+			"Pasitar",
+			"Penteveral",
+			"Pincushion",
+			"Pinebrough",
+			"Primus Tachonis",
+			"Prismatic Retort",
+			"Raimond Davinos",
+			"Rauwyn",
+			"Revolutionary Council",
+			"Revolutionary Guard",
+			"River Vrosh",
+			"Rozigar",
+			"Rubble Cliff",
+			"Seven Shining Tenets",
+			"Shadia Fang",
+			"Shadow",
+			"Shapers' War",
+			"Shapers",
+			"Sir Filoneus",
+			"Sir Harondus Einfasen",
+			"Sisters of Sylandri",
+			"Soldiers",
+			"Solomon",
+			"Stone of Nightsong",
+			"Sundered Houses",
+			"Sylandri",
+			"Talcydimir Pridesire",
+			"Tansul",
+			"Tenebral Reaches",
+			"Teor Pridesire",
+			"Thaisha Lloy",
+			"The Archanade",
+			"The Faye",
+			"The Grey Tower",
+			"The Guard Tower",
+			"The Hallowed Round",
+			"The Pit",
+			"The Rookery",
+			"The Tangled Sheet",
+			"The Wastes",
+			"Thimble",
+			"Thjazi Fang",
+			"Timmony",
+			"Torn Banner",
+			"Tunk",
+			"Tyranny",
+			"Tír Cruthú",
+			"Vaelus",
+			"Venatus",
+			"Villa Aurora",
+			"War hound",
+			"War of Axe and Vine",
+			"Wicander Halovar",
+			"Wulfric",
+			"Yanessa Halovar",
+			"the Embers",
+			"new",
+			"House Davinos",
+			"House Halovar",
+			"House Royce",
+			"House Tachonis"
+		],
+		"4": [
+			"Aetheon",
+			"Agony",
+			"Alogar Fang",
+			"Angel",
+			"Aramán",
+			"Aranessa Royce",
+			"Azgra",
+			"Azune Nayar",
+			"Bolaire Lathalia",
+			"Brethren Hall",
+			"Broken Wing",
+			"Candescent Creed",
+			"Caravan Hill",
+			"Casimir Gavendale",
+			"Chamber of Lords-Advisory",
+			"Crow Keepers",
+			"Cruelty",
+			"Davrasi Gaunt",
+			"Dol-Makjar",
+			"Dol-Rungja",
+			"Dvalmar Pass",
+			"Edrian Fazir",
+			"Ellipides Tallbarrel",
+			"Elodie",
+			"Enmity",
+			"Ethrand Tachonis",
+			"Falconer's Rebellion",
+			"Farramh",
+			"Filament",
+			"Gallant",
+			"Ghoul",
+			"Godard Halovar",
+			"Gormalay",
+			"Guardian Wall",
+			"Hala",
+			"Halandil Fang",
+			"Hero Fang",
+			"House Cormoray",
+			"House Einfasen",
+			"Julien Davinos",
+			"Kahad",
+			"Kattigan Vale",
+			"Kora",
+			"Liar's Blade",
+			"Loza Blade",
+			"Lugzash",
+			"Madam Gurlistra",
+			"Maharlian Falls",
+			"Marud",
+			"Mountains of Kavros",
+			"Mournvale",
+			"Murray Mag'Nesson",
+			"Norma",
+			"Occtis Tachonis",
+			"Olbalad",
+			"Old Path",
+			"Olgud Akarat",
+			"Palazzo Davinos",
+			"Pariah Blades",
+			"Pasitar",
+			"Penteveral",
+			"Pincushion",
+			"Pinebrough",
+			"Primus Tachonis",
+			"Prismatic Retort",
+			"Raimond Davinos",
+			"Rauwyn",
+			"Revolutionary Council",
+			"Revolutionary Guard",
+			"River Vrosh",
+			"Rozigar",
+			"Rubble Cliff",
+			"Seven Shining Tenets",
+			"Shadia Fang",
+			"Shadow",
+			"Shapers' War",
+			"Shapers",
+			"Sir Filoneus",
+			"Sir Harondus Einfasen",
+			"Sisters of Sylandri",
+			"Soldiers",
+			"Solomon",
+			"Stone of Nightsong",
+			"Sundered Houses",
+			"Sylandri",
+			"Talcydimir Pridesire",
+			"Tansul",
+			"Tenebral Reaches",
+			"Teor Pridesire",
+			"Thaisha Lloy",
+			"The Archanade",
+			"The Faye",
+			"The Grey Tower",
+			"The Guard Tower",
+			"The Hallowed Round",
+			"The Pit",
+			"The Rookery",
+			"The Tangled Sheet",
+			"The Wastes",
+			"Thimble",
+			"Thjazi Fang",
+			"Timmony",
+			"Torn Banner",
+			"Tunk",
+			"Tyranny",
+			"Tír Cruthú",
+			"Vaelus",
+			"Venatus",
+			"Villa Aurora",
+			"War hound",
+			"War of Axe and Vine",
+			"Wicander Halovar",
+			"Wulfric",
+			"Yanessa Halovar",
+			"the Embers",
+			"new",
+			"House Davinos",
+			"House Halovar",
+			"House Royce",
+			"House Tachonis"
+		]
+	}
 }

@@ -11,7 +11,9 @@
 		"Factions": "Faction",
 		"Events": "Event",
 		"Shapers": "Shaper",
-		"Parties": "Player party"
+		"Parties": "Player party",
+		"Cities": "City",
+		"Towns": "Town"
 	},
 	"series": [
 		{
@@ -41,13 +43,13 @@
 					"title": "C4 E004 | Stone-Faced",
 					"shortTitle": "C4 E004"
 				}
-			],
-			"content": [
-				1,
-				2,
-				3,
-				4
 			]
 		}
-	]
+	],
+	"updated": {
+		"episodes": "2025-11-02T11:30:35.177Z",
+		"entities": "2025-11-02T09:54:56.145Z",
+		"transcripts": "2025-11-02T11:30:35.179Z",
+		"content": "2025-11-02T11:30:40.292Z"
+	}
 }
