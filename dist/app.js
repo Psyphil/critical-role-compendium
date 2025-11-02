@@ -14684,6 +14684,12 @@ var init_main = __esm({
             this.updateQueryParams();
             this.render();
           });
+          this.controls.search.addEventListener("search", () => {
+            this.controls.search.blur();
+          });
+          this.controls.search.addEventListener("keyup", (e) => {
+            if (e.key === "Enter") this.controls.search.blur();
+          });
         }
         if (this.controls.seriesSelect) {
           this.controls.seriesSelect.onChangeHandler = (_) => {
