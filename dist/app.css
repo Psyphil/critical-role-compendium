@@ -38,7 +38,7 @@ i.icon {
   mask-position: 50% 50%;
 }
 .btn-icon {
-  font-size: 1.5em;
+  font-size: unset;
   padding: 0;
   line-height: 1em;
   display: contents;
@@ -133,6 +133,12 @@ h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
 }
+h2 {
+  font-size: unset;
+  margin-bottom: unset;
+  font-weight: 600;
+  line-height: unset;
+}
 .subtitle {
   font-size: 1.1em;
 }
@@ -141,6 +147,8 @@ h1 {
   display: flex;
   flex-direction: row-reverse;
   margin-top: -40px;
+  font-size: 1.3em;
+  gap: 8px;
 }
 .options-wrapper .btn {
   color: var(--font-color-1);
@@ -326,7 +334,6 @@ html:not([data-layout=full]) .results#related-results {
   align-items: baseline;
   font-size: 1.5em;
   color: var(--font-color-2);
-  font-weight: 600;
 }
 .entry-title {
   display: flex;

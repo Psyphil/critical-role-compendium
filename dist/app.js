@@ -14439,6 +14439,7 @@ var init_icon = __esm({
         if (result) {
           if (this.options.ariaLabel) {
             result.ariaLabel = this.options.ariaLabel;
+            result.title = this.options.ariaLabel;
           }
           result.innerHTML = icon3.outerHTML;
         } else {
@@ -14513,7 +14514,7 @@ function entity(entry, textToHighlight) {
   const entryHeader = createDiv("entry-header", { appendTo: entryRow });
   const entryTitle = createDiv("entry-title", { appendTo: entryHeader });
   const entryShare = createDiv("entry-share before", { content: shareButton(entry.key) });
-  createDiv("entry-name", { content: [entryShare, entry.key], appendTo: entryTitle });
+  createDiv("entry-name", { content: [entryShare, `<h2>${entry.key}</h2>`], appendTo: entryTitle });
   createDiv("entry-aliases", { content: aliasesHtml, appendTo: entryTitle });
   createDiv("entry-links", { content: linksHtml, appendTo: entryHeader });
   createDiv("entry-depictions", { content: descriptionHtml, appendTo: entryRow });
@@ -14530,6 +14531,7 @@ function noResults() {
 }
 function shareButton(entryKey) {
   return Icon.Render("link", {
+    ariaLabel: `Permalink to ${entryKey}`,
     className: "on-hover",
     target: "_self",
     link: ((_) => {
@@ -14611,7 +14613,8 @@ var init_main = __esm({
           episodeSelect: SelectPicker.Null,
           tagSelect: SelectPicker.Null,
           filterBadges: null,
-          search: null
+          search: null,
+          permalink: null
         };
         this.initControls();
         this.initEventListeners();
@@ -14624,6 +14627,7 @@ var init_main = __esm({
         this.controls.filterBadges = document.getElementById("filter-wrapper");
         this.controls.results = document.getElementById("key-results");
         this.controls.search = document.getElementById("search-input");
+        this.controls.permalink = Icon.JQuery("link", { ariaLabel: "Permalink to current search filter", link: "#", target: "_self" }).appendTo(".options-wrapper");
         LightSwitch.Init("#dark-mode-checkbox", "light", (theme) => document.documentElement.setAttribute("data-theme", theme));
       }
       async initAsync() {
@@ -14677,22 +14681,26 @@ var init_main = __esm({
         if (this.controls.search) {
           this.controls.search.addEventListener("input", (e) => {
             this.searchStorage.value = e.target.value.toLowerCase();
+            this.updateQueryParams();
             this.render();
           });
         }
         if (this.controls.seriesSelect) {
           this.controls.seriesSelect.onChangeHandler = (_) => {
             this.populateEpisodeSelector();
+            this.updateQueryParams();
             this.render();
           };
         }
         if (this.controls.episodeSelect) {
           this.controls.episodeSelect.onChangeHandler = (_) => {
+            this.updateQueryParams();
             this.render();
           };
         }
         if (this.controls.tagSelect) {
           this.controls.tagSelect.onChangeHandler = (_) => {
+            this.updateQueryParams();
             this.render();
           };
         }
@@ -14722,6 +14730,16 @@ var init_main = __esm({
         const errorContainer = document.getElementById("error-container");
         errorContainer.innerHTML = `<div class="error">${message}</div>`;
         document.getElementById("key-results").innerHTML = "";
+      }
+      updateQueryParams() {
+        const url = new URL(window.location.href);
+        if (url.search) {
+          url.search = "";
+          window.history.pushState({}, "", url);
+        }
+        const newUrlQueryParams = StorageProvider.QuerySearchParams();
+        const newUrl = url.origin + url.pathname + "?" + newUrlQueryParams.toString() + url.hash;
+        this.controls.permalink.attr("href", newUrl);
       }
     };
     new CriticalRoleCompendium();
