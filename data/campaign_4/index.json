@@ -840,7 +840,9 @@
 		{
 			"key": "Gormalay",
 			"alias": {},
-			"links": [],
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Gormalay"
+			],
 			"tags": {
 				"3": [
 					"Location",
@@ -1014,7 +1016,11 @@
 					"Nobility",
 					"Noble House"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/House_Davinos",
+				"https://criticalrole.miraheze.org/wiki/House_Davinos"
+			]
 		},
 		{
 			"key": "House Einfasen",
@@ -1089,7 +1095,11 @@
 					"Religion",
 					"Magical substance"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/House_Halovar",
+				"https://criticalrole.miraheze.org/wiki/House_Halovar"
+			]
 		},
 		{
 			"key": "House Royce",
@@ -1125,7 +1135,11 @@
 				"4": [
 					"Druidism"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/House_Royce",
+				"https://criticalrole.miraheze.org/wiki/House_Royce"
+			]
 		},
 		{
 			"key": "House Tachonis",
@@ -1165,7 +1179,11 @@
 				"3": [
 					"Undead"
 				]
-			}
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/House_Tachonis",
+				"https://criticalrole.miraheze.org/wiki/House_Tachonis"
+			]
 		},
 		{
 			"key": "Julien Davinos",
@@ -1779,7 +1797,8 @@
 			"key": "Pinebrough",
 			"alias": {},
 			"links": [
-				"https://criticalrole.miraheze.org/wiki/Pinebrough"
+				"https://criticalrole.miraheze.org/wiki/Pinebrough",
+				"https://criticalrole.fandom.com/wiki/Pinebrough"
 			],
 			"tags": {
 				"1": [
@@ -2102,6 +2121,9 @@
 			"tags": {
 				"1": [
 					"Undead"
+				],
+				"4": [
+					"Creature"
 				]
 			},
 			"depiction": {
@@ -2230,7 +2252,8 @@
 			"key": "Soldiers",
 			"alias": {},
 			"links": [
-				"https://criticalrole.fandom.com/wiki/Soldiers"
+				"https://criticalrole.fandom.com/wiki/Soldiers",
+				"https://criticalrole.miraheze.org/wiki/Soldiers"
 			],
 			"tags": {
 				"5": [
@@ -3097,11 +3120,13 @@
 			}
 		},
 		{
-			"key": "Wulfric",
-			"alias": {},
+			"key": "Wulferic",
+			"alias": {
+				"1": "Wulfric"
+			},
 			"links": [
-				"https://criticalrole.fandom.com/wiki/Wulfric",
-				"https://criticalrole.miraheze.org/wiki/Wulfric"
+				"https://criticalrole.fandom.com/wiki/Wulferic",
+				"https://criticalrole.miraheze.org/wiki/Wulferic"
 			],
 			"tags": {
 				"1": [
@@ -3254,7 +3279,8 @@
 			"House Halovar",
 			"House Royce",
 			"House Tachonis",
-			"House Davinos"
+			"House Davinos",
+			"Wulferic"
 		],
 		"2": [
 			"Aetheon",
@@ -3370,7 +3396,8 @@
 			"House Davinos",
 			"House Halovar",
 			"House Royce",
-			"House Tachonis"
+			"House Tachonis",
+			"Wulferic"
 		],
 		"3": [
 			"Aetheon",
@@ -3492,7 +3519,8 @@
 			"House Davinos",
 			"House Halovar",
 			"House Royce",
-			"House Tachonis"
+			"House Tachonis",
+			"Wulferic"
 		],
 		"4": [
 			"Aetheon",
@@ -3614,7 +3642,8 @@
 			"House Davinos",
 			"House Halovar",
 			"House Royce",
-			"House Tachonis"
+			"House Tachonis",
+			"Wulferic"
 		]
 	}
 }

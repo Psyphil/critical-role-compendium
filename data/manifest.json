@@ -1,55 +1,55 @@
 {
-	"tagConversions": {
-		"Allies": "NPC",
-		"Antagonists": "NPC",
-		"Other": "NPC",
-		"Familiars/Companions": "Companion",
-		"Places": "Location",
-		"Creatures": "Creature",
-		"Player characters": "Player character",
-		"Items": "Item",
-		"Factions": "Faction",
-		"Events": "Event",
-		"Shapers": "Shaper",
-		"Parties": "Player party",
-		"Cities": "City",
-		"Towns": "Town"
-	},
-	"series": [
-		{
-			"key": "campaign_4",
-			"title": "Campaign 4",
-			"shortTitle": "Campaign 4",
-			"nav": "C4Arc1-storynav",
-			"rss": "https://pocketbeacon.memberfulcontent.com/rss/24418?auth=",
-			"episodes": [
-				{
-					"id": 1,
-					"title": "C4 E001 | The Fall of Thjazi Fang",
-					"shortTitle": "C4 E001"
-				},
-				{
-					"id": 2,
-					"title": "C4 E002 | Broken Wing",
-					"shortTitle": "C4 E002"
-				},
-				{
-					"id": 3,
-					"title": "C4 E003 | The Snipping of Shears",
-					"shortTitle": "C4 E003"
-				},
-				{
-					"id": 4,
-					"title": "C4 E004 | Stone-Faced",
-					"shortTitle": "C4 E004"
-				}
-			]
-		}
-	],
-	"updated": {
-		"episodes": "2025-11-02T11:30:35.177Z",
-		"entities": "2025-11-02T09:54:56.145Z",
-		"transcripts": "2025-11-02T11:30:35.179Z",
-		"content": "2025-11-02T11:30:40.292Z"
-	}
+  "tagConversions": {
+    "Allies": "NPC",
+    "Antagonists": "NPC",
+    "Other": "NPC",
+    "Familiars/Companions": "Companion",
+    "Places": "Location",
+    "Creatures": "Creature",
+    "Player characters": "Player character",
+    "Items": "Item",
+    "Factions": "Faction",
+    "Events": "Event",
+    "Shapers": "Shaper",
+    "Parties": "Player party",
+    "Cities": "City",
+    "Towns": "Town"
+  },
+  "series": [
+    {
+      "key": "campaign_4",
+      "title": "Campaign 4",
+      "shortTitle": "Campaign 4",
+      "nav": "C4Arc1-storynav",
+      "rss": "https://pocketbeacon.memberfulcontent.com/rss/24418?auth=",
+      "episodes": [
+        {
+          "id": 1,
+          "title": "C4 E001 | The Fall of Thjazi Fang",
+          "shortTitle": "C4 E001"
+        },
+        {
+          "id": 2,
+          "title": "C4 E002 | Broken Wing",
+          "shortTitle": "C4 E002"
+        },
+        {
+          "id": 3,
+          "title": "C4 E003 | The Snipping of Shears",
+          "shortTitle": "C4 E003"
+        },
+        {
+          "id": 4,
+          "title": "C4 E004 | Stone-Faced",
+          "shortTitle": "C4 E004"
+        }
+      ]
+    }
+  ],
+  "updated": {
+    "episodes": "2025-11-02T11:30:35.177Z",
+    "entities": "2025-11-06T13:39:20.528Z",
+    "transcripts": "2025-11-02T11:30:35.179Z",
+    "content": "2025-11-06T13:40:03.648Z"
+  }
 }
