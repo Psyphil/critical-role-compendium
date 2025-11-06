@@ -3122,7 +3122,9 @@
 		{
 			"key": "Wulferic",
 			"alias": {
-				"1": "Wulfric"
+				"1": [
+					"Wulfric"
+				]
 			},
 			"links": [
 				"https://criticalrole.fandom.com/wiki/Wulferic",
