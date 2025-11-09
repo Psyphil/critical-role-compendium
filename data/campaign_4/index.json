@@ -76,6 +76,9 @@
 					"Son of Thaisha Lloy",
 					"Brother of Shadia Fang",
 					"Half-brother of Hero Fang"
+				],
+				"5": [
+					"Member of the Barrowguard"
 				]
 			},
 			"tags": {
@@ -162,6 +165,11 @@
 				],
 				"3": [
 					"Instructed Sir Julien Davinos to find Occtis Tachonis."
+				],
+				"5": [
+					"Fought on the opposite side of House Tachonis during the Shapers' War",
+					"Fought on the same side as House Tachonis during the Falconer's Rebellion",
+					"Former sister-in-law to Thaisha Lloy"
 				]
 			}
 		},
@@ -211,6 +219,9 @@
 				],
 				"3": [
 					"Met with Lord Knight Einfasen of the Sundered Houses."
+				],
+				"5": [
+					"Was at Thjazi Fang's side at the end of the Falconer's Rebellion"
 				]
 			}
 		},
@@ -248,6 +259,9 @@
 					"Blackmailed and forced to work for Thjazi Fang",
 					"Possesses the body of the criminal Aubrus Drime",
 					"Has unseen 'brothers and sisters' (other masks)"
+				],
+				"5": [
+					"Let Vaelus into Dol-Makjar hoping she would eliminate Thjazi Fang"
 				]
 			}
 		},
@@ -322,6 +336,9 @@
 				],
 				"3": [
 					"Secretly allied with the demon prince Ksha'aravi"
+				],
+				"5": [
+					"The Ember Eternalis is one of its religious texts"
 				]
 			}
 		},
@@ -381,6 +398,9 @@
 				"3": [
 					"Previously worked at the Underwallen & Sisters wainwrights",
 					"Acquired a deed to a stronghouse in Gormalay"
+				],
+				"5": [
+					"Working with House Tachonis and the Crow Keepers"
 				]
 			}
 		},
@@ -972,6 +992,10 @@
 				],
 				"4": [
 					"Lady Amariya Cormoray, a member of the Chamber of Lords-Advisory, belongs to this house"
+				],
+				"5": [
+					"Fought against the gods in the Shapers' War",
+					"Currently increasing influence over The Archanade"
 				]
 			},
 			"tags": {
@@ -1008,6 +1032,9 @@
 				"4": [
 					"Patriarch General Raimond Davinos was assassinated by Lord Primus Tachonis",
 					"Targeted for elimination by House Tachonis"
+				],
+				"5": [
+					"Trains the Barrowguard"
 				]
 			},
 			"tags": {
@@ -1032,6 +1059,11 @@
 				"2": [
 					"Member of the Sundered Houses",
 					"Member of the Chamber of Lords-Advisory"
+				],
+				"5": [
+					"Fought against the gods in the Shapers' War",
+					"A leader of the house is Harondus Einfasen",
+					"Increased its influence over the Revolutionary Guard"
 				]
 			},
 			"tags": {
@@ -1084,6 +1116,9 @@
 					"Formerly worshipped the sun god Tansul",
 					"Allied with Ksha'aravi, High Prince of Demonkind",
 					"Arranged marriage alliance with House D'Antonio"
+				],
+				"5": [
+					"Fought for the gods in the Shapers' War"
 				]
 			},
 			"tags": {
@@ -1125,6 +1160,10 @@
 				"4": [
 					"Targeted for elimination by House Tachonis",
 					"Lady Aranessa was attacked by Ethrand Tachonis and his ghouls"
+				],
+				"5": [
+					"Fought against the gods in the Shapers' War",
+					"Dwindling since the closure of the gates to Faerie"
 				]
 			},
 			"tags": {
@@ -1169,6 +1208,10 @@
 				"4": [
 					"Attempted to slaughter House Royce and House Davinos",
 					"Ethrand Tachonis murdered his brother, Occtis Tachonis"
+				],
+				"5": [
+					"Fought for the gods in the Shapers' War",
+					"Ancestral lands are in the former Obridimian Empire"
 				]
 			},
 			"tags": {
@@ -1282,6 +1325,9 @@
 				"1": [
 					"Served in the Falconer's Rebellion",
 					"Companion of Wulfric"
+				],
+				"5": [
+					"Native of Timmony"
 				]
 			}
 		},
@@ -1555,7 +1601,8 @@
 			"depiction": {
 				"1": "A young, thin human man (5'11\") from House Tachonis, with dark hair, olive skin, and green eyes. An academic necromancer with a constructed fox familiar named Pincushion. Played by Alexander Ward.",
 				"2": "A young human necromancer from House Tachonis with a constructed fox familiar. He is the son of Lord Primus Tachonis but is being hunted by his own family for his involvement in Thjazi's escape plot. Played by Alexander Ward.",
-				"4": "A young human necromancer from House Tachonis. After being murdered by his brother Ethrand, he was resurrected into an undead state via the Stone of Nightsong, no longer possessing a heart or needing to breathe. Played by Alexander Ward."
+				"4": "A young human necromancer from House Tachonis. After being murdered by his brother Ethrand, he was resurrected into an undead state via the Stone of Nightsong, no longer possessing a heart or needing to breathe. Played by Alexander Ward.",
+				"5": "A young human necromancer resurrected into an undead state. He lacks a pulse, is cold to the touch, must consciously breathe, and will not age. Played by Alexander Ward."
 			},
 			"connections": {
 				"1": [
@@ -2034,12 +2081,10 @@
 			"links": [
 				"https://criticalrole.fandom.com/wiki/Schemers"
 			],
-			"tags": {
-				"5": [
-					"Player party"
-				]
+			"tags": {},
+			"depiction": {
+				"5": "The name given to the adventuring party who remained in Dol-Makjar, consisting of Murray Mag'Nesson, Azune Nayar, Bolaire Lathalia, and Halandil Fang."
 			},
-			"depiction": {},
 			"connections": {}
 		},
 		{
@@ -2053,7 +2098,9 @@
 					"Player party"
 				]
 			},
-			"depiction": {},
+			"depiction": {
+				"5": "The name given to the adventuring party who fled Dol-Makjar, consisting of Occtis Tachonis, Thaisha Lloy, Vaelus, Sir Julien Davinos, and Lady Aranessa Royce."
+			},
 			"connections": {}
 		},
 		{
@@ -2309,7 +2356,8 @@
 				]
 			},
 			"depiction": {
-				"1": "A black stone carved to look like a nightingale embracing itself. An elven artifact from the Shapers' War, it was created to safely ferry elven souls through the Tenebral Reaches, the underworld, to their afterlife."
+				"1": "A black stone carved to look like a nightingale embracing itself. An elven artifact from the Shapers' War, it was created to safely ferry elven souls through the Tenebral Reaches, the underworld, to their afterlife.",
+				"5": "An elven artifact used to resurrect Occtis Tachonis into an undead state, tying it to his continued existence. It was intended to be destroyed in a House Tachonis ritual. Vaelus of the Sisters of Sylandri now holds it."
 			},
 			"connections": {
 				"1": [
@@ -2323,6 +2371,9 @@
 				"4": [
 					"Placed inside the corpse of Occtis Tachonis by his brother Ethrand",
 					"Used to restore Occtis Tachonis to a state of unlife"
+				],
+				"5": [
+					"Possessed by Vaelus"
 				]
 			}
 		},
@@ -2343,6 +2394,9 @@
 					"Includes House Royce",
 					"Governed by the Chamber of Lords-Advisory",
 					"Ordered the execution of Thjazi Fang"
+				],
+				"5": [
+					"Includes House Cormoray"
 				]
 			},
 			"tags": {
@@ -2539,6 +2593,9 @@
 				"4": [
 					"Her family's ancestral estate is in the Mirzash neighborhood",
 					"Her family, the Lloys, forged the Pariah Blades during the Shapers' War"
+				],
+				"5": [
+					"Her son, Alogar Fang, is a member of the Barrowguard"
 				]
 			}
 		},
@@ -2790,6 +2847,11 @@
 				],
 				"4": [
 					"Acted as a go-between for Thjazi Fang and the artifact collector Bolaire Lathalia"
+				],
+				"5": [
+					"Acquainted with Abalang Howl, an associate of Thjazi Fang.",
+					"Met the nixie Brookmeadow in the Dahapshanee Wood.",
+					"Learned of Hawthorn's Glade, a haven for fey."
 				]
 			}
 		},
@@ -2826,13 +2888,20 @@
 				"4": [
 					"Blackmailed the ancient being Bolaire Lathalia into stealing items for him",
 					"Had a working relationship with bursar Murray Mag'Nesson"
+				],
+				"5": [
+					"Associate of the thief Abalang Howl.",
+					"His rebellious cause was followed by the three daughters of Ulbid Morn."
 				]
 			}
 		},
 		{
 			"key": "Timmony",
 			"alias": {},
-			"links": [],
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Timmony",
+				"https://criticalrole.miraheze.org/wiki/Timmony"
+			],
 			"tags": {
 				"3": [
 					"Location"
@@ -2844,6 +2913,10 @@
 			"connections": {
 				"3": [
 					"Contains the town of Gormalay."
+				],
+				"5": [
+					"The King's Highway leads to its capital, Timmon's Rock.",
+					"The Pilgrims' Road leads north into the region."
 				]
 			}
 		},
@@ -2954,6 +3027,9 @@
 				],
 				"3": [
 					"Seeds from Tír Cruthú grow in the gardens of the Palazzo Davinos."
+				],
+				"5": [
+					"The closing of its gates contributed to the decline of House Royce."
 				]
 			}
 		},
@@ -2995,7 +3071,9 @@
 					"Location"
 				]
 			},
-			"links": []
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Venatus"
+			]
 		},
 		{
 			"key": "Villa Aurora",
@@ -3076,6 +3154,9 @@
 					"Wicky",
 					"Your Radiance",
 					"Bearer of the Filament"
+				],
+				"5": [
+					"Nick Halovar"
 				]
 			},
 			"links": [
@@ -3204,6 +3285,274 @@
 				]
 			},
 			"links": []
+		},
+		{
+			"key": "Abalang Howl",
+			"depiction": {
+				"5": "A broad, thick-necked man with orcish and dwarven features, imprisoned in a gibbet near the Black Heron inn. He is a thief and an acquaintance of Thjazi Fang and Thimble."
+			},
+			"alias": {
+				"5": [
+					"Abalang",
+					"Abs"
+				]
+			},
+			"connections": {
+				"5": [
+					"Acquaintance of Thimble",
+					"Did business with Thjazi Fang",
+					"Friend of Ulbid Morn",
+					"Has contacts at the Fiddle and Drum"
+				]
+			},
+			"tags": {
+				"5": [
+					"NPC",
+					"Thief",
+					"Imprisoned",
+					"Half-orc"
+				]
+			}
+		},
+		{
+			"key": "Barrowguard",
+			"depiction": {
+				"5": "A military organization whose soldiers are trained in part by House Davinos under the authority of House Royce. Occtis Tachonis saw one of their warriors in a vision."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Trained by House Davinos"
+				]
+			},
+			"tags": {
+				"5": [
+					"Faction",
+					"Military",
+					"Soldiers"
+				]
+			}
+		},
+		{
+			"key": "Black Heron",
+			"depiction": {
+				"5": "A roadside inn located a few miles outside of Dol-Makjar, at the crossroads leading to the King's Highway and the Dahapshanee Wood."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Location where the party met Abalang Howl"
+				]
+			},
+			"tags": {
+				"5": [
+					"Location",
+					"Tavern"
+				]
+			}
+		},
+		{
+			"key": "Brookmeadow",
+			"depiction": {
+				"5": "A naiad, or water fairy (nixie), who resides in a brook within the Dahapshanee Wood. She is cautious of \"big folk\" but provides Thimble with information."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Encountered Thimble in the Dahapshanee Wood",
+					"Saw Talcydimir Pridesire passing through",
+					"Knows the way to Hawthorn's Glade"
+				]
+			},
+			"tags": {
+				"5": [
+					"NPC",
+					"Fey",
+					"Creature"
+				]
+			}
+		},
+		{
+			"key": "Dahapshanee Wood",
+			"depiction": {
+				"5": "A large, cool, and misty alpine rainforest characterized by conifer pines and vines. It is located north of Dol-Makjar and is the initial path of the Soldiers' party."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Location of Ulbid Morn's observatory",
+					"Contains Hawthorn's Glade"
+				]
+			},
+			"tags": {
+				"5": [
+					"Location",
+					"Geographical feature"
+				]
+			}
+		},
+		{
+			"key": "Ember Eternalis",
+			"depiction": {
+				"5": "A holy book or scripture of the Candescent Creed. It contains prophecies and teachings, such as those quoted by Wicander Halovar regarding being tested by lies."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Sacred text of the Candescent Creed"
+				]
+			},
+			"tags": {
+				"5": [
+					"Item",
+					"Religious text"
+				]
+			}
+		},
+		{
+			"key": "Fiddle and Drum",
+			"depiction": {
+				"5": "A tavern located on the King's Highway. Abalang Howl has contacts there and offered its use as a safe place for the Soldiers' party."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Abalang Howl has contacts there"
+				]
+			},
+			"tags": {
+				"5": [
+					"Location",
+					"Tavern"
+				]
+			}
+		},
+		{
+			"key": "Golden Orchard",
+			"depiction": {
+				"5": "An estate or territory associated with House Royce. Lady Aranessa Royce expresses concern for its safety after the attack on her house."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Territory of House Royce"
+				]
+			},
+			"tags": {
+				"5": [
+					"Location",
+					"Estate"
+				]
+			}
+		},
+		{
+			"key": "Hawthorn's Glade",
+			"depiction": {
+				"5": "A secret and magically protected safe haven for fairies located deep within the Dahapshanee Wood, near the border of Timmony."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Known to Brookmeadow"
+				]
+			},
+			"tags": {
+				"5": [
+					"Location",
+					"Fey"
+				]
+			}
+		},
+		{
+			"key": "King's Highway",
+			"depiction": {
+				"5": "The main, well-traveled road leading north from the Dvalmar Pass to Timmon's Rock, the capital city of the kingdom of Timmony."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Leads to Timmony"
+				]
+			},
+			"tags": {
+				"5": [
+					"Location",
+					"Passes"
+				]
+			}
+		},
+		{
+			"key": "Pilgrims' Road",
+			"depiction": {
+				"5": "An ancient, largely abandoned dwarven road that goes north from Dol-Makjar over the mountaintops to old holy sites."
+			},
+			"alias": {},
+			"connections": {},
+			"tags": {
+				"5": [
+					"Location",
+					"Passes",
+					"Dwarven"
+				]
+			}
+		},
+		{
+			"key": "Rohor",
+			"depiction": {
+				"5": "The groundskeeper of the Lloy Estate in Dol-Makjar who was present during the revival of Occtis Tachonis."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Groundskeeper at the Lloy Estate"
+				]
+			},
+			"tags": {
+				"5": [
+					"NPC",
+					"Human"
+				]
+			}
+		},
+		{
+			"key": "Stormwrack",
+			"depiction": {
+				"5": "A geographical region near Dol-Makjar known for its severe weather and frequent rainstorms. Ulbid Morn studies its atmospheric effects."
+			},
+			"alias": {},
+			"connections": {},
+			"tags": {
+				"5": [
+					"Location",
+					"Geographical feature",
+					"Region"
+				]
+			}
+		},
+		{
+			"key": "Ulbid Morn",
+			"depiction": {
+				"5": "An elderly and eccentric gnomish arcanist and widower who lives in a remote lookout tower on a ridge in the Dahapshanee Wood. He studies clouds and the Stormwrack."
+			},
+			"alias": {
+				"5": [
+					"Ulbid"
+				]
+			},
+			"connections": {
+				"5": [
+					"Friend of Abalang Howl",
+					"Works with druids of the Old Path"
+				]
+			},
+			"tags": {
+				"5": [
+					"NPC",
+					"Gnome",
+					"Arcanist",
+					"Wizard"
+				]
+			}
 		}
 	],
 	"content": {
@@ -3645,6 +3994,144 @@
 			"House Royce",
 			"House Tachonis",
 			"Wulferic"
+		],
+		"5": [
+			"Aetheon",
+			"Agony",
+			"Alogar Fang",
+			"Angel",
+			"Aramán",
+			"Aranessa Royce",
+			"Azgra",
+			"Azune Nayar",
+			"Bolaire Lathalia",
+			"Brethren Hall",
+			"Broken Wing",
+			"Candescent Creed",
+			"Caravan Hill",
+			"Casimir Gavendale",
+			"Chamber of Lords-Advisory",
+			"Crow Keepers",
+			"Cruelty",
+			"Davrasi Gaunt",
+			"Dol-Makjar",
+			"Dol-Rungja",
+			"Dvalmar Pass",
+			"Edrian Fazir",
+			"Ellipides Tallbarrel",
+			"Elodie",
+			"Enmity",
+			"Ethrand Tachonis",
+			"Falconer's Rebellion",
+			"Farramh",
+			"Filament",
+			"Gallant",
+			"Ghoul",
+			"Godard Halovar",
+			"Gormalay",
+			"Guardian Wall",
+			"Hala",
+			"Halandil Fang",
+			"Hero Fang",
+			"House Cormoray",
+			"House Davinos",
+			"House Einfasen",
+			"House Halovar",
+			"House Royce",
+			"House Tachonis",
+			"Julien Davinos",
+			"Kahad",
+			"Kattigan Vale",
+			"Kora",
+			"Liar's Blade",
+			"Loza Blade",
+			"Lugzash",
+			"Madam Gurlistra",
+			"Maharlian Falls",
+			"Marud",
+			"Mountains of Kavros",
+			"Mournvale",
+			"Murray Mag'Nesson",
+			"Norma",
+			"Occtis Tachonis",
+			"Olbalad",
+			"Old Path",
+			"Olgud Akarat",
+			"Palazzo Davinos",
+			"Pariah Blades",
+			"Pasitar",
+			"Penteveral",
+			"Pincushion",
+			"Pinebrough",
+			"Primus Tachonis",
+			"Prismatic Retort",
+			"Raimond Davinos",
+			"Rauwyn",
+			"Revolutionary Council",
+			"Revolutionary Guard",
+			"River Vrosh",
+			"Rozigar",
+			"Rubble Cliff",
+			"Schemers",
+			"Seekers",
+			"Seven Shining Tenets",
+			"Shadia Fang",
+			"Shadow",
+			"Shapers' War",
+			"Shapers",
+			"Sir Filoneus",
+			"Sir Harondus Einfasen",
+			"Sisters of Sylandri",
+			"Soldiers",
+			"Solomon",
+			"Stone of Nightsong",
+			"Sundered Houses",
+			"Sylandri",
+			"Talcydimir Pridesire",
+			"Tansul",
+			"Tenebral Reaches",
+			"Teor Pridesire",
+			"Thaisha Lloy",
+			"The Archanade",
+			"The Faye",
+			"The Grey Tower",
+			"The Guard Tower",
+			"The Hallowed Round",
+			"The Pit",
+			"The Rookery",
+			"The Tangled Sheet",
+			"The Wastes",
+			"Thimble",
+			"Thjazi Fang",
+			"Timmony",
+			"Torn Banner",
+			"Tunk",
+			"Tyranny",
+			"Tír Cruthú",
+			"Vaelus",
+			"Venatus",
+			"Villa Aurora",
+			"War hound",
+			"War of Axe and Vine",
+			"Wicander Halovar",
+			"Wulferic",
+			"Yanessa Halovar",
+			"the Embers",
+			"Abalang Howl",
+			"Barrowguard",
+			"Black Heron",
+			"Brookmeadow",
+			"Dahapshanee Wood",
+			"Ember Eternalis",
+			"Fiddle and Drum",
+			"Golden Orchard",
+			"Hawthorn's Glade",
+			"King's Highway",
+			"Pilgrims' Road",
+			"Rohor",
+			"Stormwrack",
+			"Ulbid Morn",
+			"new"
 		]
 	}
 }
