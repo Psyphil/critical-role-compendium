@@ -1,6 +1,35 @@
 {
 	"entities": [
 		{
+			"key": "Abalang Howl",
+			"depiction": {
+				"5": "A broad, thick-necked man with orcish and dwarven features, imprisoned in a gibbet near the Black Heron inn. He is a thief and an acquaintance of Thjazi Fang and Thimble."
+			},
+			"alias": {
+				"5": [
+					"Abalang",
+					"Abs"
+				]
+			},
+			"connections": {
+				"5": [
+					"Acquaintance of Thimble",
+					"Did business with Thjazi Fang",
+					"Friend of Ulbid Morn",
+					"Has contacts at the Fiddle and Drum"
+				]
+			},
+			"tags": {
+				"5": [
+					"NPC",
+					"Thief",
+					"Imprisoned",
+					"Half-orc"
+				]
+			},
+			"links": []
+		},
+		{
 			"key": "Aetheon",
 			"alias": {},
 			"links": [
@@ -226,6 +255,45 @@
 			}
 		},
 		{
+			"key": "Barrowguard",
+			"depiction": {
+				"5": "A military organization whose soldiers are trained in part by House Davinos under the authority of House Royce. Occtis Tachonis saw one of their warriors in a vision."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Trained by House Davinos"
+				]
+			},
+			"tags": {
+				"5": [
+					"Faction",
+					"Military",
+					"Soldiers"
+				]
+			},
+			"links": []
+		},
+		{
+			"key": "Black Heron",
+			"depiction": {
+				"5": "A roadside inn located a few miles outside of Dol-Makjar, at the crossroads leading to the King's Highway and the Dahapshanee Wood."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Location where the party met Abalang Howl"
+				]
+			},
+			"tags": {
+				"5": [
+					"Location",
+					"Tavern"
+				]
+			},
+			"links": []
+		},
+		{
 			"key": "Bolaire Lathalia",
 			"alias": {},
 			"links": [
@@ -306,6 +374,30 @@
 			"links": [
 				"https://criticalrole.fandom.com/wiki/Broken_Wing",
 				"https://criticalrole.miraheze.org/wiki/Broken_Wing"
+			]
+		},
+		{
+			"key": "Brookmeadow",
+			"depiction": {
+				"5": "A naiad, or water fairy (nixie), who resides in a brook within the Dahapshanee Wood. She is cautious of \"big folk\" but provides Thimble with information."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Encountered Thimble in the Dahapshanee Wood",
+					"Saw Talcydimir Pridesire passing through",
+					"Knows the way to Hawthorn's Glade"
+				]
+			},
+			"tags": {
+				"5": [
+					"NPC",
+					"Fey",
+					"Creature"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Brookmeadow"
 			]
 		},
 		{
@@ -480,6 +572,28 @@
 			"links": [
 				"https://criticalrole.fandom.com/wiki/Cruelty",
 				"https://criticalrole.miraheze.org/wiki/Cruelty"
+			]
+		},
+		{
+			"key": "Dahapshanee Wood",
+			"depiction": {
+				"5": "A large, cool, and misty alpine rainforest characterized by conifer pines and vines. It is located north of Dol-Makjar and is the initial path of the Soldiers' party."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Location of Ulbid Morn's observatory",
+					"Contains Hawthorn's Glade"
+				]
+			},
+			"tags": {
+				"5": [
+					"Location",
+					"Geographical feature"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Dahapshanee_Wood"
 			]
 		},
 		{
@@ -659,6 +773,25 @@
 			]
 		},
 		{
+			"key": "Ember Eternalis",
+			"depiction": {
+				"5": "A holy book or scripture of the Candescent Creed. It contains prophecies and teachings, such as those quoted by Wicander Halovar regarding being tested by lies."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Sacred text of the Candescent Creed"
+				]
+			},
+			"tags": {
+				"5": [
+					"Item",
+					"Religious text"
+				]
+			},
+			"links": []
+		},
+		{
 			"key": "Enmity",
 			"depiction": {
 				"1": "A demon Aspirant of the Candescent Creed and sibling to Tyranny. Has deep, speckled red and black skin and ram-like curling horns.",
@@ -755,6 +888,25 @@
 					"Event",
 					"Custom",
 					"Orcish"
+				]
+			},
+			"links": []
+		},
+		{
+			"key": "Fiddle and Drum",
+			"depiction": {
+				"5": "A tavern located on the King's Highway. Abalang Howl has contacts there and offered its use as a safe place for the Soldiers' party."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Abalang Howl has contacts there"
+				]
+			},
+			"tags": {
+				"5": [
+					"Location",
+					"Tavern"
 				]
 			},
 			"links": []
@@ -858,6 +1010,25 @@
 			}
 		},
 		{
+			"key": "Golden Orchard",
+			"depiction": {
+				"5": "An estate or territory associated with House Royce. Lady Aranessa Royce expresses concern for its safety after the attack on her house."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Territory of House Royce"
+				]
+			},
+			"tags": {
+				"5": [
+					"Location",
+					"Estate"
+				]
+			},
+			"links": []
+		},
+		{
 			"key": "Gormalay",
 			"alias": {},
 			"links": [
@@ -951,6 +1122,25 @@
 					"Wielder of the Liar's Blade"
 				]
 			}
+		},
+		{
+			"key": "Hawthorn's Glade",
+			"depiction": {
+				"5": "A secret and magically protected safe haven for fairies located deep within the Dahapshanee Wood, near the border of Timmony."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Known to Brookmeadow"
+				]
+			},
+			"tags": {
+				"5": [
+					"Location",
+					"Fey"
+				]
+			},
+			"links": []
 		},
 		{
 			"key": "Hero Fang",
@@ -1330,6 +1520,25 @@
 					"Native of Timmony"
 				]
 			}
+		},
+		{
+			"key": "King's Highway",
+			"depiction": {
+				"5": "The main, well-traveled road leading north from the Dvalmar Pass to Timmon's Rock, the capital city of the kingdom of Timmony."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Leads to Timmony"
+				]
+			},
+			"tags": {
+				"5": [
+					"Location",
+					"Passes"
+				]
+			},
+			"links": []
 		},
 		{
 			"key": "Kora",
@@ -1807,6 +2016,22 @@
 			}
 		},
 		{
+			"key": "Pilgrims' Road",
+			"depiction": {
+				"5": "An ancient, largely abandoned dwarven road that goes north from Dol-Makjar over the mountaintops to old holy sites."
+			},
+			"alias": {},
+			"connections": {},
+			"tags": {
+				"5": [
+					"Location",
+					"Passes",
+					"Dwarven"
+				]
+			},
+			"links": []
+		},
+		{
 			"key": "Pincushion",
 			"alias": {
 				"1": [
@@ -2036,6 +2261,25 @@
 			"links": []
 		},
 		{
+			"key": "Rohor",
+			"depiction": {
+				"5": "The groundskeeper of the Lloy Estate in Dol-Makjar who was present during the revival of Occtis Tachonis."
+			},
+			"alias": {},
+			"connections": {
+				"5": [
+					"Groundskeeper at the Lloy Estate"
+				]
+			},
+			"tags": {
+				"5": [
+					"NPC",
+					"Human"
+				]
+			},
+			"links": []
+		},
+		{
 			"key": "Rozigar",
 			"depiction": {
 				"2": "A neighborhood in Dol-Makjar where The Tangled Sheet is located. It borders the Embers and the Penteveral."
@@ -2081,7 +2325,11 @@
 			"links": [
 				"https://criticalrole.fandom.com/wiki/Schemers"
 			],
-			"tags": {},
+			"tags": {
+				"5": [
+					"Player party"
+				]
+			},
 			"depiction": {
 				"5": "The name given to the adventuring party who remained in Dol-Makjar, consisting of Murray Mag'Nesson, Azune Nayar, Bolaire Lathalia, and Halandil Fang."
 			},
@@ -2376,6 +2624,24 @@
 					"Possessed by Vaelus"
 				]
 			}
+		},
+		{
+			"key": "Stormwrack",
+			"depiction": {
+				"5": "A geographical region near Dol-Makjar known for its severe weather and frequent rainstorms. Ulbid Morn studies its atmospheric effects."
+			},
+			"alias": {},
+			"connections": {},
+			"tags": {
+				"5": [
+					"Location",
+					"Geographical feature",
+					"Region"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Stormwrack"
+			]
 		},
 		{
 			"key": "Sundered Houses",
@@ -3034,6 +3300,34 @@
 			}
 		},
 		{
+			"key": "Ulbid Morn",
+			"depiction": {
+				"5": "An elderly and eccentric gnomish arcanist and widower who lives in a remote lookout tower on a ridge in the Dahapshanee Wood. He studies clouds and the Stormwrack."
+			},
+			"alias": {
+				"5": [
+					"Ulbid"
+				]
+			},
+			"connections": {
+				"5": [
+					"Friend of Abalang Howl",
+					"Works with druids of the Old Path"
+				]
+			},
+			"tags": {
+				"5": [
+					"NPC",
+					"Gnome",
+					"Arcanist",
+					"Wizard"
+				]
+			},
+			"links": [
+				"https://criticalrole.fandom.com/wiki/Ulbid_Morn"
+			]
+		},
+		{
 			"key": "Vaelus",
 			"alias": {},
 			"links": [
@@ -3285,274 +3579,6 @@
 				]
 			},
 			"links": []
-		},
-		{
-			"key": "Abalang Howl",
-			"depiction": {
-				"5": "A broad, thick-necked man with orcish and dwarven features, imprisoned in a gibbet near the Black Heron inn. He is a thief and an acquaintance of Thjazi Fang and Thimble."
-			},
-			"alias": {
-				"5": [
-					"Abalang",
-					"Abs"
-				]
-			},
-			"connections": {
-				"5": [
-					"Acquaintance of Thimble",
-					"Did business with Thjazi Fang",
-					"Friend of Ulbid Morn",
-					"Has contacts at the Fiddle and Drum"
-				]
-			},
-			"tags": {
-				"5": [
-					"NPC",
-					"Thief",
-					"Imprisoned",
-					"Half-orc"
-				]
-			}
-		},
-		{
-			"key": "Barrowguard",
-			"depiction": {
-				"5": "A military organization whose soldiers are trained in part by House Davinos under the authority of House Royce. Occtis Tachonis saw one of their warriors in a vision."
-			},
-			"alias": {},
-			"connections": {
-				"5": [
-					"Trained by House Davinos"
-				]
-			},
-			"tags": {
-				"5": [
-					"Faction",
-					"Military",
-					"Soldiers"
-				]
-			}
-		},
-		{
-			"key": "Black Heron",
-			"depiction": {
-				"5": "A roadside inn located a few miles outside of Dol-Makjar, at the crossroads leading to the King's Highway and the Dahapshanee Wood."
-			},
-			"alias": {},
-			"connections": {
-				"5": [
-					"Location where the party met Abalang Howl"
-				]
-			},
-			"tags": {
-				"5": [
-					"Location",
-					"Tavern"
-				]
-			}
-		},
-		{
-			"key": "Brookmeadow",
-			"depiction": {
-				"5": "A naiad, or water fairy (nixie), who resides in a brook within the Dahapshanee Wood. She is cautious of \"big folk\" but provides Thimble with information."
-			},
-			"alias": {},
-			"connections": {
-				"5": [
-					"Encountered Thimble in the Dahapshanee Wood",
-					"Saw Talcydimir Pridesire passing through",
-					"Knows the way to Hawthorn's Glade"
-				]
-			},
-			"tags": {
-				"5": [
-					"NPC",
-					"Fey",
-					"Creature"
-				]
-			}
-		},
-		{
-			"key": "Dahapshanee Wood",
-			"depiction": {
-				"5": "A large, cool, and misty alpine rainforest characterized by conifer pines and vines. It is located north of Dol-Makjar and is the initial path of the Soldiers' party."
-			},
-			"alias": {},
-			"connections": {
-				"5": [
-					"Location of Ulbid Morn's observatory",
-					"Contains Hawthorn's Glade"
-				]
-			},
-			"tags": {
-				"5": [
-					"Location",
-					"Geographical feature"
-				]
-			}
-		},
-		{
-			"key": "Ember Eternalis",
-			"depiction": {
-				"5": "A holy book or scripture of the Candescent Creed. It contains prophecies and teachings, such as those quoted by Wicander Halovar regarding being tested by lies."
-			},
-			"alias": {},
-			"connections": {
-				"5": [
-					"Sacred text of the Candescent Creed"
-				]
-			},
-			"tags": {
-				"5": [
-					"Item",
-					"Religious text"
-				]
-			}
-		},
-		{
-			"key": "Fiddle and Drum",
-			"depiction": {
-				"5": "A tavern located on the King's Highway. Abalang Howl has contacts there and offered its use as a safe place for the Soldiers' party."
-			},
-			"alias": {},
-			"connections": {
-				"5": [
-					"Abalang Howl has contacts there"
-				]
-			},
-			"tags": {
-				"5": [
-					"Location",
-					"Tavern"
-				]
-			}
-		},
-		{
-			"key": "Golden Orchard",
-			"depiction": {
-				"5": "An estate or territory associated with House Royce. Lady Aranessa Royce expresses concern for its safety after the attack on her house."
-			},
-			"alias": {},
-			"connections": {
-				"5": [
-					"Territory of House Royce"
-				]
-			},
-			"tags": {
-				"5": [
-					"Location",
-					"Estate"
-				]
-			}
-		},
-		{
-			"key": "Hawthorn's Glade",
-			"depiction": {
-				"5": "A secret and magically protected safe haven for fairies located deep within the Dahapshanee Wood, near the border of Timmony."
-			},
-			"alias": {},
-			"connections": {
-				"5": [
-					"Known to Brookmeadow"
-				]
-			},
-			"tags": {
-				"5": [
-					"Location",
-					"Fey"
-				]
-			}
-		},
-		{
-			"key": "King's Highway",
-			"depiction": {
-				"5": "The main, well-traveled road leading north from the Dvalmar Pass to Timmon's Rock, the capital city of the kingdom of Timmony."
-			},
-			"alias": {},
-			"connections": {
-				"5": [
-					"Leads to Timmony"
-				]
-			},
-			"tags": {
-				"5": [
-					"Location",
-					"Passes"
-				]
-			}
-		},
-		{
-			"key": "Pilgrims' Road",
-			"depiction": {
-				"5": "An ancient, largely abandoned dwarven road that goes north from Dol-Makjar over the mountaintops to old holy sites."
-			},
-			"alias": {},
-			"connections": {},
-			"tags": {
-				"5": [
-					"Location",
-					"Passes",
-					"Dwarven"
-				]
-			}
-		},
-		{
-			"key": "Rohor",
-			"depiction": {
-				"5": "The groundskeeper of the Lloy Estate in Dol-Makjar who was present during the revival of Occtis Tachonis."
-			},
-			"alias": {},
-			"connections": {
-				"5": [
-					"Groundskeeper at the Lloy Estate"
-				]
-			},
-			"tags": {
-				"5": [
-					"NPC",
-					"Human"
-				]
-			}
-		},
-		{
-			"key": "Stormwrack",
-			"depiction": {
-				"5": "A geographical region near Dol-Makjar known for its severe weather and frequent rainstorms. Ulbid Morn studies its atmospheric effects."
-			},
-			"alias": {},
-			"connections": {},
-			"tags": {
-				"5": [
-					"Location",
-					"Geographical feature",
-					"Region"
-				]
-			}
-		},
-		{
-			"key": "Ulbid Morn",
-			"depiction": {
-				"5": "An elderly and eccentric gnomish arcanist and widower who lives in a remote lookout tower on a ridge in the Dahapshanee Wood. He studies clouds and the Stormwrack."
-			},
-			"alias": {
-				"5": [
-					"Ulbid"
-				]
-			},
-			"connections": {
-				"5": [
-					"Friend of Abalang Howl",
-					"Works with druids of the Old Path"
-				]
-			},
-			"tags": {
-				"5": [
-					"NPC",
-					"Gnome",
-					"Arcanist",
-					"Wizard"
-				]
-			}
 		}
 	],
 	"content": {
